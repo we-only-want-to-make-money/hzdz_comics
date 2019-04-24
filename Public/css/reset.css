@@ -1,0 +1,103 @@
+﻿* {
+  margin: 0;
+  outline: 0 none;
+  padding: 0;
+  font-family: "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", "\9ED1\4F53", tahoma, arial;
+  font-size: 12px;
+  line-height: 21px;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+body {
+  background-color: #fff;
+}
+img {
+  border: medium none;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+th,
+td,
+caption {
+  vertical-align: middle;
+}
+textarea {
+  border: 0 none;
+  border-radius: 0;
+  padding: 8px 0;
+  resize: none;
+}
+input,
+button,
+select,
+textarea {
+  border: medium none;
+  border-radius: 0;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+li {
+  list-style: outside none none;
+}
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+select,
+textarea,
+button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.float_lf {
+  float: left;
+}
+.float_rt {
+  float: right;
+}

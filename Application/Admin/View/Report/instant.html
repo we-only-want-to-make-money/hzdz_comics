@@ -1,0 +1,91 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">商城实时数据</h1>
+            <span class="pagedesc">以下数据为系统自动根据数据统计得出,仅供参考</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			<div class="contenttitle2">
+				<h3>订单信息</h3>
+			</div><!--contenttitle-->
+			<table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<thead>
+					<tr>
+						<th>总订单数</th>
+						<th>已完成订单</th>
+						<th>已取消订单</th>
+						<th>代发货订单</th>
+						<th>待支付订单</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{$info.orders|default=0}</td>
+						<td>{$info.order_4}</td>
+						<td>{$info.order_0}</td>
+						<td>{$info.order_3}</td>
+						<td>{$info.order_2}</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="contenttitle2">
+				<h3>财务信息</h3>
+			</div><!--contenttitle-->
+			<table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<thead>
+					<tr>
+						<th>总营业额</th>
+						<th>微信支付总入账</th>
+						<th>会员总余额</th>
+						<th>会员总{$_CFG.site.points_name}</th>
+						<th>今日营业额</th>
+						<th>今日现金支付</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{$info.money_total}</td>
+						<td>{$info.money_wxpay}</td>
+						<td>{$info.user_money}</td>
+						<td>{$info.user_points}</td>
+						<td>{$info.total_today}</td>
+						<td>{$info.money_today}</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="contenttitle2">
+				<h3>分销信息</h3>
+			</div><!--contenttitle-->
+			<table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<thead>
+					<tr>
+						<th colspan="2">分成总额</th>
+						<th colspan="2">待发放分成</th>
+						<th colspan="2">已发放金额</th>
+					</tr>
+					<tr>
+						<th>金额</th>
+						<th>{$_CFG.site.points_name}</th>
+						<th>金额</th>
+						<th>{$_CFG.site.points_name}</th>
+						<th>金额</th>
+						<th>{$_CFG.site.points_name}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{$info.separate_money_total}</td>
+						<td>{$info.separate_points_total}</td>
+						<td>{$info.separate_money_wait}</td>
+						<td>{$info.separate_points_wait}</td>
+						<td>{$info.separate_money_done}</td>
+						<td>{$info.separate_points_done}</td>
+					</tr>
+				</tbody>
+			</table>
+        
+        </div><!--contentwrapper-->
+        

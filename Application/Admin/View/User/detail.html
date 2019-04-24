@@ -1,0 +1,201 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">用户详情</h1>
+            <span class="pagedesc">查看用户的详细信息</span>
+            
+        </div><!--pageheader-->
+        <style>
+			.stdtable tbody tr:first-child  td{ border-top:1px solid #eee;}
+		</style>
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+			<div class="contenttitle2">
+				<h3>基本信息</h3>
+		   </div><!--contenttitle-->
+
+		   <table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<colgroup>
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>编号</td>
+						<td>{$info.id}</td>
+						<td>头像</td>
+						<td><img src="{$info.headimg}" style="width:50px; height:50px; border-radius:25px;" /></td>
+					</tr>
+					<tr>
+						<td>昵称</td>
+						<td>{$info.nickname}</td>
+						<td>性别</td>
+						<td>
+							<if condition="$info['sex'] eq 1">男<elseif condition="$info['sex'] eq 2"/>女<else/>保密</if>
+						</td>
+					</tr>
+					<tr>
+						<td>注册时间</td>
+						<td>{$info.sub_time|date="Y-m-d H:i:s",###}</td>
+						<td>&nbsp;</td>
+						<td>
+							&nbsp;
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		   <!-- <div class="contenttitle2">
+				<h3>个人资料</h3>
+		   </div>contenttitle
+		   <table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<colgroup>
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>真实姓名</td>
+						<td>{$info.true_name}</td>
+						<td>身份证号</td>
+						<td>{$info.cardno}</td>
+					</tr>
+					<tr>
+						<td>手机号</td>
+						<td>{$info.mobile}</td>
+						<td>生日</td>
+						<td>{$info.birth}</td>
+					</tr>
+				</tbody>
+			</table> -->
+			
+		   <div class="contenttitle2">
+				<h3>
+					分销信息
+					<small>[<a href="{:U('correct_agent?id='.$info['id'])}">校准</a>]</small>
+				</h3>
+		   </div><!--contenttitle-->
+			<table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<colgroup>
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+				</colgroup>
+				<thead>
+					<th>上二级编号</th>
+					<th>上一级编号</th>
+					<th>一级下线数</th>
+					<th>二级下线数</th>
+					<th>三级下线数</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{$info.parent2}</td>
+						<td>{$info.parent1}</td>
+						<td>
+							<a href="{:U('index?parent1='.$info['id'])}" target="_blank">{$info.agent1}</a>
+						</td>
+						<td>
+							<a href="{:U('index?parent2='.$info['id'])}" target="_blank">{$info.agent2}</a>
+						</td>
+						<td>
+							<a href="{:U('index?parent3='.$info['id'])}" target="_blank">{$info.agent3}</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<!-- <div class="contenttitle2">
+				<h3>账户信息</h3>
+		    </div>contenttitle
+			<table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<colgroup>
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+				</colgroup>
+				<thead>
+					<th>余额</th>
+					<th>累计分成金额</th>
+					<th>{$_CFG.site.points_name}</th>
+					<th>累计分成{$_CFG.site.points_name}</th>
+					<th>团队业绩</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{$info.money}</td>
+						<td>{$info.separate_money|default=0}</td>
+						<td>{$info.points}</td>
+						<td>{$info.separate_points|default=0}</td>
+						<td>{$info.sales}</td>
+					</tr>
+				</tbody>
+			</table> -->
+			
+			<!-- <div class="contenttitle2">
+				<h3>操作</h3>
+		    </div>contenttitle
+			<table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<tbody>
+					<tr>
+						<td>
+							<select name="method" id="method" >
+								<option value="1">充值</option>
+								<option value="2">扣除</option>
+							</select>
+							
+							<input type="text" value="" id="money" />
+							<input type="button" value="确定" onclick="charge()" />
+						</td>
+						<td>
+							团队业绩 
+							<input type="text" value="{$info.sales}" id="sales" />
+							<input type="button" value="确定" onclick="editSales()" />
+						</td>
+					</tr>
+				</tbody>
+			</table> -->
+			<script>
+			// 充值或者扣除
+			function charge(){
+				method = jQuery("#method").val();
+				money = jQuery("#money").val();
+				if(money =='' ){
+					alert('请填写金额');
+					return false;
+				}
+				if(method ==1){
+					method_name = "充值";
+				}else{
+					method_name = "扣除";
+				}
+				if(!confirm('您确定要给 {$info.nickname} ' + method_name + "  "+ money+" 元吗?")){
+					return false;
+				}
+				jQuery.post("{:U('charge')}", {method:method,user_id:{$_GET['id']},money:money},function(d){
+					alert(d.info);
+					if(d.status==1)location.href=location.href;
+				});
+			}
+			
+			function editSales(){
+				money = jQuery("#sales").val();
+				jQuery.post("{:U('set_col')}",{id:{$info.id},col:'sales',value:money},function(d){
+					console.log(d);
+					if(d.status==1){
+						alert('操作成功');
+					}
+				});
+			}
+			
+			</script>
+        </div><!--contentwrapper-->
+        

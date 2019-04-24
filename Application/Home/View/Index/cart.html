@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no, address=no">
+<title>{$_site['name']}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/common.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/app.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/font.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/designer.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/index.css">
+<script src="__PUBLIC__/ever/js/jquery-1.8.3.min.js"></script>
+<script src="__HJS__/common.js"></script>
+<body bgcolor="#f2f2f2">
+<style>
+.cart-item .cart-price {
+    line-height: 80px;
+}
+.common-header {
+    background: #DD2726;
+    color: #fff;
+	height:50px;
+}
+</style>
+<div class="common-header">
+	<i class="iconfont icon-close" onclick="javascript:history.go(-1)"></i>
+	<h3>购物车</h3>
+</div>
+<if condition="$list neq null">
+<div class="cart-item">
+	<dl>
+		<dt>	
+		</dt>
+		<foreach name="list" item="v">
+		<dd class="flex" data-item="{$v['id']}">
+			<i class="iconfont icon-roundcheckfill checked"></i>
+			<img src="{$v['pic']}">
+			<div class="cart-info flex_1">
+				<h4 class="text-overflow_2">{$v['title']}</h4>
+				<p>￥{$v['market_price']}</p>
+			</div>
+			<div class="cart-price" onclick="delCart({$v['id']})">
+				<i class="iconfont icon-delete"></i>
+			</div>
+		</dd>
+		</foreach>
+	</dl>
+</div>
+<else />
+<div class="cart-empty">
+	<i class="iconfont icon-cart"></i>
+	<p>购物车还是空的，去挑几件中意的商品吧！</p>
+	<button onclick="window.location.href =&#39;{:U('Index/index')}&#39;">去逛逛</button>
+</div>	
+</if>
+<if condition="$list neq null">
+<div style="height: 50px;width: 100%;"></div>
+<div class="cart-footer flex">
+	<div class="cart-count flex_1">
+		<i class="iconfont icon-roundcheckfill checked"></i>
+		<p>全选</p>
+		<p>合计：<span>￥{$total}</span></p>
+	</div>
+	<button onclick="dopay();">结算</button>
+</div>
+</if>
+
+<link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css">
+<script src="__HJS__/jquery-1.10.1.min.js"></script>
+<script src="__PUBLIC__/layer_mobile/layer.js"></script>
+<script src="__HJS__/swiper.min.js"></script>
+<script src="__HJS__/common.js"></script>
+<script type="text/javascript">
+	$(function () {
+		//店铺商品选择
+		initCheck();
+		$(".cart-item dl dd>i").bind("click", function () {
+			if ($(this).hasClass("checked")) {
+				$(this).removeClass("checked");
+			} else {
+				$(this).addClass("checked");
+			}
+			initCheck();
+			updateCheck();
+			return false;
+		})
+		//购物车商品全选
+		$(".cart-count>i").bind("click", function () {
+			if ($(this).hasClass("checked")) {
+				$(this).removeClass("checked");
+				$(".cart-item").find(".icon-roundcheckfill").removeClass("checked");
+			} else {
+				$(this).addClass("checked");
+				$(".cart-item").find(".icon-roundcheckfill").addClass("checked");
+			}
+			updateCheck();
+			return false;
+		});
+	});
+	
+	function dopay(){
+		var cartIds = new Array;
+		$(".cart-item dl dd .icon-roundcheckfill").each(function () {
+			if ($(this).hasClass("checked")) {
+				cartIds.push($(this).parents("dd").data("item"));
+			}
+		});
+		if(cartIds ==''){
+			msg('您还未选中课程！');
+		}
+		var data ={cartid: cartIds.join(",")};
+		location.href="{:U('Index/cart_pay')}&cartid="+cartIds;
+	}
+	
+	function delCart(id){
+		if(id){
+			$.post("{:U('IndexAjax/delCart')}",{id:id},function(d){
+				if(d){
+					msg(d.info);
+					setTimeout(function(){
+						location.reload();
+					},2000); 
+					
+				}else{
+					msg('请求失败!');
+				}
+			});
+		}
+	}
+</script>		
+<div id="backtop"><i class="iconfont icon-fold"></i></div>
+
+</body>
+<include file="include/share2" />
+</html>

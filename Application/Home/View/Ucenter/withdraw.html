@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>{$_site['name']} - 提现</title>
+<link  href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/style.css" />
+<link type="text/css" rel="stylesheet"  href="__PUBLIC__/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/ectouch.css">
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+
+<link href="__PUBLIC__/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="__HCSS__/style.css">
+</head>
+<style>
+.cz2 a.green {
+    background: #f93;
+    color: #ffffff;
+    box-shadow: 0px 3px #aadc33;
+}
+.cz2 a {
+    width: 49%;
+    height: 38px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    margin: 0 0.5%;
+    background: #f33;
+    color: #ffffff;
+    font-size: 1.0rem;
+    border-radius: 3px;
+    box-shadow: 0px 3px #aadc33;
+}
+.pages{
+	width: 33%;
+    float: left;
+}
+.order_list_style, .cat_style, .user_style {
+    margin-top: 1.5rem;
+}
+.Paging a {
+    padding: 3px;
+}
+.record_list li {
+    padding:0;
+}
+</style>
+<body>
+<div class="Layout_style">
+<div class="header-blank"></div>
+<div class="header">
+	{:getUsername($user['id'])} -- 客户信息
+	<span class="left">
+		<a href="javascript:;" onclick="window.history.go(-1)"><span class="glyphicon glyphicon-chevron-left"  aria-hidden="true"></span></a>
+	</span>
+</div>
+<section class="user_style">
+<div class="cz_form">
+    <div class="tx_j">可提现金额：<span>￥{$user['money']}</span></div>
+     <div class="cz1"><span>金额(￥):</span><input class="txt " type="text" name="money" id="money" value="" autocomplete="off" placeholder="请输入金额1元起"></div>
+</div>
+<div class="cz2" id="show">
+	<a href="javascript:;"  _id="1" class="green toggle">小额红包提现</a>
+	<a href="javascript:;"  _id="2" class="toggle">大额平台提现</a>
+</div>
+<div class="cz2" id="hide" style="display:none">
+	<a href="javascript:;" style="width:100%;background:#f30;" _id="1" class="green toggle">正在提现,请耐心等待...</a>
+</div>
+<div class="record_list">
+     <div class="title_name">提现记录</div>
+     <ul id="recode">
+     
+     </ul>
+    <div class="Paging">
+     <div class="pages" id="up" style="text-align:right"><a href="javascript:;">上一页</a></div>
+     <div class="pages" id="pages" style="text-align:center"></div>
+     <div class="pages" id="down" style="text-align:left"><a href="javascript:;">下一页</a></div>
+    </div>
+</div>
+</section>
+</div>
+
+<script>
+$('.toggle').click(function(data){
+	$('#show').hide();
+	$('#hide').show();
+	var money = $('#money').val();
+		status = $(this).attr('_id');
+	if(money==''){
+		$('#show').show();
+		$('#hide').hide();
+		alert('请输入金额');
+		return false;
+	}
+	$.post("{:U('Ucenter/withdraw')}",{status:status,money:money},function(data){
+		$('#show').show();
+		$('#hide').hide();
+		if(data){
+			if(data.status){
+				alert(data.info);
+			}else{
+				alert(data.info);
+			}
+		}else{	
+			alert('网络异常');
+		}
+	});
+});
+
+$('#up').click(function(){
+	if(p==1){
+		alert('已经是第一页了');
+		return false;
+	}
+	p--;
+	withdraw_recode();
+});
+
+$('#down').click(function(){
+	if(p==count){
+		alert('已经是最后一页了');
+		return false;
+	}
+	p++;
+	withdraw_recode();
+});
+withdraw_recode();
+var p=1;
+var count = 0;
+function withdraw_recode(){
+	$.post("{:U('Ucenter/withdraw_recode')}",{p:p},function(data){
+		if(data){
+			console.log(data);
+			if(data.status){
+				$('#recode').html('');
+				$('#pages').html(p+'/'+data.page_list);
+				count = data.page_list;
+				$('#recode').append(data.info);
+			}else{
+				alert(data.info);
+			}
+		}else{	
+			alert('网络异常');
+		}
+	});
+}
+</script>

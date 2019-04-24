@@ -1,0 +1,54 @@
+		<script src="__PUBLIC__/plugins/My97DatePicker/WdatePicker.js"></script>
+        <div class="pageheader notab">
+            <h1 class="pagetitle">代理提现管理</h1>
+            <span class="pagedesc">管理代理提现记录等信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			
+        
+			<div class="tableoptions">                    
+				<button class="radius3" onclick="location.href='{:U('edit')}'">申请提现</button>
+			</div><!--tableoptions-->
+			<div class="tableoptions">        
+				<form method="post" id="form">
+					提现状态:
+					<select name="status" default="{$_GET['status']}" style="width:90px; min-width:0;">
+						<option value="">全部</option>
+						<option value="1">待转账</option>
+						<option value="2">已转账</option>
+					</select>
+					提现时间:
+					<input type="text" name="time1" value="{$_GET['time1']}" class="smallinput" style="width:100px;" onclick="WdatePicker()" />
+					到
+					<input type="text" name="time2" value="{$_GET['time2']}" class="smallinput" style="width:100px;" onclick="WdatePicker()"  />
+					<input type="submit" value="查找" />
+				</form>
+			</div><!--tableoptions-->
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">申请日期</th>
+						<th class="head1">支付宝账号</th>
+						<th class="head0">提现金额</th>
+						<th class="head0">提现状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+						<td>{$vo.zfb}</td>
+						<td>{$vo.money}</td>
+						<td>{$vo.status|get_withdraw_status}</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+       

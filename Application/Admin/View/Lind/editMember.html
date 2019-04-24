@@ -1,0 +1,69 @@
+{__NOLAYOUT__}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>管理后台</title>
+<link rel="stylesheet" href="/Public/admin/css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="/Public/plugins/bootstrap/css/bootstrap.font.css" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="/Public/admin/js/custom/general.js"></script>
+
+<!--[if IE 9]>
+    <link rel="stylesheet" media="screen" href="css/style.ie9.css"/>
+<![endif]-->
+<!--[if IE 8]>
+    <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/plugins/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body class="withvernav">
+        <div class="pageheader notab">
+            <h1 class="pagetitle">编辑代理内容</h1>
+            <span class="pagedesc">请认真编辑代理的各项信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>代理公司名称</label>
+					<span class="field"><input type="text" name="name" id="name" value="{$info.name}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>会员充值返佣比例<small>会员充值书币时候返佣多少金额的百分比</small></label>
+					<span class="field"><input type="text" name="separate" id="separate" value="{$info.separate}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>代理名称</label>
+					<span class="field"><input type="text" name="username" id="username" value="{$info.username}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>代理支付宝账号</label>
+					<span class="field"><input type="text" name="zfb" id="zfb" value="{$info.zfb}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>代理手机号</label>
+					<span class="field"><input type="text" name="mobile" id="mobile" value="{$info.mobile}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>登录密码</label>
+					<span class="field"><input type="text" name="tpassword" id="tpassword" value="{$info.tpassword}" class="smallinput" /></span>
+				</p>
+				<p class="stdformbutton">
+					<input type="hidden" name="id" value="{$_GET['id']}" />
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+			
+        </div><!--contentwrapper-->
+        

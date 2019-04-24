@@ -1,0 +1,194 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">订单详情</h1>
+            <span class="pagedesc">查看订单的详细信息或者操作订单</span>
+            
+        </div><!--pageheader-->
+        <style>
+			.stdtable tbody tr:first-child  td{ border-top:1px solid #eee;}
+		</style>
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			<div class="contenttitle2">
+				<h3>订单基本信息 <span class="noprint">[ <a href="{:U('?print=1&id='.$_GET['id'])}" target="_blank">打印</a>]</span></h3>
+		   </div><!--contenttitle-->
+
+		   <table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<colgroup>
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>订单号</td>
+						<td>{$info.sn}</td>
+						<td>分成状态</td>
+						<td>
+							<if condition="$info['status'] eq -1">已取消<elseif condition="$info['separate'] gt 0"/>已分成<else/>未分成</if>
+							
+						</td>
+					</tr>
+					<tr>
+						<td>总金额</td>
+						<td>{$info.total}</td>
+						<td>支付</td>
+						<td>
+						{$_CFG.site.points_name}{$info.points} + 余额{$info.money} + 微信支付{$info.wxpay} = {$info['wxpay'] + $info['money'] + $info['points']}
+						</td>
+					</tr>
+					<tr>
+						<td>状态</td>
+						<td>{$info.status|get_order_status}</td>
+						<td>时间信息</td>
+						<td>
+							{$info.create_time|date="Y-m-d H:i:s",###} 创建订单<br/>
+							<if condition="$info['status'] gt 1">{$info.pay_time|date="Y-m-d H:i:s",###} 支付成功<br/></if>
+							<if condition="$info['status'] gt 2">{$info.delivery_time|date="Y-m-d H:i:s",###} 已经发货<br/></if>
+							<if condition="$info['status'] gt 3">{$info.confirm_time|date="Y-m-d H:i:s",###} 已完成<br/></if>
+							<if condition="$info['status'] eq -1">{$info.confirm_time|date="Y-m-d H:i:s",###} 已关闭<br/></if>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		   <div class="contenttitle2">
+				<h3>收货信息</h3>
+		   </div><!--contenttitle-->
+		   <table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<colgroup>
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>收货人</td>
+						<td>{$info.name}</td>
+						<td>联系电话</td>
+						<td>{$info.mobile}</td>
+					</tr>
+					<tr>
+						<td>收货地址</td>
+						<td colspan="3">{$info.addr}</td>
+					</tr>
+					<tr>
+						<td>客户留言</td>
+						<td colspan="3">{$info.msg}</td>
+					</tr>
+					
+				</tbody>
+			</table>
+			
+		   <div class="contenttitle2">
+				<h3>商品信息</h3>
+		   </div><!--contenttitle-->
+			<table cellpadding="0" cellspacing="0" border="0" class="stdtable">
+				<colgroup>
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th class="head0">商品标题</th>
+						<th class="head1">属性</th>
+						<th class="head0">价格</th>
+						<th class="head1">数量</th>
+						<th class="head0">小计</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="products" id="vo">
+					<tr>
+						<td>{$vo.title}</td>
+						<td>{$vo.attr}</td>
+						<td>{$vo.price}</td>
+						<td>{$vo.nums}</td>
+						<td>{$vo['nums']*$vo['price']}</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<if condition="$info['status'] gt -1">
+			<div class="contenttitle2 noprint">
+				<h3>操作</h3>
+			</div><!--contenttitle-->
+			<table cellpadding="0" cellspacing="0" border="0" class="stdtable noprint">
+				<colgroup>
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+				</colgroup>
+				<tbody>
+					<tr <if condition="$info['status'] eq 1">style="display:none;"</if>>
+						<td>发货</td>
+						<td>
+							快递公司:
+							<input type="text" name="express" id="express_name" value="{$info.express}" />
+							快单号:
+							<input type="text" name="express_no" id="express_no" value="{$info.express_no}" />
+							
+							<if condition="$info['status'] lt 3">
+							<input type="button" class="stdbtn" onclick="set_express()" value="确定" />
+							<else/>
+							<input type="button" class="stdbtn" onclick="if(confirm('修改后订单重置为已发货状态，确定要修改吗？'))set_express()" value="修改" />
+							</if>
+						</td>
+					</tr>
+					<tr>
+						<td>取消订单</td>
+						<td>
+							取消订单后，余额支付和积分支付的原路返回，分成也将会被取消，但是通过微信支付的款项请手动联系客户退款.
+							<input type="button" class="stdbtn" onclick="if(confirm('取消订单后款项原路返回，分成自动取消，继续？'))cancle_order()" value="取消订单" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<script>
+			function set_express(){
+				var exp_name = jQuery("#express_name").val();
+				var exp_no	= jQuery("#express_no").val();
+				exp_name = $.trim(exp_name);
+				exp_no = $.trim(exp_no);
+				if(exp_name == ''){
+					alert('请填写快递公司');
+					return false;
+				}else if(exp_no == ''){
+					alert('请填写快递单号');
+					return false;
+				}
+				
+				jQuery.post("{:U('set_express')}",{order:{$info.id},name:exp_name,no:exp_no},function(d){
+					alert(d.info);
+				})
+			}
+			
+			function cancle_order(){
+				jQuery.post("{:U('cancle_order')}",{order:{$info.id}},function(d){
+					alert(d.info);
+					if(d.status == 1){
+						location.href = location.href;
+					}
+				})
+			}
+			</script>
+			</if>
+			<if condition="$_GET['print'] eq 1">
+			<script>
+			jQuery(document).ready(function(e){
+				jQuery(".pageheader,.topheader,.vernav2,.noprint").hide();
+				jQuery(".centercontent").css('margin-left',0);
+				jQuery(".withvernav").css('background','none');
+			});
+			</script>
+			</if>
+        </div><!--contentwrapper-->
+        

@@ -1,0 +1,46 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">用户树形关系</h1>
+            <span class="pagedesc">在这里你可以直观的了解到用户间的上下级关系</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+			<div>
+				<form method="post">
+				上级ID:<input type="text" style=" width:50px;" name="id" />
+				<input type="submit" value="提交" />
+				
+				</form>
+			</div>
+			<link rel="stylesheet" href="__PUBLIC__/plugins/zTree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
+			<script type="text/javascript" src="__PUBLIC__/plugins/zTree_v3/js/jquery.ztree.core-3.5.js"></script>
+			<!--script src="//twemoji.maxcdn.com/twemoji.min.js"></script-->
+			<div id="tree" class="ztree"></div>
+			<SCRIPT type="text/javascript">
+			<!--
+			var root = "{$_POST['id']|default=0}";
+			var setting = {
+				async: {
+					enable: true,
+					url:"{:U('get_users')}",
+					autoParam:["id", "name=n", "level=lv"],
+					otherParam:{"root":root},
+					dataFilter: filter
+				}
+			};
+			function filter(treeId, parentNode, childNodes) {
+				if (!childNodes) return null;
+				for (var i=0, l=childNodes.length; i<l; i++) {
+					childNodes[i].name = childNodes[i].name.replace(/\.n/g, '.');
+				}
+				return childNodes;
+			}
+			jQuery(document).ready(function(){
+				$ = jQuery;
+				$.fn.zTree.init($("#tree"), setting);
+			});
+			//-->
+		</SCRIPT>
+        </div><!--contentwrapper-->
+        

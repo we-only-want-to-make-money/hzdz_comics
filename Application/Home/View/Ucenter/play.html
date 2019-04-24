@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{$info['teacher']['name']} -- {$info['name']}</title>
+<link rel="stylesheet" href="__HCSS__/swiper.min.css">
+<link rel="stylesheet" href="__HCSS__/goods.css">
+<script src="//qzonestyle.gtimg.cn/open/qcloud/video/h5/h5connect.js" charset="utf-8"></script> 
+
+<link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css">
+<script src="__HJS__/jquery-1.10.1.min.js"></script>
+<script src="__PUBLIC__/layer_mobile/layer.js"></script>
+<script src="__HJS__/swiper.min.js"></script>
+<script src="__HJS__/common.js"></script> 
+</head>
+<style>
+.swiper-assess {
+    margin-bottom: 15px;
+}
+.py{
+    width: 50%;
+    float: left;
+    height: 35px;
+    background: #FF9800;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+.py:nth-child(2){
+	background:#FF5722;
+}
+.py span{margin-left:10%}
+.py img{
+	width: 25px;
+    position: absolute;
+    margin: 3px -3%;
+	height:25px;
+}
+
+.item-ppop{
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.6;
+	top: 0;
+    left: 0;
+    position: fixed;
+
+}
+.item-p-c {
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    position: fixed;
+    background: #FFC19B;
+    border: 2px solid #E67451;
+    border-radius: 10px;
+	z-index: 999;
+}
+.item-p-c .item-li {
+    width: 70%;
+    margin: 7% 15% 7% 15%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #FF5722;
+    font-size: 15px;
+    border-radius: 6px;
+    color: #fff;
+}
+.item-p-c .item-p-x{
+	width: 20px;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+}
+</style>
+<body>
+<div class="swipers">
+<!-- Swiper -->
+<div id="id_video_container" style="width:100%; height:auto;"></div>
+</div>
+<script>
+var file_id = "{$info['file_id']}";
+	app_id = "{$_site['app_id']}";
+var option ={
+    "file_id":file_id,
+    "app_id":app_id,
+    "width":640,
+    "height":360,
+	"hide_h5_setting":true,
+    //...可选填其他属性
+};
+
+var player = new qcVideo.Player("id_video_container", option);
+</script>
+<div>
+	<div class="py" onclick="dz();"><img src="__PUBLIC__/images/dz.png" style="width:25px;" /><span>点	赞({$info['dznums']})</span></div>
+	<div class="py" onclick="$('.item-p').toggle();"><img src="__PUBLIC__/images/ds.png" /><span>打	赏</span></div>
+</div>
+<div class="swiper-content">
+        <div class="swiper-title">
+            <div class="kcml2">
+                <div class="cell-b">评论</div>
+                
+            </div>
+        </div>
+</div>
+<div class="swiper-assess" id="assess">
+
+</div>
+</div>
+</div>
+
+<!--点击钻石遮罩曾-->
+<div class="item-p" style="display:none;">
+	<div class="item-ppop"></div>
+	<div class="item-p-c">
+		<img src="__PUBLIC__/images/close.png" class="item-p-x" onclick="$('.item-p').toggle();" />
+		<foreach name="moneys" item="v">
+			<div _value="{$v}" class="item-li" onclick="dsGoods(this);">打赏{$v}元</div>
+		</foreach>
+	</div>
+	
+</div>
+<script>
+var page = 1;
+	html = false;
+	var gid="{$info['id']}";
+	loadAssess();
+
+	//加载评论
+	function loadAssess(){
+		AjaxLoad("/index.php?m=&c=Index&a=getAssess",{page:page,gid:gid},$('#assess'),html,loadAssess);
+	}
+	
+	
+	//点赞
+	function dz(){
+		var url = "{:U('IndexAjax/dznums')}";
+		$.post(url,{gid:gid},function(d){
+			if(d){
+				console.log(d);
+				if(d.status){
+					layer.alert('点赞成功',{icon:"6"},function(){
+						location.reload();
+					});
+				}else{
+					msg(d.info);
+				}
+			}else{
+				msg('网络异常');
+			}
+		});
+	}
+	
+	function dsGoods(ob){
+		var gid = "{$info['id']}";
+			money = $(ob).attr('_value');
+		if(gid && money){
+			$.post("{:U('IndexAjax/dsGoods')}",{gid:gid,money:money},function(d){
+				if(d){
+					if(d.status){
+						console.log(d);
+						$('.item-p').toggle();
+						//调起微信支付js
+						var jsapi =  d.info;
+						var jsApiParameters = eval('(' +jsapi + ')');
+						WeixinJSBridge.invoke(
+							'getBrandWCPayRequest',
+							jsApiParameters,
+							function(res){
+								WeixinJSBridge.log(res.err_msg);
+								if(res.err_msg == "get_brand_wcpay_request:ok"){
+									layer.alert('打赏成功！',{icon:"6"},function(){
+										location.reload();
+									});
+								}else if(res.err_msg == "get_brand_wcpay_request:cancel"){
+									layer.msg('您取消了支付');
+								}else{
+									layer.msg('支付失败，请重试！');
+								}
+							}
+						);
+					}else{
+						layer.msg(d.info);
+					}
+				}else{
+					layer.msg('请求失败!');
+				}
+			});
+		}
+	}
+</script>
+</body>
+</html>

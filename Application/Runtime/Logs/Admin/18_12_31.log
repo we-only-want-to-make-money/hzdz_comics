@@ -1,0 +1,2257 @@
+[ 2018-12-31T22:13:03+08:00 ] 111.165.134.121 /efucms.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+
+[ 2018-12-31T22:13:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2018-12-31T22:13:10+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_admin` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_admin` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-12-31T22:13:10+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Admin&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-12-31T22:13:16+08:00 ] 42.236.10.84 /efucms.php?m=Admin&c=Index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2018-12-31T22:13:16+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=xbanner
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-12-31T22:13:16+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath2&url=.%2FPublic%2Fupload%2Fimages%2F1806%2F22%2F193132101770007911.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-12-31T22:13:16+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath1&url=.%2FPublic%2Fupload%2Fimages%2F1806%2F22%2F193115211067005999.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021941s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-12-31T22:13:16+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath3&url=.%2FPublic%2Fupload%2Fimages%2F1807%2F03%2F100021070415008273.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011159s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2018-12-31T22:13:20+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=mhcate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=1&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F06%2F195359392107007275.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=6&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F020516619140002925.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=3&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F06%2F195408767294004497.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=5&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F020512009765007016.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=2&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F06%2F195404752307004408.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=4&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F06%2F195413423720005649.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=7&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F020627369140001484.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=9&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F020523431640007756.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=8&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F020520150390001237.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=10&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F020527337890004998.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=11&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F020530884765001755.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2018-12-31T22:13:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=12&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F020534603515009265.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-12-31T22:13:23+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2018-12-31T22:13:23+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F011758775390003563.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2018-12-31T22:13:53+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=dist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2018-12-31T22:13:55+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-12-31T22:13:55+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F011758775390003563.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2018-12-31T22:13:56+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=yyb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2018-12-31T22:13:59+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-12-31T22:14:01+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=yyb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-12-31T22:14:02+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2018-12-31T22:14:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=send
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-12-31T22:14:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=1&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030511906701003443.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-31T22:14:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=4&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030517500688005051.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-12-31T22:14:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=3&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030515531618007134.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2018-12-31T22:14:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=2&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030513547258009716.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2018-12-31T22:14:05+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2018-12-31T22:14:06+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=ads
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-12-31T22:14:06+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F15%2F230605878937004817.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-12-31T22:14:10+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0004s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2018-12-31T22:14:17+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=episodes&mhid=104
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE ( id=104 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vv_mh_episodes` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_episodes` WHERE `mhid` = 104 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_mh_episodes` WHERE `mhid` = 104 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2018-12-31T22:14:27+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=episodes&mhid=18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE ( id=18 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vv_mh_episodes` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_episodes` WHERE `mhid` = 18 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_mh_episodes` WHERE `mhid` = 18 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-12-31T22:14:32+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index&p=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 100,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-31T22:14:38+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=episodes&mhid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vv_mh_episodes` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_episodes` WHERE `mhid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_mh_episodes` WHERE `mhid` = 4 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-12-31T22:20:38+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2018-12-31T22:20:38+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F011758775390003563.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2018-12-31T22:20:56+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [2048] Declaration of Admin\Controller\UserController::set_col() should be compatible with Admin\Controller\AdminController::set_col($table = NULL) /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/UserController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: vip /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/UserController.class.php 第 16 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/UserController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `vv_tpl` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `vv_tpl` ORDER BY id desc  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/UserController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/UserController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `vv_user` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_user` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_user` ORDER BY id desc LIMIT 0,25   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: vip /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 258 行.
+NOTIC: [8] Undefined index: id /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 264 行.
+NOTIC: [8] Undefined index: name /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 266 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 283 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 291 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 293 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 298 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 300 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 304 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 306 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 310 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 312 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 316 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 318 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2018-12-31T22:20:57+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Report&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_data` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ReportController.class.php 第 18 行.
+SQL: SELECT * FROM `vv_data` ORDER BY date desc LIMIT 7   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: wxpay /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ReportController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined index: stime /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 255 行.
+NOTIC: [8] Undefined index: etime /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 257 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-12-31T22:20:58+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Tree&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2018-12-31T22:20:58+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Tree&a=get_users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: id /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/TreeController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `vv_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_user` WHERE ( parent1=0 )  [ RunTime:0.0002s ]
+
+[ 2018-12-31T22:20:59+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Report&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_data` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ReportController.class.php 第 18 行.
+SQL: SELECT * FROM `vv_data` ORDER BY date desc LIMIT 7   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: wxpay /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ReportController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: stime /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 255 行.
+NOTIC: [8] Undefined index: etime /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/3c1dc1b7660b78e2eac45df80b6ab038.php 第 257 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-12-31T22:21:03+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Finance&a=share
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/FinanceController.class.php 第 201 行.
+SQL: SHOW COLUMNS FROM `vv_slog` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_slog` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_slog` ORDER BY create_time desc LIMIT 0,25   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined index: user_id /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/c492d4ceecb89beba69d43d9b087c1fc.php 第 247 行.
+NOTIC: [8] Undefined index: self_id /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/c492d4ceecb89beba69d43d9b087c1fc.php 第 249 行.
+NOTIC: [8] Undefined index: time /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/c492d4ceecb89beba69d43d9b087c1fc.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2018-12-31T22:21:05+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=mp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-12-31T22:21:07+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Autoreply&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_autoreply` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_autoreply` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_autoreply` ORDER BY id desc LIMIT 0,25   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2018-12-31T22:21:10+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Selfmenu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_selfmenu` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_selfmenu` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_selfmenu` ORDER BY sort desc LIMIT 0,25   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2018-12-31T22:21:11+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=share
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2018-12-31T22:21:11+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1807%2F24%2F050514617388003349.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2018-12-31T22:21:17+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Chapter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ChapterController.class.php 第 7 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ChapterController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/d8daf0265cc34acbb73680299dbfb5d3.php 第 247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2018-12-31T22:21:22+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Chapter&a=free&id=104
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE ( id=104 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vv_mh_episodes` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_episodes` WHERE `mhid` = 104 AND `ji_no` < '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_mh_episodes` WHERE `mhid` = 104 AND `ji_no` < '1' ORDER BY id asc LIMIT 0,25   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-12-31T22:21:27+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Bhapter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/BhapterController.class.php 第 7 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/BhapterController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `vv_book` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_book` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_book` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/fc26c138ca275fe937472d6c75255be3.php 第 247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2018-12-31T22:21:32+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Bhapter&a=free&id=127
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_book` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_book` WHERE ( id=127 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vv_book_episodes` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_book_episodes` WHERE `bid` = 127 AND `ji_no` < '10' LIMIT 1   [ RunTime:0.4273s ]
+SQL: SELECT * FROM `vv_book_episodes` WHERE `bid` = 127 AND `ji_no` < '10' ORDER BY id asc LIMIT 0,25   [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2018-12-31T22:21:36+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Bhapter&a=doChapter&bid=127&id=99977
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_book_episodes` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_book_episodes` WHERE `id` = 99977 LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: pics /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/BhapterController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `vv_book` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_book` WHERE `id` = 127 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_book_episodes` WHERE `bid` = 127 AND `ji_no` = 4 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-31T22:21:43+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Member&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_member` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_member` ORDER BY id desc LIMIT 0,25   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-12-31T22:21:46+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Jub&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_jubao` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_jubao` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_jubao` ORDER BY id desc LIMIT 0,25   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2018-12-31T22:21:50+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-12-31T22:21:51+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F011758775390003563.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-12-31T22:22:00+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-12-31T22:22:01+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F011758775390003563.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2018-12-31T22:22:02+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=dist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-12-31T22:22:03+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=yyb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2018-12-31T22:22:05+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-12-31T22:22:06+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=send
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2018-12-31T22:22:06+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=1&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030511906701003443.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-12-31T22:22:06+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=3&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030515531618007134.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2018-12-31T22:22:06+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=4&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030517500688005051.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-12-31T22:22:06+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=2&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030513547258009716.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2018-12-31T22:22:08+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=ads
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2018-12-31T22:22:08+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F15%2F230605878937004817.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2018-12-31T22:22:12+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2018-12-31T22:22:14+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=ads
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-12-31T22:22:14+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F15%2F230605878937004817.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2018-12-31T22:22:16+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Autoreply&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_autoreply` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_autoreply` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_autoreply` ORDER BY id desc LIMIT 0,25   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2018-12-31T22:22:18+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Selfmenu&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_selfmenu` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_selfmenu` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_selfmenu` ORDER BY sort desc LIMIT 0,25   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2018-12-31T22:22:19+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=mp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-12-31T22:22:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Finance&a=share
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/FinanceController.class.php 第 201 行.
+SQL: SHOW COLUMNS FROM `vv_slog` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_slog` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_slog` ORDER BY create_time desc LIMIT 0,25   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: user_id /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/c492d4ceecb89beba69d43d9b087c1fc.php 第 247 行.
+NOTIC: [8] Undefined index: self_id /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/c492d4ceecb89beba69d43d9b087c1fc.php 第 249 行.
+NOTIC: [8] Undefined index: time /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/c492d4ceecb89beba69d43d9b087c1fc.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2018-12-31T22:46:49+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2018-12-31T22:46:49+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F011758775390003563.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2018-12-31T22:47:42+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+

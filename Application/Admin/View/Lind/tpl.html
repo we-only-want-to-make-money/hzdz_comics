@@ -1,0 +1,183 @@
+{__NOLAYOUT__}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>管理后台</title>
+<link rel="stylesheet" href="/Public/admin/css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="/Public/plugins/bootstrap/css/bootstrap.font.css" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="/Public/admin/js/custom/general.js"></script>
+
+<!--[if IE 9]>
+    <link rel="stylesheet" media="screen" href="css/style.ie9.css"/>
+<![endif]-->
+<!--[if IE 8]>
+    <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/plugins/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body class="withvernav">
+        <div class="pageheader notab">
+            <h1 class="pagetitle">升级消息模板</h1>
+            <span class="pagedesc">对升级消息模板进行增加，修改或者删除等操作</span>
+            
+        </div><!--pageheader-->
+        <style>
+			.btn{
+				display:block;
+				border-radius:2px;
+				position:absolute;
+				right:2px;
+				width:60px;
+				height:20px;
+				line-height:20px;
+				text-align:center;
+				background-image:none!important;
+				
+			}
+			.yp{
+				display: block;
+				float: right;
+				background: #FF5722;
+				color: #fff;
+				border-radius: 5px;
+				width: 70px;
+				text-align: center;
+				line-height: 20px;
+			}
+		</style>
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			
+			<div class="tableoptions">                    
+				<button class="radius3" onclick="location.href='{:U('edit')}'">添加</button>
+			</div><!--tableoptions-->
+			<div class="tableoptions">    
+			
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">通知标题</th>
+						<th class="head1">通知链接</th>
+						<th class="head1">通知简介</th>
+						<th class="head0">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						
+						<td>{$vo.title}</td>
+						<td>{$vo.url}</td>
+						<td>{$vo.remark}</td>
+						<td class="center">
+							<a href="{:U('edit', 'id='.$vo['id'])}">修改</a> |							
+							<a href="{:U('del', 'id='.$vo['id'])}" onclick="return confirm('你确实要删除吗？')">删除</a>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<style>
+				.r3{
+					float: left;
+					border: none;
+					color: #fff;
+					background: #FF5722;
+					margin-top: -2.5px;
+					margin-left: 10px;
+					border-radius: 4px;
+					text-align: center;
+				}
+			</style>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">  
+
+				{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+		<link rel="stylesheet" href="__PUBLIC__/layer/skin/default/layer.css?v=140b">
+		<script src="__PUBLIC__/layer/layer.js"></script>
+		<script>
+			var $ = jQuery;
+			function showP(id){
+				layer.open({
+					type: 2,
+					title: '查看代理',
+					shadeClose: true,
+					shade: 0.8,
+					area: ['70%', '70%'],
+					content: "{:U('Item/myMch')}&id="+id
+				}); 
+			}
+			
+			function fup(id){
+				layer.prompt({title:'请输入用户id'},function(val, index){
+					$.post("{:U('Item/upItemId')}",{id:id,user_id:val},function(d){
+						if(d){
+							console.log(d);
+							if(d.status){
+								layer.alert(d.info,function(){
+									location.reload();
+								});
+							}else{
+								layer.msg(d.info);
+							}
+						}else{
+							layer.msg('修改失败');
+						}
+					});
+					layer.close(index);
+				});
+			}
+			
+			//全选
+			$(".checkAll").click(function(){
+				$(".ids").prop("checked",this.checked);
+				$(".check-all").prop("checked",this.checked);
+			});
+			$(".ids").click(function () {
+				var option = $(".ids");
+				option.each(function (i) {
+					if (!this.checked) {
+						$(".checkAll").prop("checked", false);
+						return false;
+					} else {
+						$(".checkAll").prop("checked", true);
+					}
+				});
+			});
+            
+			//提交表单
+            function sendMsg(){
+				layer.msg('发送中...', {
+					icon: 16,
+					shade: 0.01
+				});
+
+				var tag = "";  
+                $(":checkbox[name='id[]']:checked").each(function(){ 
+					if(this.value>0) tag = tag + this.value + ","
+				});
+                var ids = tag.replace(/,$/,"");
+				if(ids == ''){
+					layer.msg('没有达到条件的用户');
+					return false;
+				}
+				$.post("{:U('Item/sendMsg')}",{ids:ids},function(d){
+					if(d){
+						layer.closeAll();
+						layer.msg(d.info);
+					}else{
+						layer.msg('发送失败');
+					}
+				});
+            }
+		</script>
+        

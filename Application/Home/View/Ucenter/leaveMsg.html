@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>{$_site['name']} -- 意见反馈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css">
+<body>
+    <div class="header">
+        <h1>请您留言</h1>
+    </div>
+    <div class="section">
+                <div class="company_info">
+            <div class="company_name">意见反馈</div>
+            <div class="company_phone_no">{$_site['phone']}</div>
+        </div>
+        <hr class="split">
+           <form id="mess-form" method="post" action="{:U('Ucenter/leaveMsg')}" autocomplete="off">
+            <input name="siteid" value="7216706" type="hidden">
+            <input id="referrer" name="referrer" value="" type="hidden">
+            <input id="bid" name="bid" value="2262923096072167060" type="hidden">
+            <input id="client-info" name="client" value="{&quot;language&quot;:&quot;zh-CN&quot;,&quot;ppi&quot;:&quot;1366*768&quot;,&quot;timeZone&quot;:&quot;UTC+8:0&quot;,&quot;color&quot;:&quot;24&quot;}" type="hidden">
+            <div id="content-wrapper" class="item-container textarea-container">
+                <textarea class=" mess-placeholder" name="content" id="content" data-ph="请在此输入留言内容，我们会尽快与您联系。(必填)" spellcheck="false" placeholder="请在此输入留言内容，我们会尽快与您联系。(必填)" maxlength="400"></textarea>
+            </div>
+             <div id="visitorName-wrapper" class="item-container">
+                        <label id="name" for="visitorName"></label>
+                        <div class="ctrl_wrap">
+                            <div class="ipt_wrap">
+                                <input  class=" mess-placeholder" name="username" id="username" maxlength="100" data-ph="姓名"  placeholder="姓名(必填)" type="text" value="" />
+                            </div>
+                        </div>
+                    </div>
+                        <div id="visitorPhone-wrapper" class="item-container">
+                        <label id="phone" for="visitorPhone"></label>
+                        <div class="ctrl_wrap">
+                            <div class="ipt_wrap">
+                                <input  class=" mess-placeholder" id="mobile" name="mobile" maxlength="100" data-ph="电话(必填)"  placeholder="电话(必填)" type="text" value="" />
+                            </div>
+                        </div>
+                    </div>                                                  
+			<div class="custom-items-container"></div>
+            <button type="button" class="mess_send" onclick="sendMsg();">发送</button>
+			<button type="button" class="mess_send" onclick="history.go(-1);">取消</button>
+        </form>
+       
+    </div>
+<link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css">
+<script src="__HJS__/jquery-1.10.1.min.js"></script>
+<script src="__PUBLIC__/layer_mobile/layer.js"></script>
+<script src="__HJS__/common.js"></script>	
+<script>
+	function sendMsg(){
+		Ajax("{:U('Ucenter/leaveMsg')}",$('#mess-form').serialize());
+	}
+</script>
+</body>
+</html>

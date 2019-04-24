@@ -1,0 +1,34 @@
+		<style>
+			ul ,li{list-style:none}
+			.wtxt{width: 100%;border: 1px solid #EBEBEB;background: #f9f9f9;padding: 10px 0;}
+			.wtxt li{height:40px;line-height:40px;color:#337ab7;border-bottom: 1px solid #e7eaec;padding-left:10px;cursor: pointer;font-size: 15px;}
+			.wtxt li:last-child{border-bottom:none;}
+			.wtxt li span{margin:0 10px;}
+		</style>
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			<if condition="$notice">
+			<div class="wtxt">
+				<ul>
+					<foreach name="notice" item="v">
+					<li onclick="nInfo({$v['id']})">{$v.create_time|date="Y-m-d",###}<span>|</span>{$v.title}</li>
+					</foreach>
+				</ul>
+			</div>
+			</if>
+        </div><!--contentwrapper-->
+        <link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css" type="text/css" />
+		<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+		<script>
+			var $=jQuery;
+			function nInfo(id){
+				layer.open({
+				  type: 2,
+				  title: '通知详情',
+				  shadeClose: true,
+				  shade: 0.8,
+				  area: ['30%', '80%'],
+				  content: "{:U('nInfo')}&id="+id,
+				});
+			}
+			
+		</script>

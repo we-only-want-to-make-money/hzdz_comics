@@ -1,0 +1,194 @@
+/*
+   对应于订单提交成功页面 orderCss
+*/
+.orderCss img{  margin-top: 40%;  }
+.orderCss label{margin-top: 24px ; font-size: 24px ;  color: #000;}
+.btn_small{width: 200px ; border: none ; height: 35px ; margin-top: 30px}
+
+/*对应于购物车页面（无内容）shopCarCss */
+.shopCarCss label{margin-top: 15px ; font-size: 15px ; color: #000}
+.Sbtn_small{padding-top: 6px;margin-top:20px;height: 35px;border-radius: 5px;  width: 200px ;
+    font-size: 14px ; border: 1px #a28e82 solid ; background-color: transparent; color: #a28e82}
+
+/*购物车（有内容）shopCarsInCss */
+.shopCarsInCssBody {background-color: #F2F2F2 ; width: 100%;margin: 0px 0px 0px 0px}
+.shopCarsInCssItem {height: 64px; padding-top: 20px}
+.shopCarsInCssGold{margin-right: 16px ; float:right}
+.shopCarsInCssdelete { float: right}
+.shopCarsInCssContainer { margin-top: 10px ;background-color: white; }
+.operate{width: 80px ;position: relative ;  display: inline}
+.operate input{width: 24px ;height: 24px;  margin: 0px 0px 0px 0px ;
+    padding: 0px 0px 0px 0px ;}
+.name_label{display: inline ;}
+.name_label label{width: 110px;}
+.op_add, .op_minus{background-color: white ; border: 1px #CCCCCC solid ; border-radius: 0px}
+.op_num {border: none ; text-align: center}
+.shopCarsInCssLine{  border: none;height:1px; background-color: #CCCCCC ;margin-top: 18px ;width: 100%;}
+/*清空按钮*/
+.shopCarsInClear{height: 90px ;}
+.shopCarsInClear input{margin-top: 30px ; font-size: 14px;
+    border-radius: 5px;border: 1px #a28e82 solid ;
+    height: 35px ;width: 70%;background-color: transparent;color: #a28e82}
+.shopCarsInClear input:active{background-image:none;outline:0;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}
+
+/*结算*/
+.tabBar{position: fixed ;bottom: 0px;height: 49px;border-top:2px solid #9d8e8b;border-bottom: none;border-color: #a28e82
+;z-index:200;left:0;width:100%;background: #FFFFFF;padding: 0;margin: 0;
+}
+.tabBar ul{padding:0px 22px 0px 22px ; width: 100%;margin: 0}
+.tabBar li{display: inline;margin: 0}
+.tabBar .totalMoney{height: 15px ; font-size: 14px;color: black  ;position: relative;top: 14px }
+.tabBar .submitBtn{height: 34px ; width: 97px ; color: white ;
+    float: right ; margin-top: 7px ;border: none;
+    background-color: #a28e82 ; border-radius: 5px}
+
+/*服务地点locCSS*/
+.locCssInput {height: 56px ;width: 100%}
+.locCssInput img{ align-content: center;position: relative;left: 5px ;
+    top: 22px; float: left}
+.locCssInput .lit{padding-left: 3px}
+.locCssInput input, .locCssInput input:disabled{border: none ; width: 100% ; padding-left: 35px ;font-size: 15px ; color: #b3b3b3;}
+.locCssInput img ,.locCssInput input{margin-top:3px}
+.locCssInput .line{background-color: #CCCCCC ; border: none ; height: 1px ; width: 100%;margin-top: 10px}
+.locCssInputBtn{margin-top: 30px ; font-size: 18px ; height: 45px}
+.locCssInputBtnDis{margin-top: 30px ; font-size: 18px ; height: 45px ;background-color:#b3b3b3 ;width:100%}
+/*服务地点中的 历史地址 locHisCSS*/
+.locHisCSS{margin-top: 40px;  width:100%;}
+.locHisCSSList{margin-top: 20px;  width:100%;}
+.locHisCSS .line{margin-top: 5px ; border: none ; height: 1px ;width: 100% ;background-color: #CCCCCC}
+/*历史地址List locHisCSSList*/
+.locHisCSSTable{margin: 0;}
+.locHisCSSTable .locHisCSSList{margin-top: 5px;}
+.locHisCSSList .door{font-size: 14px;font-weight: bold ; margin:0 ;float: left;width: 100%}
+.locHisCSSList .zone{font-size: 12px;color: #808080 ; margin-top: 25px}
+.locHisCSSList img{float: right}
+.zxyContainer{padding:0px 10px 0px 10px}
+/*申请退款页面drawBackCSS*/
+.drawBackCSS{margin-top: 19px ; width: 100% ; height: 100%}
+.drawBackCSS font{margin-top: 19px ; font-size: 14px ;}
+.drawBackCSS input{margin-top: 19px ;height: 35px;margin-bottom: 19px; width: 100% ;border: 1px #a28e82 solid ;border-radius: 5px ;padding-left: 10px ;padding-right: 10px}
+.drawBackCSS textarea {margin-top: 19px ;resize: none; width: 100%;border: 1px #a28e82 solid ;border-radius: 5px ; height: 90px ; padding-left: 10px ;padding-right: 10px}
+.thinCss{width: 80% ;height: 34px;margin-top: 6px }
+
+/*代金券 couponCss*/
+.margin0 {margin: 0}
+.couponSuperCss{width: 100%; margin: 0;height: 50px ;}
+.couponCssBody{margin: 0;background-color: #F2F2F2;padding: 0px 0px 0px 0px}
+.couponCss {width: 100% ;z-index: 1;background-color: white; height: 50px ; position: fixed ; top: 0px ; padding-right: 140px  ;margin: 0 ;padding-top: 10px}
+.changeTXT{padding-left: 10px;padding-right: 10px;width: 100% ;border: 1px #a28e82 solid ;border-radius: 5px ; margin-left: 20px;float: left ;height: 30px}
+.changeBtn{ position: absolute ; top: 10px ;font-weight: bold;color: white; float: right ;height: 30px ;width: 80px ; margin-left: 20px ; background-color: #a28e82 ;border:none ; border-radius: 5px}
+.couponCssline{border: none ; height: 1px ; width: 100%; position: fixed ; top: 50px}
+.couponListCSS{ margin: 0px 18px 0px 18px}
+.couponListCSS label{margin-left: 18px ; align-content: center}
+.couponListCSS .hint{padding-top: 30px}
+/*代金券列表部分couponListCSS*/
+.couponListItem{background-color: white ; margin: 13px 0px 17px 0px ; height: 124px}
+.couponListItemY{float: left ;margin-left: 10px ;}
+.couponListItemY div{margin: 0}
+.couponListItemY .token{margin-top: 76px ; font-size: 18px ; color: #a28e82 ;  margin-left: 0px;  }
+.couponListItemY .tokenValue{ position: relative ;margin-left: 0px;font-size: 35px ;font-weight: bold ; color: #a28e82 ;height: 48px }
+.couponLIITitle{margin-top: 13px ; padding: 0}
+.couponListItemInfo{float: right ;  margin-right: 10px ; }
+.couponLIITitle .title{font-size: 16px ;text-align: left;margin: 0}
+.couponLIITitle .status{font-size: 13px ; color: #6DD274}
+.couponLIITitle .statusUse {font-size:13px ;color :   #FFA24c }
+.couponLIITitle .statusPeri {  font-size: 13px;color: #B3b3b3}
+.detail label{font-size: 12px ;color: #808080 ; margin-top: 0px ;border: none;margin: 0;padding: 0;
+    height: 13px;;}
+.couponListItem .line{height: 4px ;position: relative ; top: 116px ;width: 100% ; background-color: #a28e82 ; border-bottom-left-radius: 5px ;border-bottom-right-radius: 5px}
+.drawSurface{position: relative ; top: 0px ; height: 8px ;
+    padding:0;margin: 0 ;width: auto ;align-content: flex-start}
+.drawSurface canvas{ float: left ;display:block ; max-width: 100%}
+
+/*订单详情*/
+.order-rise{background: #F2F2F2;}
+.head-rise{ background: #ffffff;height: 100px;}
+.main-tp-1,.main-tp-2{border-bottom: 1px solid #cccccc;  padding-top: 10px;padding-bottom: 10px;}
+.main-tp-3{ padding-top: 20px;margin-bottom: 10px;}
+.span-rise{color:#fea24b }
+.btn-rise{width: 100px;}
+.step_context{height: 50px;margin-top: 5%;margin-bottom: 5%;}
+.step_context li{float: left;width: 16.666%;list-style: none;}
+.order-evaluate{margin-top:10px;padding:0}
+.order-evaluate .relative-icon{position:relative;width:100%;top:54px;padding:0 15px;}
+.order-evaluate .relative-icon:after{display: block;content: " ";margin-left: 92%;width:24px;height:22px;background: url(../img/order/chat.png) no-repeat;background-size: 100% 100%;}
+.leaderboard{padding-top: 10px;  margin-bottom: 10px;}
+.order-score{margin-top: 15px; margin-bottom: 15px;padding:0}
+.app-screenshot{height: 25px; margin-top: 8px;}
+.purchase{border-bottom: 3px solid #000000}
+.order-input{border: 1px solid #000000}
+.one-service.one-service-discount{color:#fea24b}
+.one-service.one-service-discount .service-price{color:#fea24b}
+/*订单状态*/
+.order-status-list{width: 100%;background: #FFFFFF;padding:15px;border-bottom: 1px solid #CCCCCC;}
+.order-status-list li{float: left;height:53px;}
+.order-status-list .line{width: 10px;}
+.order-status-list .line:after{content:" ";display:block;height: 1px;width: 99%;background: #cccccc;margin-top:17px ;}
+.order-status-list .line.on:after{background: #fea24b;}
+.order-status-list .status-img{width:30px;background: url(../img/order/order_status.png) no-repeat;background-size: auto 100%;}
+.order-status-list .status-img:nth-of-type(1){background-position: -365px 0;}
+.order-status-list .status-img:nth-of-type(1).on{background-position:0 0 ;}
+.order-status-list .status-img:nth-of-type(3){width:32px;background-position: -424px 0;}
+.order-status-list .status-img:nth-of-type(3).on{background-position:-59px 0 ;}
+.order-status-list .status-img:nth-of-type(5){background-position: -487px 0;}
+.order-status-list .status-img:nth-of-type(5).on{background-position:-120px 0 ;}
+.order-status-list .status-img:nth-of-type(7){width:32px;background-position: -183px 0;}
+.order-status-list .status-img:nth-of-type(7).on{background-position:-548px 0 ;}
+.order-status-list .status-img:nth-of-type(9){background-position: -245px 0;}
+.order-status-list .status-img:nth-of-type(9).on{background-position:-610px 0 ;}
+.order-status-list .status-img:nth-of-type(11){background-position: -305px 0;}
+.order-status-list .status-img:nth-of-type(11).on{background-position:-670px 0 ;}
+
+/*服务满意度*/
+.order-expression{margin-top: 10px;}
+.order-expression .app-screenshot{display: block;margin:0 auto;width: 55px;height: 66px;background: url(../img/order/satisfaction.png) no-repeat ;background-size: auto 100%;}
+.order-expression .col-xs-4:nth-of-type(1) .app-screenshot{background-position: -317px 0;}
+.order-expression .col-xs-4:nth-of-type(1) .app-screenshot.on{background-position: 0 0;}
+.order-expression .col-xs-4:nth-of-type(2) .app-screenshot{background-position: -110px 0;}
+.order-expression .col-xs-4:nth-of-type(2) .app-screenshot.on{background-position: -427px 0;}
+.order-expression .col-xs-4:nth-of-type(3) .app-screenshot{background-position: -218px 0;}
+.order-expression .col-xs-4:nth-of-type(3) .app-screenshot.on{background-position: -535px 0;}
+
+/*代金券空 emptyCouponCSS*/
+.couponCancelCSS{width: 14px;height: 14px;margin-bottom:20px;position: relative;left: 15px;top:15px ;}
+.couponCancelEmptyCSS{margin-top: 75px;}
+.couponCancelEmptyCSS img{width: 68px;height: 48px;}
+.couponCancelEmptyCSS .eTitle{margin-top: 30px;font-size: 18px;color: black;font-weight: bold;}
+.couponCancelEmptyCSS .eContent{margin-top: 5px; font-size: 14px;color: #B3B3B3;}
+
+/* 订单页面的优惠券 */
+.orderCouponCSSBody{padding: 0;}
+.orderCouponCSS{background-color: #F2F2F2;height: 100%;margin: 0;}
+.orderCouponCSS .oCItem{background-color: white;height: 100px;margin: 0;width: 100%;padding: 0;margin-top: 5px;}
+.oCItem_title{padding-top: 10px;color: #A28E82;font-size: 14px;}
+.oCItem_cons{margin-top:15px ;font-size: 12px;color: #808080;}
+.oCItem_date{font-size: 12px;color: #808080;}
+.oCItem_Dec{float: left;padding-left: 15px;}
+.oCItem_Info{float: right;font-size: 15px; width: 115px;height: 30px;background-color: #A28E83;color: white;margin-right: 15px;position: relative;top: 20px;padding-top: 5px;}
+
+/*线下评论*/
+.form-title{background: #F2F2F2; width: 100%; height: 45px;}
+.form-textarea{width: 100%; }
+.myicon .icon-phone {
+    background: url(../img/iphone.png) no-repeat 0 0px;
+}
+.label-title{  margin-top: 15px; font-weight: bold;}
+.form-item{line-height: 35px;margin-right: 15px;margin-left: 15px;}
+.zy{  width: 100%; overflow: hidden;}
+.form-item .myicon {
+    position: relative;
+    height: 0;
+    width: 20px;
+    top: 5px;
+    left: -30px;
+}
+.form-item .myicon div {
+    background-size: 100% auto;
+    width: 15px;
+    height: 25px;
+}
+.fr-line{ height: 45px; }
+.line{border-bottom: 1px solid #F2F2F2;}
+.x-fl{float: left}
+.x-fr{float: right}

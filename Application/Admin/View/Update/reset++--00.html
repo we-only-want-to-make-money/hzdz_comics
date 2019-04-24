@@ -1,0 +1,104 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">初始化系统</h1>
+            <span class="pagedesc">清除数据是系统初始化</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+			<div class="tableoptions" style="color:red;">                    
+				危险操作，请谨慎执行！
+			</div><!--tableoptions-->
+			<div style="padding:10px; border:1px solid #ddd; background:#fff;">
+				<p>本功能可以清楚数据库中的数据，让程序还原到初始状态。一经执行不可还原，请谨慎操作！</p>
+				<p>使用本功能将导致数据丢失，本功能使用过程中发生任何问题或者损失开发方不承担相关责任。使用本功能即视为同意使用协议。</p>
+				<p>
+					<form method="post">
+					<table width="100%">
+						<thead>
+							<tr>
+								<th>
+									用户数据
+								</th>
+								<th>
+									产品数据
+								</th>
+								<th>
+									收款功能数据
+								</th>
+								<th>
+									公众号相关数据
+								</th>
+								<th>
+									其他数据
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td align="center">
+									<input type="checkbox" name="user" value="1" />
+								</td>
+								<td align="center">
+									<input type="checkbox" name="product" value="1" />
+								</td>
+								<td align="center">
+									<input type="checkbox" name="sk" value="1" />
+								</td>
+								<td align="center">
+									<input type="checkbox" name="mp" value="1" />
+								</td>
+								<td align="center">
+									<input type="checkbox" name="other" value="1" />
+								</td>
+							</tr>
+							<tr>
+								<td align="center">
+									用户基本信息<br/>
+									用户银行卡<br/>
+									用户地址<br/>
+									订单数据<br/>
+									财务记录<br/>
+									转账数据<br/>
+									微信支付记录<br/>
+									分成记录<br/>
+									提现数据
+								</td>
+								<td align="center">
+									产品分类<br/>
+									产品(商品)<br/>
+									产品属性
+								</td>
+								<td align="center">
+									收款设置<br/>
+									收款记录
+								</td>
+								<td align="center">
+									自定义菜单<br/>
+									自动回复
+								</td>
+								<td align="center">
+									通知公告
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									管理员密码：<input type="password" name="pass" class="smallinput" />
+									<input type="submit" value="我同意协议,立即清除选中的数据" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					
+					</form>
+				</p>
+			</div>
+        </div><!--contentwrapper-->
+        

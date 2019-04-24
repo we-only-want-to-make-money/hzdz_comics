@@ -1,0 +1,43 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">文章管理 （消息标题：{$title}）</h1>
+            <span class="pagedesc"></span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+			<div class="tableoptions">                    
+				<button class="radius3" onclick="location.href='{:U('editArc?pid='.$_GET['pid'])}'">添加文章</button>
+			</div><!--tableoptions-->
+
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">标题</th>
+						<th class="head0">作者</th>
+						<th class="head0">排序</th>
+						<th class="head1">添加日期</th>
+						<th class="head0">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.title}</td>
+						<td>{$vo.author}</td>
+						<td>{$vo.sort}</td>
+						<td>{$vo.create_time|date="Y-m-d",###}</td>
+						<td class="center">
+							<a href="{:U('editArc', array('id'=>$vo['id']))}">修改</a> | 
+							<a href="{:U('delArc', array('id'=>$vo['id'],'pid'=>$_GET['pid']))}" onclick="return confirm('你确实要删除这个文章吗？')">删除</a>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        

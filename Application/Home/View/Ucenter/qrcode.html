@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no">
+<title>{$_qrcode['name']}</title>
+<link href="__PUBLIC__/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/store.css?bc" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/user.css" rel="stylesheet" type="text/css" />
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<style>
+.bottom{height:60px!important;}
+</style>
+<body>
+	<div class="qrcode-main" style="z-index:9999">
+		生成中需要5秒左右，请稍后...
+		<img src="{:U('Ucenter/get_qrcode')}" id="qrcode" style=" width:100%" />
+		<script>
+		$(document).ready(function(d){
+			h = $(window).height();
+			img_h = h-60;// - 90;
+			$("#qrcode").height(img_h+"px");
+		});
+		</script>
+	</div>

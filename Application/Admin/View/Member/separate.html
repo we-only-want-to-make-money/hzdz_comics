@@ -1,0 +1,74 @@
+	{__NOLAYOUT__} 
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>管理后台</title>
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/style.default.css" type="text/css" />
+	<link rel="stylesheet" href="__PUBLIC__/plugins/bootstrap/css/bootstrap.font.css" type="text/css" />
+	<script type="text/javascript" src="__PUBLIC__/admin/js/plugins/jquery-1.7.min.js"></script>
+	<!--[if IE 9]>
+		<link rel="stylesheet" media="screen" href="css/style.ie9.css"/>
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/plugins/css3-mediaqueries.js"></script>
+	<![endif]-->
+	</head>
+	<style>
+		.yp{
+			display: block;
+			float: right;
+			background: #FF5722;
+			color: #fff;
+			border-radius: 5px;
+			width: 70px;
+			text-align: center;
+			line-height: 20px;
+		}
+		.r3{
+			float: left;
+			border: none;
+			color: #fff;
+			background: #FF5722;
+			margin-top: -2.5px;
+			margin-left: 10px;
+			border-radius: 4px;
+			text-align: center;
+		}
+	</style>
+	<body>
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">充值用户</th>
+						<th class="head1">充值单号</th>
+						<th class="head0">充值金额</th>
+						<th class="head0">分成金额</th>
+						<th class="head0">分成时间</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.user_id}</td>
+						<td>{$vo.sn}</td>
+						<td>{$vo.pay}</td>
+						<td>{$vo.money|}</td>
+						<td>{$vo.pay_time|date="Y-m-d H:i:s",###}</td>						
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+				{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+	</body>
+	</html>
+        

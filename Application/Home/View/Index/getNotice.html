@@ -1,0 +1,53 @@
+<style>
+.swiper-no{
+    padding: 20px 0 20px 0;
+    min-height: 50px;
+    line-height: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #93899E;
+    margin: 0 auto;
+}
+.order-item .order-count ul li {
+    float: left;
+    width: 45%;
+    padding: 0px 2px;
+}
+.order-item .order-count ul li img {
+    width: 100%;
+    height: 80px;
+}
+.order-item h3 span:last-child {
+    float: right;
+    color: #f39800;
+}
+.order-item {
+    margin-bottom: 10px;
+}
+</style>
+<if condition="$list">
+<foreach name="list" item="v">
+<a href="{:U('Index/notice_info',array('id'=>$v['id']))}">
+	<li>{$v['title']}</li>
+</a>
+</foreach>
+<else />
+	<if condition="$page eq 1">
+	<div class="swiper-s">
+		<div class="swiper-no">
+			<img src="__HIMAGE__/empty.png" />
+		</div>
+		<div class="swiper-no">
+			您还未购买课程
+		</div>
+	 </div>
+	<else />
+	<div class="swiper-ss" id="common-load">
+		<div class="swiper-no">
+			已经加载完数据！
+		</div>
+	</div>
+	</if>
+</if>

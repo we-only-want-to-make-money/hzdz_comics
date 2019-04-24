@@ -1,0 +1,35 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">提现设置</h1>
+            <span class="pagedesc"></span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post" enctype="multipart/form-data">
+				<p>
+					<label>可提现比例</label>
+					<span class="field"><input type="text" name="rate" id="rate" value="{$_CFG.withdraw.rate}" class="smallinput" /></span>
+				</p>
+				
+				<p>
+					<label>满多少才能提现</label>
+					<span class="field"><input type="text" name="need" id="need" value="{$_CFG.withdraw.need}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>最少提现额度</label>
+					<span class="field"><input type="text" name="min" id="min" value="{$_CFG.withdraw.min}" class="smallinput" /></span>
+				</p>
+
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

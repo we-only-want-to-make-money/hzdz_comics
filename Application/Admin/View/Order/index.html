@@ -1,0 +1,90 @@
+		<script src="__PUBLIC__/plugins/My97DatePicker/WdatePicker.js"></script>
+        <div class="pageheader notab">
+            <h1 class="pagetitle">充值管理</h1>
+            <span class="pagedesc">管理商城中的用户充值</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+			<div class="tableoptions">        
+				<form method="post" id="form">
+					状态:
+					<select name="status" default="{$_GET['status']}" style="width:90px; min-width:0;">
+						<option value="">全部</option>
+						<option value="1">待支付</option>
+						<option value="2">待发货</option>
+						<option value="3">待确认</option>
+						<option value="4">已完成</option>
+					</select>
+					用户ID:
+					<input type="text" name="user_id" value="{$_GET['user_id']}" class="smallinput" style="width:50px;" />
+					下单时间:
+					<input type="text" name="time1" value="{$_GET['time1']}" class="smallinput" style="width:100px;" onclick="WdatePicker()" />
+					到
+					<input type="text" name="time2" value="{$_GET['time2']}" class="smallinput" style="width:100px;" onclick="WdatePicker()"  />
+					<input type="submit" value="查找" />
+					<!-- <input type="button" value="导出" onclick="exportExcel()" /> -->
+					<script>
+					function exportExcel(){
+						jQuery("#form").attr('action', "{:U('export')}");
+						jQuery("#form").submit();
+					}					
+					</script>
+				</form>
+			</div><!--tableoptions-->
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">编号</th>
+						<th class="head1">用户</th>
+						<th class="head1">充值单号</th>
+						<th class="head0">下单时间</th>
+						<!-- <th class="head0">收货人</th> -->
+						<th class="head0">充值金额</th>
+						<th class="head0">状态</th>
+						<th class="head0">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.user_id}</td>
+						<td>{$vo.sn}</td>
+						<td>{$vo.create_time|date="Y-m-d H:i",###}</td>
+						<!-- <td>{$vo.name}</td> -->
+						<td>{$vo.money|floatval}</td>
+						<td>{$vo.status|get_order_status}</td>
+						<td class="center">
+							<!-- <a href="{:U('detail', 'id='.$vo['id'])}">详情</a> -->
+							<if condition="$vo['status'] eq -1">
+							| 
+							<a href="{:U('del', 'id='.$vo['id'])}" onclick="return confirm('你确实要删除这个充值记录吗？')">删除</a>
+							</if>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			<if condition="$orders gt 0">
+			
+			<!-- <span style="float:left;">
+			<if condition="$_GET['status'] eq ''">
+			总充值数：{$orders_paid}/{$orders},
+			总金额：￥{$total_paid}/￥{$total},
+			微信支付：￥{$wxpay|default=0}，
+			余额支付：￥{$money|default=0}，
+			{$_CFG.site.points_name}支付：￥{$points|default=0}
+			<else/>
+			总充值数：{$orders},
+			总金额：￥{$total}
+			</if>
+			</span> -->
+			</if>
+			
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{$_site['name']} -- 首页</title>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<link rel="stylesheet" type="text/css" href="__HCSS__/common.css">
+<link rel="stylesheet" type="text/css" href="__HCSS__/index.css">
+<link rel="stylesheet" href="__HCSS__/reset.css">
+<link rel="stylesheet" href="__HCSS__/idangerous.swiper.css"> 
+<link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css" type="text/css" />
+
+<script src="__HJS__/jquery-1.10.1.min.js"></script>
+<script src="__PUBLIC__/bootstrap-3.3.5/js/bootstrap.js"></script>
+<script src="__PUBLIC__/layer/layer.js" type="text/javascript"></script>
+	
+<style>
+header {
+	height: 60px;
+	background-color: #f5f5f5;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	display: -webkit-box;
+	top: 0;
+}
+body{margin:0;font-family:"microsoft yahei";font-size:13px;line-height:1.5;background:#F2F2F2}
+.wrap{margin:50px auto 0 auto;}
+.tabs{height:40px;padding-left: 50px;}
+.tabs a{display:block;float:left;width:13.66%;color:#333;text-align:center;line-height:40px;font-size:16px;text-decoration:none;}
+.tabs a.active{color:#D13F42;border-radius:5px 5px 0px 0px;border-bottom:3px solid #D13F42}
+.swiper-container{height:205px;border-radius:0 0 5px 5px;width:100%;border-top:0;}
+.swiper-slide{height:205px;width:100%;background:none;color:#fff;}
+.content-slide p{text-indent:2em;line-height:1.9;}
+.cityBtn2 {
+	width: 60px;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	top: 0;
+	left: 0;
+	font-size: 14px;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+.swiper-slide img{height:205px;}
+.sy_recmd_list_box {
+    padding-top: 0;
+	margin-bottom: 50px;
+    background-color: #F2F2F2;
+}
+</style>
+</head>
+
+<body>
+<header class="hasManyCity" id="header">
+	<div class="cityBtn2"><img src="{$_site['pic']}" style="width: 85%;" onclick="window.location.href=&#39;{:U('Mh/index')}&#39;"></div>
+	<div id="locaitonBtn" class="link-url locaitonBtn" onclick="window.location.href=&#39;{:U('Index/cart')}&#39;"></div>
+
+	
+	<div class="custom-search" style="margin-left: 2%;">
+		<form action="{:U('Index/index')}" method="get">
+			<input type="text"  class="searchBox" placeholder="搜索热门课程" id="keyword" name="keyword" />
+		</form>
+	</div>
+	<div class="qrcodeBtn" onclick="window.location.href=&#39;{:U('Index/notice')}&#39;"></div>
+</header>
+<div id="container">		
+	<div id="main">
+
+					
+		<div id="index" class="page-center-box">
+			<div>
+
+				<div class="wrap">
+					
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<foreach name="banner" item="v" key="k">
+							<div class="swiper-slide">
+								<div class="content-slide">
+									<a href="{$v['url']}"><img src="{$v['pic']}"></a>
+								</div>
+							</div>
+							</foreach>
+							
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript" src="__HJS__/idangerous.swiper.min.js"></script>
+				<script type="text/javascript">
+					var tabsSwiper = new Swiper('.swiper-container',{
+						speed:500,
+						onSlideChangeStart: function(){
+							$(".tabs .active").removeClass('active');
+							$(".tabs a").eq(tabsSwiper.activeIndex).addClass('active');
+						}
+					});
+
+					$(".tabs a").on('touchstart mousedown',function(e){
+						e.preventDefault()
+						$(".tabs .active").removeClass('active');
+						$(this).addClass('active');
+						tabsSwiper.swipeTo($(this).index());
+					});
+
+					$(".tabs a").click(function(e){
+						e.preventDefault();
+					});
+				</script>
+				<div class="sy_recmd" style="margin-top: 10px;">
+					<div class="sy_recmd_list_box">
+						<ul id="goods">
+						
+						</ul>
+						<div class="clear" style="margin-bottom: 15px"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css">
+<script src="__HJS__/jquery-1.10.1.min.js"></script>
+<script src="__PUBLIC__/layer_mobile/layer.js"></script>
+<script src="__HJS__/swiper.min.js"></script>
+<script src="__HJS__/common.js"></script>
+<script>
+	var page = 1;
+	var keyword ="{$_GET['keyword']}";
+	loadData();
+	function loadData(){
+		AjaxLoad("{:U('Index/getGoods')}",{page:page,keyword:keyword},$('#goods'),false,loadData,true);
+	}
+</script>		
+<include file="include/footer" />

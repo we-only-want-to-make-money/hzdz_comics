@@ -1,0 +1,162 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">用户等级</h1>
+            <span class="pagedesc">设置商城用户等级名称和条件</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<div class="tableoptions">                    
+					<input type="button" class="radius3" onclick="add_level()" value="增加等级"/>
+				</div><!--tableoptions-->
+				<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" class="head1">名称</th>
+							<th colspan="7" class="head1">条件</th>
+							<th colspan="5" class="head1">权限</th>
+							 <th rowspan="2" class="head1">操作</th>
+						</tr>
+						<tr>
+                            <th class="head0">订单数</th>
+                            <th class="head1">一级内下级</th>
+                            <th class="head0">二级内下级</th>
+							<th class="head0">三级内下级</th>
+							<th class="head0">消费金额</th>
+							<th class="head0">团队业绩</th>
+							<th class="head0">投资币</th>
+							<th class="head0">分销</th>
+							<th class="head1">提现</th>
+							<th class="head0">转账</th>
+							<th class="head0">奖励层数</th>
+							<th class="head0">分红比例(%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+						<tr>
+                            <td><input type="text" name="name[]" value="{$_CFG['level'][0]['name']}" /></td>
+                            <td><input type="text" style="width:30px" name="orders[]" value="0" readonly /></td>
+                            <td><input type="text" style="width:30px" name="agent1[]" value="0" readonly /></td>
+                            <td><input type="text" style="width:30px" name="agent2[]" value="0" readonly /></td>
+							<td><input type="text" style="width:30px" name="agent3[]" value="0" readonly /></td>
+							<td><input type="text" style="width:30px" name="consume[]" value="0" readonly /></td>
+							<td><input type="text" style="width:60px" name="sales[]" value="0" readonly /></td>
+							<td><input type="text" style="width:60px" name="touzibi[]" value="0" readonly /></td>
+							<td>
+								<select name="dist[]" default="{$_CFG['level'][0]['dist']}">
+									<option value="1">开启</option>
+									<option value="0">关闭</option>
+								</select>
+							</td>
+							<td>
+								<select name="withdraw[]" default="{$_CFG['level'][0]['withdraw']}">
+									<option value="1">开启</option>
+									<option value="0">关闭</option>
+								</select>
+							</td>
+							<td>
+								<select name="deposit[]" default="{$_CFG['level'][0]['deposit']}">
+									<option value="1">开启</option>
+									<option value="0">关闭</option>
+								</select>
+							</td>
+							<td><input type="text" style="width:60px" name="level[]" value="{$_CFG['level'][0]['level']}"  /></td>
+							<td><input type="text" style="width:60px" name="bonus[]" value="{$_CFG['level'][0]['bonus']}"  /></td>
+							<td>无</td>
+                        </tr>
+                    	<volist name="_CFG['level']" id="vo" offset="1">
+                        <tr>
+                            <td><input type="text" name="name[]" value="{$vo.name}" /></td>
+                            <td><input type="text" style="width:30px" name="orders[]" value="{$vo.orders}" /></td>
+                            <td><input type="text" style="width:30px" name="agent1[]" value="{$vo.agent1}" /></td>
+                            <td><input type="text" style="width:30px" name="agent2[]" value="{$vo.agent2}" /></td>
+							<td><input type="text" style="width:30px" name="agent3[]" value="{$vo.agent3}" /></td>
+							<td><input type="text" style="width:30px" name="consume[]" value="{$vo.consume}" /></td>
+							<td><input type="text" style="width:60px" name="sales[]" value="{$vo.sales}" /></td>
+							<td><input type="text" style="width:60px" name="touzibi[]" value="{$vo.touzibi}" /></td>
+							<td>
+								<select name="dist[]" default="{$vo.dist}">
+									<option value="1">开启</option>
+									<option value="0">关闭</option>
+								</select>
+							</td>
+							<td>
+								<select name="withdraw[]" default="{$vo.withdraw}">
+									<option value="1">开启</option>
+									<option value="0">关闭</option>
+								</select>
+							</td>
+							<td>
+								<select name="deposit[]" default="{$vo.deposit}">
+									<option value="1">开启</option>
+									<option value="0">关闭</option>
+								</select>
+							</td>
+							<td><input type="text" style="width:60px" name="level[]" value="{$vo.level}" /></td>
+							<td><input type="text" style="width:60px" name="bonus[]" value="{$vo.bonus}" /></td>
+							<td><a href="javascript:;" onclick="del_level(this)">删除</a></td>
+                        </tr>
+                        </volist>
+                    </tbody>
+                </table>
+				<script>
+				function add_level(){
+					//return false;
+					html = '<tr>'
+                           +' <td><input type="text" name="name[]" value="" /></td>'
+                           +' <td><input type="text" style="width:30px" name="orders[]" value="" /></td>'
+                           +' <td><input type="text" style="width:30px" name="agent1[]" value="" /></td>'
+                           +' <td><input type="text" style="width:30px" name="agent2[]" value="" /></td>'
+						   +' <td><input type="text" style="width:30px" name="agent3[]" value="" /></td>'
+						   +' <td><input type="text" style="width:30px" name="consume[]" value="" /></td>'
+						   +' <td><input type="text" style="width:60px" name="sales[]" value="" /></td>'
+						   +' <td><input type="text" style="width:60px" name="touzibi[]" value="" /></td>'
+						   +' <td>'
+						   +'	<select name="dist[]" default="">'
+							+'		<option value="1">开启</option>'
+							+'		<option value="0">关闭</option>'
+							+'	</select>'
+							+'</td>'
+							+'<td>'
+							+'	<select name="withdraw[]" default="">'
+							+'		<option value="1">开启</option>'
+							+'		<option value="0">关闭</option>'
+							+'	</select>'
+							+'</td>'
+							+'<td>'
+							+'	<select name="deposit[]" default="">'
+							+'		<option value="1">开启</option>'
+							+'		<option value="0">关闭</option>'
+							+'	</select>'
+							+'</td>'
+							+' <td><input type="text" style="width:60px" name="level[]" value="" /></td>'
+							+' <td><input type="text" style="width:60px" name="bonus[]" value="" /></td>'
+							+'<td><a href="javascript:;" onclick="del_level(this)">删除</a></td>'
+                        +'</tr>';
+					
+					jQuery("#table2").find("tbody").append(html);
+				}
+				
+				function del_level(obj){
+					jQuery(obj).parent("td").parent("tr").remove();
+				}
+
+				jQuery(document).ready(function(e) {
+				   //调整下拉的默认选择
+				   jQuery("select").each(function(index, element) {
+					  jQuery(element).find("option[value='"+jQuery(this).attr('default')+"']").attr('selected','selected');
+				   });
+				 });
+				</script>
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

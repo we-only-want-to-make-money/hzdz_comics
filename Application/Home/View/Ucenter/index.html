@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{$_site['name']} -- 个人中心</title>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<link rel="stylesheet" type="text/css" href="__HCSS__/common.css">
+<link rel="stylesheet" type="text/css" href="__HCSS__/index.css">
+<link rel="stylesheet" type="text/css" href="__HCSS__/mui.min.css"/>
+<link rel="stylesheet" href="__HCSS__/reset.css">
+<style>
+#container{font-weight: bold}
+.h-top {
+	width: 100%;
+	background-color: #ffffff;
+	padding: 5% 5% 5% 15%;
+	position: relative;
+}
+.cash-tit {
+	width: 100%;
+	height: .2rem;
+	line-height: .2rem;
+	border-bottom: 1px solid #DDD8CD;
+	font-size: .15rem;
+	padding: 0 3%;
+	background: #F8F9FA;
+}
+.h-top .content p {
+	color: #000;
+	line-height: .25rem;
+}
+a.center-btn {
+	background-color: #00A3E4;
+	color: #fff;
+
+}
+.zw{
+    background: #00a2d4;
+    height: 25px;
+    border-radius: 6px;
+    display: -webkit-inline-box;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+.hname{height: 30px;font-size: 14px;}
+.htel{height: 30px;font-size: 20px;}
+.c-blue{color: #00a0e9!important;font-size: 16px!important; }
+.c-ml{height: 25px;    padding-top: 5px;}
+.bottom{height:60px!important;}
+</style>
+</head>
+<body>
+	<!--header end-->
+	<div id="container">		
+		<div id="main">
+			<div class="warp clearfloat">
+				<div class="h-top clearfloat box-s">
+					<div class="tu clearfloat fl">
+						<img src="{$user['headimg']}"/>
+					</div>
+					<div class="content clearfloat fl">
+						<div class="hname">{:getUserName($user['id'])}，您好</div>
+						<div class="htel">职务：<div class="zw">{:get_level_lv_name($user['level'],$user['lv'])}</div></div>
+					</div>
+
+				</div>
+				<div class="cash clearfloat" >
+					<div class="cash-tit clearfloat box-s"></div>
+					<div class="shang xia clearfloat">
+						<ul>
+							<li>
+								<a href="{:U('Index/index')}">
+									<img src="__HIMAGE__/sy.png"/>
+									<span>首页课堂</span>
+								</a>
+							</li>
+							<li>
+								<a href="{:U('Ucenter/myTeam')}">
+									<span class="c-ml">我的班级米粒</span>
+									<span class="c-blue">{:sprintf("%.2f",$myson_money)}</span>
+								</a>
+							</li>
+							<li>
+								<a href="{:U('Ucenter/myMl')}">
+									<span class="c-ml">我的米粒</span>
+									<span class="c-blue">{:sprintf("%.2f",$user['money'])}</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="cash clearfloat" style="margin-bottom: 10%">
+					<div class="cash-tit clearfloat box-s"></div>
+					<div class="shang xia clearfloat">
+						<ul>
+							<li>
+								<a href="{:U('Ucenter/profile')}">
+									<img src="__HIMAGE__/gr.png" width="35" height="35"/>
+									<span>个人中心</span>
+								</a>
+							</li>
+							<li>
+								<a href="{:U('Ucenter/myGoods')}">
+									<img src="__HIMAGE__/st.png"  width="35" height="35"/>
+									<span>已买课程</span>
+								</a>
+							</li>
+							<li>
+								<a href="{:U('Ucenter/myMl')}">
+									<img src="__HIMAGE__/xx.png"  width="35" height="35"/>
+									<span>米粒信息</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="shang xia clearfloat">
+						<ul>
+							<li>
+								<a href="{:U('Ucenter/qrcode')}">
+									<img src="__HIMAGE__/xj.png"  width="35" height="35"/>
+									<span>下级学员生成</span>
+								</a>
+							</li>
+							<li>
+								<a href="{:U('Ucenter/TeamL')}">
+									<img src="__HIMAGE__/rm.png"  width="35" height="35"/>
+									<span>下级学员查看</span>
+								</a>
+							</li>
+							<li>
+								<a href="{:U('Ucenter/withdraw')}">
+									<img src="__HIMAGE__/sq.png"  width="35" height="35"/>
+									<span>学员申请提现</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="shang xia clearfloat">
+						<ul>
+							<li>
+								<a href="{:U('Ucenter/mySeparate')}">
+									<img src="__HIMAGE__/sm.png"  width="35" height="35"/>
+									<span>收米信息</span>
+								</a>
+							</li>
+							<li>
+								<a href="{:U('Ucenter/leaveMsg')}">
+									<img src="__HIMAGE__/fk.png"  width="35" height="35"/>
+									<span>意见反馈</span>
+								</a>
+							</li>
+							<li>
+								<a href="tel:{$_site['phone']}">
+									<img src="__HIMAGE__/lx.png"  width="35" height="35"/>
+									<span>联系我们</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div>  
+					<div class="rights">All Rights Reserved@2016efucms 版权所有</div>
+					<div class="rights">技术支持：efucms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--footer star-->
+
+	<!--footer end-->
+<include file="include/footer" />

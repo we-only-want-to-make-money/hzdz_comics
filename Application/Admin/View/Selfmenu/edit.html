@@ -1,0 +1,124 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">编辑自定义菜单</h1>
+            <span class="pagedesc">编辑自定义菜单的详细信息</span>
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+			<form class="stdform stdform2" method="post">
+				<p>
+					<label>名称<small>自定义菜单显示的名字</small></label>
+					<span class="field"><input type="text" name="name" id="name" value="{$info.name}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>排序值<small>越大越排前</small></label>
+					<span class="field"><input type="text" name="sort" id="sort" value="{$info.sort}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>上级菜单</label>
+					<span class="field">
+						<select name="pid"  default="{$info.pid}">
+							<option value="0">顶级菜单</option>
+							<volist name="parents" id="vo">
+								<option value="{$vo.id}" <if condition="$_GET['id'] eq $vo['id']">disabled</if>>{$vo.name}</option>
+							</volist>
+						</select>
+					</span>
+				</p>
+				<p>
+					<label>类型</label>
+					<span class="field">
+						<select name="type" default="{$info.type}" id="type_selector" onclick="type_change()">
+							<option value="click">点击推事件</option>
+							<option value="view">跳转URL</option>
+							<option value="scancode_push">扫码推事件</option>
+							<option value="scancode_waitmsg">扫码推事件且弹出“消息接收中”提示框</option>
+							<option value="pic_sysphoto">弹出系统拍照发图</option>
+							<option value="pic_photo_or_album">弹出拍照或者相册发图</option>
+							<option value="pic_weixin">弹出微信相册发图器</option>
+							<option value="location_select">弹出地理位置选择器</option>
+						</select>
+						<script>
+						function type_change(){
+							obj = document.getElementById('type_selector');
+							i = 0;
+							jQuery(obj).find("option").each(function(index, el){
+								if(jQuery(el).is(":selected")){
+									//jQuery(".type-remark").hide().eq(i).show();
+									jQuery("#tips").html(jQuery(".type-remark").eq(i).html())
+								}
+								i++;
+							});
+						}
+						jQuery(document).ready(function(e){
+							$ = jQuery;
+							// 调整默认选择内容
+							jQuery("select").each(function(index, element) {
+								$(element).find("option[value='"+$(this).attr('default')+"']").attr('selected','selected');
+							});
+							// 调整提示内容
+							type_change()
+						});
+						</script>
+					</span>
+				</p>
+				<p>
+					<label>说明</label>
+					<span class="field" id="tips">
+						<b>click：点击推事件</b>
+						用户点击click类型按钮后，微信服务器会通过消息接口推送消息类型为event	的结构给开发者（参考消息接口指南），并且带上按钮中开发者填写的key值，开发者可以通过自定义的key值与用户进行交互；
+						
+					</span>
+				</p>
+				<p>
+					<label>附加内容<small>请填写关键词、网址后者key</small></label>
+					<span class="field"><input type="text" name="extra" id="extra" value="{$info.extra}" class="smallinput" /></span>
+				</p>
+				
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        </div><!--contentwrapper-->
+        
+		<div class="contentwrapper lineheight21">
+			<style>
+			.type-remark{ display:none;}
+			</style>
+			<div class="type-remark">
+			<b>click：点击推事件</b>
+			用户点击click类型按钮后，微信服务器会通过消息接口推送消息类型为event	的结构给开发者（参考消息接口指南），并且带上按钮中开发者填写的key值，开发者可以通过自定义的key值与用户进行交互；
+			</div>
+			<div class="type-remark">
+			<b>view：跳转URL</b>
+			用户点击view类型按钮后，微信客户端将会打开开发者在按钮中填写的网页URL，可与网页授权获取用户基本信息接口结合，获得用户基本信息。
+			</div>
+			<div class="type-remark">			
+			<b>scancode_push：扫码推事件</b>
+			用户点击按钮后，微信客户端将调起扫一扫工具，完成扫码操作后显示扫描结果（如果是URL，将进入URL），且会将扫码的结果传给开发者，开发者可以下发消息。
+			</div>
+			<div class="type-remark">
+			<b>scancode_waitmsg：扫码推事件且弹出“消息接收中”提示框</b>
+			用户点击按钮后，微信客户端将调起扫一扫工具，完成扫码操作后，将扫码的结果传给开发者，同时收起扫一扫工具，然后弹出“消息接收中”提示框，随后可能会收到开发者下发的消息。
+			</div>
+			<div class="type-remark">
+			<b>pic_sysphoto：弹出系统拍照发图</b>
+			用户点击按钮后，微信客户端将调起系统相机，完成拍照操作后，会将拍摄的相片发送给开发者，并推送事件给开发者，同时收起系统相机，随后可能会收到开发者下发的消息。
+			</div>
+			<div class="type-remark">
+			<b>pic_photo_or_album：弹出拍照或者相册发图</b>
+			用户点击按钮后，微信客户端将弹出选择器供用户选择“拍照”或者“从手机相册选择”。用户选择后即走其他两种流程。
+			</div>
+			<div class="type-remark">
+			<b>pic_weixin：弹出微信相册发图器</b>
+			用户点击按钮后，微信客户端将调起微信相册，完成选择操作后，将选择的相片发送给开发者的服务器，并推送事件给开发者，同时收起相册，随后可能会收到开发者下发的消息。
+			</div>
+			<div class="type-remark">
+			<b>location_select：弹出地理位置选择器</b>
+			用户点击按钮后，微信客户端将调起地理位置选择工具，完成选择操作后，将选择的地理位置发送给开发者的服务器，同时收起位置选择工具，随后可能会收到开发者下发的消息。
+			</div>
+		</div>

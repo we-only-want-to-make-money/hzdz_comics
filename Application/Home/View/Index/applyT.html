@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no, address=no">
+<title>{$_site['name']} -- 申请讲师</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/common.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/app.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/font.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/designer.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/index.css">
+<link href="__PUBLIC__/ever/css/owl.carousel.css" rel="stylesheet">
+<script src="__PUBLIC__/ever/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/ever/js/owl.carousel.min.js"></script>
+<script src="__PUBLIC__/ever/js/common.js"></script>
+<script src="__PUBLIC__/ever/js/app.js"></script>
+<body bgcolor="#f2f2f2">
+<style>
+.spark_buy .spark_submit {
+    display: block;
+    width: 100%!important;
+    border: none;
+    background: #0085d0;
+    color: #fff;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+}
+.bottom{height:60px!important;}
+.spark_buy {
+	position:relative!important;
+    width: 70%!important;
+    max-width: 720px;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 50px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+.spark_buy .spark_submit {
+    display: block;
+    width: 120px;
+    border: none;
+    background: #0085d0;
+    color: #fff;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/spark.css">
+<div class="sparkHead" style="background: #0085d0;color:#fff">
+	<i class="iconfont icon-back commonBack" onclick="javascript:history.go(-1)"></i>
+	<h3 class="text-overflow_1">申请讲师</h3>
+</div>
+<div class="spark_content">
+	<ul class="clr">
+		<li class="flex">
+			<h4>姓&nbsp;&nbsp;&nbsp;&nbsp;名</h4>
+			<div class="flex_1">
+				<input type="text" name="true_name" value="" placeholder="提现需要实名制">
+			</div>
+		</li>
+		<li class="flex">
+			<h4>简&nbsp;&nbsp;&nbsp;&nbsp;介</h4>
+			<div class="flex_1">
+				<input type="text" name="sign" value="" placeholder="提现需要实名制">
+			</div>
+		</li>
+		<li class="flex">
+			<h4>手机号</h4>
+			<div class="flex_1">
+				<input type="text" name="mobile" value="" placeholder="请输入11位手机号">
+			</div>
+		</li>
+		<li class="flex">
+			<h4>微信号</h4>
+			<div class="flex_1">
+				<input type="text" name="wxId" value="" placeholder="请输入微信号">
+			</div>
+		</li>
+		<!-- <li class="flex">
+			<h4>性&nbsp;&nbsp;&nbsp;&nbsp;别</h4>
+			<div class="flex_1">
+				<select name="sex">
+					<option value="0">请选择</option>
+					<option value="1">男</option>
+					<option value="2">女</option>
+				</select>
+			</div>
+		</li>
+		<li class="flex">
+			<h4>头&nbsp;&nbsp;&nbsp;&nbsp;像</h4>
+			<div class="flex_1">
+				<include file="include/Upload" />
+			</div>
+		</li> -->
+	</ul>
+</div>
+<div class="spark_buy flex">
+	<button class="spark_submit" onclick="submitOrder()">立	即	申	请</button>
+</div>
+<div style="height:50px"></div>
+<link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css">
+<script src="__PUBLIC__/layer_mobile/layer.js"></script>
+<script src="__HJS__/common.js"></script>
+<script type="text/javascript">
+	function submitOrder() {
+		var true_name = $("input[name=true_name]").val();
+			sign = $("input[name=sign]").val();
+			wxId = $("input[name=wxId]").val();
+			mobile = $("input[name=mobile]").val();
+			pic = $("input[name=pic]").val();
+			sex = $("select[name=sex]").val();
+		
+		if (true_name == "") {
+			msg("姓名不能为空");
+			$("input[name=true_name]").focus();
+			return;
+		}
+		if (sign == "") {
+			msg("简介不能为空");
+			$("input[name=sign]").focus();
+			return;
+		}
+		var isMobile = /^1\d{10}$/;
+		if (!isMobile.test(mobile)) {
+			msg("请输入正确的11位手机号");
+			$("input[name=mobile]").focus();
+			return;
+		}
+		if (wxId == "") {
+			msg("微信号不能为空");
+			$("input[name=wxId]").focus();
+			return;
+		}
+		
+		/*
+		if (sex == "" || sex == 0) {
+			msg("请选择性别");
+			$("select[name=sex]").focus();
+			return;
+		}
+		if (pic == "") {
+			msg("请上传头像");
+			return;
+		}*/
+		var data = {name: true_name, sign:sign, wxid: wxId, mobile: mobile ,sex:sex ,pic:pic};
+		$(".spark_submit").attr('disabled', "true").addClass("disabled");
+		$(".spark_submit").text("正在提交...");
+		$.post("{:U('applyT')}",data,function (data) {
+				console.log(data);
+				if (data.status) {
+						msg(data.info);
+						setTimeout(function(){
+							location.href="{:U('Ucenter/index')}";
+						}, 2000);
+				} else {
+					msg(data.info);
+					$(".spark_submit").removeAttr('disabled').removeClass("disabled");
+					$(".spark_submit").text("立即申请");
+					return;
+				}
+			},
+			"json"
+		);
+	}
+	
+</script>
+		
+
+<div id="backtop"><i class="iconfont icon-fold"></i></div>
+<include file="include/share2" />
+<include file="include/footer" />

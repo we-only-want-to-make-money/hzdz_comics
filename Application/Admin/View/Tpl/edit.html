@@ -1,0 +1,48 @@
+        <div class="pageheader notab">
+            <h1 class="pagetitle">编辑模板内容</h1>
+            <span class="pagedesc">请认真编辑模板内容各项信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			
+        
+            <form class="stdform stdform2" method="post">
+				<style>
+				.form-table{ width:100%; background:#ddd;}
+				.form-table th,.form-table td{ padding:15px;}
+				.form-table th.title{ width:190px; background:#fcfcfc; color:#666; text-align:left;}
+				.form-table th small{ font-weight:normal; color:#999; display:block;}
+				.form-table td{ background:#fff; vertical-align:middle;}
+				</style>
+				<table class="form-table" cellspacing="1" border="0">
+					<tr>
+						<th class="title">模板标题<small>这里是提示您</small></th>
+						<td>
+							<input type="text" name="title" id="title" value="{$info.title}" class="smallinput" />
+						</td>
+					</tr>
+					<tr>
+						<th class="title">模板链接<small>这里是提示您</small></th>
+						<td>
+							<input type="text" name="url" id="url" value="{$info.url}" class="smallinput" />
+						</td>
+					</tr>
+					<tr>
+						<th class="title">模板简介</th>
+						<td>
+							<textarea name="remark" id="remark" class="longinput" style="margin: 0px; height: 200px; width:40%;">{$info.remark}</textarea>
+						</td>
+					</tr>
+				</table>
+				
+				
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+			
+        </div><!--contentwrapper-->
+        

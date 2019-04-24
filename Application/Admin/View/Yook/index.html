@@ -1,0 +1,130 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">听书管理</h1>
+            <span class="pagedesc">对听书进行增加，修改或者删除等操作</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+			<div class="tableoptions">        
+				<form method="post" id="form">
+					
+					听书名称:
+					<input type="text" name="title" value="{$_GET['title']}" class="smallinput" style="width:350px;" />
+					<input type="submit" value="查找" />				
+					</script>
+				</form>
+			</div><!--tableoptions-->
+			<div class="tableoptions">                    
+				<button class="radius3" onclick="location.href='{:U('edit')}'">添加听书</button>
+			</div><!--tableoptions-->
+
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1" style="width:50px;">听书ID</th>
+						<th class="head1">听书标题</th>
+						<th class="head1">进入分集</th>
+						<th class="head1">分类</th>
+						<th class="head1">作者</th>
+						<th class="head1">状态</th>
+						<th class="head1">属性</th>
+						<th class="head1">最大话数</th>
+						<th class="head1">
+							<a href="<?php if($_GET['order'] == 'readnum' && $_GET['type'] == 'desc'){
+								echo U('index?order=readnum&type=asc');
+							}else{
+								echo U('index?order=readnum&type=desc');
+							}?>" style="color:red">
+							总阅读人数
+							<?php if($_GET['order'] == 'readnum' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head1">
+							<a href="<?php if($_GET['order'] == 'chargenum' && $_GET['type'] == 'desc'){
+								echo U('index?order=chargenum&type=asc');
+							}else{
+								echo U('index?order=chargenum&type=desc');
+							}?>" style="color:red">
+							总充值人数
+							<?php if($_GET['order'] == 'chargenum' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head1">
+							<a href="<?php if($_GET['order'] == 'chargemoney' && $_GET['type'] == 'desc'){
+								echo U('index?order=chargemoney&type=asc');
+							}else{
+								echo U('index?order=chargemoney&type=desc');
+							}?>" style="color:red">
+							总充值金额
+							<?php if($_GET['order'] == 'chargemoney' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head1">充值人数/阅读人数</th>
+						<th class="head1">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr style="background:#fff">
+						<td>{$vo.id}</td>
+						<td>{$vo.title}</td>
+						<td><a href="{:U('episodes')}&yid={$vo.id}">进入分集</a></td>
+						<td>{$vo.cateids}</td>
+						<td>{$vo.author}</td>
+						<td><if condition="$vo['status'] eq 1">连载<else />完结</if></td>
+						<td><if condition="$vo['free_type'] eq 1">免费<else />付费</if></td>
+						<td>{$vo.episodes}</td>
+						
+						<td>{$vo.readnum}</td>
+						<td>{$vo.chargenum}</td>
+						<td>{$vo.chargemoney}</td>
+						<td>
+							<if condition="$vo['readnum']">
+								{:sprintf("%.2f",$vo['chargenum']/$vo['readnum']*100)}%
+							<else />
+								0%
+							</if>
+						</td>
+						
+						<td class="center">
+							<a href="javascript:;" onclick="showP({$vo['id']});">评论</a> | 
+							<a href="javascript:;" onclick="showPs({$vo['id']});">打赏记录</a> | 
+							<a href="{:U('edit', 'id='.$vo['id'])}">修改</a> | 
+							<a href="{:U('del', 'id='.$vo['id'])}" onclick="return confirm('你确实要删除这个漫画吗？')">删除</a>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        <link rel="stylesheet" href="__PUBLIC__/layer/skin/default/layer.css?v=140b">
+		<script src="__PUBLIC__/layer/layer.js"></script>
+		<script>
+			var $ = jQuery;
+			function showP(id){
+				layer.open({
+					type: 2,
+					title: '评论列表',
+					shadeClose: true,
+					shade: 0.8,
+					area: ['80%', '80%'],
+					content: "{:U('comments')}&id="+id
+				}); 
+			}
+			function showPs(id){
+				layer.open({
+					type: 2,
+					title: '打赏记录',
+					shadeClose: true,
+					shade: 0.8,
+					area: ['80%', '80%'],
+					content: "{:U('sends')}&id="+id
+				}); 
+			}
+		</script>

@@ -1,0 +1,103 @@
+		<link href="__PUBLIC__/layer/skin/layer.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/clipboard.min.js"></script>
+        <div class="pageheader notab">
+            <h1 class="pagetitle">文案链接管理</h1>
+            <span class="pagedesc">对文案链接操作</span>
+            
+        </div><!--pageheader-->
+        <style>
+			.contentwrapper p {
+				margin: 0px;
+			}
+		</style>
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+        
+			<div class="tableoptions">        
+				<form method="post" id="form">
+					漫画或小说名称:
+					<input type="text" name="title" value="{$_GET['title']}" class="smallinput" style="width:350px;" />
+					<input type="submit" value="查找" />				
+					</script>
+				</form>
+			</div><!--tableoptions-->		
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1" width="300">本章节链接</th>
+						<th class="head1" width="300">原文链接</th>
+						<th class="head1">二维码</th>
+						<th class="head1">入口章节</th>
+						<th class="head1">关注</th>
+						<th class="head1">点击</th>
+						<th class="head1">充值</th>
+						<th class="head1">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+					function dwz($url) {  
+						$url2=file_get_contents("http://api.t.sina.com.cn/short_url/shorten.json?source=3271760578&url_long=".urlencode($url));
+						$json = json_decode($url2);
+						$zl=$json[0]->url_short;
+						return $zl;
+					}
+					?>
+					<volist name="list" id="vo">
+					<tr>
+						<td>
+							<p><h1 style="font-size: 16px;">{$vo.name}</h1></p>
+							<p>{$vo.burl}</p>
+							<p>创建时间:{$vo.create_time|date="Y-m-d H:i:s",###}</p>
+							<p style="margin-top:10px;cursor:pointer" data-clipboard-action="copy" data-clipboard-text="{$vo.burl}" class="copy"><span class="glyphicon glyphicon-copy">复制</span></p>
+							<p><?php echo dwz($vo['burl']);?></p>
+						</td>
+						<td>
+							<p><h1 style="font-size: 16px;">{$vo.name}</h1></p>
+							<p>{$vo.url}</p>
+							<p>创建时间:{$vo.create_time|date="Y-m-d H:i:s",###}</p>
+							<p style="margin-top:10px;cursor:pointer" data-clipboard-action="copy" data-clipboard-text="{$vo.url}" class="copy"><span class="glyphicon glyphicon-copy">复制</span></p>
+							<p><?php echo dwz($vo['url']);?></p>
+						</td>
+						<td class="center">
+							<a href="javascript:;" onclick="showQrcode({$vo['id']})" style="color:blue">点击查看</a>
+						</td>
+						<td>
+							<p><img src="{$vo.pic}" style="width:80px;height:50px;"/></p>
+							<p>{$vo.title}</p>
+							<p>第{$vo.ji_no}话	{$vo.etitle}</p>	
+						</td>
+						<td>{$vo.subscribe}</td>
+						<td>{$vo.read}</td>
+						<td>{$vo.charge}</td>
+						<td class="center">
+							<a href="{:U('del', 'id='.$vo['id'])}" onclick="return confirm('你确实要删除？')">删除</a>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+		<script>
+			var $ = jQuery;
+			var clipboard = new Clipboard('.copy');
+			clipboard.on('success', function(e) {
+				e.clearSelection();
+				layer.msg('已经复制到粘贴板！', {icon: 1, time: 1500,});
+			});
+			function showQrcode(id){
+				layer.open({
+				  type: 2,
+				  title: '查看二维码',
+				  shadeClose: true,
+				  shade: 0.8,
+				  area: ['400px', '360px'],
+				  content: "{:U('showQrcode')}&id="+id,
+				});
+			}
+		</script>
+        

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="format-detection" content="telephone=no">
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>商品支付</title>
+<!-- CSS -->
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/new/css/style.css">
+<!-- JS -->
+<script type="text/javascript" src="__HJS__/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<style>
+	html{background:#e0e0e0;}
+</style>
+
+<div class="page">
+	<div style="padding:10px;"><img src="__PUBLIC__/images/ali_pay.png" style="width:70px;"></div>
+	<div style="background:#fff;text-align: center;">
+		<div style="padding-top:25px;">订单号：{$pay_array.out_trade_no}</div>
+		<div class="fw" style="font-size:26px;color:red;padding-top:20px;">¥{$pay_array.total}</div>
+		<div style="padding-top:30px;padding-bottom:50px;">
+			<div><img style="width:20px;" src="__PUBLIC__/images/loader.gif"></div>
+			<div>正在申请支付，请稍等...</div>
+		</div>
+	</div>
+</div>
+<section class="mcart_pay" style="bottom: 43px;height:40px;line-height:0px;text-align: center;background:none;border:0;padding-top:20px;">
+	<img src="__PUBLIC__/images/ali_pay1.png" style="width:70px;">
+</section>
+
+
+<div style="display:none;">
+	<form id="ali_form" action="{:U('Alipay/doalipay')}" method="post" >
+		<input type="text" id="trade_no" name="trade_no" value="{$pay_array['out_trade_no']}" />
+		<input type="text" id="ordsubject" name="ordsubject" value="{$pay_array['body']}" />
+		<input type="text" id="ordtotal_fee" name="ordtotal_fee" value="{$pay_array['total']}" />
+		<input type="text" id="ordbody" name="ordbody" value="{$pay_array['ordbody']}" />
+		<input type="text" id="ordshow_url" name="ordshow_url" value="{$pay_array['ordshow_url']}" />
+		<input type="text" id="is_mobile" name="is_mobile" value="1" />
+		<input type="text" id="type" name="type" value="{$pay_array['type']}" />
+	</form>
+</div>
+
+
+<script type="text/javascript">
+$(function(){
+	if(is_weixin()){
+		alert('请在右上角用系统浏览器打开支付！');
+		return false;
+	}else{
+		setTimeout($('#ali_form').submit(),1000);
+	}
+	var int = self.setInterval("getOrderStatus()",3000);
+});
+		
+function is_weixin(){
+	var ua = navigator.userAgent.toLowerCase();
+	if(ua.match(/MicroMessenger/i)=="micromessenger") {
+		return 1; 
+	} else {  
+		return 0;
+	}  
+}
+
+
+function getOrderStatus(){
+	var type = $('#type').val();
+		sn = $('#trade_no').val();
+	$.post("{:U('IndexAjax/getOrderStatus')}",{sn:sn,type:type},function(data){
+		if(data){
+			//alert(data.status);
+			if(data.status){
+				
+				if(type==1){
+					location.href="{:U('Index/order_list')}";
+				}else{
+					location.href="{:U('Staff/order_list')}";
+				}
+			}else{
+				console.log(1111);
+			}
+		}else{
+			alert('网络异常');
+			return false;
+		}
+	});
+}
+
+
+</script>

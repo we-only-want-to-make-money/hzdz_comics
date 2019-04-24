@@ -1,0 +1,191 @@
+.ticket_discount_edit{ margin-top: 30px;}
+.ticket_discount_edit .form-group{
+	margin-bottom:18px;
+}
+.ticket_discount_edit .form-group span{
+	margin-left: 10px;
+}
+.ticket_discount_edit .control-label{
+	float: left;
+	text-align: right;
+	line-height: 30px;
+	padding-left: 15px;
+	color:#333;
+	font-weight:normal;
+	width: 50px;
+}
+.ticket_discount_edit .controls{
+	margin:0 0 0 68px;
+	min-height: 32px;
+}
+.ticket_discount_edit .controls .unit{
+	line-height: 30px;
+	color:#000;
+	float:left;
+}
+.help-inline{ height: 32px; line-height: 32px;}
+.controls_select{
+	margin-left:5px;
+}
+.ticket_discount_edit .controls .selectbox{
+	width:150px;
+}
+.form-group .controls input{
+	border-radius: 3px;
+	text-align: center;
+}
+.market_pic_upLoad{ width: 80px; height: 80px; margin-bottom: 30px;}
+.si_input{
+	width: 280px;
+}
+.si_input_short{
+	width: 70px;
+}
+.si_textarea {
+    width: 400px;
+    height: 60px;
+    line-height: 25px;
+    border-radius: 3px;
+}
+input.si_data{
+	width:120px;
+}
+.ticket_discount_edit .title{
+	width:100%;
+	position: relative;
+	height:20px;
+	line-height:20px;
+	margin-bottom: 20px;
+}
+.ticket_discount_edit .title span{
+	position: absolute;
+	background:#fff;
+	padding-right:5px;
+	z-index: 3;
+	font-size:14px;
+}
+.ticket_discount_edit .title:after{
+	content: "";
+	border-top:1px solid #eeeeee;
+	position: absolute;
+	left:0;
+	top:11px;
+	width:100%;
+}
+.ticket_discount_edit .share_img{
+    margin: 10px 0px 0px 100px;
+}
+.share_img .img_bg_con{
+	width:82px;
+	height:82px;
+}
+.share_img .img_bg {
+    font-size: 280%;
+    line-height: 2.4;
+    color:#d4d4d4;
+}
+.edit-btn {
+	text-align: center;
+	border-top:1px solid #eeeeee;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.goods_material_form .form_group>div a.btn {
+    margin: 0;
+}
+
+.goods_material_info {
+    position: relative;
+    background: #f4f4f4;
+    width: 530px;
+    height: 100px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-bottom: 16px;
+}
+.goods_material_info>div:first-child {
+    border: 1px solid #ebebeb;
+    width: 80px;
+    height: 80px;
+}
+.goods_material_info img {
+    width: 78px;
+    height: 78px;
+}
+.goods_material_right {
+    padding: 10px;
+}
+.goods_material_right div {
+    margin: 7px 0;
+    font-weight: bold;
+}
+
+.goods_material_right span {
+    margin-right: 40px;
+}
+
+.goods_material_info .operate_box {
+    position: absolute;
+    right: -40px;
+    top: -10px;
+    display: none;
+}
+.goods_material_goList{ margin-top: 17px; display:none;}
+.goods_material_goList li:hover .operate_box{
+	display: block;
+}
+.gift_material_upLoad,.share_material_upLoad{
+    margin: 10px 5px;
+	display:none;
+}
+.gift_material_upLoad{ width: 194px; height: 118px; }
+.share_material_upLoad{ width: 80px; height: 80px; }
+#type2{ display:none;}
+.iradio_square-yellow{ margin: 12px 0 0 11px!important;}
+
+
+.datetimepicker table tr td.day:hover {
+    background: #eee;
+    cursor: pointer;
+}
+.datetimepicker .table-condensed tbody tr td,.datetimepicker .table-condensed tr th{ text-align: center;}
+.datetimepicker .table-condensed tr:nth-child(2) th{ text-align:center;}
+.datetimepicker {
+    padding: 4px;
+    margin-top: 1px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    direction: ltr;
+}
+.datetimepicker thead tr:first-child th:hover, .datetimepicker tfoot th:hover {
+    background: #eee;
+	cursor:pointer;
+}
+.datetimepicker table tr td.old, .datetimepicker table tr td.new {
+    color: #999;
+}
+.lss_title{
+	height: 30px;
+	line-height: 30px;
+}
+.lss_list li{
+	width: 360px;
+	padding-left: 10px;
+	height: 24px;
+	line-height: 24px;
+	color: #999;
+}
+.lss_list li a{
+	float: right;
+	color: #999;
+}
+.ticket_discount_edit .controls textarea{
+	width: 280px;
+	height: 60px;
+	line-height: 20px;
+}
+.lss_name .icheckbox_minimal-yellow{
+	margin-top: 4px;
+}

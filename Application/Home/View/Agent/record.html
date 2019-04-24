@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>代金券</title>
+    <link rel="stylesheet" href="__PUBLIC__/new/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/new/css/idangerous.swiper.css" />
+    <link rel="stylesheet" href="__PUBLIC__/new/css/main.css?v=1.0.9" />
+    <!--自定义使用的div-->
+    <link rel="stylesheet" href="__PUBLIC__/new/css/mynMain.css" />
+    <style>
+        .swiper-slide img{width:100%}
+		.couponSuperCss {
+			width: 100%;
+			margin: 0;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #fff;
+			background: #D6504D;
+		}
+    </style>
+</head>
+<body class="couponCssBody"style="">
+<div class="margin0">
+    <div class="couponSuperCss">
+            您在我们平台共充值了{$total}元
+        <div class="couponCssline"></div>
+    </div>
+
+    <div class="couponListCSS" align="center">
+        <!--for循环了-->
+		<foreach name="list" item="v">
+        <div class="couponListItem">
+            <!--上边波浪线-->
+            <div class = "drawSurface"><canvas id="myCanvas0" height="8" ></canvas></div>
+            <!--左侧金钱-->
+            <div class="couponListItemY">
+                <div >
+                    <label class="token">¥</label>
+                    <label class="tokenValue">{$v['money']}</label>
+                </div>
+            </div>
+            <!--右侧信息-->
+            <div class="couponListItemInfo">
+                <div class="couponLIITitle" align="left">
+                    <label class="title">充值状态</label>
+                    <if condition="$v['status'] eq 1">
+						<label class="status">未支付</label>
+					<else />
+						<label class="status">已支付</label>
+					</if>
+                </div>
+                <div class="detail" align="left">
+					<if condition="$v['status'] eq 1">
+						<div><label>很遗憾，您充值的{$v['money']}元</label></div>
+						<div><label>于{$v['create_time']|date='Y-m-d H:i:s',###}</label></div>
+						<div><label>充值不成功(未支付)</label></div>
+					<else />
+						<div><label>恭喜您，您充值的{$v['money']}元</label></div>
+						<div><label>于{$v['pay_time']|date='Y-m-d H:i:s',###}</label></div>
+						<div><label>已打入您的账号，敬请查收</label></div>
+					</if>
+                    
+                </div>
+
+
+            </div>
+            <!--底部横线-->
+            <div class="line"></div>
+        </div>
+		</foreach>
+      
+
+        <!--End for-->
+    </div>
+
+</div>
+</body>
+</html>

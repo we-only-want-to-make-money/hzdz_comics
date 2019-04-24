@@ -1,0 +1,133 @@
+{__NOLAYOUT__}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>管理后台</title>
+<link rel="stylesheet" href="/Public/admin/css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="/Public/plugins/bootstrap/css/bootstrap.font.css" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="/Public/admin/js/custom/general.js"></script>
+
+<!--[if IE 9]>
+    <link rel="stylesheet" media="screen" href="css/style.ie9.css"/>
+<![endif]-->
+<!--[if IE 8]>
+    <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/plugins/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body class="withvernav">
+        <div class="pageheader notab">
+            <h1 class="pagetitle">代理管理</h1>
+            <span class="pagedesc">管理商城中的代理信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+        
+        
+			<div class="tableoptions">                    
+				<button class="radius3" onclick="location.href='{:U('edit')}'">添加代理</button>
+			</div><!--tableoptions-->
+
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">代理公司名称</th>
+						<th class="head0">代理地址/二维码</th>
+						<th class="head0">返佣比例(单位:%)</th>
+						<th class="head1">状态</th>
+						<th class="head0">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.name}</td>
+						<td><a href="javascript:;" style="color:blue" onclick="showQrcode({$vo['id']})">点击查看</a></td>
+						<td>{$vo.separate}%</td>
+						<td>
+							<if condition="$vo['status'] eq 1">
+								<a style="color:red;cursor:pointer" href="{:U('setStatus', 'id='.$vo['id'])}">禁用</a>
+							<else />
+								<a style="color:blue;cursor:pointer" href="{:U('setStatus', 'id='.$vo['id'])}">启用</a>
+							</if>
+						</td>
+						<td class="center">
+							<a href="{:U('editMember', 'id='.$vo['id'])}">修改</a> 
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        <link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css" type="text/css" />
+		<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+		<script>
+			var $=jQuery;
+			function showQrcode(id){
+				layer.open({
+				  type: 2,
+				  title: '查看二维码',
+				  shadeClose: true,
+				  shade: 0.8,
+				  area: ['445px', '430px'],
+				  content: "{:U('showQrcode')}&id="+id,
+				});
+			}
+			
+			function charge(id){
+				layer.open({
+				  type: 2,
+				  title: '充值记录',
+				  shadeClose: true,
+				  shade: 0.8,
+				  area: ['70%', '90%'],
+				  content: "{:U('charge')}&id="+id,
+				});
+			}
+			
+			function separate(id){
+				layer.open({
+				  type: 2,
+				  title: '分成记录',
+				  shadeClose: true,
+				  shade: 0.8,
+				  area: ['70%', '90%'],
+				  content: "{:U('separate')}&id="+id,
+				});
+			}
+			
+			function jiesuan(id){
+				layer.open({
+				  type: 2,
+				  title: '结算记录',
+				  shadeClose: true,
+				  shade: 0.8,
+				  area: ['70%', '90%'],
+				  content: "{:U('jiesuan')}&id="+id,
+				});
+			}
+			
+			function withdraw(id){
+				layer.open({
+				  type: 2,
+				  title: '结算记录',
+				  shadeClose: true,
+				  shade: 0.8,
+				  area: ['70%', '90%'],
+				  content: "{:U('withdraw')}&id="+id,
+				});
+			}
+		</script>

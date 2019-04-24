@@ -1,0 +1,80 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">客服消息管理</h1>
+            <span class="pagedesc">管理客服消息内容(48小时之内发送图文消息,发送所有用户，点击发送默认等待5秒启动发送，发送过程请不要关闭或跳转页面，每次发送消息之前建议清除发送缓存)</span>
+            
+        </div><!--pageheader-->
+        <style>
+			.record{width: 100%;height: 500px;overflow:auto;padding: 10px 0;}
+			.record span{display:block;border-bottom:1px solid #ddd;padding:10px 0;}
+		</style>
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+        
+        
+			<div class="tableoptions">                    
+				<button class="radius3" onclick="location.href='{:U('edit')}'">添加客服消息</button>
+				<button class="radius3" onclick="location.href='{:U('clearSend')}'">清除发送缓存</button>
+			</div><!--tableoptions-->
+
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">客服标题</th>
+						<th class="head0">时间</th>
+						<th class="head0">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.title}</td>
+						<td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+						<td class="center">
+							<a href="javascript:;" onclick="custommsg({$vo['id']})">发送客服消息</a> | 
+							<a href="{:U('arclist',array('pid'=>$vo['id']))}">管理文章</a> | 
+							<a href="{:U('del', 'id='.$vo['id'])}" onclick="return confirm('你确实要删除吗？')">删除</a>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+		<div class="record">
+			
+		</div>
+		<link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css" type="text/css" />
+		<script src="__PUBLIC__/layer/layer.js" type="text/javascript"></script>
+		<script>
+			var ref;
+			function custommsg(id){
+				ref = setInterval(function(){
+					layer.msg('加载中', {
+						icon: 16
+						,shade: 0.01
+					});
+					$.post("{:U('custommsg')}",{id:id},function(d){
+						if(d){
+							console.log(d);
+							if(d.status){
+								$('.record').append(d.info);
+							}else{
+								layer.closeAll();
+								alert(d.info);
+								clearInterval(ref);
+							}
+						}else{
+							alert('请求失败！');
+						}
+					});
+				},5000);
+			}
+			function clearReflesh(){
+				layer.closeAll();
+				clearInterval(ref);
+			}
+		</script>
+        

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title><if condition="$goods['teacher']['status']">{$goods['teacher']['name']} -- </if>{$goods['name']}</title>
+<link rel="stylesheet" href="__HCSS__/goods.css">
+<link rel="stylesheet" href="__HCSS__/swiper.min.css">
+
+<link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css">
+<script src="__HJS__/jquery-1.10.1.min.js"></script>
+<script src="__PUBLIC__/layer_mobile/layer.js"></script>
+<script src="__HJS__/swiper.min.js"></script>
+<script src="__HJS__/common.js"></script>
+<script>
+layer.config({
+	extend: 'extend/layer.ext.js'
+});
+</script>
+<style>
+.swiper-js-title {
+    padding: 0px;
+    font-size: 18px;
+}
+.swiper-js-content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2px;
+}
+.swiper-js-content img{width:100%}
+</style>
+<!-- Demo styles -->
+</head>
+<body>
+<div class="swipers">
+<!-- Swiper -->
+<div class="swiper-container swiper-container-h">
+    <div class="swiper-wrapper">
+		<foreach name="goods['banner']" item="v">
+			<div class="swiper-slide"><a href="{:U('Index/listening',array('id'=>$goods['id']))}"><img src="{$v}" style="width:100%;"></a></div>
+		</foreach>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-h"></div>
+
+</div>
+<div class="swiper-js">
+	<div class="swiper-js-title">
+	<if condition="$goods['teacher']['status']">{$goods['teacher']['name']}：{$goods['name']}</div></if>
+	<if condition="$goods['teacher']['status']"><div class="swiper-js-content">{$goods['teacher']['name']}：{$goods['teacher']['sign']}</div></if>
+	<div class="swiper-js-content">{$goods['content']}</div>
+</div>
+<!-- Swiper -->
+
+<if condition="$ogoods">
+<div class="cell-border"></div>
+<div class="swiper-content">
+    <div class="swiper-title">
+       <div class="kcml">课程目录</div>
+    </div>
+	<foreach name="ogoods" item="v">
+    <div class="cell-border2">
+		<div class="kctit">{$goods['teacher']['name']}：{$v['name']}</div>
+		<div class="kctime">{$v['hours']}分钟</div>
+    </div>
+	</foreach>
+</div>
+</if>
+<div class="swiper-content">
+        <div class="swiper-title">
+            <div class="kcml2">
+                <div class="cell-b">评论</div>
+                <div class="cell-l">
+                    <div class="cell-n" onclick="prompt('请输入您要评论的内容',&#39;{:U('Index/assess',array('gid'=>$goods['id']))}&#39;,reloadAssess)">写评论</div>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="swiper-assess" id="assess">
+
+</div>
+
+</div>
+<div class="foot">
+  <div class="swiper-slide">
+       <div class="v-button">
+			<a href="{:U('Index/listening',array('id'=>$goods['id']))}">
+				<div class="v-img">
+					<img src="__HIMAGE__/play.png" />
+				</div>
+				<div class="r-b">
+					<div class="ss">播放视频</div>
+				</div>
+			</a>
+		</div>
+        <div class="v-button">
+			<a href="{:U('Index/order_pay',array('gid'=>$goods['id']))}">
+				<div class="v-img">
+					<img src="__HIMAGE__/buy.png" />
+				</div>
+				<div class="r-b">
+					<div class="ss">立即购买</div>
+				</div>
+			</a>
+		</div>
+        <div class="v-button" onclick="addCart();">
+			<div class="v-img">
+				<img src="__HIMAGE__/gwc.png" />
+			</div>
+			<div class="r-b">
+				<div class="ss">加入购物车</div>
+			</div>
+		</div>
+  </div>
+</div>
+<script>
+    var swiperH = new Swiper('.swiper-container-h', {
+        pagination: '.swiper-pagination-h',
+        paginationClickable: true,
+        spaceBetween: 50
+    });
+	
+	//商品详情JS
+	function addCart(){
+		var data = {gid:gid};
+			url = "{:U('IndexAjax/addCart')}";
+		Ajax(url,data);
+	}
+	var page = 1;
+		html = false;
+		var gid="{$goods['id']}";
+	loadAssess();
+
+	//加载评论
+	function loadAssess(){
+		AjaxLoad("/index.php?m=&c=Index&a=getAssess",{page:page,gid:gid},$('#assess'),html,loadAssess);
+	}
+	//评论完后重新加载
+	function reloadAssess(){
+		html=true;
+		AjaxLoad("/index.php?m=&c=Index&a=getAssess",{page:page,gid:gid},$('#assess'),html);
+	}
+
+	
+	
+</script>
+</body>
+<include file="include/share2" />
+</html>

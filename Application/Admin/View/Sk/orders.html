@@ -1,0 +1,44 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">收款记录</h1>
+            <!--span class="pagedesc">进行增加，修改或者删除等操作</span-->
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">付款人</th>
+						<th class="head0">金额</th>
+						<th class="head1">创建日期</th>
+						<th class="head1">支付信息</th>
+						<th class="head1">表单信息</th>
+						<th class="head0">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.nickname}</td>
+						<td>{$vo.money}</td>
+						<td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+						<td><if condition="$vo['status'] eq 1">未支付<else/>已支付{$vo.paid}</if></td>
+						<td>
+							<volist name="vo['form']" id="v">
+							{$v.name} : {$v.value}<br/>
+							</volist>
+						</td>
+						<td class="center">
+						无
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        

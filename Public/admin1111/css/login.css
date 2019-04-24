@@ -1,0 +1,38 @@
+#login{
+	font-family: "微软雅黑"; 
+	background:url(../image/loginbg.jpg) center 0 no-repeat #1f0818;
+	background-size: 100% auto;
+	}
+#login .container{width:600px; margin-top: 100px;}
+#login .form-signin{background: #fff; border-radius: 0; border:1px #ddd solid;}
+#login .form-signin-heading{background:url(../image/logo.png) 0 center no-repeat; padding-left: 60px; height:80px; line-height:80px; font-size: 20px; color: #666; font-weight: 400; width: 200px; margin: 10px auto;}
+#login .row{margin: auto; color: #666;margin-bottom: 9px;}
+#login .row .iconfont{width:10%; display: block; text-align: center; line-height: 32px; font-size: 18px; color: #999;}
+#login .row input{width:64%; border-radius: 0; box-shadow: none;}
+#login .row input:focus{border-color:#54bad3;}
+#login .row .iconfont,#login .row input{float:left; margin: 10px 5px 10px 0;}
+#login .row .iconfont{margin-left: 10%;}
+#login .row .alert{float: left;width: 64%; border:none; background: transparent; margin-bottom: 0;margin-left: 22%; padding: 0px;line-height: 12px;margin-top: 4px;}
+#login label{color:#666; margin-bottom: 30px !important;}
+#login .btn{width:70%; height:40px; border-radius: 3px; line-height:40px; margin: 10px 0 40px 0; background: #ff6600; border:none; text-shadow: none; font-family: "微软雅黑";}
+#login .form-signin{margin-top:10%;}
+#login .disabled{background:#E3E3E3; border: 1px solid;}
+#loginerror.alert{
+	width: 70%;
+    height: 40px;
+    margin: 18px auto 5px;
+    line-height: 38px;
+    padding: 0 10px;
+    border-radius: 0;
+	
+}
+#loginerror.alert-success{
+	color: #468847;
+    background-color: #dff0d8;
+
+}
+#loginerror.alert-error{
+	color: #b94a48;
+    background-color: #f2dede;
+}
+

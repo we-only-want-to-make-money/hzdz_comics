@@ -1,0 +1,35 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">管理员设置</h1>
+            <span class="pagedesc">设置您的管理员登录名和密码</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>登录名</label>
+					<span class="field"><input type="text" name="name" id="name" value="{$_CFG.user.name}" class="smallinput" /></span>
+				</p>
+				
+				<p>
+					<label>密码</label>
+					<span class="field"><input type="password" name="pass" id="pass" value="" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>确认密码</label>
+					<span class="field"><input type="password" name="pass2" id="pass2" value="" class="smallinput" /></span>
+				</p>
+				
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

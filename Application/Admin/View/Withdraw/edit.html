@@ -1,0 +1,36 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">编辑通知内容</h1>
+            <span class="pagedesc">请认真编辑通知的各项信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>通知标题</label>
+					<span class="field"><input type="text" name="title" id="title" value="{$info.title}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>通知详情</label>
+					<span class="field">
+						<textarea name="body" id="body" class="longinput" style="margin: 0px; height: 400px; width: 693px;">{$info.body}</textarea>
+					</span>
+				</p>
+				
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+			<script src="__PUBLIC__/plugins/ueditor1.4.3/ueditor.config.js"></script>
+			<script src="__PUBLIC__/plugins/ueditor1.4.3/ueditor.all.min.js"></script>
+			<script>
+				ue = UE.getEditor('body');
+			</script>
+        
+        </div><!--contentwrapper-->
+        

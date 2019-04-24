@@ -1,0 +1,49 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">一键转账</h1>
+            <span class="pagedesc">转账后不可撤销，请谨慎操作</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>用户ID</label>
+					<span class="field"><input type="text" name="user_id" id="user_id" value="{$user_info.id}" class="smallinput" disabled /></span>
+				</p>
+				<p>
+					<label>用户OPENID</label>
+					<span class="field">
+						<input type="text" name="openid" id="openid" value="{$user_info.openid}" class="smallinput" disabled />
+					</span>
+				</p>
+				<p>
+					<label>用户昵称</label>
+					<span class="field">
+						<input type="text" name="nickname" id="nickname" value="{$user_info.nickname}" class="smallinput" disabled />
+					</span>
+				</p>
+				<p>
+					<label>金额<small>最少1快</small></label>
+					<span class="field">
+						<input type="text" name="money" id="money" value="{$_GET.money|default=1}" class="smallinput" />
+					</span>
+				</p>
+				<p>
+					<label>备注</label>
+					<span class="field">
+						<input type="text" name="remark" id="remark" value="{$_GET.remark|default='管理员转账'}" class="smallinput" />
+					</span>
+				</p>
+				
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        </div><!--contentwrapper-->
+        

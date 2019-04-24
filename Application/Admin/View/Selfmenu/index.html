@@ -1,0 +1,44 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">自定义菜单管理</h1>
+            <span class="pagedesc">设置公众号的自定义菜单</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+        
+        
+			<div class="tableoptions">                    
+				<button class="radius3" onclick="location.href='{:U('edit')}'">添加菜单</button>
+				<button class="radius3" onclick="if(confirm('自定义菜单发布成功后需要重新关注或者等一段时间才生效，确认发布？'))location.href='{:U('send')}'">发布自定义菜单</button>
+			</div><!--tableoptions-->
+
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">名称</th>
+						<th class="head0">类型</th>
+						<th class="head1">附加内容</th>
+						<th class="head0">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>
+							<if condition="$vo['pid'] gt 0">&nbsp;&nbsp;&nbsp;&nbsp;├─</if>
+							{$vo.name}
+						</td>
+						<td>{$vo.type|get_selfmenu_type}</td>
+						<td title="{$vo.extra}">{$vo.extra|substr=0,80}</td>
+						<td class="center">
+							<a href="{:U('edit', 'id='.$vo['id'])}">修改</a> | 
+							<a href="{:U('del', 'id='.$vo['id'])}" onclick="return confirm('你确实要删除这个菜单吗？')">删除</a>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+        
+        </div><!--contentwrapper-->
+        

@@ -1,0 +1,51 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">自动回复管理</h1>
+            <span class="pagedesc">管理微信关键词自动回复内容</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+        
+        
+			<div class="tableoptions">                    
+				<button class="radius3" onclick="location.href='{:U('edit')}'">增加关键词</button>
+			</div><!--tableoptions-->
+
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">关键词</th>
+						<th class="head1">回复类型</th>
+						<th class="head0">状态</th>
+						<th class="head0">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.keyword}</td>
+						<td><if condition="$vo['type'] eq 1">文本<else/>图文</if></td>
+						<td><if condition="$vo['status'] eq 1">启用<else/>停用</if></td>
+						<td class="center">
+							<if condition="$vo['status'] gt 0">
+							<a href="{:U('set_status?status=0&id='.$vo['id'])}">停用</a>
+							<else/>
+							<a href="{:U('set_status?status=1&id='.$vo['id'])}">启用</a>
+							</if> |
+							<a href="{:U('edit', 'id='.$vo['id'])}">修改</a> | 
+							<if condition="$vo['type'] eq 2">
+							<a href="{:U('Article/index?autoreply='.$vo['id'])}">管理文章</a> | 
+							</if>
+							<a href="{:U('del', 'id='.$vo['id'])}" onclick="return confirm('你确实要删除这个自动回复吗？')">删除</a>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        

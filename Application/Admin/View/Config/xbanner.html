@@ -1,0 +1,107 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">小说首页轮播图设置</h1>
+            <span class="pagedesc">设置小说首页顶部轮播的图片和链接,最多支持8张图片</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<div class="tableoptions">                    
+                    <input value="添加图片" type="button" class="radius3" onclick="add_row()" />
+                </div><!--tableoptions-->
+				<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+                    <thead>
+                        <tr>
+                            <th class="head1" width="520">图片</th>
+                            <th class="head0" style=" text-align:center;">链接（小说ID）</th>
+							<th class="head0">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+						
+                    	<volist name="_CFG['xbanner']['config']" id="vo">
+                        <tr style="background:#fff">
+                            <td>
+								<iframe src="{:U('upload?event=setPath'.$i.'&url='.$vo['pic'])}" scrolling="no" style="width:400px; height:275px;"></iframe>
+								<input type="hidden" name="pic[]" value="{$vo.pic}" />
+							</td>
+                            <td><input type="text" name="url[]" value="{$vo.url}" /></td>
+							<td><a href="javascript:;" onclick="del_row(this)">删除</a></td>
+                        </tr>
+                        </volist>
+						 <!--tr>
+                            <td>
+								<iframe src="{:U('upload?event=setPath0')}" scrolling="no" style="width:500px; height:200px;"></iframe>
+								<input type="hidden" name="pic[]" value="{$vo.pic}" />
+							</td>
+                            <td><input type="text" name="url[]" value="{$vo.url}" /></td>
+							<td><a href="javascript:;" onclick="del_row(this)">删除</a></td>
+                        </tr-->
+                    </tbody>
+                </table>
+				<script>
+				function add_row(){
+					//return false;
+					html = '<tr style="background:#fff">'
+						  +'	 <td>'
+						  +'		<iframe src="{:U('upload?event=setPath_n_')}" scrolling="no" style="width:400px; height:275px;"></iframe>'
+						  +'		<input type="hidden" name="pic[]" value="" />'
+						  +'	</td>'
+						  +'	<td><input type="text" name="url[]" /></td>'
+						  +'	<td><a href="javascript:;" onclick="del_row(this)">删除</a></td>'
+						  +'</tr>';
+					size = jQuery("#table2").find("tbody").find("tr").size();
+					if(size>=8){
+						alert('最多8张图片');
+						return false;
+					}
+					jQuery("#table2").find("tbody").append(html.replace('_n_',size+1));
+				}
+				
+				function del_row(obj){
+					jQuery(obj).parent("td").parent("tr").remove();
+				}
+				
+				function setPath(index,url){
+					jQuery("#table2").find("tbody").find("tr").eq(index-1).find("td:eq(0)").find("input[type=hidden]").val(url);
+				}
+				function setPath0(url){
+					setPath(0, url)
+				}
+				function setPath1(url){
+					setPath(1, url)
+				}
+				function setPath2(url){
+					setPath(2, url)
+				}
+				function setPath3(url){
+					setPath(3, url)
+				}
+				function setPath4(url){
+					setPath(4, url)
+				}
+				function setPath5(url){
+					setPath(5, url)
+				}
+				function setPath6(url){
+					setPath(6, url)
+				}
+				function setPath7(url){
+					setPath(7, url)
+				}
+				function setPath8(url){
+					setPath(8, url)
+				}
+				</script>
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

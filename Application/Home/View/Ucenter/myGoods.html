@@ -1,0 +1,31 @@
+<include file="include/head" />
+<style>
+.pay-loading{ text-align:center;display:none;margin-top: 20px;}
+.pay-loading img{ width:30px; height:30px;}
+.bottom{height:60px!important;}
+</style>
+<div class="common-header">
+	<i class="iconfont icon-back" onclick="javascript:history.go( - 1)"></i>
+	<h3>我的课程</h3>
+</div>
+<div class="order-list" id="orders">
+	
+	
+</div>
+<div style="clear:both;height:70px;"></div>
+<link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css">
+<script src="__HJS__/jquery-1.10.1.min.js"></script>
+<script src="__PUBLIC__/layer_mobile/layer.js"></script>
+<script src="__HJS__/common.js"></script>
+<script type="text/javascript">
+	var page = 1;
+		html = false;
+	loadOrder();
+
+	//加载评论
+	function loadOrder(){
+		AjaxLoad("{:U('Ucenter/getOrder')}",{page:page},$('#orders'),html,loadOrder);
+	}
+</script>
+<div id="backtop"><i class="iconfont icon-fold"></i></div>
+<include file="include/footer" />

@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>视频试看</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/reset.css"/>
+<link href="__PUBLIC__/css/bootstrap.font.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/willesPlay.css"/>
+<script src="__PUBLIC__/js/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="__PUBLIC__/js/willesPlay.js" type="text/javascript" charset="utf-8"></script>
+<link href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="margin-bottom:0px;">
+<!--视频播放器-->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="willesPlay">
+				<div class="playHeader">
+					<div class="videoName">{$info['title']}</div>
+					<input name="trytime" id="trytime" value="{$info['trytime']}" />
+				</div>
+				<div class="playContent">
+					<div class="turnoff">
+						<ul>
+							<li><a href="javascript:;" title="喜欢" class="glyphicon glyphicon-heart-empty"></a></li>
+							<li><a href="javascript:;" title="关灯" class="btnLight on glyphicon glyphicon-sunglasses"></a></li>
+							<li><a href="javascript:;" title="分享" class="glyphicon glyphicon-share"></a></li>
+						</ul>
+					</div>
+					<video width="100%" height="100%" id="playVideo" x5-playsinline="" playsinline="" webkit-playsinline="" >
+						<source src="{$info['video_url']}" type="video/mp4"></source>
+						当前浏览器不支持 video直接播放，点击这里下载视频： <a href="{$info['video_url']}">下载视频</a>
+					</video>
+					<div class="playTip glyphicon glyphicon-play"></div>
+				</div>
+				<div class="playControll">
+					<div class="playPause playIcon"></div>
+					<div class="timebar">
+						<span class="currentTime">0:00:00</span>
+						<div class="progress">
+							<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+							</div>
+						<span class="duration">0:00:00</span>
+					</div>
+					<div class="otherControl">
+						<span class="volume glyphicon glyphicon-volume-down"></span>
+						<span class="fullScreen glyphicon glyphicon-fullscreen"></span>
+						<div class="volumeBar">
+								<div class="volumewrap">
+									<div class="progress">
+									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 8px;height: 40%;"></div>
+								</div>
+									</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="include/share2" />
+</body>
+</html>

@@ -1,0 +1,613 @@
+.si_content-form{
+	background: #f4f4f4;
+	padding:20px 15px 0 15px;
+	width:100%;
+}
+.si_content-form form{
+
+}
+.si_content-form .form-left{
+	width:78%;
+}
+.si_content-form .form-right{
+	width:22%;
+}
+.si_content-form .si_list {
+  width: 34%;
+  float: left;
+}
+.si_content-form .si_list dt {
+  width: 80px;
+  padding-right: 8px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  font-weight: normal;
+  text-align: left;
+  color:#000;
+}
+.si_content-form .si_list dd {
+  width:160px;
+  float: left;
+}
+.si_content-form .si_list .si_input {
+  width: 150px;
+  border-radius: 2px;
+}
+.si_content-form .list-long {
+  width: 50%;
+}
+.si_content-form .list-short {
+  width: 32%;
+}
+.si_content-form .s_button i{
+	font-size:20px;
+}
+.si-upload{
+	height:20px;
+	width:19px;
+	background: url("../../images/order_micromall/upload.png") no-repeat;
+	display: inline-block;
+	margin-top:5px;
+}
+.si_content-form .result{
+	color:#999;
+	width:300px;
+}
+.si_content-form .result span{
+	color:#333;
+}
+.selectbox{
+	background: #fff;
+	width:150px;
+	margin-left:5px;
+	height:32px;
+}
+
+.table-box{
+	overflow: hidden;
+	table-layout: fixed;
+}
+
+
+.tb_box .table tbody tr:nth-child(2n+1){
+	background: #f4f4f4;
+}
+.tb_box .table tr{
+	background:#fff;
+}
+
+.tab_list li{
+	padding:0 20px;
+	color:#666;
+	font-size:14px;
+}
+.tab_list li.active{
+	color:#333;
+}
+.tb_box .table th.goods {
+  width: 310px;
+}
+.tb_box .table td {
+  padding: 10px;
+  vertical-align: middle;
+  height: auto;
+  line-height: 21px;
+  border-top:1px #ebebeb solid;
+  border-bottom:1px #ebebeb solid;
+}
+.tb_box .table .bar_code td{
+	 height: 50px;
+}
+.tb_box .table td a {
+  text-decoration: underline;
+}
+.tb_box .table td.goods{
+ 	width:310px;
+ 	text-align:left;
+ 	text-overflow: clip;
+ }
+.tb_box .table td.goods span {
+	width: 230px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+  line-height: 40px;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+.tb_box .table td.goods img {
+  width: 60px;
+  height: 60px;
+}
+
+.tb_box .table tr.td-title td:first-child {
+	width: 20px;
+}
+.tb_box .table tr.td-title td {
+  padding: 5px;
+  border:none;
+ }
+
+ .grey{
+ 	color:#666;
+ }
+ 
+ .tb_box .table td.combine{
+ 	padding:0;
+ }
+.tb_box .table-box tbody tr:nth-child(2n+1){
+ 	background: #fff;
+ }
+.tb_box .table-box td{
+ 	padding:10px;
+ }
+.tb_box .table-box td.tb-goods{
+ 	vertical-align: middle;
+	height: auto;
+	line-height: 21px;
+	text-align: left;
+ }
+.tb_box .table-box td.tb-goods span{
+ 	 width: 220px;
+ }
+ .tb_box .table-box tr{
+ 	border:none;
+ }
+.tb_box .table-box tr td:last-child{
+	border-right:0;
+}
+.tb_box .goods-price{
+	width:120px;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+.tb_box .goods-number{
+	width:100px;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+.tb_box .order-time{
+	text-align: left;
+}
+ 
+ /*退货*/
+.tb_box .return-table td.tb-goods span{
+	width: 220px;
+}
+ 
+ 
+.si_content-goods {
+	margin-bottom:100px;
+}
+.si_content-goods .tab_list{
+ 	margin:20px 0;
+ }
+ .tb_box .table th.t_left{
+ 	text-align: left;
+ 	padding-left:40px;
+ }
+ 
+.tb_box .goods-seller{ min-width: 150px;}
+.tb_box .goods-sell{ min-width: 150px;}
+.tb_box .goods-money{ min-width: 130px;}
+.tb_box .goods-state{min-width: 100px;}
+.tb_box .goods-income{ width: 120px;}
+
+/*弹窗*/
+.si_open{
+	width:1040px;
+}
+.si_tips{
+	margin:10px 0;
+	font-size:14px;
+	font-weight: bold;
+	color:#666;
+	background: #f4f4f4;
+}
+.message .message-box{
+	padding:10px 15px;
+	overflow: hidden;
+	border-bottom: 1px #ebebeb dashed;
+}
+.message .last{
+	padding:10px 15px 0;
+	border:none;
+}
+.message .message-box dl{
+	width:450px;
+	float:left;
+	color:#333;
+	margin-bottom:5px;
+}
+.message .message-box dl.leave_message{
+	clear: both;
+	width:100%;
+}
+.message .message-box dt{
+	font-weight: normal;
+	float:left;
+}
+.message .message-box dd{
+	width:360px;
+	float:left;
+	word-break: break-all;
+}
+.message .message-box dl.leave_message dd{
+	width:900px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.message .message-box dd span{
+	line-height: 0;
+}
+.tb_box .open-table td:first-child{
+	border-right: 1px solid #ebebeb;
+}
+
+.open_send-box ,.open_refund-box{
+	width:470px;
+}
+.logistics ,.examine {
+	padding: 20px 40px;
+}
+.logistics dl ,.examine dl{
+	width:370px;
+	float:left;
+	color:#000;
+}
+.logistics dt{
+	font-weight: normal;
+	float:left;
+	margin:6px 10px 0 0;
+}
+.logistics dd ,.examine dd{
+	width:310px;
+	float:left;
+}
+
+.logistics .selectbox{
+	width:150px;
+}
+.examine dl{
+	margin-bottom: 10px;	
+}
+.examine dt{
+	font-weight: normal;
+	float:left;	
+	margin-right:10px;
+}
+.examine .si_textarea{
+	width: 300px;
+	height: 75px;
+	line-height: 25px;
+	border-radius: 3px;
+}
+.si_lg-input{
+	width:150px;
+	border-radius: 3px;
+}
+
+
+
+.open-body{
+	overflow: auto;
+	height:85%;
+}
+ .tb_box .table .open-left{
+ 	width:290px;
+ 	padding-left:10px;
+	text-align: left;
+    color:#0049ff;
+}
+ .tb_box .open-table .open-left{
+    color:#000;
+}
+
+.open-table td{
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: hidden;	
+}
+.open-property{
+	width: 80px;
+}
+.open-number{
+	width: 50px;
+}
+.open-price , .open-original{
+	width: 85px;
+}
+.open-one-level , .open-two-level , .open-three-level{
+	width: 80px;	
+}
+.open-amount{
+	width: 80px;
+}
+.open-state{
+	width: 80px;
+}
+
+
+/*日期*/
+.input_date_init.si_data{
+	width:113px;
+}
+.form-left .tilde{
+	margin-top:5px;
+}
+
+/*提示*/
+.si_poundage:hover .si_prompt{
+	display: block;
+}
+.si_poundage{
+	position: relative;
+}
+.si_prompt{
+	width:300px;
+	position: absolute;
+	padding: 5px 15px;
+	background:#ffeeee;
+	border:1px #f00 solid;
+	border-radius: 5px;
+	z-index:10;
+	display: none;
+	top: 50%;
+	margin-top: 15px;
+	right: 28%;
+	text-align: left;
+}
+.si_prompt .si_icon{
+	display: inline-block;
+	width:8px;
+	height:8px;
+	background:#ffeeee;
+	border-top:1px #f00 solid;
+	border-right:1px #f00 solid;
+	transform: rotate(-45deg);
+	position: relative;
+	bottom:17px;
+	left:255px;
+	
+}
+
+.table .icheckbox_minimal-yellow{
+	margin-left:5px !important;
+}
+
+.message-box>div{
+	padding: 10px 0;
+	border-bottom: 1px dashed #ccc;
+}
+.message-box>div:last-child{
+	border: none;
+}
+.message-box ul{
+	margin: 0;
+}
+.message-box dl{
+	position: relative;
+	padding-left: 85px;
+	margin: 10px 0;
+	min-height: 20px;
+}
+.message-box dd{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 75px;
+	text-align: right;
+	line-height: 20px;
+}
+.message-box>div li{
+	float: left;
+}
+/*.message-box>div li:after{
+	content: "，"
+}*/
+.message-box>div li:last-child:after{
+	content: "";
+}
+.lss_title{
+	height: 30px;
+	line-height: 30px;
+}
+.lss_list li{
+	width: 440px;
+	padding-left: 10px;
+	height: 24px;
+	line-height: 24px;
+	color: #999;
+}
+.lss_list li a{
+	float: right;
+	color: #999;
+}
+.ticket_discount_edit .controls textarea{
+	width: 380px;
+	height: 60px;
+}
+.lss_name .icheckbox_minimal-yellow{
+	margin-top: 4px;
+}
+.lss_box{
+	position: relative;
+	margin-bottom: 20px;
+}
+.lss_box .line{
+	position: absolute;
+	top: 10px;
+	left: 470px;
+	height: 100%;
+	border-right: 1px dashed #ccc;
+}
+.lss_info{
+	margin-top: 10px;
+	padding-right: 30px;
+}
+.ticket_discount_edit{
+	margin-top: 10px;
+	margin-left: 30px;
+	padding-top: 10px;
+}
+.ticket_discount_edit input[type=text]{
+	width: 380px;
+}
+.ticket_discount_edit input[type=checkbox]{
+	margin-right: 10px;
+}
+.ticket_discount_edit input[type=number]{
+	width: 80px;
+}
+.lss_address_check li{
+	width: 120px;
+	float: left;
+	margin-right: 10px;
+}
+.lss_address_check li select{
+	width: 100%;
+}
+.lss_edit_addres input[name=address_info]{
+	width: 380px;
+}
+.tb_box .table th{
+	font-family: '宋体';
+}
+.yundan{
+	    color: #23527c;
+}
+.goo_ed_subcon {
+    padding-top: 10px;
+    width: 100%;
+}
+.form-group .controls, .form-group .controls .ed_rad {
+    line-height: 32px;
+    margin-top: 6px;
+    min-height: 32px;
+}
+.goo_ed_subcon .goo_ed_table {
+}
+.goo_ed_subcon .controls {
+    margin: 0 0 5px 0;
+    position: relative;
+}
+.form-group {
+    overflow: hidden;
+}
+.goo_ed_subcon .controls .ed_table {
+    max-height: 354px;
+    text-align: center;
+    width: 100%;
+}
+.goo_ed_subcon .controls .ed_table tr td {
+    border: 1px solid #ebebeb;
+    padding: 5px;
+}
+.goo_ed_subcon .controls .ed_table tr input[readonly] {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+.goo_ed_subcon .controls .ed_table tr input {
+    display: block;
+    float: none;
+    width: 80%;
+}
+.form-group .goods_txt, .form-group input {
+    height: 32px;
+    line-height: 32px;
+}
+.form-group .goods_txt, .form-group input, .form-group label {
+    float: left;
+}
+.new_tbody img {
+    height: 50px;
+    width: 50px;
+}
+.goo_ed_subcon .controls .ed_table tr th {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #ebebeb none repeat scroll 0 0;
+    border-color: #ebebeb #ebebeb -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid #ebebeb;
+    border-width: 1px 1px 0;
+    color: #444;
+    line-height: 26px;
+    text-align: center;
+}
+.goo_ed_subcon .controls .ed_table tr td {
+    border: 1px solid #ebebeb;
+    padding: 5px;
+}
+
+
+.tipbox{
+	padding-top: 15px;
+	width: 240px;
+	height: 280px;
+	text-align: center;
+	background: transparent;
+}
+.tipbox .tiptitle{
+	font-weight: 700;
+	font-size: 14px;
+}
+.tipbox .tipinfo{
+	text-align: center;
+	line-height: 20px;
+	height: 20px;
+	color: #666;
+	font-weight: 700;
+	margin: 10px 0;
+}
+.tipbox .tipbtn{
+	width: 214px;
+	margin: 0 auto;
+}
+.tipbox .tipbtn a.turnto{
+	float: left;
+	margin-top: 3px;
+	margin-left: 16px;
+	height: 30px;
+	padding: 0 10px;
+	display: inline-block;
+	line-height: 31px;
+	font-size: 13px;
+	color: #fff;
+	background: #56ccc8;
+}
+.tipbox .tipbtn a.copy_btn{
+	float: left;
+	display: inline-block;
+	width: 75px;
+	height: 31px;
+	line-height: 31px;
+	color: #fff;
+	background: #56ccc8;
+	margin-top: 3px;
+	margin-left: 13px;
+	font-size: 13px;
+	cursor: pointer;
+}
+.tipbox .tipbtn a.turnto:hover,
+.tipbox .tipbtn a.copy_btn:hover{
+	opacity: 0.8;
+    filter: alpha(opacity=30);
+}
+.tipbox .tipbtn object{
+	display: inline-block;
+	float: left;
+	margin-left: 13px;
+}
+.tipbox .tipbtn a.active{
+	line-height: 30px;
+}

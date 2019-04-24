@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://m.efucms.com/coupon/{:U('Mh/index')} -->
+<html data-dpr="1" style="font-size: 43.1px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{$_CFG['site']['name']} - 我的优惠券</title>
+    <!-- 共用引入资源.开始 -->
+
+    <script src="__PUBLIC__/home/mhjs/stats.js" name="MTAH5" sid="500462993"></script>
+    <meta name="viewport" content="designWidth=750,width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 防止加载lib.flexible加载的时候文字由大变小的闪烁 -->
+    <style>html,body{font-size:12px;}</style>
+    <!-- lib.flexible 移动端相对适应比例 必须在浏览器head类 -->
+    <script type="text/javascript">
+        !function (a, b) { function c() { var b = f.getBoundingClientRect().width; b / i > 540 && (b = 540 * i); var c = b / 10; f.style.fontSize = c + "px", k.rem = a.rem = c } var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'), h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {}); if (g) {  var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/); l && (j = parseFloat(l[1]), i = parseInt(1 / j)) } else if (h) { var m = h.getAttribute("content"); if (m) { var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/); n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2))) } } if (!i && !j) { var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)), q = a.devicePixelRatio; i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i } if (f.setAttribute("data-dpr", i), !g) if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + 1 + ", maximum-scale=" + 1 + ", minimum-scale=" + 1 + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else { var r = e.createElement("div"); r.appendChild(g), e.write(r.innerHTML) } a.addEventListener("resize", function () { clearTimeout(d), d = setTimeout(c, 300) }, !1), a.addEventListener("pageshow", function (a) { a.persisted && (clearTimeout(d), d = setTimeout(c, 300)) }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () { e.body.style.fontSize = 12 * i + "px" }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) { var b = parseFloat(a) * this.rem; return "string" == typeof a && a.match(/rem$/) && (b += "px"), b }, k.px2rem = function (a) { var b = parseFloat(a) / this.rem; return "string" == typeof a && a.match(/px$/) && (b += "rem"), b } }(window, window.lib || (window.lib = {}));
+    </script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/mhcss/style.min.css">
+    <script type="text/javascript" src="__PUBLIC__/home/mhjs/fundebug.0.1.7.min.js" apikey="ba3a0e0d938e92b44f279067dffb8d071ee87fc35eb75918b7a900e8581a955d"></script>
+    <script type="text/javascript" src="__PUBLIC__/home/mhjs/jquery.js"></script>
+    <!-- 共用引入资源.结束 -->
+    <script type="text/javascript" src="__PUBLIC__/home/mhjs/saved_resource"></script>
+</head>
+<body style="font-size: 12px;">
+<div class="rt-bar">
+    <div class="row">
+        <div class="col icon">
+            <a href="{:U('Mh/my')}">
+                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M29.56 39.47a2 2 0 0 1-1.38-.56L8.45 20 28.17 1.09A2 2 0 1 1 30.94 4L14.23 20l16.71 16a2 2 0 0 1-1.38 3.44z" fill="#ff730a"></path></svg>
+            </a>
+        </div>
+        <div class="col title" style="margin-right: 1.333rem;">我的优惠券</div>
+    </div>
+</div>
+<div class="lc-box">
+    <div class="common-nt reply-message-null"></div>
+</div>
+
+<div class="mask-box coupon-popup" style="display:none;"></div>
+<div class="modal rpse-modal coupon-popup" id="coupon-popup" style="display:none;">
+    <div class="inner">
+        <div class="rt">
+            <div class="subject"><strong>28</strong>元券</div>
+            <div class="cd" id="popup-time-clock">有效期：<strong>29</strong>天<strong>16</strong>时<strong>19</strong>分<strong>45</strong>秒</div>
+        </div>
+        <div class="body">
+            <div class="subject">充28元送4元</div>
+            <div class="text">28元=2800金币+送400金豆</div>
+        </div>
+        <div class="action">
+            <a href="javascript:void(0);" class="btn confirm">立即使用</a>
+            <a href="javascript:void(0);" class="close cancel">关闭</a>
+        </div>
+    </div>
+</div>
+
+<!--非微信.优惠券充值浮层.开始 -->
+<script type="text/javascript">
+    function tips(msg,callback){
+        $("body").append("<div id='gcoupon-tips' style='position:fixed;left:0;top:50%;z-index:100;text-align:center;width:100%'><span style='background: rgba(0, 0, 0, 0.65);color: #fff;padding: 10px 15px;border-radius: 3px; font-size: 14px;'>" + msg + "</span></div>");
+        setTimeout(function(){$("#gcoupon-tips").remove();if(callback) callback();},2000);
+    }
+    function compareDate(startTime,endTime){
+        var curTime = new Date(),startTime = new Date(startTime.replace(/-/g,"\/")),endTime = new Date(endTime.replace(/-/g,"\/"));
+        return (curTime>=startTime && curTime<=endTime);
+    }
+    function getcookie(name){
+        var nameValue = "";
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg)) {
+            nameValue = decodeURI(arr[2]);
+        }
+        return nameValue;
+    }
+    function get_time(){return +(new Date);}
+    function jq_ajax(url, data, successCallBack){
+        var random = get_time();
+        data.param_random = random;
+        $.ajax({
+            type : "POST",
+            dataType : "json",
+            url : url,
+            cache : false,
+            data : data,
+            timeout : 5000,
+            beforeSend:function(req){
+                this.data+="&send_random="+random;
+                req.setRequestHeader("header_random", random);
+            },
+            success : function(json){
+                try{ successCallBack(json); }catch(e){window.console&&window.console&&console.log("动态请求js回调异常",e);}
+            },
+            error : function(xhr, type) {
+                GCoupon.logs('动态请求失败');
+                window.console&&window.console&&console.log("动态请求失败记录",xhr,type);
+            }
+        });
+    }
+    var p_p_s_t = +(new Date);
+    function checkandalipay(my_coupon_id){
+        jq_ajax('/alipay/ajaxcoupon',{coupon_id:my_coupon_id,coupon_r:'4c',callback:encodeURI(window.location.href),p_u:(+(new Date)-p_p_s_t),random:get_time()},function(res){
+            if(res.status*1 == 1){
+                var payPackage = res.data;
+                window.location.replace('/alipay/xpay?trade_id='+payPackage.trade_id+'&et='+payPackage.etoken);
+            }else if(res.status*1 == -2){
+                tips("需要登录，请重新登录重试",show_login);
+            }else if(res.status*1 == -1){
+                tips("选择的充值信息有误，请重新选择重试");
+            }else if(res.status*1 == 0){
+                tips("下单失败，请稍后重试");
+            }else {
+                tips(res.info);
+            }
+        });
+    }
+    function checkandpay(my_coupon_id){
+        jq_ajax('/wxpay/couponajax',{coupon_id:my_coupon_id,coupon_r:'4c',callback:encodeURI(window.location.href),p_u:(+(new Date)-p_p_s_t),random:get_time()},function(res){
+            if(res.status*1 == 1){
+                var payPackage = res.data;
+                window.location.replace('https://w.efucms.com/wxpay/xpay?trade_id='+payPackage.trade_id);
+            }else if(res.status*1 == -2){
+                tips("需要登录，请重新登录重试",show_login);
+            }else if(res.status*1 == -1){
+                tips("选择的充值信息有误，请重新选择重试");
+            }else if(res.status*1 == 0){
+                tips("下单失败，请稍后重试");
+            }else {
+                tips(res.info);
+            }
+        });
+    }
+    function pageFocusQueryNowPay(){
+        if(nowpay.nowPayQuery){
+            jq_ajax('/nowpay/ajax_query_coupon',nowpay.payPackage,function(res){
+                if(res.status*1!=1){
+                    tips(res.info);
+                    return;
+                }
+                if(res.payStatus>0){
+                    tips("支付成功");
+                    setTimeout(function(){
+                        window.location.reload();
+                    },500);
+                    return;
+                }
+                tips("未支付成功");
+            });
+        }
+    }
+    function visibilitychange(){
+        nowpay.srattime = get_time();
+        nowpay.difftime = 0;
+        $(document).on('visibilitychange',function (e) {
+            if (e.target.visibilityState === "visible") {
+                nowpay.difftime = get_time()-nowpay.srattime;
+                nowpay.srattime = get_time();
+                setTimeout(function(){
+                    if(nowpay.difftime>500) pageFocusQueryNowPay();
+                },500);
+            } else if (e.target.visibilityState === "hidden") {
+                nowpay.difftime = get_time()-nowpay.srattime;
+                nowpay.srattime = get_time();
+            }
+        });
+    }
+    var nowpay = {payPackage:{},PayQuery:false};
+    function checkwithnowpay(my_coupon_id){
+        jq_ajax('/nowpay/ajaxcoupon',{coupon_id:my_coupon_id,coupon_r:'4c',callback:encodeURI(window.location.href),p_u:(+(new Date)-p_p_s_t),random:+(new Date)},function(res){
+            if(res.status*1 == 1){
+                nowpay.payPackage = res.data;
+                nowpay.PayQuery = true;
+                window.location.href=nowpay.payPackage.weixin_url;//唤起外部微信支付，监听页面
+                if(!nowpay.srattime) visibilitychange();
+            }else if(res.status*1 == -2){
+                tips("需要登录，请重新登录重试",show_login);
+            }else if(res.status*1 == -1){
+                tips("选择的充值信息有误，请重新选择重试");
+            }else if(res.status*1 == 0){
+                tips("下单失败，请稍后重试");
+            }else {
+                tips(res.info);
+            }
+        });
+    }
+    function checkwithalipay(my_coupon_id){
+        window.location.replace('/alipay/coupon?coupon_id='+my_coupon_id+'&coupon_r=4c&p_u='+(+(new Date)-p_p_s_t)+'&callback='+encodeURI(window.location.href));
+    }
+    function choice_pay_box(my_coupon_id){
+        //$("body").append('<div class="mask-box choice_pay_box" style="display:none;"></div><div class="item2p choice-pay choice_pay_box" id="choice_pay_box" style="display:none;"><div class="inner"><div class="title"><strong>选择支付方式</strong></div><div class="close"><a href="javascript:void(0);"></a></div><div class="entry"><ul><li><a href="javascript:void(0);" data-paytype="wx"><i class="icon-wechat"></i>微信支付</a></li><li><a href="javascript:void(0);" data-paytype="alipay"><i class="icon-alipay"></i>支付宝支付</a></li></ul></div></div></div>');
+        $("body").append('<div class="mask-box choice_pay_box" style="display:none;"></div><div class="item2p choice-pay choice_pay_box" id="choice_pay_box" style="display:none;"><div class="inner"><div class="title"><strong>选择支付方式</strong></div><div class="close"><a href="javascript:void(0);"></a></div><div class="entry"><ul><li><a href="javascript:void(0);" data-paytype="alipay"><i class="icon-alipay"></i>支付宝支付</a></li></ul></div></div></div>');
+        var choice_pay = $("#choice_pay_box");
+        choice_pay.find('.close a').click(function(){
+            $(".choice_pay_box").remove();
+        });
+        choice_pay.find('.entry ul li a').click(function(){
+            $(".choice_pay_box").remove();
+            $(this).attr('data-paytype')=='wx'?checkwithnowpay(my_coupon_id):checkwithalipay(my_coupon_id);
+        });
+        choice_pay.add('.choice_pay_box').show();
+    }
+    function go_start_pay(my_coupon_id){
+        var ua = navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i) == "micromessenger"){
+            getcookie('qrmh_channel_mp')==1?checkandalipay(my_coupon_id):checkandpay(my_coupon_id);//微信内
+        }else{
+            choice_pay_box(my_coupon_id);//非微信
+        }
+    }
+</script>
+<!-- 非微信.优惠券充值浮层.结束 -->
+
+<script type="text/javascript">
+    //倒计时
+    function time_end_create(that,type){
+        var day=0,hour=0,minute=0,second=0,intDiff=0,timehtml='',createtime=0,hours=0;
+        //如果是普通的那就从元素上面取出参数运算，如果是点开单个的限时优惠券的话就从3，4入参取出参数来运算
+        type=='each'?(createtime = that.data('createtime'),hours=that.data('hours')):(createtime = arguments[2],hours=arguments[3]);
+        var endDate = new Date(Date.parse(createtime.replace(/-/g, "/")));
+        endDate.setHours(endDate.getHours()+hours);
+        var endTime = endDate.getTime(),endTime = endTime-diffTime;
+        //事先算好该算的参数，直接将结果传进去用
+        var func = function(){
+            intDiff = endTime - (new Date()).getTime(), intDiff = parseInt(intDiff/1000);
+            if(intDiff <= 0){
+                //清除定时器，这里可以加个回调，到时候怎么处理
+                clearInterval(that.attr('data-interval'));
+                //update byefucms 20171117 暂时固定刷新下当前页吧
+                window.location.reload();
+                return false;
+            }
+            if(intDiff>=0){
+                day = Math.floor(intDiff / (60 * 60 * 24));
+                hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+                minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+                second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+            }
+            if (hour <= 9) hour = '0' + hour;
+            if (minute <= 9) minute = '0' + minute;
+            if (second <= 9) second = '0' + second;
+
+            if(type=='one'){
+                if(day>0){
+                    timehtml = "<strong>"+day+"</strong>天<strong>"+hour+"</strong>时<strong>"+minute+"</strong>分<strong>"+second+"</strong>秒";
+                }else if(hour>0){
+                    timehtml = "<strong>"+hour+"</strong>时<strong>"+minute+"</strong>分<strong>"+second+"</strong>秒";
+                }else{
+                    timehtml = "<strong>"+hour+"</strong>时<strong>"+minute+"</strong>分<strong>"+second+"</strong>秒";
+                }
+                that.html("有效期："+timehtml);
+            }else{
+                if(day>0){
+                    timehtml = ""+day+"天"+hour+"时";
+                }else if(hour>0){
+                    timehtml = ""+hour+"时"+minute+"分";
+                }else{
+                    timehtml = ""+minute+"分"+second+"秒";
+                }
+                that.html(timehtml);
+            }
+        };
+        //设定定时器，传入执行的方法
+        var time_end_interval = setInterval(func, 1000);
+        //立即执行一次
+        func();
+        that.attr('data-interval',time_end_interval);
+    }
+    function compareDate(startTime,endTime){
+        var curTime = new Date(),startTime = new Date(startTime.replace(/-/g,"\/")),endTime = new Date(endTime.replace(/-/g,"\/"));
+        return (curTime>=startTime && curTime<=endTime);
+    }
+    //计算出网络的延迟，时差，忽略网络延迟，只考虑机器时间不同步
+    var serverTime = 1515330520926,clientTime = new Date().getTime(),diffTime = serverTime-clientTime;
+    $(function(){
+        $(".need_time_clock").each(function(i,x){
+            time_end_create($(x),'each');
+        });
+        $(".coupon-popup .action .cancel").click(function(){
+            $(".coupon-popup").hide();
+            //停用计时器
+            if($("#popup-time-clock").hasClass('need_time_clock')){
+                $("#popup-time-clock").removeClass('need_time_clock');
+                clearInterval($("#popup-time-clock").attr('data-interval'));
+            }
+        });
+        $(".coupon-popup .action .confirm").click(function(){
+            //可能这个时候活动型的优惠券并没有到开始使用的时候，所以要提示出来
+            var couponData = $(".lc-box .item a[data-id='"+$("#coupon-popup").attr('data-couponid')+"']").data('coupon');
+            if(couponData.coupon_type==1&&!compareDate(couponData.coupon_start+' 00:00:00',couponData.coupon_end+' 23:59:59')){
+                bh_msg_tips('券不在有效期内，不能充值');
+                return false;
+            }
+            $(".coupon-popup").hide();
+            //先停用计时器，这个页面发生跳转了，是可以不用了
+            if($("#popup-time-clock").hasClass('need_time_clock')){
+                $("#popup-time-clock").removeClass('need_time_clock');
+                clearInterval($("#popup-time-clock").attr('data-interval'));
+            }
+            //去充值的逻辑；注意，要有各种浮层判断弹出
+            go_start_pay($("#coupon-popup").attr('data-couponid'));
+        });
+        $(".lc-box").on('click','.item .container',function(){
+            //是不是要判断过期和已经使用的不能点开，避免去充值
+            var coupon_id = $(this).data('id'),coupon=$(this).data('coupon'),popup=$("#coupon-popup");
+            popup.find('.rt .subject').html('<strong>'+coupon.coupon_money+'</strong>元券');
+            if(coupon.coupon_type==1){
+                popup.find('.rt .cd').html('<strong>'+coupon.coupon_start+'</strong>至<strong>'+coupon.coupon_end+'</strong>').removeClass('need_time_clock');
+            }else{
+                popup.find('.rt .cd').html('有效期：<strong>9</strong>天<strong>9</strong>时<strong>9</strong>分<strong>9</strong>秒').addClass('need_time_clock');
+                //添加一个单独的倒计时，传两个隐藏参数过去
+                time_end_create($('#popup-time-clock.need_time_clock'),'one',$(this).find('.need_time_clock').data('createtime'),$(this).find('.need_time_clock').data('hours'));
+            }
+            popup.find('.body .subject').text('充'+coupon.coupon_money+'元送'+coupon.coupon_bean+'元');
+            popup.find('.body .text').text(coupon.coupon_money+'元='+coupon.coupon_money+'00金币+送'+coupon.coupon_bean+'00金豆');
+            popup.add(".coupon-popup").attr('data-couponid',coupon_id).show();
+        });
+    });
+</script>
+<!-- 统计 -->
+<script type="text/javascript" src="__PUBLIC__/home/mhjs/gcoupon.min.js"></script>
+<script type="text/javascript">
+    function addLoadEvent(func){
+        if (typeof window.addEventListener != "undefined") {
+            window.addEventListener("load",func,false);
+        } else {
+            window.attachEvent("onload",func) ;
+        }
+    }
+    function tj_getcookie(name){
+        var nameValue = "";
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg)) {
+            nameValue = decodeURI(arr[2]);
+        }
+        return nameValue;
+    }
+    function getQueryString(name){
+        var reg = new RegExp("(^|&)"+name+"=([^&]*)(&|$)","i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r!=null) return unescape(r[2]); return null;
+    }
+    addLoadEvent(function(){
+        var error_img = new Image(),channel=tj_getcookie('qrmh_channel'),channel_type=tj_getcookie('qrmh_channel_type');
+        error_img.onerror=null;
+        error_img.src="//www.efucms.com/stats/?c="+channel+"&ct="+channel_type+"&rnd="+(+new Date);
+        error_img=null;
+        //某些地方页面缓存-检测
+        var p_img =new Image(), p_userid = parseInt("5414066"),c_auth=tj_getcookie('qrmh_auth'),p_reload = getQueryString('p_reload');
+        if(p_userid>0&&c_auth==''){
+            if(p_reload==null){
+                var url = window.location.href;
+                //刷新一次页面
+                window.location.href=url.indexOf("?")>0?(url+'&p_reload=1&reload_time='+(+new Date)):(url+'?p_reload=1&reload_time='+(+new Date));
+            }else{
+                //还是出现这个问题的话，就记录下来
+                p_img.onerror=null;
+                p_img.src="//www.efucms.com/page_stats/?p_userid="+p_userid+"&rnd="+(+new Date);
+            }
+        }
+        p_img=p_userid=c_auth=p_reload=null;
+    });
+    //update byefucms 20170906 某些手机系统下，旋转屏幕出现页面混乱问题，通过延时500ms滚动页面1个单位得以恢复正常
+    var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+    window.addEventListener(evt, function() {
+        setTimeout(function(){
+            window.scrollTo(0, window.pageYOffset+1);
+        },500);
+    }, false);
+</script>
+<!-- 统计 -->
+<!-- 第三方qq统计 -->
+<!-- <script type="text/javascript">
+    var _mtac = {};
+    (function() {
+        setTimeout(function(){
+            var mta = document.createElement("script");
+            mta.src = (("https:" == document.location.protocol) ? "https://" : "http://")+"pingjs.qq.com/h5/stats.js?v2.0.4";
+            mta.setAttribute("name", "MTAH5");
+            mta.setAttribute("sid", "500462993");
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(mta, s);
+        },888);
+    })();
+</script> -->
+<!-- 第三方qq统计 -->
+<include file="include/share2" />
+</body></html>

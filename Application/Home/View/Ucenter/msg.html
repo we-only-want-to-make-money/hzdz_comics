@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no, address=no">
+<title>{$_site['name']} -- 我的留言</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css_s/common.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css_s/app.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css_s/font.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css_s/font-awesome.css">
+<script src="__PUBLIC__/ever/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/ever/js/app.js"></script>
+<body bgcolor="#f2f2f2">
+<div class="commonHead" style="background: #0085d0;color:#fff;z-index: 999;">
+	<i class="iconfont icon-community"></i>
+	<h3 class="">在线留言</h3>
+</div>
+<div class="box-chat">
+	<ul>
+		<foreach name="list" item="v">
+			<if condition="$v['fromuser'] eq '系统管理员'">
+				<li class="chat_left clr">
+					<h4 class="msgName">
+						<span>系统管理员</span>
+						<span>{$v['create_time']|date="Y-m-d H:i:s",###}</span>
+					</h4>
+					<img class="msgPic" src="__PUBLIC__/images/admin.jpg" />
+					<p class="msgContent">{$v['content']}</p>
+				</li>
+			<else />
+				<li class="chat_right clr">
+					<h4 class="msgName">
+						<span>{$user['nickname']}</span>
+						<span>{$v['create_time']|date="Y-m-d H:i:s",###}</span>
+					</h4>
+					<img class="msgPic" src="{$user['headimg']}" />
+					<p class="msgContent">{$v['content']}</p>
+				</li>
+			</if>
+		
+		</foreach>				
+	</ul>
+	<div class="send-msg">
+		<input type="text" name="msg" placeholder="说点什么吧…">
+		<button id="sendBtn" onclick="sendMsg();">发送</button>
+	</div>
+</div>
+	<script>
+		function sendMsg(){
+			var msg = $("input[name=msg]").val();
+			if(msg.length <= 0){
+				alert("说些什么吧…");
+				return false;
+			}
+			$("#sendBtn").attr('disabled',"true");
+			$.post(
+				"{:U('Ucenter/sendMsg')}",
+				{content : msg},
+				function(data){
+					console.log(data);
+					$("#sendBtn").removeAttr("disabled");
+					if(data.status == "1"){
+						$("input[name=msg]").val("");
+						$(".box-chat").scrollTop(100000);
+						alert(data.info);
+						location.reload();
+					}else{
+						alert("发送失败，请刷新后重试");
+						window.location.reload();
+						return false;
+					}
+				},
+				"json"
+			);
+		}
+		
+	</script>	
+</body>
+</html>

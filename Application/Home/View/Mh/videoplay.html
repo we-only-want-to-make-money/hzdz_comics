@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>视频试看</title>
+<link rel="stylesheet" href="__PUBLIC__/css/video.css">
+<script src="__PUBLIC__/js/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="__PUBLIC__/ckplayer/ckplayer.js"></script>
+</head>
+<body style="margin-bottom:0px;">
+<div class="video" style="height: 30rem;"></div>
+<script type="text/javascript">
+	var path = "{$info['video_url']}";
+	var trytime = "{$info['trytime']}";
+	var videoObject = {
+		container: '.video', //“#”代表容器的ID，“.”或“”代表容器的class
+		variable: 'player', //该属性必需设置，值等于下面的new chplayer()的对象
+		autoplay: false,
+		poster: '',
+		video: path //视频地址
+	};
+	var player = new ckplayer(videoObject);
+</script>
+</body>
+<include file="include/share2" />
+</html>

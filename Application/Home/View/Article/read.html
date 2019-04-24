@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no">
+    <title>{$info.title}</title>
+    <!--link href="/Public/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="/Public/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" /-->
+	<link href="/Public/css/store.css?dbc" rel="stylesheet" type="text/css" />
+	
+	<script src="/Public/js/jquery.min.js" type="text/javascript"></script>
+	<!--script src="/Public/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script-->
+	
+	
+</head>
+
+<body class="arcread">
+	<div class="arcread-title">{$info.title}</div>
+	<div class="arcread-info">
+		{$info.create_time|date="Y-m-d",###}
+		<span class="author">{$info.author}</span>
+	<div>
+	<if condition="$info['show_cover'] gt 0">
+	<div class="arcread-cover">
+		<img src="{$info.cover}" />
+	</div>
+	</if>
+	<div class="arcread-body">
+	{$info.body}
+	</div>
+</body>
+</html>

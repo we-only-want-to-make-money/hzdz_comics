@@ -1,0 +1,54 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">广告设置</h1>
+            <span class="pagedesc">设置网站的小说漫画弹出广告信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>是否开启广告功能<small></small></label>
+					<span class="field">
+						<input type="checkbox" name="isopen" id="isopen" value="1" class="smallinput" <if condition="$_ads['isopen'] eq 1">checked</if> />&nbsp;&nbsp;是
+					</span>
+				</p>
+				<p>
+					<label>广告图片链接<small>若上传广告图片，优先显示上传图片</small></label>
+					<span class="field"><input type="text" name="url" id="url" value="{$_ads.url}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>广告图片</label>
+					<span class="field">
+						<iframe src="{:U('upload', 'event=setPic&url='.$_ads['pic'])}" scrolling="no" width="100" height="150"></iframe>
+						<input type="hidden" name="pic" id="pic" value="{$_ads['pic']}" class="smallinput" />
+						<script>
+						function setPic(url){
+							document.getElementById('pic').value = url;
+						}
+						</script>
+					</span>
+				</p>
+				<p>
+					<label>某一章节显示<small>若设置，则在该章节显示广告图，若不设置不填写或填写0</small></label>
+					<span class="field"><input type="text" name="chapter" id="chapter" value="{$_ads.chapter}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>多章节显示<small>若设置，则在该章节显示广告图，多个章节用英文逗号(,)隔开，若不设置不填写或填写0</small></label>
+					<span class="field"><input type="text" name="achapter" id="achapter" value="{$_ads.achapter}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>章节倍数显示<small>若设置，则在该章节显示广告图，显示关系为该章节倍数，若不设置不填写或填写0</small></label>
+					<span class="field"><input type="text" name="xchapter" id="xchapter" value="{$_ads.xchapter}" class="smallinput" /></span>
+				</p>
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

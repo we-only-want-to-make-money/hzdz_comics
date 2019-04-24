@@ -1,0 +1,45 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">模板设置</h1>
+            <span class="pagedesc">设置您的管理员登录名和密码</span>
+            <ul class="hornav">
+                <li class="current"><a href="#index">首页模板</a></li>
+                <!--li><a href="#ucenter">个人中心模板</a></li-->
+            </ul>
+
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			<form class="stdform stdform2" method="post">
+				<div id="index" class="subcontent" style="display:block">
+					<style>
+						.tpl_list{ padding:0; margin:0; list-style:none;}
+						.tpl_list li{ float:left; width:200px; height:300px; padding:10px; cursor:pointer; position:relative;}
+						.tpl_list li img{ width:100%; height:100%;}
+						.tpl_list li span.checked{ position:absolute; bottom:20px; right:20px; width:40px; height:40px; background:url(__PUBLIC__/images/check.gif); background-size:100% 100%;}
+					</style>
+					<ul class="tpl_list">
+					<volist name="dir_list" id="vo">
+						<li tpl="{$vo}">
+							<img src="{$tpl_path}/{$vo}/preview.jpg" />
+							<if condition="$_CFG['tpl']['index'] eq $vo"><span class="checked"></span></if>
+						</li>
+					</volist>
+					<ul>
+				</div>
+				<input type="hidden" name="{$action}" id="" value="{$_CFG['tpl'][$action]}" />
+            </form>
+			<script>
+			jQuery(document).ready(function(e){
+				$ = jQuery;
+				$(".tpl_list li").on('click',function(e){
+					tpl = $(this).attr('tpl');
+					$("input[name={$action}]").val(tpl);
+					$(".stdform").submit();
+				});
+			});
+			
+			</script>
+        
+        </div><!--contentwrapper-->
+        

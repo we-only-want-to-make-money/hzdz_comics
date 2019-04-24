@@ -1,0 +1,80 @@
+		<script src="__PUBLIC__/plugins/My97DatePicker/WdatePicker.js"></script>
+        <div class="pageheader notab">
+            <h1 class="pagetitle">账户变动记录</h1>
+            <span class="pagedesc"></span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+        
+        
+			<div class="tableoptions">                    
+				<form method="post">
+					类型:
+					<select name="type" default="{$_GET['type']}" style="width:90px; min-width:0;">
+						<option value="">全部</option>
+						<option value="money">余额</option>
+						<option value="wxpay">微信支付</option>
+						<option value="points">{$_CFG.site.points_name}</option>
+					</select>
+					操作:
+					<select name="action" default="{$_GET['action']}" style="width:90px; min-width:0;">
+						<option value="">全部</option>
+						<?php
+							for($i=0;$i<20;$i++){
+								$action = get_finance_action($i);
+								if(!empty($action) && $action!='未知操作'){
+									echo '<option value="'.$i.'">'.$action.'</option>';
+								}
+							}
+						?>
+					</select>
+					用户:
+					<input type="text" name="user_id" value="{$_GET['user_id']}" placeholder="请输入用户编号" class="smallinput" style="width:100px;" />
+					订单号:
+					<input type="text" name="order_sn" value="{$_GET['order_sn']}" placeholder="输入订单号" class="smallinput" style="width:100px;" />
+					操作时间:
+					<input type="text" name="time1" value="{$_GET['time1']}" class="smallinput" style="width:100px;" onclick="WdatePicker()" />
+					到
+					<input type="text" name="time2" value="{$_GET['time2']}" class="smallinput" style="width:100px;" onclick="WdatePicker()"  />
+					<input type="submit" value="查找" />
+				</form>
+			</div><!--tableoptions-->
+
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">编号</th>
+						<th class="head1">用户</th>
+						<th class="head0">类型</th>
+						<th class="head0">金额</th>
+						<th class="head0">动作</th>
+						<th class="head0">时间</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.user_id}</td>
+						<td>
+						<if condition="$vo['type'] eq 'money'">
+						余额
+						<elseif condition="$vo['type'] eq 'qimiaobi'"/>
+						旅游基金
+						<elseif condition="$vo['type'] eq 'wxpay'"/>
+						微信支付
+						<else/>{$_CFG.site.points_name}</if></td>
+						<td>{$vo['money']}</td>
+						<td>{:get_finance_action($vo['action'])}</td>
+						<td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        

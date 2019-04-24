@@ -1,0 +1,53 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">视频管理</h1>
+            <span class="pagedesc">对视频进行增加，修改或者删除等操作</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+			<div class="tableoptions">                    
+				<button class="radius3" onclick="location.href='{:U('edit')}'">添加视频</button>
+			</div><!--tableoptions-->
+
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head0" style="width:50px;">视频ID</th>
+						<th class="head1">视频标题</th>
+						<th class="head0">封面图</th>
+						<!-- <th class="head0">分类</th> -->
+						<th class="head1">作者</th>
+						<!-- <th class="head0">状态</th> -->
+						<!-- <th class="head1">属性</th> -->
+						<!-- <th class="head0">最大话数</th> -->
+						<th class="head1">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.title}</td>
+						<td><img src="{$vo.cover_pic}" width="" height="50px" /></td>
+						<!-- <td>{$vo.cateids}</td> -->
+						<td>{$vo.author}</td>
+						<!-- <td><if condition="$vo['status'] eq 1">连载<else />完结</if></td> -->
+						<!-- <td><if condition="$vo['free_type'] eq 1">免费<else />付费</if></td> -->
+						<!-- <td>{$vo.episodes}</td> -->
+						<td class="center">
+							<a href="{:U('edit', 'id='.$vo['id'])}">修改</a> | 
+							<a href="{:U('del', 'id='.$vo['id'])}" onclick="return confirm('你确实要删除这个视频吗？')">删除</a>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        

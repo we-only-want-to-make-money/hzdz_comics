@@ -1,0 +1,30 @@
+/*userlist-container*/
+body { background: #fff; padding-bottom: 50px; }
+.userlist-search { background-color: #f7f7f7; padding: 5px 15px; margin: -15px -15px 15px -15px; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); 
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
+
+.userlist-container { background: #fff; margin: -15px -15px 0 -15px; }
+.userlist-container .media-left a { display: block; width: 60px; height: 60px; border-radius: 30px; border: 2px solid #fff; overflow: hidden; }
+.userlist-container .media-left .media-object { width: 60px; height: 60px;  }
+.userlist-container .media-body { position: relative; }
+.userlist-container .media-body .media-heading { font-size: 14px; font-weight: 500; display: block; max-width: 8em; color: #337ab7; }
+.userlist-container .media-body p { font-size: 12px; margin: 0; }
+.userlist-container .subscribe-p { margin-bottom: 5px !important; }
+.userlist-container .subscribe-label { font-size: 10px !important; font-weight: normal !important; padding: 1px 4px; }
+.userlist-container .subscribe-label.label-default { background: #aaa; }
+.userlist-container .media-right a { font-size: 12px; color: #ccc; }
+.userlist-container .media-right a:hover,.userlist-container .media-right a:active,
+.userlist-container .media-right a:focus { color: #337ab7; }
+.userlist-container .media-list { border-bottom: 1px solid #eee; }
+.userlist-container .media-list li { border-top: 1px solid #eee; margin: 0; padding: 8px 15px; }
+.userlist-container .sex-label { font-size: 10px !important; font-weight: normal !important; padding: 1px 4px; }
+.label-man { background: #0089e1; line-height: normal; }
+.label-woman { background: #f02f72; line-height: normal; }
+.label-genderless { line-height: normal; background: #aaa; }
+
+.userlist-container .no-result-msg { padding: 30px 15px; }
+
+.page-back { position: fixed; right: 0; left: 0; bottom: 0; z-index: 998; border-top: 1px solid #e0e0e0; background: #eee; padding: 5px 0; }
+
+
+	.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.list-filter ul li.active a{color:#ec5151;border-color:#ec5151;font-weight:400}.list-filter ul li a{display:block;color:#666;line-height:30px;border-bottom:2px solid transparent;text-decoration:none}.list-filter ul li{-moz-box-flex:1;-webkit-box-flex:1;box-flex:1;text-align:center;font-size:14px}.list-filter ul{list-style:none outside;margin:0;padding:0;display:-moz-box;display:-webkit-box;display:box;width:100%}.list-filter{background-color:#fff;border-bottom:1px solid #dedede;padding:0 10px;margin:-15px -15px 0 -15px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.15);box-shadow:0 1px 3px rgba(0,0,0,.15)}

@@ -1,0 +1,43 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">漫画小说分享设置</h1>
+            <span class="pagedesc">设置网站的漫画小说分享信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>分享标题<small></small></label>
+					<span class="field">
+						<input type="text" name="title" id="title" value="{$_share.title}" class="smallinput" />
+					</span>
+				</p>
+				<p>
+					<label>分享简介<small></small></label>
+					<span class="field"><input type="text" name="desc" id="desc" value="{$_share.desc}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>分享图片</label>
+					<span class="field">
+						<iframe src="{:U('upload', 'event=setPic&url='.$_share['pic'])}" scrolling="no" width="100" height="100"></iframe>
+						<input type="hidden" name="pic" id="pic" value="{$_share['pic']}" class="smallinput" />
+						<script>
+						function setPic(url){
+							document.getElementById('pic').value = url;
+						}
+						</script>
+					</span>
+				</p>
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

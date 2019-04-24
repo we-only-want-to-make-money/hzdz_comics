@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html data-dpr="1" style="font-size: 54px;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<title>举报中心</title>
+<link href="./举报中心_files/swiper.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/mhcss/style.min.css">
+<meta name="viewport" content="designWidth=750,width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+	html, body {
+		font-size: 12px;
+	}
+</style>
+<!-- lib.flexible 移动端相对适应比例 必须在浏览器head类 -->
+<script type="text/javascript">
+	!function (a, b) { function c() { var b = f.getBoundingClientRect().width; b / i > 540 && (b = 540 * i); var c = b / 10; f.style.fontSize = c + "px", k.rem = a.rem = c } var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'), h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {}); if (g) { var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/); l && (j = parseFloat(l[1]), i = parseInt(1 / j)) } else if (h) { var m = h.getAttribute("content"); if (m) { var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/); n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2))) } } if (!i && !j) { var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)), q = a.devicePixelRatio; i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i } if (f.setAttribute("data-dpr", i), !g) if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + 1 + ", maximum-scale=" + 1 + ", minimum-scale=" + 1 + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else { var r = e.createElement("div"); r.appendChild(g), e.write(r.innerHTML) } a.addEventListener("resize", function () { clearTimeout(d), d = setTimeout(c, 300) }, !1), a.addEventListener("pageshow", function (a) { a.persisted && (clearTimeout(d), d = setTimeout(c, 300)) }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () { e.body.style.fontSize = 12 * i + "px" }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) { var b = parseFloat(a) * this.rem; return "string" == typeof a && a.match(/rem$/) && (b += "px"), b }, k.px2rem = function (a) { var b = parseFloat(a) / this.rem; return "string" == typeof a && a.match(/px$/) && (b += "rem"), b } }(window, window.lib || (window.lib = {}));
+</script>
+<script type="text/javascript" src="__PUBLIC__/home/mhjs/jquery.js"></script>
+<style type="text/css">
+	#banner-container {
+		display: block;
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		overflow: hidden;
+	}
+
+		#banner-container .loading {
+			display: block;
+			width: 70px;
+			text-align: center;
+			font-size: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate3d(-50%,-50%,0);
+			transform: translate3d(-50%,-50%,0);
+		}
+
+			#banner-container .loading .item {
+				width: 18px;
+				height: 18px;
+				margin: 0 2px;
+				background-color: #333333;
+				border-radius: 100%;
+				display: inline-block;
+				-webkit-animation: loading-delay 1.4s infinite ease-in-out;
+				animation: loading-delay 1.4s infinite ease-in-out;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+
+				#banner-container .loading .item:nth-child(2) {
+					-webkit-animation-delay: -0.16s;
+					animation-delay: -0.16s;
+				}
+
+				#banner-container .loading .item:nth-child(3) {
+					-webkit-animation-delay: -0.32s;
+					animation-delay: -0.32s;
+				}
+
+	@-webkit-keyframes loading-delay {
+		0%,80%,100% {
+			-webkit-transform: scale(0);
+		}
+
+		40% {
+			-webkit-transform: scale(1);
+		}
+	}
+
+	@keyframes loading-delay {
+		0%,80%,100% {
+			transform: scale(0);
+			-webkit-transform: scale(0);
+		}
+
+		40% {
+			transform: scale(1);
+			-webkit-transform: scale(1);
+		}
+	}
+</style>
+</head>
+<body style="font-size: 12px;" data-tchee="report" class="mui-ios mui-ios-11 mui-ios-11-0">   
+<style>
+    .msg-box {
+        font-size: .4rem;
+        background: #f5f5f5;
+        padding: 20px 10px;
+    }
+
+    .msg-text {
+        margin: 0 auto;
+        font-size: 20px;
+        color: #1ac305;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .msg-text1 {
+        margin: 0 auto;
+        font-size: 12px;
+        color: #999;
+        text-align: center;
+    }
+</style>
+
+    <div class="rt-bar" data-tchee="top">
+        <div class="row">
+            <div class="col icon">
+                <a href="javascript:history.back();">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M29.56 39.47a2 2 0 0 1-1.38-.56L8.45 20 28.17 1.09A2 2 0 1 1 30.94 4L14.23 20l16.71 16a2 2 0 0 1-1.38 3.44z" fill="#ff730a"></path></svg>
+                </a>
+            </div>
+            <div class="col title" style="margin-right: 1.333rem;">举报中心</div>
+        </div>
+    </div>
+    <div class="msg-box mt-10" style="display: none;">
+        <div class="msg-text">
+            举报成功！
+        </div>
+        <div class="msg-text1">
+            我们将核实您所举报的内容并进行处理。
+        </div>
+    </div>
+
+    <div class="qa-box mt-10">
+		<foreach name="list" item="v" key="k">
+        <div class="item" rid="{$k}">
+            <div class="head">
+                <div class="title">{$v}</div>
+            </div>
+        </div>
+        </foreach>
+    </div>
+    <script>
+        $(function() {
+            $(".qa-box .item").click(function(){
+				var jid = $(this).attr("rid");
+					rid = "{$_GET['rid']}";
+					type = "{$_GET['type']}";
+					url = "{$url}";
+				$.post(url,{rid:rid,jid:jid,type:type},function(d){
+					if(d){
+						console.log(d);
+						$('.qa-box').removeClass('posting').hide();
+						$(".msg-box").show();
+					}else{
+						alert('非法请求！');
+					}
+				});
+            });
+        })
+    </script>
+
+
+
+
+    <div class="backtop" id="icon-top" style="display:none">
+        <a href="javascript:void(0);" class="top">顶部</a>
+    </div>
+</body></html>

@@ -1,0 +1,61 @@
+        <div class="pageheader notab">
+            <h1 class="pagetitle">收款地址</h1>            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+            <form class="stdform stdform2" method="post">
+				<style>
+				.form-table{ width:100%; background:#ddd;}
+				.form-table th,.form-table td{ padding:15px;}
+				.form-table th.title{ width:190px; background:#fcfcfc; color:#666; text-align:left;}
+				.form-table th small{ font-weight:normal; color:#999; display:block;}
+				.form-table td{ background:#fff; vertical-align:middle;}
+				</style>
+				<table class="form-table" cellspacing="1" border="0">
+					<tr>
+						<th class="title">标题</th>
+						<td>
+							{$info.title}
+						</td>
+					</tr>
+					<tr>
+						<th class="title">金额</th>
+						<td>
+							{$info.price}
+						</td>
+					</tr>
+					<tr>
+						<th class="title">收款地址</th>
+						<td id="url">
+							http://{$_SERVER['HTTP_HOST']}{:U('Home/Sk/detail?id='.$_GET['id'])}
+						</td>
+					</tr>
+					<tr>
+						<th class="title">
+							收款二维码
+						</th>
+						<td>
+							<div style="width:200px; height:200px" id="qrcode">
+								
+							</div>
+						</td>
+					</tr>
+					
+				</table>
+			</form>
+			<script src="__PUBLIC__/js/jquery.qrcode.min.js"></script>
+			<script>
+				jQuery(document).ready(function(d){
+					$ = jQuery;
+					//调整下拉的默认选择
+					$("select").each(function(index, element) {
+					  $(element).find("option[value='"+$(this).attr('default')+"']").attr('selected','selected');
+					});
+					
+					url = $("#url").text();
+					jQuery('#qrcode').qrcode({width:200,height:200,correctLevel:0,text:url});  
+				});
+			</script>
+        
+        </div><!--contentwrapper-->
+        

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>视频试看</title>
+<link rel="stylesheet" href="__PUBLIC__/css/video.css">
+<script src="__PUBLIC__/js/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="__PUBLIC__/ckplayer/ckplayer.js"></script>
+</head>
+<body style="margin-bottom:0px;">
+<div class="video" style="height: 30rem;"></div>
+<script type="text/javascript">
+	var path = "{$info['video_url']}";
+	var trytime = "{$info['trytime']}";
+	var videoObject = {
+		container: '.video', //“#”代表容器的ID，“.”或“”代表容器的class
+		variable: 'player', //该属性必需设置，值等于下面的new chplayer()的对象
+		autoplay: false,
+		poster: '',
+		loaded: 'loadedHandler',
+		video: path //视频地址
+	};
+	var player = new ckplayer(videoObject);
+
+	function loadedHandler() { //播放器加载后会调用该函数
+		player.addListener('time', timeHandler); //监听播放时间,addListener是监听函数，需要传递二个参数，'time'是监听属性，这里是监听时间，timeHandler是监听接受的函数
+	}
+
+	function timeHandler(t) { //监听播放时间
+		if(t >= trytime) { //如果大于试看时间
+			player.videoPause();
+			salert('购买节目后方可观看完整视频!','',function(){
+				location.href="{:U('Mh/videopay')}&id="+"{$info['id']}";
+			});
+		}
+	}
+	
+	/*
+	*提示框
+	*content:提示信息,url:跳转地址,flge:是否关闭浏览器
+	*/
+	function salert(content,url,func){
+		$('#salert').find('.alert-content').html(content);
+		$('#salert').show();
+		if(url){
+			$('#salert-true').click(function(){
+				location.href=url;
+			});
+		}else{
+			$('#salert-true').click(function(){
+				func();
+			});
+			$('#salert-false').click(function(){
+				$('#salert').hide();
+			});
+		}
+	}
+</script>
+
+<div class="alert" id="salert">
+	<div class="alert-bg"></div>
+	<div class="alert-txt">
+		<div class="alert-msg">系统消息提示</div>
+		<div class="alert-content"></div>
+		<div class="alert-btn">
+			<ul>
+				<li id="salert-false">取消</li>
+				<li id="salert-true">立即购买</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div style="height: 5rem;padding: 2rem;font-size: .8rem;color: #FF5722;line-height: 2.5rem;">
+	温馨提示：该视频免费试看{$info['trytime']}秒，如果您对本视频满意，请在试看结束购买本视频！
+</div>
+<include file="include/share2" />
+</body>
+</html>

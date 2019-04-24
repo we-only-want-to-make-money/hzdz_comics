@@ -1,0 +1,102 @@
+	<style>
+		ul,li{list-style:none;}
+		.txt{width:100%;display: -webkit-box;}
+		.txt li{flex:1;-webkit-box-flex: 1;}
+		.txt li div{width: 90%;margin: 0 auto;height: 90px;border-radius: 10px;border: 1px solid #ddd;background:#fff;padding:4%;}
+		.txt li div h1{font-size:16px;font-weight:bold}
+		.txt li div p{line-height: 35px;}
+		.txt li div .num{font-size: 20px;color: #39aef5;}
+	</style>
+	<script src="__PUBLIC__/plugins/My97DatePicker/WdatePicker.js"></script>
+	<div class="pageheader notab">
+		<ul class="txt">
+			<li>
+				<div>
+					<h1>今日新增</h1>
+					<p><span class="num">{$tuAll}</span></p>
+					<p><span class="num">{$tnnuAll}</span>个男性&nbsp;&nbsp;<span class="num">{$tnvuAll}</span>个女性</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h1>昨日新增</h1>
+					<p><span class="num">{$zuAll}</span></p>
+					<p><span class="num">{$znnuAll}</span>个男性&nbsp;&nbsp;<span class="num">{$znvuAll}</span>个女性</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h1>本月新增</h1>
+					<p><span class="num">{$yuAll}</span></p>
+					<p><span class="num">{$ynnuAll}</span>个男性&nbsp;&nbsp;<span class="num">{$ynvuAll}</span>个女性</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h1>累计新增</h1>
+					<p><span class="num">{$luAll}</span></p>
+					<p><span class="num">{$lnnuAll}</span>个男性&nbsp;&nbsp;<span class="num">{$lnvuAll}</span>个女性</p>
+				</div>
+			</li>
+		</ul>
+    </div>
+	<div id="contentwrapper" class="contentwrapper lineheight21">
+		<div class="tableoptions">        
+			<form method="post" id="form">
+				用户ID:
+				<input type="text" name="user_id" value="{$_GET['user_id']}" class="smallinput" style="width:50px;" />
+				昵称/姓名:
+				<input type="text" name="name" value="{$_GET['name']}" class="smallinput" style="width:100px;" />
+				时间:
+				<input type="text" name="time1" value="{$_GET['time1']}" class="smallinput" style="width:100px;" onclick="WdatePicker()" />
+				到
+				<input type="text" name="time2" value="{$_GET['time2']}" class="smallinput" style="width:100px;" onclick="WdatePicker()"  />
+				<input type="submit" value="查找" />
+				<!-- <input type="button" value="导出" onclick="exportExcel()" /> -->
+				<script>
+				function exportExcel(){
+					jQuery("#form").attr('action', "{:U('export')}");
+					jQuery("#form").submit();
+				}					
+				</script>
+			</form>
+		</div><!--tableoptions-->
+		<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+			<thead>
+					<tr>
+						<th class="head1">编号</th>
+						<th class="head1">头像</th>
+						<th class="head0">昵称</th>
+						<th class="head1">账户书币</th>
+						<th class="head1">账户余额</th>
+						<th class="head0">注册时间</th>
+						<th class="head0">一级下线数</th>
+						<th class="head0">二级下线数</th>
+						<th class="head0">三级下线数</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						
+						<td>{$vo.id}</td>
+						<td><img src="{$vo.headimg}" style="width:50px; height:50px; border-radius:25px;" /></td>
+						<td>{$vo.nickname}</td>
+						<td>{$vo.money}</td>
+						<td>{$vo.rmb}</td>
+						<td><if condition="$vo['sub_time'] gt 0">{$vo.sub_time|date="Y-m-d H:i:s",###}<else/>-</if></td>
+						<td>{$vo.agent1}</td>
+						<td>{$vo.agent2}</td>
+						<td>{$vo.agent3}</td>
+						
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+	
+	</div><!--contentwrapper-->
+
+        

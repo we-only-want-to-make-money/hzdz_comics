@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset="tuf8">
+		<style>
+		body{ padding:0; margin:0; background:#eee;}
+		img.img,.file{ position:absolute; top:0; left:0; width:100%; height:100%;}
+		.file{ z-index:888; opacity:0;}
+		</style>
+	</head>
+	<body>
+	<form method="post" name="fileForm" id="fileForm" enctype="multipart/form-data">
+		<input type="file" name="file" onchange="uplaod()" class="file" />
+		<empty name="url">
+			<img src="/Public/images/upload.jpg" class="img" />
+		<else/>
+			<img src="{$url}" class="img" />
+		</empty>
+	</form>
+	<script>
+	function uplaod(){
+		fileForm.submit();
+	}
+	<notempty name="errmsg">
+	alert('{$errmsg}');
+	</notempty>
+	
+	<notempty name="url">
+		<if condition="$_GET['cur_index'] neq ''">
+			parent.cur_index = {$_GET['cur_index']};
+		</if>
+		parent.{$_GET['event']}('{$url}');
+	</notempty>
+	</script>
+	</body>
+</html>

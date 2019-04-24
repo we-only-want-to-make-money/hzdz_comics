@@ -1,0 +1,1660 @@
+[ 2019-01-05T01:08:58+08:00 ] 111.165.134.121 /efucms.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+
+[ 2019-01-05T01:09:00+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0013s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001212s ]
+
+[ 2019-01-05T01:09:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_admin` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `vv_admin` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2019-01-05T01:09:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Admin&a=welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2019-01-05T01:09:07+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2019-01-05T01:09:11+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=episodes&mhid=105
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE ( id=105 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vv_mh_episodes` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_episodes` WHERE `mhid` = 105 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `vv_mh_episodes` WHERE `mhid` = 105 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2019-01-05T01:09:15+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: id /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 255 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 261 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 267 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 279 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 279 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 280 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 280 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 281 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 281 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 282 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 282 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 283 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 283 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 284 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 284 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 285 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 285 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 286 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 286 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 287 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 287 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 288 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 288 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 289 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 289 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 290 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 290 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 291 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 291 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 297 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 298 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 304 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 304 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 310 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 316 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 322 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 328 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 329 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 335 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 336 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 342 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 343 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 351 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 359 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 378 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 387 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 396 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 397 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 410 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2019-01-05T01:09:16+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=upload&event=setPics&url=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2019-01-05T01:09:40+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: mhcate /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 24 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 24 行.
+NOTIC: [8] Undefined index: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 27 行.
+NOTIC: [2] implode(): Invalid arguments passed /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: INSERT INTO `vv_mh_list` (`title`,`author`,`sort`,`pay_num`,`reader`,`likes`,`collect`,`is_new`,`is_recomm`,`status`,`cover_pic`,`detail_pic`,`share_title`,`share_desc`,`share_pic`,`summary`,`mhcate`,`cateids`,`create_time`,`update_time`) VALUES ('asddasd','','0','0','0','0','0','0','0','2','','','','','','',NULL,NULL,'1546621780','1546621780') [ RunTime:0.0013s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /www/wwwroot/mh.lingdmh.com/#ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: UPDATE `vv_mh_list` SET `episodes`='1' WHERE `id` = 108 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `vv_mh_episodes` [ RunTime:0.0007s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','1话获取能力','1','/漫画/超级吸引力/第1话获取能力/4745.jpg,/漫画/超级吸引力/第1话获取能力/4746.jpg,/漫画/超级吸引力/第1话获取能力/4747.jpg,/漫画/超级吸引力/第1话获取能力/4748.jpg,/漫画/超级吸引力/第1话获取能力/4751.jpg,/漫画/超级吸引力/第1话获取能力/4754.jpg,/漫画/超级吸引力/第1话获取能力/4757.jpg,/漫画/超级吸引力/第1话获取能力/4759.jpg,/漫画/超级吸引力/第1话获取能力/4762.jpg,/漫画/超级吸引力/第1话获取能力/4764.jpg,/漫画/超级吸引力/第1话获取能力/4766.jpg,/漫画/超级吸引力/第1话获取能力/4767.jpg,/漫画/超级吸引力/第1话获取能力/4769.jpg,/漫画/超级吸引力/第1话获取能力/4775.jpg,/漫画/超级吸引力/第1话获取能力/4779.jpg,/漫画/超级吸引力/第1话获取能力/4788.jpg,/漫画/超级吸引力/第1话获取能力/4796.jpg,/漫画/超级吸引力/第1话获取能力/4801.jpg','0','2','0','1546621780','0') [ RunTime:0.0041s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='2' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','2话意外','2','/漫画/超级吸引力/第2话意外/4749.jpg,/漫画/超级吸引力/第2话意外/4750.jpg,/漫画/超级吸引力/第2话意外/4752.jpg,/漫画/超级吸引力/第2话意外/4753.jpg,/漫画/超级吸引力/第2话意外/4755.jpg,/漫画/超级吸引力/第2话意外/4758.jpg,/漫画/超级吸引力/第2话意外/4763.jpg,/漫画/超级吸引力/第2话意外/4765.jpg,/漫画/超级吸引力/第2话意外/4770.jpg,/漫画/超级吸引力/第2话意外/4772.jpg,/漫画/超级吸引力/第2话意外/4773.jpg,/漫画/超级吸引力/第2话意外/4776.jpg,/漫画/超级吸引力/第2话意外/4781.jpg,/漫画/超级吸引力/第2话意外/4793.jpg,/漫画/超级吸引力/第2话意外/4827.jpg,/漫画/超级吸引力/第2话意外/4828.jpg,/漫画/超级吸引力/第2话意外/4831.jpg,/漫画/超级吸引力/第2话意外/4837.jpg,/漫画/超级吸引力/第2话意外/4844.jpg,/漫画/超级吸引力/第2话意外/4866.jpg,/漫画/超级吸引力/第2话意外/4867.jpg','1','3','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='3' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','3话因祸得福','3','/漫画/超级吸引力/第3话因祸得福/4756.jpg,/漫画/超级吸引力/第3话因祸得福/4760.jpg,/漫画/超级吸引力/第3话因祸得福/4761.jpg,/漫画/超级吸引力/第3话因祸得福/4768.jpg,/漫画/超级吸引力/第3话因祸得福/4771.jpg,/漫画/超级吸引力/第3话因祸得福/4774.jpg,/漫画/超级吸引力/第3话因祸得福/4780.jpg,/漫画/超级吸引力/第3话因祸得福/4783.jpg,/漫画/超级吸引力/第3话因祸得福/4790.jpg,/漫画/超级吸引力/第3话因祸得福/4794.jpg,/漫画/超级吸引力/第3话因祸得福/4795.jpg,/漫画/超级吸引力/第3话因祸得福/4818.jpg,/漫画/超级吸引力/第3话因祸得福/4859.jpg,/漫画/超级吸引力/第3话因祸得福/4861.jpg,/漫画/超级吸引力/第3话因祸得福/4894.jpg,/漫画/超级吸引力/第3话因祸得福/4896.jpg,/漫画/超级吸引力/第3话因祸得福/4899.jpg,/漫画/超级吸引力/第3话因祸得福/4901.jpg,/漫画/超级吸引力/第3话因祸得福/4903.jpg,/漫画/超级吸引力/第3话因祸得福/4907.jpg,/漫画/超级吸引力/第3话因祸得福/4909.jpg,/漫画/超级吸引力/第3话因祸得福/4910.jpg,/漫画/超级吸引力/第3话因祸得福/4912.jpg,/漫画/超级吸引力/第3话因祸得福/4914.jpg,/漫画/超级吸引力/第3话因祸得福/4915.jpg,/漫画/超级吸引力/第3话因祸得福/4916.jpg,/漫画/超级吸引力/第3话因祸得福/4917.jpg,/漫画/超级吸引力/第3话因祸得福/4918.jpg','2','4','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='4' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','4话能力初现','4','/漫画/超级吸引力/第4话能力初现/4777.jpg,/漫画/超级吸引力/第4话能力初现/4785.jpg,/漫画/超级吸引力/第4话能力初现/4792.jpg,/漫画/超级吸引力/第4话能力初现/4800.jpg,/漫画/超级吸引力/第4话能力初现/4812.jpg,/漫画/超级吸引力/第4话能力初现/4824.jpg,/漫画/超级吸引力/第4话能力初现/4841.jpg,/漫画/超级吸引力/第4话能力初现/4847.jpg,/漫画/超级吸引力/第4话能力初现/4852.jpg,/漫画/超级吸引力/第4话能力初现/4858.jpg,/漫画/超级吸引力/第4话能力初现/4863.jpg,/漫画/超级吸引力/第4话能力初现/4868.jpg,/漫画/超级吸引力/第4话能力初现/4870.jpg,/漫画/超级吸引力/第4话能力初现/4873.jpg,/漫画/超级吸引力/第4话能力初现/4876.jpg,/漫画/超级吸引力/第4话能力初现/4880.jpg,/漫画/超级吸引力/第4话能力初现/4885.jpg,/漫画/超级吸引力/第4话能力初现/4888.jpg,/漫画/超级吸引力/第4话能力初现/4891.jpg','3','5','0','1546621780','0') [ RunTime:0.0003s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='5' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','5话能力初现2','5','/漫画/超级吸引力/第5话能力初现2/4778.jpg,/漫画/超级吸引力/第5话能力初现2/4782.jpg,/漫画/超级吸引力/第5话能力初现2/4787.jpg,/漫画/超级吸引力/第5话能力初现2/4791.jpg,/漫画/超级吸引力/第5话能力初现2/4798.jpg,/漫画/超级吸引力/第5话能力初现2/4802.jpg,/漫画/超级吸引力/第5话能力初现2/4810.jpg,/漫画/超级吸引力/第5话能力初现2/4817.jpg,/漫画/超级吸引力/第5话能力初现2/4823.jpg,/漫画/超级吸引力/第5话能力初现2/4832.jpg,/漫画/超级吸引力/第5话能力初现2/4834.jpg,/漫画/超级吸引力/第5话能力初现2/4879.jpg,/漫画/超级吸引力/第5话能力初现2/4884.jpg,/漫画/超级吸引力/第5话能力初现2/4889.jpg,/漫画/超级吸引力/第5话能力初现2/4893.jpg,/漫画/超级吸引力/第5话能力初现2/4898.jpg,/漫画/超级吸引力/第5话能力初现2/4904.jpg,/漫画/超级吸引力/第5话能力初现2/4908.jpg,/漫画/超级吸引力/第5话能力初现2/4911.jpg,/漫画/超级吸引力/第5话能力初现2/4913.jpg','4','6','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='6' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','6话被发现了！！','6','/漫画/超级吸引力/第6话被发现了！！/4784.jpg,/漫画/超级吸引力/第6话被发现了！！/4786.jpg,/漫画/超级吸引力/第6话被发现了！！/4789.jpg,/漫画/超级吸引力/第6话被发现了！！/4799.jpg,/漫画/超级吸引力/第6话被发现了！！/4804.jpg,/漫画/超级吸引力/第6话被发现了！！/4806.jpg,/漫画/超级吸引力/第6话被发现了！！/4808.jpg,/漫画/超级吸引力/第6话被发现了！！/4811.jpg,/漫画/超级吸引力/第6话被发现了！！/4814.jpg,/漫画/超级吸引力/第6话被发现了！！/4815.jpg,/漫画/超级吸引力/第6话被发现了！！/4819.jpg,/漫画/超级吸引力/第6话被发现了！！/4820.jpg,/漫画/超级吸引力/第6话被发现了！！/4826.png,/漫画/超级吸引力/第6话被发现了！！/4836.png,/漫画/超级吸引力/第6话被发现了！！/4840.jpg,/漫画/超级吸引力/第6话被发现了！！/4843.jpg,/漫画/超级吸引力/第6话被发现了！！/4845.jpg,/漫画/超级吸引力/第6话被发现了！！/4848.jpg,/漫画/超级吸引力/第6话被发现了！！/4851.jpg','5','7','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='7' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','7话测试','7','/漫画/超级吸引力/第7话测试/4797.jpg,/漫画/超级吸引力/第7话测试/4803.jpg,/漫画/超级吸引力/第7话测试/4805.jpg,/漫画/超级吸引力/第7话测试/4807.jpg,/漫画/超级吸引力/第7话测试/4809.jpg,/漫画/超级吸引力/第7话测试/4813.jpg,/漫画/超级吸引力/第7话测试/4816.jpg,/漫画/超级吸引力/第7话测试/4821.jpg,/漫画/超级吸引力/第7话测试/4822.jpg,/漫画/超级吸引力/第7话测试/4825.jpg,/漫画/超级吸引力/第7话测试/4830.jpg,/漫画/超级吸引力/第7话测试/4835.jpg,/漫画/超级吸引力/第7话测试/4838.jpg,/漫画/超级吸引力/第7话测试/4842.jpg,/漫画/超级吸引力/第7话测试/4846.jpg,/漫画/超级吸引力/第7话测试/4850.jpg,/漫画/超级吸引力/第7话测试/4853.jpg,/漫画/超级吸引力/第7话测试/4856.jpg,/漫画/超级吸引力/第7话测试/4860.jpg,/漫画/超级吸引力/第7话测试/4864.jpg,/漫画/超级吸引力/第7话测试/4871.jpg,/漫画/超级吸引力/第7话测试/4874.jpg,/漫画/超级吸引力/第7话测试/4877.jpg,/漫画/超级吸引力/第7话测试/4882.jpg,/漫画/超级吸引力/第7话测试/4886.jpg','6','8','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='8' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','8话梦','8','/漫画/超级吸引力/第8话梦/4829.jpg,/漫画/超级吸引力/第8话梦/4833.jpg,/漫画/超级吸引力/第8话梦/4839.jpg,/漫画/超级吸引力/第8话梦/4849.jpg,/漫画/超级吸引力/第8话梦/4854.jpg,/漫画/超级吸引力/第8话梦/4855.jpg,/漫画/超级吸引力/第8话梦/4857.jpg,/漫画/超级吸引力/第8话梦/4862.jpg,/漫画/超级吸引力/第8话梦/4865.jpg,/漫画/超级吸引力/第8话梦/4869.jpg,/漫画/超级吸引力/第8话梦/4872.jpg,/漫画/超级吸引力/第8话梦/4875.jpg,/漫画/超级吸引力/第8话梦/4878.jpg,/漫画/超级吸引力/第8话梦/4881.jpg,/漫画/超级吸引力/第8话梦/4883.jpg,/漫画/超级吸引力/第8话梦/4887.jpg,/漫画/超级吸引力/第8话梦/4890.jpg,/漫画/超级吸引力/第8话梦/4892.jpg,/漫画/超级吸引力/第8话梦/4895.jpg,/漫画/超级吸引力/第8话梦/4897.jpg,/漫画/超级吸引力/第8话梦/4900.jpg,/漫画/超级吸引力/第8话梦/4902.jpg,/漫画/超级吸引力/第8话梦/4905.jpg,/漫画/超级吸引力/第8话梦/4906.jpg','7','9','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='9' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','9话测试第一步','9','/漫画/超级吸引力/第9话测试第一步/4919.jpg,/漫画/超级吸引力/第9话测试第一步/4920.jpg,/漫画/超级吸引力/第9话测试第一步/4921.jpg,/漫画/超级吸引力/第9话测试第一步/4922.jpg,/漫画/超级吸引力/第9话测试第一步/4923.jpg,/漫画/超级吸引力/第9话测试第一步/4924.jpg,/漫画/超级吸引力/第9话测试第一步/4925.jpg,/漫画/超级吸引力/第9话测试第一步/4926.jpg,/漫画/超级吸引力/第9话测试第一步/4927.jpg,/漫画/超级吸引力/第9话测试第一步/4928.jpg,/漫画/超级吸引力/第9话测试第一步/4929.jpg,/漫画/超级吸引力/第9话测试第一步/4930.jpg,/漫画/超级吸引力/第9话测试第一步/4931.jpg,/漫画/超级吸引力/第9话测试第一步/4932.jpg,/漫画/超级吸引力/第9话测试第一步/4933.jpg,/漫画/超级吸引力/第9话测试第一步/4934.jpg,/漫画/超级吸引力/第9话测试第一步/4935.jpg,/漫画/超级吸引力/第9话测试第一步/4936.jpg,/漫画/超级吸引力/第9话测试第一步/4937.jpg,/漫画/超级吸引力/第9话测试第一步/4938.jpg,/漫画/超级吸引力/第9话测试第一步/4939.jpg,/漫画/超级吸引力/第9话测试第一步/4940.jpg,/漫画/超级吸引力/第9话测试第一步/4941.jpg','8','10','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='10' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','10话捉到你了','10','/漫画/超级吸引力/第10话捉到你了/4942.jpg,/漫画/超级吸引力/第10话捉到你了/4943.jpg,/漫画/超级吸引力/第10话捉到你了/4944.jpg,/漫画/超级吸引力/第10话捉到你了/4945.jpg,/漫画/超级吸引力/第10话捉到你了/4946.jpg,/漫画/超级吸引力/第10话捉到你了/4947.jpg,/漫画/超级吸引力/第10话捉到你了/4948.jpg,/漫画/超级吸引力/第10话捉到你了/4949.jpg,/漫画/超级吸引力/第10话捉到你了/4950.jpg,/漫画/超级吸引力/第10话捉到你了/4951.jpg,/漫画/超级吸引力/第10话捉到你了/4952.jpg,/漫画/超级吸引力/第10话捉到你了/4953.jpg,/漫画/超级吸引力/第10话捉到你了/4954.jpg,/漫画/超级吸引力/第10话捉到你了/4955.jpg,/漫画/超级吸引力/第10话捉到你了/4956.jpg,/漫画/超级吸引力/第10话捉到你了/4957.jpg,/漫画/超级吸引力/第10话捉到你了/4958.jpg,/漫画/超级吸引力/第10话捉到你了/4959.jpg,/漫画/超级吸引力/第10话捉到你了/4960.jpg,/漫画/超级吸引力/第10话捉到你了/4961.jpg,/漫画/超级吸引力/第10话捉到你了/4962.jpg,/漫画/超级吸引力/第10话捉到你了/4963.jpg','9','11','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='11' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','11话返转','11','/漫画/超级吸引力/第11话返转/4964.jpg,/漫画/超级吸引力/第11话返转/4965.jpg,/漫画/超级吸引力/第11话返转/4966.jpg,/漫画/超级吸引力/第11话返转/4967.jpg,/漫画/超级吸引力/第11话返转/4968.jpg,/漫画/超级吸引力/第11话返转/4969.jpg,/漫画/超级吸引力/第11话返转/4970.jpg,/漫画/超级吸引力/第11话返转/4971.jpg,/漫画/超级吸引力/第11话返转/4973.jpg,/漫画/超级吸引力/第11话返转/4974.jpg','10','12','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='12' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','12话道歉','12','/漫画/超级吸引力/第12话道歉/4972.jpg,/漫画/超级吸引力/第12话道歉/4975.jpg,/漫画/超级吸引力/第12话道歉/4976.jpg,/漫画/超级吸引力/第12话道歉/4977.jpg,/漫画/超级吸引力/第12话道歉/4978.jpg,/漫画/超级吸引力/第12话道歉/4979.jpg,/漫画/超级吸引力/第12话道歉/4980.jpg,/漫画/超级吸引力/第12话道歉/4981.jpg,/漫画/超级吸引力/第12话道歉/4982.jpg,/漫画/超级吸引力/第12话道歉/4983.jpg,/漫画/超级吸引力/第12话道歉/4984.jpg,/漫画/超级吸引力/第12话道歉/4985.jpg,/漫画/超级吸引力/第12话道歉/4986.jpg,/漫画/超级吸引力/第12话道歉/4988.jpg,/漫画/超级吸引力/第12话道歉/4989.jpg,/漫画/超级吸引力/第12话道歉/4991.jpg,/漫画/超级吸引力/第12话道歉/4992.jpg,/漫画/超级吸引力/第12话道歉/4994.jpg','11','13','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='13' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','13话美容效果','13','/漫画/超级吸引力/第13话美容效果/4987.jpg,/漫画/超级吸引力/第13话美容效果/4990.jpg,/漫画/超级吸引力/第13话美容效果/4993.jpg,/漫画/超级吸引力/第13话美容效果/4995.jpg,/漫画/超级吸引力/第13话美容效果/4996.jpg,/漫画/超级吸引力/第13话美容效果/4997.jpg,/漫画/超级吸引力/第13话美容效果/4998.jpg,/漫画/超级吸引力/第13话美容效果/4999.jpg,/漫画/超级吸引力/第13话美容效果/5000.jpg,/漫画/超级吸引力/第13话美容效果/5001.jpg,/漫画/超级吸引力/第13话美容效果/5002.jpg,/漫画/超级吸引力/第13话美容效果/5003.jpg,/漫画/超级吸引力/第13话美容效果/5004.jpg,/漫画/超级吸引力/第13话美容效果/5005.jpg,/漫画/超级吸引力/第13话美容效果/5006.jpg,/漫画/超级吸引力/第13话美容效果/5007.jpg,/漫画/超级吸引力/第13话美容效果/5008.jpg,/漫画/超级吸引力/第13话美容效果/5009.jpg,/漫画/超级吸引力/第13话美容效果/5010.jpg,/漫画/超级吸引力/第13话美容效果/5011.jpg,/漫画/超级吸引力/第13话美容效果/5012.jpg,/漫画/超级吸引力/第13话美容效果/5013.jpg,/漫画/超级吸引力/第13话美容效果/5014.jpg,/漫画/超级吸引力/第13话美容效果/5015.jpg,/漫画/超级吸引力/第13话美容效果/5016.jpg,/漫画/超级吸引力/第13话美容效果/5017.jpg','12','14','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='14' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','14话丧失能力？','14','/漫画/超级吸引力/第14话丧失能力？/5018.jpg,/漫画/超级吸引力/第14话丧失能力？/5019.jpg,/漫画/超级吸引力/第14话丧失能力？/5020.jpg,/漫画/超级吸引力/第14话丧失能力？/5021.jpg,/漫画/超级吸引力/第14话丧失能力？/5022.jpg,/漫画/超级吸引力/第14话丧失能力？/5023.jpg,/漫画/超级吸引力/第14话丧失能力？/5024.jpg,/漫画/超级吸引力/第14话丧失能力？/5025.jpg,/漫画/超级吸引力/第14话丧失能力？/5026.jpg,/漫画/超级吸引力/第14话丧失能力？/5027.jpg,/漫画/超级吸引力/第14话丧失能力？/5028.jpg,/漫画/超级吸引力/第14话丧失能力？/5029.jpg,/漫画/超级吸引力/第14话丧失能力？/5030.jpg,/漫画/超级吸引力/第14话丧失能力？/5031.jpg,/漫画/超级吸引力/第14话丧失能力？/5032.jpg,/漫画/超级吸引力/第14话丧失能力？/5033.jpg','13','15','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='15' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','15话好久不见','15','/漫画/超级吸引力/第15话好久不见/5034.jpg,/漫画/超级吸引力/第15话好久不见/5035.jpg,/漫画/超级吸引力/第15话好久不见/5036.jpg,/漫画/超级吸引力/第15话好久不见/5037.jpg,/漫画/超级吸引力/第15话好久不见/5038.jpg,/漫画/超级吸引力/第15话好久不见/5039.jpg,/漫画/超级吸引力/第15话好久不见/5040.jpg,/漫画/超级吸引力/第15话好久不见/5041.jpg,/漫画/超级吸引力/第15话好久不见/5042.jpg,/漫画/超级吸引力/第15话好久不见/5043.jpg,/漫画/超级吸引力/第15话好久不见/5044.jpg,/漫画/超级吸引力/第15话好久不见/5045.jpg,/漫画/超级吸引力/第15话好久不见/5046.jpg,/漫画/超级吸引力/第15话好久不见/5047.jpg,/漫画/超级吸引力/第15话好久不见/5048.jpg','14','16','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='16' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','16话再次','16','/漫画/超级吸引力/第16话再次/5049.jpg,/漫画/超级吸引力/第16话再次/5050.jpg,/漫画/超级吸引力/第16话再次/5051.jpg,/漫画/超级吸引力/第16话再次/5052.jpg,/漫画/超级吸引力/第16话再次/5053.jpg,/漫画/超级吸引力/第16话再次/5054.jpg,/漫画/超级吸引力/第16话再次/5055.jpg,/漫画/超级吸引力/第16话再次/5056.jpg,/漫画/超级吸引力/第16话再次/5057.jpg,/漫画/超级吸引力/第16话再次/5058.jpg,/漫画/超级吸引力/第16话再次/5059.jpg,/漫画/超级吸引力/第16话再次/5061.jpg,/漫画/超级吸引力/第16话再次/5062.jpg','15','17','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='17' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','17话情景再现','17','/漫画/超级吸引力/第17话情景再现/5060.jpg,/漫画/超级吸引力/第17话情景再现/5063.jpg,/漫画/超级吸引力/第17话情景再现/5064.jpg,/漫画/超级吸引力/第17话情景再现/5065.jpg,/漫画/超级吸引力/第17话情景再现/5066.jpg,/漫画/超级吸引力/第17话情景再现/5067.jpg,/漫画/超级吸引力/第17话情景再现/5068.jpg,/漫画/超级吸引力/第17话情景再现/5069.jpg,/漫画/超级吸引力/第17话情景再现/5070.jpg,/漫画/超级吸引力/第17话情景再现/5071.jpg','16','18','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='18' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','18话女神的心事','18','/漫画/超级吸引力/第18话女神的心事/5072.jpg,/漫画/超级吸引力/第18话女神的心事/5073.jpg,/漫画/超级吸引力/第18话女神的心事/5074.jpg,/漫画/超级吸引力/第18话女神的心事/5075.jpg,/漫画/超级吸引力/第18话女神的心事/5076.jpg,/漫画/超级吸引力/第18话女神的心事/5077.jpg,/漫画/超级吸引力/第18话女神的心事/5078.jpg,/漫画/超级吸引力/第18话女神的心事/5079.jpg,/漫画/超级吸引力/第18话女神的心事/5080.jpg,/漫画/超级吸引力/第18话女神的心事/5081.jpg,/漫画/超级吸引力/第18话女神的心事/5082.jpg,/漫画/超级吸引力/第18话女神的心事/5083.jpg,/漫画/超级吸引力/第18话女神的心事/5084.jpg,/漫画/超级吸引力/第18话女神的心事/5085.jpg,/漫画/超级吸引力/第18话女神的心事/5086.jpg,/漫画/超级吸引力/第18话女神的心事/5087.jpg,/漫画/超级吸引力/第18话女神的心事/5088.jpg,/漫画/超级吸引力/第18话女神的心事/5089.jpg','17','19','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='19' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','19话机会','19','/漫画/超级吸引力/第19话机会/5090.jpg,/漫画/超级吸引力/第19话机会/5091.jpg,/漫画/超级吸引力/第19话机会/5092.jpg,/漫画/超级吸引力/第19话机会/5093.jpg,/漫画/超级吸引力/第19话机会/5094.jpg,/漫画/超级吸引力/第19话机会/5095.jpg,/漫画/超级吸引力/第19话机会/5096.jpg,/漫画/超级吸引力/第19话机会/5097.jpg,/漫画/超级吸引力/第19话机会/5098.jpg,/漫画/超级吸引力/第19话机会/5099.jpg,/漫画/超级吸引力/第19话机会/5100.jpg,/漫画/超级吸引力/第19话机会/5101.jpg,/漫画/超级吸引力/第19话机会/5102.jpg,/漫画/超级吸引力/第19话机会/5103.jpg,/漫画/超级吸引力/第19话机会/5104.jpg,/漫画/超级吸引力/第19话机会/5105.jpg,/漫画/超级吸引力/第19话机会/5106.jpg,/漫画/超级吸引力/第19话机会/5107.jpg,/漫画/超级吸引力/第19话机会/5108.jpg,/漫画/超级吸引力/第19话机会/5109.jpg','18','20','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='20' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','20话触发能力','20','/漫画/超级吸引力/第20话触发能力/5110.jpg,/漫画/超级吸引力/第20话触发能力/5111.jpg,/漫画/超级吸引力/第20话触发能力/5112.jpg,/漫画/超级吸引力/第20话触发能力/5113.jpg,/漫画/超级吸引力/第20话触发能力/5114.jpg,/漫画/超级吸引力/第20话触发能力/5115.jpg,/漫画/超级吸引力/第20话触发能力/5116.jpg,/漫画/超级吸引力/第20话触发能力/5117.jpg,/漫画/超级吸引力/第20话触发能力/5118.jpg,/漫画/超级吸引力/第20话触发能力/5119.jpg,/漫画/超级吸引力/第20话触发能力/5120.jpg,/漫画/超级吸引力/第20话触发能力/5121.jpg,/漫画/超级吸引力/第20话触发能力/5122.jpg,/漫画/超级吸引力/第20话触发能力/5123.jpg,/漫画/超级吸引力/第20话触发能力/5124.jpg,/漫画/超级吸引力/第20话触发能力/5125.jpg,/漫画/超级吸引力/第20话触发能力/5126.jpg','19','21','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='21' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','21话是谁','21','/漫画/超级吸引力/第21话是谁/5127.jpg,/漫画/超级吸引力/第21话是谁/5128.jpg,/漫画/超级吸引力/第21话是谁/5129.jpg,/漫画/超级吸引力/第21话是谁/5130.jpg,/漫画/超级吸引力/第21话是谁/5131.jpg,/漫画/超级吸引力/第21话是谁/5132.jpg,/漫画/超级吸引力/第21话是谁/5133.jpg,/漫画/超级吸引力/第21话是谁/5134.jpg,/漫画/超级吸引力/第21话是谁/5135.jpg,/漫画/超级吸引力/第21话是谁/5137.jpg','20','22','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='22' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','22话爽约','22','/漫画/超级吸引力/第22话爽约/5136.jpg,/漫画/超级吸引力/第22话爽约/5138.jpg,/漫画/超级吸引力/第22话爽约/5139.jpg,/漫画/超级吸引力/第22话爽约/5140.jpg,/漫画/超级吸引力/第22话爽约/5141.jpg,/漫画/超级吸引力/第22话爽约/5142.jpg,/漫画/超级吸引力/第22话爽约/5143.jpg,/漫画/超级吸引力/第22话爽约/5144.jpg,/漫画/超级吸引力/第22话爽约/5145.jpg,/漫画/超级吸引力/第22话爽约/5146.jpg,/漫画/超级吸引力/第22话爽约/5147.jpg,/漫画/超级吸引力/第22话爽约/5148.jpg,/漫画/超级吸引力/第22话爽约/5149.jpg,/漫画/超级吸引力/第22话爽约/5150.jpg','21','23','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='23' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','23话满十送一','23','/漫画/超级吸引力/第23话满十送一/5151.jpg,/漫画/超级吸引力/第23话满十送一/5152.jpg,/漫画/超级吸引力/第23话满十送一/5153.jpg,/漫画/超级吸引力/第23话满十送一/5155.jpg,/漫画/超级吸引力/第23话满十送一/5157.jpg,/漫画/超级吸引力/第23话满十送一/5158.jpg,/漫画/超级吸引力/第23话满十送一/5161.jpg,/漫画/超级吸引力/第23话满十送一/5163.jpg,/漫画/超级吸引力/第23话满十送一/5164.jpg,/漫画/超级吸引力/第23话满十送一/5166.jpg,/漫画/超级吸引力/第23话满十送一/5168.jpg,/漫画/超级吸引力/第23话满十送一/5171.jpg,/漫画/超级吸引力/第23话满十送一/5173.jpg,/漫画/超级吸引力/第23话满十送一/5175.jpg','22','24','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='24' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','24话错误','24','/漫画/超级吸引力/第24话错误/5154.jpg,/漫画/超级吸引力/第24话错误/5156.jpg,/漫画/超级吸引力/第24话错误/5159.jpg,/漫画/超级吸引力/第24话错误/5160.jpg,/漫画/超级吸引力/第24话错误/5162.jpg,/漫画/超级吸引力/第24话错误/5165.jpg,/漫画/超级吸引力/第24话错误/5167.jpg,/漫画/超级吸引力/第24话错误/5169.jpg,/漫画/超级吸引力/第24话错误/5170.jpg,/漫画/超级吸引力/第24话错误/5172.jpg,/漫画/超级吸引力/第24话错误/5174.jpg,/漫画/超级吸引力/第24话错误/5176.jpg,/漫画/超级吸引力/第24话错误/5177.jpg','23','25','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='25' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','25话假如','25','/漫画/超级吸引力/第25话假如/5178.jpg,/漫画/超级吸引力/第25话假如/5179.jpg,/漫画/超级吸引力/第25话假如/5180.jpg,/漫画/超级吸引力/第25话假如/5181.jpg,/漫画/超级吸引力/第25话假如/5182.jpg,/漫画/超级吸引力/第25话假如/5183.jpg,/漫画/超级吸引力/第25话假如/5184.jpg,/漫画/超级吸引力/第25话假如/5185.jpg,/漫画/超级吸引力/第25话假如/5186.jpg,/漫画/超级吸引力/第25话假如/5187.jpg,/漫画/超级吸引力/第25话假如/5188.jpg,/漫画/超级吸引力/第25话假如/5189.jpg,/漫画/超级吸引力/第25话假如/5190.jpg,/漫画/超级吸引力/第25话假如/5191.jpg,/漫画/超级吸引力/第25话假如/5192.jpg,/漫画/超级吸引力/第25话假如/5193.jpg,/漫画/超级吸引力/第25话假如/5194.jpg,/漫画/超级吸引力/第25话假如/5195.jpg','24','26','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='26' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','26话接触目标','26','/漫画/超级吸引力/第26话接触目标/5196.jpg,/漫画/超级吸引力/第26话接触目标/5197.jpg,/漫画/超级吸引力/第26话接触目标/5198.jpg,/漫画/超级吸引力/第26话接触目标/5199.jpg,/漫画/超级吸引力/第26话接触目标/5200.jpg,/漫画/超级吸引力/第26话接触目标/5201.jpg,/漫画/超级吸引力/第26话接触目标/5202.jpg,/漫画/超级吸引力/第26话接触目标/5203.jpg,/漫画/超级吸引力/第26话接触目标/5204.jpg,/漫画/超级吸引力/第26话接触目标/5205.jpg,/漫画/超级吸引力/第26话接触目标/5206.jpg,/漫画/超级吸引力/第26话接触目标/5208.jpg,/漫画/超级吸引力/第26话接触目标/5211.jpg,/漫画/超级吸引力/第26话接触目标/5213.jpg,/漫画/超级吸引力/第26话接触目标/5216.jpg,/漫画/超级吸引力/第26话接触目标/5227.jpg,/漫画/超级吸引力/第26话接触目标/5230.jpg','25','27','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='27' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','27话准备上钩','27','/漫画/超级吸引力/第27话准备上钩/5207.jpg,/漫画/超级吸引力/第27话准备上钩/5209.jpg,/漫画/超级吸引力/第27话准备上钩/5210.jpg,/漫画/超级吸引力/第27话准备上钩/5212.jpg,/漫画/超级吸引力/第27话准备上钩/5214.jpg,/漫画/超级吸引力/第27话准备上钩/5215.jpg,/漫画/超级吸引力/第27话准备上钩/5217.jpg,/漫画/超级吸引力/第27话准备上钩/5218.jpg,/漫画/超级吸引力/第27话准备上钩/5219.jpg,/漫画/超级吸引力/第27话准备上钩/5220.jpg,/漫画/超级吸引力/第27话准备上钩/5221.jpg,/漫画/超级吸引力/第27话准备上钩/5222.jpg,/漫画/超级吸引力/第27话准备上钩/5223.jpg,/漫画/超级吸引力/第27话准备上钩/5224.jpg,/漫画/超级吸引力/第27话准备上钩/5225.jpg,/漫画/超级吸引力/第27话准备上钩/5226.jpg,/漫画/超级吸引力/第27话准备上钩/5228.jpg,/漫画/超级吸引力/第27话准备上钩/5229.jpg','26','28','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='28' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','28话真的存在','28','/漫画/超级吸引力/第28话真的存在/5231.jpg,/漫画/超级吸引力/第28话真的存在/5232.jpg,/漫画/超级吸引力/第28话真的存在/5233.jpg,/漫画/超级吸引力/第28话真的存在/5235.jpg,/漫画/超级吸引力/第28话真的存在/5238.jpg,/漫画/超级吸引力/第28话真的存在/5240.jpg,/漫画/超级吸引力/第28话真的存在/5242.jpg,/漫画/超级吸引力/第28话真的存在/5246.jpg,/漫画/超级吸引力/第28话真的存在/5248.jpg,/漫画/超级吸引力/第28话真的存在/5250.jpg,/漫画/超级吸引力/第28话真的存在/5251.jpg,/漫画/超级吸引力/第28话真的存在/5254.jpg,/漫画/超级吸引力/第28话真的存在/5256.jpg,/漫画/超级吸引力/第28话真的存在/5258.jpg,/漫画/超级吸引力/第28话真的存在/5259.jpg,/漫画/超级吸引力/第28话真的存在/5261.jpg','27','29','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='29' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','29话都喜欢吃面吗','29','/漫画/超级吸引力/第29话都喜欢吃面吗/5234.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5236.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5237.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5239.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5241.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5243.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5244.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5245.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5247.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5249.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5252.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5253.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5255.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5257.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5260.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5262.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5263.jpg,/漫画/超级吸引力/第29话都喜欢吃面吗/5264.jpg','28','30','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='30' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','30话一起','30','/漫画/超级吸引力/第30话一起/5265.jpg,/漫画/超级吸引力/第30话一起/5266.jpg,/漫画/超级吸引力/第30话一起/5267.jpg,/漫画/超级吸引力/第30话一起/5268.jpg,/漫画/超级吸引力/第30话一起/5269.jpg,/漫画/超级吸引力/第30话一起/5270.jpg,/漫画/超级吸引力/第30话一起/5271.jpg,/漫画/超级吸引力/第30话一起/5272.jpg,/漫画/超级吸引力/第30话一起/5273.jpg,/漫画/超级吸引力/第30话一起/5274.jpg,/漫画/超级吸引力/第30话一起/5275.jpg,/漫画/超级吸引力/第30话一起/5276.jpg,/漫画/超级吸引力/第30话一起/5277.jpg,/漫画/超级吸引力/第30话一起/5278.jpg,/漫画/超级吸引力/第30话一起/5279.jpg,/漫画/超级吸引力/第30话一起/5280.jpg,/漫画/超级吸引力/第30话一起/5281.jpg','29','31','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='31' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','31话被吸住了','31','/漫画/超级吸引力/第31话被吸住了/5282.jpg,/漫画/超级吸引力/第31话被吸住了/5283.jpg,/漫画/超级吸引力/第31话被吸住了/5284.jpg,/漫画/超级吸引力/第31话被吸住了/5285.jpg,/漫画/超级吸引力/第31话被吸住了/5286.jpg,/漫画/超级吸引力/第31话被吸住了/5287.jpg,/漫画/超级吸引力/第31话被吸住了/5288.jpg,/漫画/超级吸引力/第31话被吸住了/5290.jpg,/漫画/超级吸引力/第31话被吸住了/5293.jpg,/漫画/超级吸引力/第31话被吸住了/5294.jpg,/漫画/超级吸引力/第31话被吸住了/5296.jpg,/漫画/超级吸引力/第31话被吸住了/5297.jpg,/漫画/超级吸引力/第31话被吸住了/5298.jpg,/漫画/超级吸引力/第31话被吸住了/5300.jpg,/漫画/超级吸引力/第31话被吸住了/5303.jpg,/漫画/超级吸引力/第31话被吸住了/5306.jpg','30','32','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='32' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','32话梦？','32','/漫画/超级吸引力/第32话梦？/5289.jpg,/漫画/超级吸引力/第32话梦？/5291.jpg,/漫画/超级吸引力/第32话梦？/5292.jpg,/漫画/超级吸引力/第32话梦？/5295.jpg,/漫画/超级吸引力/第32话梦？/5299.jpg,/漫画/超级吸引力/第32话梦？/5301.jpg,/漫画/超级吸引力/第32话梦？/5302.jpg,/漫画/超级吸引力/第32话梦？/5304.jpg,/漫画/超级吸引力/第32话梦？/5305.jpg,/漫画/超级吸引力/第32话梦？/5307.jpg,/漫画/超级吸引力/第32话梦？/5308.jpg,/漫画/超级吸引力/第32话梦？/5309.jpg,/漫画/超级吸引力/第32话梦？/5310.jpg,/漫画/超级吸引力/第32话梦？/5311.jpg,/漫画/超级吸引力/第32话梦？/5312.jpg,/漫画/超级吸引力/第32话梦？/5313.jpg,/漫画/超级吸引力/第32话梦？/5314.jpg,/漫画/超级吸引力/第32话梦？/5315.jpg,/漫画/超级吸引力/第32话梦？/5316.jpg','31','33','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='33' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','33话计划开始','33','/漫画/超级吸引力/第33话计划开始/5317.jpg,/漫画/超级吸引力/第33话计划开始/5318.jpg,/漫画/超级吸引力/第33话计划开始/5319.jpg,/漫画/超级吸引力/第33话计划开始/5320.jpg,/漫画/超级吸引力/第33话计划开始/5321.jpg,/漫画/超级吸引力/第33话计划开始/5322.jpg,/漫画/超级吸引力/第33话计划开始/5323.jpg,/漫画/超级吸引力/第33话计划开始/5324.jpg,/漫画/超级吸引力/第33话计划开始/5325.jpg,/漫画/超级吸引力/第33话计划开始/5326.jpg,/漫画/超级吸引力/第33话计划开始/5327.jpg,/漫画/超级吸引力/第33话计划开始/5328.jpg,/漫画/超级吸引力/第33话计划开始/5329.jpg,/漫画/超级吸引力/第33话计划开始/5330.jpg,/漫画/超级吸引力/第33话计划开始/5331.jpg,/漫画/超级吸引力/第33话计划开始/5332.jpg,/漫画/超级吸引力/第33话计划开始/5333.jpg','32','34','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='34' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','34话讨厌的电话','34','/漫画/超级吸引力/第34话讨厌的电话/5334.jpg,/漫画/超级吸引力/第34话讨厌的电话/5335.jpg,/漫画/超级吸引力/第34话讨厌的电话/5336.jpg,/漫画/超级吸引力/第34话讨厌的电话/5337.jpg,/漫画/超级吸引力/第34话讨厌的电话/5338.jpg,/漫画/超级吸引力/第34话讨厌的电话/5339.jpg,/漫画/超级吸引力/第34话讨厌的电话/5340.jpg,/漫画/超级吸引力/第34话讨厌的电话/5341.jpg,/漫画/超级吸引力/第34话讨厌的电话/5342.jpg,/漫画/超级吸引力/第34话讨厌的电话/5343.jpg,/漫画/超级吸引力/第34话讨厌的电话/5344.jpg,/漫画/超级吸引力/第34话讨厌的电话/5345.jpg,/漫画/超级吸引力/第34话讨厌的电话/5346.jpg,/漫画/超级吸引力/第34话讨厌的电话/5347.jpg,/漫画/超级吸引力/第34话讨厌的电话/5349.jpg,/漫画/超级吸引力/第34话讨厌的电话/5354.jpg,/漫画/超级吸引力/第34话讨厌的电话/5364.jpg,/漫画/超级吸引力/第34话讨厌的电话/5370.jpg','33','35','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='35' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','35话健身课程','35','/漫画/超级吸引力/第35话健身课程/5348.jpg,/漫画/超级吸引力/第35话健身课程/5350.jpg,/漫画/超级吸引力/第35话健身课程/5351.jpg,/漫画/超级吸引力/第35话健身课程/5352.jpg,/漫画/超级吸引力/第35话健身课程/5353.jpg,/漫画/超级吸引力/第35话健身课程/5355.jpg,/漫画/超级吸引力/第35话健身课程/5356.jpg,/漫画/超级吸引力/第35话健身课程/5357.jpg,/漫画/超级吸引力/第35话健身课程/5358.jpg,/漫画/超级吸引力/第35话健身课程/5359.jpg,/漫画/超级吸引力/第35话健身课程/5360.jpg,/漫画/超级吸引力/第35话健身课程/5361.jpg,/漫画/超级吸引力/第35话健身课程/5362.jpg,/漫画/超级吸引力/第35话健身课程/5363.jpg,/漫画/超级吸引力/第35话健身课程/5365.jpg,/漫画/超级吸引力/第35话健身课程/5366.jpg,/漫画/超级吸引力/第35话健身课程/5367.jpg,/漫画/超级吸引力/第35话健身课程/5368.jpg,/漫画/超级吸引力/第35话健身课程/5369.jpg','34','36','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='36' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','36话健身教练','36','/漫画/超级吸引力/第36话健身教练/5371.jpg,/漫画/超级吸引力/第36话健身教练/5372.jpg,/漫画/超级吸引力/第36话健身教练/5373.jpg,/漫画/超级吸引力/第36话健身教练/5374.jpg,/漫画/超级吸引力/第36话健身教练/5375.jpg,/漫画/超级吸引力/第36话健身教练/5376.jpg,/漫画/超级吸引力/第36话健身教练/5377.jpg,/漫画/超级吸引力/第36话健身教练/5378.jpg,/漫画/超级吸引力/第36话健身教练/5379.jpg,/漫画/超级吸引力/第36话健身教练/5380.jpg,/漫画/超级吸引力/第36话健身教练/5381.jpg,/漫画/超级吸引力/第36话健身教练/5382.jpg,/漫画/超级吸引力/第36话健身教练/5472.jpg,/漫画/超级吸引力/第36话健身教练/5473.jpg,/漫画/超级吸引力/第36话健身教练/5474.jpg,/漫画/超级吸引力/第36话健身教练/5475.jpg,/漫画/超级吸引力/第36话健身教练/5476.jpg','35','37','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='37' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','37话确实好多了','37','/漫画/超级吸引力/第37话确实好多了/5385.jpg,/漫画/超级吸引力/第37话确实好多了/5387.jpg,/漫画/超级吸引力/第37话确实好多了/5389.jpg,/漫画/超级吸引力/第37话确实好多了/5391.jpg,/漫画/超级吸引力/第37话确实好多了/5393.jpg,/漫画/超级吸引力/第37话确实好多了/5397.jpg,/漫画/超级吸引力/第37话确实好多了/5406.jpg,/漫画/超级吸引力/第37话确实好多了/5416.jpg,/漫画/超级吸引力/第37话确实好多了/5426.jpg,/漫画/超级吸引力/第37话确实好多了/5431.jpg,/漫画/超级吸引力/第37话确实好多了/5432.jpg,/漫画/超级吸引力/第37话确实好多了/5433.jpg,/漫画/超级吸引力/第37话确实好多了/5434.jpg,/漫画/超级吸引力/第37话确实好多了/5435.jpg,/漫画/超级吸引力/第37话确实好多了/5436.jpg','36','38','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='38' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','38话能力发生变化','38','/漫画/超级吸引力/第38话能力发生变化/5383.jpg,/漫画/超级吸引力/第38话能力发生变化/5384.jpg,/漫画/超级吸引力/第38话能力发生变化/5386.jpg,/漫画/超级吸引力/第38话能力发生变化/5388.jpg,/漫画/超级吸引力/第38话能力发生变化/5390.jpg,/漫画/超级吸引力/第38话能力发生变化/5392.jpg,/漫画/超级吸引力/第38话能力发生变化/5395.jpg,/漫画/超级吸引力/第38话能力发生变化/5396.jpg,/漫画/超级吸引力/第38话能力发生变化/5403.jpg,/漫画/超级吸引力/第38话能力发生变化/5404.jpg,/漫画/超级吸引力/第38话能力发生变化/5405.jpg,/漫画/超级吸引力/第38话能力发生变化/5407.jpg,/漫画/超级吸引力/第38话能力发生变化/5408.jpg,/漫画/超级吸引力/第38话能力发生变化/5409.jpg,/漫画/超级吸引力/第38话能力发生变化/5410.jpg,/漫画/超级吸引力/第38话能力发生变化/5411.jpg,/漫画/超级吸引力/第38话能力发生变化/5413.jpg,/漫画/超级吸引力/第38话能力发生变化/5417.jpg,/漫画/超级吸引力/第38话能力发生变化/5420.jpg,/漫画/超级吸引力/第38话能力发生变化/5421.jpg,/漫画/超级吸引力/第38话能力发生变化/5423.jpg','37','39','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='39' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','39话为了女神','39','/漫画/超级吸引力/第39话为了女神/5394.jpg,/漫画/超级吸引力/第39话为了女神/5398.jpg,/漫画/超级吸引力/第39话为了女神/5399.jpg,/漫画/超级吸引力/第39话为了女神/5400.jpg,/漫画/超级吸引力/第39话为了女神/5401.jpg,/漫画/超级吸引力/第39话为了女神/5402.jpg,/漫画/超级吸引力/第39话为了女神/5412.jpg,/漫画/超级吸引力/第39话为了女神/5414.jpg,/漫画/超级吸引力/第39话为了女神/5415.jpg,/漫画/超级吸引力/第39话为了女神/5418.jpg,/漫画/超级吸引力/第39话为了女神/5419.jpg,/漫画/超级吸引力/第39话为了女神/5422.jpg,/漫画/超级吸引力/第39话为了女神/5424.jpg,/漫画/超级吸引力/第39话为了女神/5425.jpg,/漫画/超级吸引力/第39话为了女神/5427.jpg,/漫画/超级吸引力/第39话为了女神/5428.jpg,/漫画/超级吸引力/第39话为了女神/5429.jpg,/漫画/超级吸引力/第39话为了女神/5430.jpg','38','40','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='40' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','40话单独谈话','40','/漫画/超级吸引力/第40话单独谈话/5437.jpg,/漫画/超级吸引力/第40话单独谈话/5438.jpg,/漫画/超级吸引力/第40话单独谈话/5439.jpg,/漫画/超级吸引力/第40话单独谈话/5440.jpg,/漫画/超级吸引力/第40话单独谈话/5441.jpg,/漫画/超级吸引力/第40话单独谈话/5442.jpg,/漫画/超级吸引力/第40话单独谈话/5443.jpg,/漫画/超级吸引力/第40话单独谈话/5444.jpg,/漫画/超级吸引力/第40话单独谈话/5445.jpg,/漫画/超级吸引力/第40话单独谈话/5446.jpg,/漫画/超级吸引力/第40话单独谈话/5447.jpg,/漫画/超级吸引力/第40话单独谈话/5448.jpg,/漫画/超级吸引力/第40话单独谈话/5449.jpg,/漫画/超级吸引力/第40话单独谈话/5450.jpg,/漫画/超级吸引力/第40话单独谈话/5451.jpg,/漫画/超级吸引力/第40话单独谈话/5452.jpg,/漫画/超级吸引力/第40话单独谈话/5453.jpg','39','41','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='41' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','41话乐于助人','41','/漫画/超级吸引力/第41话乐于助人/5454.jpg,/漫画/超级吸引力/第41话乐于助人/5455.jpg,/漫画/超级吸引力/第41话乐于助人/5456.jpg,/漫画/超级吸引力/第41话乐于助人/5457.jpg,/漫画/超级吸引力/第41话乐于助人/5458.jpg,/漫画/超级吸引力/第41话乐于助人/5459.jpg,/漫画/超级吸引力/第41话乐于助人/5460.jpg,/漫画/超级吸引力/第41话乐于助人/5461.jpg,/漫画/超级吸引力/第41话乐于助人/5462.jpg,/漫画/超级吸引力/第41话乐于助人/5463.jpg,/漫画/超级吸引力/第41话乐于助人/5464.jpg,/漫画/超级吸引力/第41话乐于助人/5465.jpg,/漫画/超级吸引力/第41话乐于助人/5466.jpg,/漫画/超级吸引力/第41话乐于助人/5467.jpg,/漫画/超级吸引力/第41话乐于助人/5468.jpg,/漫画/超级吸引力/第41话乐于助人/5469.jpg,/漫画/超级吸引力/第41话乐于助人/5470.jpg,/漫画/超级吸引力/第41话乐于助人/5471.jpg','40','42','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='42' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','42话失败了？','42','/漫画/超级吸引力/第42话失败了？/5477.jpg,/漫画/超级吸引力/第42话失败了？/5478.jpg,/漫画/超级吸引力/第42话失败了？/5479.jpg,/漫画/超级吸引力/第42话失败了？/5480.jpg,/漫画/超级吸引力/第42话失败了？/5481.jpg,/漫画/超级吸引力/第42话失败了？/5482.jpg,/漫画/超级吸引力/第42话失败了？/5483.jpg,/漫画/超级吸引力/第42话失败了？/5484.jpg,/漫画/超级吸引力/第42话失败了？/5485.jpg,/漫画/超级吸引力/第42话失败了？/5486.jpg,/漫画/超级吸引力/第42话失败了？/5487.jpg,/漫画/超级吸引力/第42话失败了？/5490.jpg,/漫画/超级吸引力/第42话失败了？/5496.jpg,/漫画/超级吸引力/第42话失败了？/5500.jpg,/漫画/超级吸引力/第42话失败了？/5503.jpg,/漫画/超级吸引力/第42话失败了？/5505.jpg,/漫画/超级吸引力/第42话失败了？/5510.jpg,/漫画/超级吸引力/第42话失败了？/5513.jpg,/漫画/超级吸引力/第42话失败了？/5515.jpg,/漫画/超级吸引力/第42话失败了？/5517.jpg','41','43','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='43' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','43话女王大人','43','/漫画/超级吸引力/第43话女王大人/5488.jpg,/漫画/超级吸引力/第43话女王大人/5489.jpg,/漫画/超级吸引力/第43话女王大人/5491.jpg,/漫画/超级吸引力/第43话女王大人/5492.jpg,/漫画/超级吸引力/第43话女王大人/5493.jpg,/漫画/超级吸引力/第43话女王大人/5494.jpg,/漫画/超级吸引力/第43话女王大人/5495.jpg,/漫画/超级吸引力/第43话女王大人/5497.jpg,/漫画/超级吸引力/第43话女王大人/5498.jpg,/漫画/超级吸引力/第43话女王大人/5499.jpg,/漫画/超级吸引力/第43话女王大人/5501.jpg,/漫画/超级吸引力/第43话女王大人/5502.jpg,/漫画/超级吸引力/第43话女王大人/5504.jpg,/漫画/超级吸引力/第43话女王大人/5506.jpg,/漫画/超级吸引力/第43话女王大人/5507.jpg,/漫画/超级吸引力/第43话女王大人/5508.jpg,/漫画/超级吸引力/第43话女王大人/5509.jpg,/漫画/超级吸引力/第43话女王大人/5511.jpg,/漫画/超级吸引力/第43话女王大人/5512.jpg,/漫画/超级吸引力/第43话女王大人/5514.jpg,/漫画/超级吸引力/第43话女王大人/5516.jpg','42','44','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='44' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','44话正式开始','44','/漫画/超级吸引力/第44话正式开始/5518.jpg,/漫画/超级吸引力/第44话正式开始/5519.jpg,/漫画/超级吸引力/第44话正式开始/5520.jpg,/漫画/超级吸引力/第44话正式开始/5521.jpg,/漫画/超级吸引力/第44话正式开始/5522.jpg,/漫画/超级吸引力/第44话正式开始/5523.jpg,/漫画/超级吸引力/第44话正式开始/5524.jpg,/漫画/超级吸引力/第44话正式开始/5525.jpg,/漫画/超级吸引力/第44话正式开始/5526.jpg,/漫画/超级吸引力/第44话正式开始/5527.jpg,/漫画/超级吸引力/第44话正式开始/5528.jpg,/漫画/超级吸引力/第44话正式开始/5529.jpg,/漫画/超级吸引力/第44话正式开始/5530.jpg,/漫画/超级吸引力/第44话正式开始/5531.jpg,/漫画/超级吸引力/第44话正式开始/5532.jpg,/漫画/超级吸引力/第44话正式开始/5533.jpg,/漫画/超级吸引力/第44话正式开始/5534.jpg,/漫画/超级吸引力/第44话正式开始/5535.jpg,/漫画/超级吸引力/第44话正式开始/5536.jpg,/漫画/超级吸引力/第44话正式开始/5537.jpg','43','45','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='45' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','45话强势的女人','45','/漫画/超级吸引力/第45话强势的女人/5538.jpg,/漫画/超级吸引力/第45话强势的女人/5539.jpg,/漫画/超级吸引力/第45话强势的女人/5540.jpg,/漫画/超级吸引力/第45话强势的女人/5541.jpg,/漫画/超级吸引力/第45话强势的女人/5542.jpg,/漫画/超级吸引力/第45话强势的女人/5543.jpg,/漫画/超级吸引力/第45话强势的女人/5544.jpg,/漫画/超级吸引力/第45话强势的女人/5545.jpg,/漫画/超级吸引力/第45话强势的女人/5546.jpg,/漫画/超级吸引力/第45话强势的女人/5547.jpg,/漫画/超级吸引力/第45话强势的女人/5548.jpg,/漫画/超级吸引力/第45话强势的女人/5549.jpg,/漫画/超级吸引力/第45话强势的女人/5550.jpg','44','46','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='46' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','46话求助','46','/漫画/超级吸引力/第46话求助/5551.jpg,/漫画/超级吸引力/第46话求助/5553.jpg,/漫画/超级吸引力/第46话求助/5556.jpg,/漫画/超级吸引力/第46话求助/5564.jpg,/漫画/超级吸引力/第46话求助/5565.jpg,/漫画/超级吸引力/第46话求助/5567.jpg,/漫画/超级吸引力/第46话求助/5568.jpg,/漫画/超级吸引力/第46话求助/5569.jpg,/漫画/超级吸引力/第46话求助/5570.jpg,/漫画/超级吸引力/第46话求助/5571.jpg,/漫画/超级吸引力/第46话求助/5572.jpg,/漫画/超级吸引力/第46话求助/5574.jpg,/漫画/超级吸引力/第46话求助/5580.jpg,/漫画/超级吸引力/第46话求助/5581.jpg,/漫画/超级吸引力/第46话求助/5583.jpg,/漫画/超级吸引力/第46话求助/5584.jpg,/漫画/超级吸引力/第46话求助/5586.jpg,/漫画/超级吸引力/第46话求助/5587.jpg,/漫画/超级吸引力/第46话求助/5588.jpg,/漫画/超级吸引力/第46话求助/5591.jpg,/漫画/超级吸引力/第46话求助/5592.jpg','45','47','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='47' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','47话能力，无懈可击','47','/漫画/超级吸引力/第47话能力，无懈可击/5552.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5554.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5555.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5557.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5558.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5559.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5560.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5561.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5562.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5563.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5566.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5573.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5575.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5576.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5577.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5578.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5579.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5582.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5585.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5589.jpg,/漫画/超级吸引力/第47话能力，无懈可击/5590.jpg','46','48','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='48' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','48话傻瓜','48','/漫画/超级吸引力/第48话傻瓜/5593.jpg,/漫画/超级吸引力/第48话傻瓜/5594.jpg,/漫画/超级吸引力/第48话傻瓜/5595.jpg,/漫画/超级吸引力/第48话傻瓜/5596.jpg,/漫画/超级吸引力/第48话傻瓜/5597.jpg,/漫画/超级吸引力/第48话傻瓜/5598.jpg,/漫画/超级吸引力/第48话傻瓜/5599.jpg,/漫画/超级吸引力/第48话傻瓜/5600.jpg,/漫画/超级吸引力/第48话傻瓜/5601.jpg,/漫画/超级吸引力/第48话傻瓜/5602.jpg,/漫画/超级吸引力/第48话傻瓜/5603.jpg,/漫画/超级吸引力/第48话傻瓜/5604.jpg,/漫画/超级吸引力/第48话傻瓜/5605.jpg,/漫画/超级吸引力/第48话傻瓜/5606.jpg,/漫画/超级吸引力/第48话傻瓜/5607.jpg,/漫画/超级吸引力/第48话傻瓜/5608.jpg,/漫画/超级吸引力/第48话傻瓜/5609.jpg,/漫画/超级吸引力/第48话傻瓜/5610.jpg','47','49','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='49' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','49话有危险','49','/漫画/超级吸引力/第49话有危险/5611.jpg,/漫画/超级吸引力/第49话有危险/5612.jpg,/漫画/超级吸引力/第49话有危险/5613.jpg,/漫画/超级吸引力/第49话有危险/5614.jpg,/漫画/超级吸引力/第49话有危险/5615.jpg,/漫画/超级吸引力/第49话有危险/5616.jpg,/漫画/超级吸引力/第49话有危险/5617.jpg,/漫画/超级吸引力/第49话有危险/5618.jpg,/漫画/超级吸引力/第49话有危险/5619.jpg,/漫画/超级吸引力/第49话有危险/5620.jpg,/漫画/超级吸引力/第49话有危险/5621.jpg,/漫画/超级吸引力/第49话有危险/5622.jpg,/漫画/超级吸引力/第49话有危险/5623.jpg,/漫画/超级吸引力/第49话有危险/5624.jpg,/漫画/超级吸引力/第49话有危险/5625.jpg,/漫画/超级吸引力/第49话有危险/5626.jpg,/漫画/超级吸引力/第49话有危险/5627.jpg','48','50','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='50' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','50话再次邀请','50','/漫画/超级吸引力/第50话再次邀请/5628.jpg,/漫画/超级吸引力/第50话再次邀请/5629.jpg,/漫画/超级吸引力/第50话再次邀请/5630.jpg,/漫画/超级吸引力/第50话再次邀请/5631.jpg,/漫画/超级吸引力/第50话再次邀请/5632.jpg,/漫画/超级吸引力/第50话再次邀请/5633.jpg,/漫画/超级吸引力/第50话再次邀请/5634.jpg,/漫画/超级吸引力/第50话再次邀请/5635.jpg,/漫画/超级吸引力/第50话再次邀请/5636.jpg,/漫画/超级吸引力/第50话再次邀请/5637.jpg,/漫画/超级吸引力/第50话再次邀请/5638.jpg,/漫画/超级吸引力/第50话再次邀请/5639.jpg,/漫画/超级吸引力/第50话再次邀请/5640.jpg,/漫画/超级吸引力/第50话再次邀请/5641.jpg,/漫画/超级吸引力/第50话再次邀请/5642.jpg,/漫画/超级吸引力/第50话再次邀请/5643.jpg,/漫画/超级吸引力/第50话再次邀请/5644.jpg,/漫画/超级吸引力/第50话再次邀请/5645.jpg','49','51','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='51' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','51话喝啤酒','51','/漫画/超级吸引力/第51话喝啤酒/5646.jpg,/漫画/超级吸引力/第51话喝啤酒/5647.jpg,/漫画/超级吸引力/第51话喝啤酒/5648.jpg,/漫画/超级吸引力/第51话喝啤酒/5649.jpg,/漫画/超级吸引力/第51话喝啤酒/5659.jpg,/漫画/超级吸引力/第51话喝啤酒/5661.jpg,/漫画/超级吸引力/第51话喝啤酒/5667.jpg,/漫画/超级吸引力/第51话喝啤酒/5668.jpg,/漫画/超级吸引力/第51话喝啤酒/5669.jpg,/漫画/超级吸引力/第51话喝啤酒/5670.jpg,/漫画/超级吸引力/第51话喝啤酒/5671.jpg,/漫画/超级吸引力/第51话喝啤酒/5672.jpg,/漫画/超级吸引力/第51话喝啤酒/5673.jpg,/漫画/超级吸引力/第51话喝啤酒/5674.jpg,/漫画/超级吸引力/第51话喝啤酒/5675.jpg,/漫画/超级吸引力/第51话喝啤酒/5676.jpg,/漫画/超级吸引力/第51话喝啤酒/5677.jpg,/漫画/超级吸引力/第51话喝啤酒/5678.jpg,/漫画/超级吸引力/第51话喝啤酒/5679.jpg,/漫画/超级吸引力/第51话喝啤酒/5680.jpg','50','52','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='52' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','52话主人','52','/漫画/超级吸引力/第52话主人/5650.jpg,/漫画/超级吸引力/第52话主人/5651.jpg,/漫画/超级吸引力/第52话主人/5652.jpg,/漫画/超级吸引力/第52话主人/5653.jpg,/漫画/超级吸引力/第52话主人/5654.jpg,/漫画/超级吸引力/第52话主人/5655.jpg,/漫画/超级吸引力/第52话主人/5656.jpg,/漫画/超级吸引力/第52话主人/5657.jpg,/漫画/超级吸引力/第52话主人/5658.jpg,/漫画/超级吸引力/第52话主人/5660.jpg,/漫画/超级吸引力/第52话主人/5662.jpg,/漫画/超级吸引力/第52话主人/5663.jpg,/漫画/超级吸引力/第52话主人/5664.jpg,/漫画/超级吸引力/第52话主人/5665.jpg,/漫画/超级吸引力/第52话主人/5666.jpg','51','53','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='53' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','53话副会长的提议','53','/漫画/超级吸引力/第53话副会长的提议/5681.jpg,/漫画/超级吸引力/第53话副会长的提议/5682.jpg,/漫画/超级吸引力/第53话副会长的提议/5683.jpg,/漫画/超级吸引力/第53话副会长的提议/5684.jpg,/漫画/超级吸引力/第53话副会长的提议/5685.jpg,/漫画/超级吸引力/第53话副会长的提议/5686.jpg,/漫画/超级吸引力/第53话副会长的提议/5687.jpg,/漫画/超级吸引力/第53话副会长的提议/5688.jpg,/漫画/超级吸引力/第53话副会长的提议/5689.jpg,/漫画/超级吸引力/第53话副会长的提议/5690.jpg,/漫画/超级吸引力/第53话副会长的提议/5691.jpg,/漫画/超级吸引力/第53话副会长的提议/5692.jpg,/漫画/超级吸引力/第53话副会长的提议/5693.jpg,/漫画/超级吸引力/第53话副会长的提议/5694.jpg,/漫画/超级吸引力/第53话副会长的提议/5695.jpg,/漫画/超级吸引力/第53话副会长的提议/5696.jpg,/漫画/超级吸引力/第53话副会长的提议/5697.jpg,/漫画/超级吸引力/第53话副会长的提议/5698.jpg,/漫画/超级吸引力/第53话副会长的提议/5699.jpg,/漫画/超级吸引力/第53话副会长的提议/5700.jpg,/漫画/超级吸引力/第53话副会长的提议/5701.jpg','52','54','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='54' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','54话往事','54','/漫画/超级吸引力/第54话往事/5702.jpg,/漫画/超级吸引力/第54话往事/5703.jpg,/漫画/超级吸引力/第54话往事/5704.jpg,/漫画/超级吸引力/第54话往事/5705.jpg,/漫画/超级吸引力/第54话往事/5706.jpg,/漫画/超级吸引力/第54话往事/5707.jpg,/漫画/超级吸引力/第54话往事/5708.jpg,/漫画/超级吸引力/第54话往事/5709.jpg,/漫画/超级吸引力/第54话往事/5710.jpg,/漫画/超级吸引力/第54话往事/5712.jpg,/漫画/超级吸引力/第54话往事/5713.jpg,/漫画/超级吸引力/第54话往事/5714.jpg,/漫画/超级吸引力/第54话往事/5716.jpg,/漫画/超级吸引力/第54话往事/5717.jpg,/漫画/超级吸引力/第54话往事/5718.jpg,/漫画/超级吸引力/第54话往事/5720.jpg,/漫画/超级吸引力/第54话往事/5722.jpg,/漫画/超级吸引力/第54话往事/5724.jpg,/漫画/超级吸引力/第54话往事/5725.jpg,/漫画/超级吸引力/第54话往事/5727.jpg,/漫画/超级吸引力/第54话往事/5728.jpg','53','55','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='55' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','55话再遇','55','/漫画/超级吸引力/第55话再遇/5711.jpg,/漫画/超级吸引力/第55话再遇/5715.jpg,/漫画/超级吸引力/第55话再遇/5719.jpg,/漫画/超级吸引力/第55话再遇/5721.jpg,/漫画/超级吸引力/第55话再遇/5723.jpg,/漫画/超级吸引力/第55话再遇/5726.jpg,/漫画/超级吸引力/第55话再遇/5729.jpg,/漫画/超级吸引力/第55话再遇/5730.jpg,/漫画/超级吸引力/第55话再遇/5731.jpg,/漫画/超级吸引力/第55话再遇/5732.jpg,/漫画/超级吸引力/第55话再遇/5733.jpg,/漫画/超级吸引力/第55话再遇/5734.jpg,/漫画/超级吸引力/第55话再遇/5735.jpg,/漫画/超级吸引力/第55话再遇/5736.jpg,/漫画/超级吸引力/第55话再遇/5737.jpg,/漫画/超级吸引力/第55话再遇/5738.jpg,/漫画/超级吸引力/第55话再遇/5739.jpg','54','56','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='56' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','56话为什么没说','56','/漫画/超级吸引力/第56话为什么没说/5740.jpg,/漫画/超级吸引力/第56话为什么没说/5741.jpg,/漫画/超级吸引力/第56话为什么没说/5742.jpg,/漫画/超级吸引力/第56话为什么没说/5743.jpg,/漫画/超级吸引力/第56话为什么没说/5744.jpg,/漫画/超级吸引力/第56话为什么没说/5745.jpg,/漫画/超级吸引力/第56话为什么没说/5746.jpg,/漫画/超级吸引力/第56话为什么没说/5747.jpg,/漫画/超级吸引力/第56话为什么没说/5748.jpg,/漫画/超级吸引力/第56话为什么没说/5749.jpg,/漫画/超级吸引力/第56话为什么没说/5750.jpg,/漫画/超级吸引力/第56话为什么没说/5751.jpg,/漫画/超级吸引力/第56话为什么没说/5752.jpg,/漫画/超级吸引力/第56话为什么没说/5753.jpg,/漫画/超级吸引力/第56话为什么没说/5754.jpg,/漫画/超级吸引力/第56话为什么没说/5755.jpg,/漫画/超级吸引力/第56话为什么没说/5756.jpg','55','57','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='57' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','57话接触','57','/漫画/超级吸引力/第57话接触/5757.jpg,/漫画/超级吸引力/第57话接触/5758.jpg,/漫画/超级吸引力/第57话接触/5759.jpg,/漫画/超级吸引力/第57话接触/5760.jpg,/漫画/超级吸引力/第57话接触/5761.jpg,/漫画/超级吸引力/第57话接触/5762.jpg,/漫画/超级吸引力/第57话接触/5763.jpg,/漫画/超级吸引力/第57话接触/5764.jpg,/漫画/超级吸引力/第57话接触/5765.jpg,/漫画/超级吸引力/第57话接触/5766.jpg,/漫画/超级吸引力/第57话接触/5768.jpg,/漫画/超级吸引力/第57话接触/5769.jpg,/漫画/超级吸引力/第57话接触/5771.jpg,/漫画/超级吸引力/第57话接触/5773.jpg,/漫画/超级吸引力/第57话接触/5775.jpg,/漫画/超级吸引力/第57话接触/5777.jpg,/漫画/超级吸引力/第57话接触/5778.jpg','56','58','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='58' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','58话打开心结','58','/漫画/超级吸引力/第58话打开心结/5767.jpg,/漫画/超级吸引力/第58话打开心结/5770.jpg,/漫画/超级吸引力/第58话打开心结/5772.jpg,/漫画/超级吸引力/第58话打开心结/5774.jpg,/漫画/超级吸引力/第58话打开心结/5776.jpg,/漫画/超级吸引力/第58话打开心结/5779.jpg,/漫画/超级吸引力/第58话打开心结/5780.jpg,/漫画/超级吸引力/第58话打开心结/5781.jpg,/漫画/超级吸引力/第58话打开心结/5784.jpg,/漫画/超级吸引力/第58话打开心结/5787.jpg,/漫画/超级吸引力/第58话打开心结/5790.jpg,/漫画/超级吸引力/第58话打开心结/5792.jpg','57','59','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='59' WHERE `id` = 108 [ RunTime:0.0001s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','59话像做梦一样','59','/漫画/超级吸引力/第59话像做梦一样/5782.jpg,/漫画/超级吸引力/第59话像做梦一样/5783.jpg,/漫画/超级吸引力/第59话像做梦一样/5785.jpg,/漫画/超级吸引力/第59话像做梦一样/5786.jpg,/漫画/超级吸引力/第59话像做梦一样/5788.jpg,/漫画/超级吸引力/第59话像做梦一样/5789.jpg,/漫画/超级吸引力/第59话像做梦一样/5791.jpg,/漫画/超级吸引力/第59话像做梦一样/5793.jpg,/漫画/超级吸引力/第59话像做梦一样/5794.jpg,/漫画/超级吸引力/第59话像做梦一样/5795.jpg,/漫画/超级吸引力/第59话像做梦一样/5796.jpg,/漫画/超级吸引力/第59话像做梦一样/5797.jpg,/漫画/超级吸引力/第59话像做梦一样/5798.jpg,/漫画/超级吸引力/第59话像做梦一样/5799.jpg,/漫画/超级吸引力/第59话像做梦一样/5800.jpg,/漫画/超级吸引力/第59话像做梦一样/5801.jpg,/漫画/超级吸引力/第59话像做梦一样/5802.jpg','58','60','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='60' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','60话梦想成真','60','/漫画/超级吸引力/第60话梦想成真/5803.jpg,/漫画/超级吸引力/第60话梦想成真/5804.jpg,/漫画/超级吸引力/第60话梦想成真/5805.jpg,/漫画/超级吸引力/第60话梦想成真/5806.jpg,/漫画/超级吸引力/第60话梦想成真/5807.jpg,/漫画/超级吸引力/第60话梦想成真/5808.jpg,/漫画/超级吸引力/第60话梦想成真/5809.jpg,/漫画/超级吸引力/第60话梦想成真/5810.jpg,/漫画/超级吸引力/第60话梦想成真/5811.jpg','59','61','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='61' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','61话牵手','61','/漫画/超级吸引力/第61话牵手/5812.jpg,/漫画/超级吸引力/第61话牵手/5813.jpg,/漫画/超级吸引力/第61话牵手/5814.jpg,/漫画/超级吸引力/第61话牵手/5815.jpg,/漫画/超级吸引力/第61话牵手/5816.jpg,/漫画/超级吸引力/第61话牵手/5817.jpg,/漫画/超级吸引力/第61话牵手/5818.jpg,/漫画/超级吸引力/第61话牵手/5819.jpg,/漫画/超级吸引力/第61话牵手/5820.jpg,/漫画/超级吸引力/第61话牵手/5821.jpg,/漫画/超级吸引力/第61话牵手/5822.jpg,/漫画/超级吸引力/第61话牵手/5823.jpg,/漫画/超级吸引力/第61话牵手/5824.jpg,/漫画/超级吸引力/第61话牵手/5825.jpg,/漫画/超级吸引力/第61话牵手/5826.jpg,/漫画/超级吸引力/第61话牵手/5827.jpg,/漫画/超级吸引力/第61话牵手/5828.jpg','60','62','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='62' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','62话尽快证明','62','/漫画/超级吸引力/第62话尽快证明/5829.jpg,/漫画/超级吸引力/第62话尽快证明/5830.jpg,/漫画/超级吸引力/第62话尽快证明/5831.jpg,/漫画/超级吸引力/第62话尽快证明/5832.jpg,/漫画/超级吸引力/第62话尽快证明/5833.jpg,/漫画/超级吸引力/第62话尽快证明/5834.jpg,/漫画/超级吸引力/第62话尽快证明/5835.jpg,/漫画/超级吸引力/第62话尽快证明/5836.jpg,/漫画/超级吸引力/第62话尽快证明/5837.jpg,/漫画/超级吸引力/第62话尽快证明/5838.jpg,/漫画/超级吸引力/第62话尽快证明/5839.jpg,/漫画/超级吸引力/第62话尽快证明/5840.jpg,/漫画/超级吸引力/第62话尽快证明/5841.jpg,/漫画/超级吸引力/第62话尽快证明/5842.jpg,/漫画/超级吸引力/第62话尽快证明/5843.jpg,/漫画/超级吸引力/第62话尽快证明/5844.jpg,/漫画/超级吸引力/第62话尽快证明/5845.jpg','61','63','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='63' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','63话慢慢互相了解','63','/漫画/超级吸引力/第63话慢慢互相了解/5846.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5849.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5854.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5857.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5860.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5861.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5863.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5865.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5868.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5870.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5871.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5873.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5875.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5879.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5885.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5888.jpg,/漫画/超级吸引力/第63话慢慢互相了解/5891.jpg','62','64','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='64' WHERE `id` = 108 [ RunTime:0.0004s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','64话必须找到方法','64','/漫画/超级吸引力/第64话必须找到方法/5847.jpg,/漫画/超级吸引力/第64话必须找到方法/5850.jpg,/漫画/超级吸引力/第64话必须找到方法/5853.jpg,/漫画/超级吸引力/第64话必须找到方法/5856.jpg,/漫画/超级吸引力/第64话必须找到方法/5859.jpg,/漫画/超级吸引力/第64话必须找到方法/5966.jpg,/漫画/超级吸引力/第64话必须找到方法/5968.jpg,/漫画/超级吸引力/第64话必须找到方法/5970.jpg,/漫画/超级吸引力/第64话必须找到方法/5972.jpg,/漫画/超级吸引力/第64话必须找到方法/5974.jpg,/漫画/超级吸引力/第64话必须找到方法/5975.jpg,/漫画/超级吸引力/第64话必须找到方法/5978.jpg,/漫画/超级吸引力/第64话必须找到方法/5980.jpg,/漫画/超级吸引力/第64话必须找到方法/5982.jpg','63','65','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='65' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','65话办法','65','/漫画/超级吸引力/第65话办法/5848.jpg,/漫画/超级吸引力/第65话办法/5851.jpg,/漫画/超级吸引力/第65话办法/5852.jpg,/漫画/超级吸引力/第65话办法/5855.jpg,/漫画/超级吸引力/第65话办法/5858.jpg,/漫画/超级吸引力/第65话办法/5862.jpg,/漫画/超级吸引力/第65话办法/5864.jpg,/漫画/超级吸引力/第65话办法/5866.jpg,/漫画/超级吸引力/第65话办法/5867.jpg,/漫画/超级吸引力/第65话办法/5869.jpg,/漫画/超级吸引力/第65话办法/5872.jpg,/漫画/超级吸引力/第65话办法/5874.jpg,/漫画/超级吸引力/第65话办法/5877.jpg,/漫画/超级吸引力/第65话办法/5884.jpg,/漫画/超级吸引力/第65话办法/5887.jpg,/漫画/超级吸引力/第65话办法/5893.jpg,/漫画/超级吸引力/第65话办法/5899.jpg,/漫画/超级吸引力/第65话办法/5906.jpg','64','66','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='66' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','66话危机','66','/漫画/超级吸引力/第66话危机/5876.jpg,/漫画/超级吸引力/第66话危机/5878.jpg,/漫画/超级吸引力/第66话危机/5880.jpg,/漫画/超级吸引力/第66话危机/5881.jpg,/漫画/超级吸引力/第66话危机/5882.jpg,/漫画/超级吸引力/第66话危机/5883.jpg,/漫画/超级吸引力/第66话危机/5886.jpg,/漫画/超级吸引力/第66话危机/5889.jpg,/漫画/超级吸引力/第66话危机/5890.jpg,/漫画/超级吸引力/第66话危机/5894.jpg,/漫画/超级吸引力/第66话危机/5905.jpg,/漫画/超级吸引力/第66话危机/5908.jpg,/漫画/超级吸引力/第66话危机/5911.jpg,/漫画/超级吸引力/第66话危机/5915.jpg,/漫画/超级吸引力/第66话危机/5918.jpg,/漫画/超级吸引力/第66话危机/5921.jpg,/漫画/超级吸引力/第66话危机/5923.jpg,/漫画/超级吸引力/第66话危机/5931.jpg,/漫画/超级吸引力/第66话危机/5939.jpg,/漫画/超级吸引力/第66话危机/5940.jpg','65','67','0','1546621780','0') [ RunTime:0.0011s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='67' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','67话给我好好证明','67','/漫画/超级吸引力/第67话给我好好证明/5892.jpg,/漫画/超级吸引力/第67话给我好好证明/5904.jpg,/漫画/超级吸引力/第67话给我好好证明/5909.jpg,/漫画/超级吸引力/第67话给我好好证明/5912.jpg,/漫画/超级吸引力/第67话给我好好证明/5914.jpg,/漫画/超级吸引力/第67话给我好好证明/5917.jpg,/漫画/超级吸引力/第67话给我好好证明/5920.jpg,/漫画/超级吸引力/第67话给我好好证明/5924.jpg,/漫画/超级吸引力/第67话给我好好证明/5925.jpg,/漫画/超级吸引力/第67话给我好好证明/5926.jpg,/漫画/超级吸引力/第67话给我好好证明/5928.jpg,/漫画/超级吸引力/第67话给我好好证明/5929.jpg,/漫画/超级吸引力/第67话给我好好证明/5930.jpg,/漫画/超级吸引力/第67话给我好好证明/5932.jpg,/漫画/超级吸引力/第67话给我好好证明/5933.jpg,/漫画/超级吸引力/第67话给我好好证明/5934.jpg,/漫画/超级吸引力/第67话给我好好证明/5935.jpg,/漫画/超级吸引力/第67话给我好好证明/5936.jpg,/漫画/超级吸引力/第67话给我好好证明/5938.jpg','66','68','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='68' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','68话确认','68','/漫画/超级吸引力/第68话确认/5895.jpg,/漫画/超级吸引力/第68话确认/5896.jpg,/漫画/超级吸引力/第68话确认/5897.jpg,/漫画/超级吸引力/第68话确认/5898.jpg,/漫画/超级吸引力/第68话确认/5900.jpg,/漫画/超级吸引力/第68话确认/5901.jpg,/漫画/超级吸引力/第68话确认/5902.jpg,/漫画/超级吸引力/第68话确认/5903.jpg,/漫画/超级吸引力/第68话确认/5907.jpg,/漫画/超级吸引力/第68话确认/5910.jpg,/漫画/超级吸引力/第68话确认/5913.jpg,/漫画/超级吸引力/第68话确认/5916.jpg,/漫画/超级吸引力/第68话确认/5919.jpg,/漫画/超级吸引力/第68话确认/5922.jpg,/漫画/超级吸引力/第68话确认/5927.jpg,/漫画/超级吸引力/第68话确认/5937.jpg','67','69','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='69' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','69话确认完成','69','/漫画/超级吸引力/第69话确认完成/5941.jpg,/漫画/超级吸引力/第69话确认完成/5942.jpg,/漫画/超级吸引力/第69话确认完成/5943.jpg,/漫画/超级吸引力/第69话确认完成/5944.jpg,/漫画/超级吸引力/第69话确认完成/5945.jpg,/漫画/超级吸引力/第69话确认完成/5946.jpg,/漫画/超级吸引力/第69话确认完成/5947.jpg,/漫画/超级吸引力/第69话确认完成/5948.jpg,/漫画/超级吸引力/第69话确认完成/5949.jpg,/漫画/超级吸引力/第69话确认完成/5950.jpg,/漫画/超级吸引力/第69话确认完成/5951.jpg,/漫画/超级吸引力/第69话确认完成/5953.jpg,/漫画/超级吸引力/第69话确认完成/5955.jpg,/漫画/超级吸引力/第69话确认完成/5957.jpg,/漫画/超级吸引力/第69话确认完成/5958.jpg,/漫画/超级吸引力/第69话确认完成/5960.jpg,/漫画/超级吸引力/第69话确认完成/5962.jpg','68','70','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='70' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','70话实验开始','70','/漫画/超级吸引力/第70话实验开始/5952.jpg,/漫画/超级吸引力/第70话实验开始/5954.jpg,/漫画/超级吸引力/第70话实验开始/5956.jpg,/漫画/超级吸引力/第70话实验开始/5959.jpg,/漫画/超级吸引力/第70话实验开始/5961.jpg,/漫画/超级吸引力/第70话实验开始/5963.jpg,/漫画/超级吸引力/第70话实验开始/5964.jpg,/漫画/超级吸引力/第70话实验开始/5965.jpg,/漫画/超级吸引力/第70话实验开始/5967.jpg,/漫画/超级吸引力/第70话实验开始/5969.jpg,/漫画/超级吸引力/第70话实验开始/5971.jpg,/漫画/超级吸引力/第70话实验开始/5973.jpg,/漫画/超级吸引力/第70话实验开始/5976.jpg,/漫画/超级吸引力/第70话实验开始/5977.jpg,/漫画/超级吸引力/第70话实验开始/5979.jpg,/漫画/超级吸引力/第70话实验开始/5981.jpg,/漫画/超级吸引力/第70话实验开始/5983.jpg,/漫画/超级吸引力/第70话实验开始/5984.jpg,/漫画/超级吸引力/第70话实验开始/5985.jpg,/漫画/超级吸引力/第70话实验开始/5986.jpg','69','71','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='71' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','71话请求','71','/漫画/超级吸引力/第71话请求/5987.jpg,/漫画/超级吸引力/第71话请求/5988.jpg,/漫画/超级吸引力/第71话请求/5989.jpg,/漫画/超级吸引力/第71话请求/5990.jpg,/漫画/超级吸引力/第71话请求/5991.jpg,/漫画/超级吸引力/第71话请求/5992.jpg,/漫画/超级吸引力/第71话请求/5993.jpg,/漫画/超级吸引力/第71话请求/5994.jpg,/漫画/超级吸引力/第71话请求/5995.jpg,/漫画/超级吸引力/第71话请求/5996.jpg,/漫画/超级吸引力/第71话请求/5997.jpg,/漫画/超级吸引力/第71话请求/6001.jpg,/漫画/超级吸引力/第71话请求/6007.jpg,/漫画/超级吸引力/第71话请求/6009.jpg,/漫画/超级吸引力/第71话请求/6011.jpg,/漫画/超级吸引力/第71话请求/6013.jpg,/漫画/超级吸引力/第71话请求/6015.jpg,/漫画/超级吸引力/第71话请求/6016.jpg,/漫画/超级吸引力/第71话请求/6018.jpg,/漫画/超级吸引力/第71话请求/6020.jpg,/漫画/超级吸引力/第71话请求/6022.jpg,/漫画/超级吸引力/第71话请求/6026.jpg,/漫画/超级吸引力/第71话请求/6029.jpg','70','72','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='72' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','72话实验的结果','72','/漫画/超级吸引力/第72话实验的结果/5998.jpg,/漫画/超级吸引力/第72话实验的结果/5999.jpg,/漫画/超级吸引力/第72话实验的结果/6000.jpg,/漫画/超级吸引力/第72话实验的结果/6002.jpg,/漫画/超级吸引力/第72话实验的结果/6003.jpg,/漫画/超级吸引力/第72话实验的结果/6004.jpg,/漫画/超级吸引力/第72话实验的结果/6005.jpg,/漫画/超级吸引力/第72话实验的结果/6006.jpg,/漫画/超级吸引力/第72话实验的结果/6008.jpg,/漫画/超级吸引力/第72话实验的结果/6010.jpg,/漫画/超级吸引力/第72话实验的结果/6012.jpg,/漫画/超级吸引力/第72话实验的结果/6014.jpg,/漫画/超级吸引力/第72话实验的结果/6017.jpg,/漫画/超级吸引力/第72话实验的结果/6019.jpg,/漫画/超级吸引力/第72话实验的结果/6021.jpg,/漫画/超级吸引力/第72话实验的结果/6024.jpg,/漫画/超级吸引力/第72话实验的结果/6027.jpg,/漫画/超级吸引力/第72话实验的结果/6030.jpg,/漫画/超级吸引力/第72话实验的结果/6032.jpg,/漫画/超级吸引力/第72话实验的结果/6039.jpg,/漫画/超级吸引力/第72话实验的结果/6044.jpg,/漫画/超级吸引力/第72话实验的结果/6048.jpg,/漫画/超级吸引力/第72话实验的结果/6049.jpg,/漫画/超级吸引力/第72话实验的结果/6055.jpg,/漫画/超级吸引力/第72话实验的结果/6065.jpg,/漫画/超级吸引力/第72话实验的结果/6070.jpg,/漫画/超级吸引力/第72话实验的结果/6072.jpg,/漫画/超级吸引力/第72话实验的结果/6074.jpg','71','73','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='73' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','73话中枪','73','/漫画/超级吸引力/第73话中枪/6023.jpg,/漫画/超级吸引力/第73话中枪/6025.jpg,/漫画/超级吸引力/第73话中枪/6028.jpg,/漫画/超级吸引力/第73话中枪/6031.jpg,/漫画/超级吸引力/第73话中枪/6036.jpg,/漫画/超级吸引力/第73话中枪/6043.jpg,/漫画/超级吸引力/第73话中枪/6047.jpg,/漫画/超级吸引力/第73话中枪/6050.jpg,/漫画/超级吸引力/第73话中枪/6052.jpg,/漫画/超级吸引力/第73话中枪/6053.jpg,/漫画/超级吸引力/第73话中枪/6054.jpg,/漫画/超级吸引力/第73话中枪/6056.jpg,/漫画/超级吸引力/第73话中枪/6057.jpg,/漫画/超级吸引力/第73话中枪/6058.jpg,/漫画/超级吸引力/第73话中枪/6059.jpg,/漫画/超级吸引力/第73话中枪/6060.jpg,/漫画/超级吸引力/第73话中枪/6061.jpg,/漫画/超级吸引力/第73话中枪/6062.jpg,/漫画/超级吸引力/第73话中枪/6063.jpg,/漫画/超级吸引力/第73话中枪/6066.jpg,/漫画/超级吸引力/第73话中枪/6067.jpg,/漫画/超级吸引力/第73话中枪/6068.jpg,/漫画/超级吸引力/第73话中枪/6069.jpg,/漫画/超级吸引力/第73话中枪/6071.jpg','72','74','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='74' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','74话劫后余生','74','/漫画/超级吸引力/第74话劫后余生/6033.jpg,/漫画/超级吸引力/第74话劫后余生/6034.jpg,/漫画/超级吸引力/第74话劫后余生/6035.jpg,/漫画/超级吸引力/第74话劫后余生/6037.jpg,/漫画/超级吸引力/第74话劫后余生/6038.jpg,/漫画/超级吸引力/第74话劫后余生/6040.jpg,/漫画/超级吸引力/第74话劫后余生/6041.jpg,/漫画/超级吸引力/第74话劫后余生/6042.jpg,/漫画/超级吸引力/第74话劫后余生/6045.jpg,/漫画/超级吸引力/第74话劫后余生/6046.jpg,/漫画/超级吸引力/第74话劫后余生/6051.jpg,/漫画/超级吸引力/第74话劫后余生/6064.jpg','73','75','0','1546621780','0') [ RunTime:0.0002s ]
+SQL: UPDATE `vv_mh_list` SET `episodes`='75' WHERE `id` = 108 [ RunTime:0.0002s ]
+SQL: INSERT INTO `vv_mh_episodes` (`mhid`,`title`,`ji_no`,`pics`,`before`,`next`,`money`,`create_time`,`update_time`) VALUES ('108','75话另一个我？？（完）','75','/漫画/超级吸引力/第75话另一个我？？（完）/6073.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6075.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6076.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6077.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6078.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6079.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6080.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6081.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6082.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6083.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6084.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6085.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6086.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6087.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6088.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6089.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6090.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6091.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6092.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6093.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6094.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6095.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6096.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6097.jpg,/漫画/超级吸引力/第75话另一个我？？（完）/6100.jpg','74','76','0','1546621780','0') [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+
+[ 2019-01-05T01:09:41+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2019-01-05T01:09:43+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=episodes&mhid=105
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE ( id=105 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vv_mh_episodes` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_episodes` WHERE `mhid` = 105 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_mh_episodes` WHERE `mhid` = 105 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2019-01-05T01:09:55+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=del&id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: DELETE FROM `vv_mh_list` WHERE `id` = 30 [ RunTime:0.0206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2019-01-05T01:09:56+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2019-01-05T01:09:56+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2019-01-05T01:09:59+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index&p=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 100,25   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000294s ]
+
+[ 2019-01-05T01:10:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=episodes&mhid=108
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE ( id=108 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vv_mh_episodes` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_episodes` WHERE `mhid` = 108 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_mh_episodes` WHERE `mhid` = 108 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2019-01-05T01:32:40+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-01-05T01:32:52+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2019-01-05T01:32:53+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F011758775390003563.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2019-01-05T01:33:56+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: UPDATE `vv_config` SET `value`='a:18:{s:4:\"name\";s:11:\"CC漫画站\";s:9:\"subscribe\";s:6:\"关注\";s:10:\"send_money\";s:3:\"100\";s:3:\"uid\";s:24:\"ed292aa45caf5deb45432c45\";s:5:\"token\";s:32:\"891a84bdc3df4ee3d764bcdd510142d3\";s:8:\"paymodel\";s:1:\"3\";s:4:\"kfqq\";s:8:\"24814545\";s:6:\"weixin\";s:8:\"24814545\";s:3:\"vip\";s:3:\"365\";s:4:\"rate\";s:3:\"100\";s:7:\"mhmoney\";s:2:\"20\";s:7:\"xsmoney\";s:2:\"20\";s:4:\"sign\";s:3:\"100\";s:6:\"mobile\";s:11:\"13845615424\";s:7:\"smsuser\";s:7:\"chengyc\";s:6:\"smspsw\";s:8:\"27658525\";s:7:\"smssign\";s:11:\"CC漫画站\";s:6:\"qrcode\";s:53:\"./Public/upload/images/1811/24/011758775390003563.jpg\";}' WHERE `name` = 'site' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+
+[ 2019-01-05T01:33:57+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2019-01-05T01:33:57+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F24%2F011758775390003563.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+
+[ 2019-01-05T01:33:59+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=dist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2019-01-05T01:34:01+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=yyb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2019-01-05T01:34:14+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2019-01-05T01:34:51+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: UPDATE `vv_config` SET `value`='a:5:{i:1;a:3:{s:5:\"money\";s:1:\"8\";s:4:\"send\";s:3:\"800\";s:5:\"ishot\";i:0;}i:2;a:3:{s:5:\"money\";s:2:\"28\";s:4:\"send\";s:4:\"3000\";s:5:\"ishot\";i:0;}i:3;a:3:{s:5:\"money\";s:2:\"50\";s:4:\"send\";s:4:\"7000\";s:5:\"ishot\";i:0;}i:4;a:3:{s:5:\"money\";s:3:\"100\";s:4:\"send\";s:5:\"16000\";s:5:\"ishot\";s:1:\"1\";}i:5;a:3:{s:5:\"money\";s:3:\"200\";s:4:\"send\";s:5:\"38000\";s:5:\"ishot\";s:1:\"1\";}}' WHERE `name` = 'charge' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+
+[ 2019-01-05T01:34:52+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2019-01-05T01:34:58+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: UPDATE `vv_config` SET `value`='a:5:{i:1;a:3:{s:5:\"money\";s:1:\"8\";s:4:\"send\";s:3:\"800\";s:5:\"ishot\";i:0;}i:2;a:3:{s:5:\"money\";s:2:\"28\";s:4:\"send\";s:4:\"3000\";s:5:\"ishot\";i:0;}i:3;a:3:{s:5:\"money\";s:2:\"50\";s:4:\"send\";s:4:\"7000\";s:5:\"ishot\";s:1:\"1\";}i:4;a:3:{s:5:\"money\";s:3:\"100\";s:4:\"send\";s:5:\"16000\";s:5:\"ishot\";i:0;}i:5;a:3:{s:5:\"money\";s:3:\"200\";s:4:\"send\";s:5:\"38000\";s:5:\"ishot\";s:1:\"1\";}}' WHERE `name` = 'charge' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+
+[ 2019-01-05T01:34:59+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2019-01-05T01:35:01+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=yyb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2019-01-05T01:35:02+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=charge
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2019-01-05T01:35:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=send
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2019-01-05T01:35:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=2&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030513547258009716.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2019-01-05T01:35:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=1&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030511906701003443.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011547s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2019-01-05T01:35:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=3&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030515531618007134.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2019-01-05T01:35:04+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPath&cur_index=4&url=.%2FPublic%2Fupload%2Fimages%2F1804%2F24%2F030517500688005051.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2019-01-05T01:35:05+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=ads
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2019-01-05T01:35:05+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F15%2F230605878937004817.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2019-01-05T01:35:10+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=ads
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: UPDATE `vv_config` SET `value`='a:5:{s:3:\"url\";s:21:\"http://www.efucms.com\";s:3:\"pic\";s:53:\"./Public/upload/images/1811/15/230605878937004817.jpg\";s:7:\"chapter\";s:1:\"1\";s:8:\"achapter\";s:3:\"2,5\";s:8:\"xchapter\";s:2:\"10\";}' WHERE `name` = 'ads' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+
+[ 2019-01-05T01:35:12+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=ads
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined index: isopen /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/9aea026682172549f042cff3995bc077.php 第 248 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2019-01-05T01:35:12+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Config&a=upload&event=setPic&url=.%2FPublic%2Fupload%2Fimages%2F1811%2F15%2F230605878937004817.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined index: cur_index /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/42684e41b5d7d3bd6b9e714a62a1e7f6.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2019-01-05T01:35:15+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Book&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/BookController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/BookController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/BookController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_book` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_book` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_book` ORDER BY sort desc LIMIT 0,25   [ RunTime:0.0111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2019-01-05T01:35:16+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Book&a=episodes&bid=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_book` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_book` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vv_book_episodes` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_book_episodes` WHERE `bid` = 5 LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT * FROM `vv_book_episodes` WHERE `bid` = 5 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2019-01-05T01:37:19+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Book&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/BookController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/BookController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/BookController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_book` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_book` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_book` ORDER BY sort desc LIMIT 0,25   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/afa8c6529ef554789834553d1ae7ec47.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2019-01-05T01:37:21+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2019-01-05T01:37:29+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=episodes&mhid=56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE ( id=56 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `vv_mh_episodes` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_episodes` WHERE `mhid` = 56 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `vv_mh_episodes` WHERE `mhid` = 56 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2019-01-05T01:52:35+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2019-01-05T01:52:36+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 7 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: where /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_mh_list` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `vv_mh_list` ORDER BY sort desc,id desc LIMIT 0,25   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined index: title /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 247 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 260 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 262 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 273 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 275 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 279 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 281 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 285 行.
+NOTIC: [8] Undefined index: order /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/34e4b095905075aaede5ee9039415509.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2019-01-05T01:52:37+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0002s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] Undefined index: id /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/ProductController.class.php 第 89 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 255 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 261 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 267 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: mhcate /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 273 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 279 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 279 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 280 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 280 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 281 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 281 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 282 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 282 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 283 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 283 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 284 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 284 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 285 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 285 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 286 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 286 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 287 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 287 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 288 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 288 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 289 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 289 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 290 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 290 行.
+NOTIC: [8] Undefined variable: arrcateids /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 291 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 291 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 297 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 298 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 304 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 304 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 310 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 316 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 322 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 328 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 329 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 335 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 336 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 342 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 343 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 351 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 359 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 378 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 387 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 396 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 397 行.
+NOTIC: [8] Undefined variable: info /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Admin/b3c4eeadefc336ccc37682b1e72f6690.php 第 410 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2019-01-05T01:52:37+08:00 ] 111.165.134.121 /efucms.php?m=Admin&c=Product&a=upload&event=setPics&url=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Admin/Controller/AdminController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+

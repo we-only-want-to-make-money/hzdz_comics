@@ -1,0 +1,92 @@
+<!-- <footer id="footer">
+			<div>
+				<a href="{:U('Index/index')}">
+					<div class="icon i-1 on"></div>
+					<p>首页</p>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="icon i-2"></div>
+					<p>预存</br>代理</p>
+				</a>
+			</div>
+			<div>
+				<a href="rush.html">
+					<div class="icon i-status" style="position: relative;top: -22px;"></div>
+				</a>
+			</div>
+			<div>
+				<a href="{:U('Index/applyT')}">
+					<div class="icon i-3"></div>
+					<p>申请</br>讲师</p>
+				</a>
+			</div>
+			<div>
+				<a href="{:U('Ucenter/index')}">
+					<div class="icon i-4"></div>
+					<p>个人</br>中心</p>
+				</a>
+			</div>			
+		</footer>	 -->	
+
+<style>
+
+.bottom {
+    background: #64BDB7;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 100;
+    padding: 5px 0px;
+	color:#fff;
+    box-shadow: 0px 0px 8px #c1c1c1;
+}
+.bottom a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #333333;
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 30px;
+	color:#fff;
+}
+.bottom .f1{
+	background: url(./Public/images/f1.png) no-repeat top center;
+    background-size: 30px 30px;
+}
+.bottom .f2{
+	background: url(./Public/images/f2.png) no-repeat top center;
+    background-size: 40px 30px;
+}
+.bottom .f3{
+	background: url(./Public/images/f3.png) no-repeat top center;
+    background-size: 30px 30px;
+}
+.bottom .f4{
+	background: url(./Public/images/f4.png) no-repeat top center;
+    background-size: 30px 30px;
+}
+.bottom span{
+	display: block;
+    height: 60px;
+    width: 1px;
+    background: #ddd;
+    left: 50%;
+    position: fixed;
+    bottom: .5px;
+}
+</style>
+<div class="bottom">
+	<a href="{:U('Index/index')}" class="f1">首页</a>
+	<a href="{:U('Ucenter/myGoods')}"  class="f2">我的课程</a>
+	<a href="{:U('Index/applyT')}"  class="f3">申请讲师</a>
+	<a href="{:U('Ucenter/index')}"  class="f4">个人中心</a>
+</div>
+</body>
+<include file="include/share2" />
+</html>

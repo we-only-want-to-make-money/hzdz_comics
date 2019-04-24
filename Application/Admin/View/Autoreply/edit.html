@@ -1,0 +1,72 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">编辑自动回复内容</h1>
+            <span class="pagedesc">图文回复请保存后编辑文章</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>关键词<small>多个关键词用,分开</small></label>
+					<span class="field"><input type="text" name="keyword" id="keyword" value="{$info.keyword}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>回复类型</label>
+					<span class="field">
+						<select name="type" id="type" default="{$info.type}" onchange="type_change()">
+							<option value="1">文本回复</option>
+							<option value="2">图文回复</option>
+						</select>
+					</span>
+				</p>
+				<p>
+					<label>说明</label>
+					<span class="field">
+						<span class="fortext">请在下面编辑回复内容，可以用A标签来做超链接</span>
+						<span class="forimgtxt">请保存后点击后面的管理文章设置回复的文章</span>
+					</span>
+				</p>
+				<p id="content_row">
+					<label>回复内容</label>
+					<span class="field">
+						<textarea name="content" id="content" class="longinput" style="height:70px;" >{$info.content}</textarea>
+					</span>
+				</p>
+				
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+			<script>
+			function type_change(){
+				obj = jQuery("#type");
+				t = obj.val();
+				if(t==2){
+					jQuery("#content_row").hide();
+					jQuery(".fortext").hide();
+					jQuery(".forimgtxt").show();
+				}else{
+					jQuery("#content_row").show();
+					jQuery(".fortext").show();
+					jQuery(".forimgtxt").hide();
+				}
+			}
+			
+			jQuery(document).ready(function(e){
+				$ = jQuery;
+				// 调整默认选择内容
+				jQuery("select").each(function(index, element) {
+					$(element).find("option[value='"+$(this).attr('default')+"']").attr('selected','selected');
+				});
+				// 调整提示内容
+				type_change();
+			});
+			
+			</script>
+        </div><!--contentwrapper-->
+        

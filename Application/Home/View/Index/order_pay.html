@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no">
+<title>{$_site['name']} -- 安全支付</title>
+<link href="__PUBLIC__/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/store.css?bc" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/user.css" rel="stylesheet" type="text/css" />
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>	
+</head>
+<body>
+	<div class="header-blank"></div>
+    <div class="header">
+		订单支付
+	</div>
+	
+	<div class="orderpay-main">
+		<form method="post" action="{:U('Index/pay?order_id='.$info['id'])}" name="form" id="form">
+			<div class="orderpay-tips">订单提交成功，请尽快支付！</div>
+			<div class="orderpay-info">
+				<p>订单号：{$info.sn}</p>
+				<p>商品总价：{$info.money}</p>
+				<p>&nbsp;</p>
+				<p>应付金额：{$info['money']}</p>
+			</div>
+			<div class="orderpay-pay">
+				<p>
+					<input type="radio" name="checks" value="1" checked /> 微信安全支付
+				</p>
+				<p>
+					<input type="radio" name="checks" value="2" /> 支付宝支付
+				</p>
+				<p>
+					<input type="radio" name="checks" value="3" /> 余额支付(可用：￥{$user.money})
+				</p>
+			</div>
+			<div class="orderpay-btn">
+				
+				<a href="javascript:;" onclick="form_submit()">立即支付</a>
+			</div>
+			<script>
+				var need = {$info['money']};
+				var money = {$user.money};
+				
+				function form_submit(){
+					// 没有勾选微信支付则判断余额是否足够
+					var checks = $("input[name=checks]:checked").val();
+					if(checks == 3){
+						if(money < need){
+							alert('所选择的支付方式余额不够,请勾选其他支付方式');
+							return false;
+						}
+					}					
+					form.submit();
+				}
+			</script>
+		</form>
+	</div>
+	
+	<include file="include/bottom" />
+
+
+</body>
+</html>

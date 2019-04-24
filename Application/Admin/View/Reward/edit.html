@@ -1,0 +1,83 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">发放分红</h1>
+            <span class="pagedesc">请认真填写各项信息，提交后不可撤销</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>昨日总营业额</label>
+					<span class="field"><input type="text" name="last_sales" id="last_sales" value="{$last_sales}" readonly class="smallinput" /></span>
+				</p>
+				<p>
+					<label>选择用户等级</label>
+					<span class="field">
+						<select name="level" default="{$info.level}" onchange="getUserCount()">
+							<volist name="_CFG['level']" id="vo">
+							<option value="{$key}">{$vo.name}</option>
+							</volist>
+						</select>
+					</span>
+					<script>
+					var last_sales = {$last_sales|default=0};
+					function getUserCount(){
+						level = jQuery("select[name=level]").val();
+						jQuery.post("{:U('get_user_count')}",{level:level},function(d){
+							nums = d.nums
+							jQuery('#nums').text(nums); 
+							jQuery('#bonus').text(d.bonus); 
+							jQuery('#total').text(parseFloat(d.bonus*last_sales/100).toFixed(2)); 
+							jQuery('#per').text((d.bonus*last_sales/d.nums/100).toFixed(2));
+							//sum();
+						});
+					}
+					
+					function sum(){
+						nums = parseInt(jQuery(".nums").text());
+						if(isNaN(nums) || nums <0){
+							nums = 0;
+						}
+						
+						money = parseFloat(jQuery("#money").val());
+						if(isNaN(money) || money <0){
+							money = 0;
+						}
+						
+						total = nums * money;
+						jQuery(".total").text(total);
+					}
+					
+					jQuery(document).ready(function(){
+						getUserCount();
+						jQuery("#money").on('input',function(e){ sum();});
+					});
+					</script>
+				</p>
+				<p>
+					<label>每人发放金额</label>
+					<span class="field"><input type="text" name="money" id="money" value="{$info.money}" class="smallinput" /></span>
+				</p>
+				<p>
+					<style>
+					.nums,.total{ font-weight:bold;}
+					</style>
+					<label>分红计算</label>
+					<span class="field">
+						共发放{$last_sales|default=0}*<span id="bonus">0</span>%=<span id="total">0</span>元<br/>
+						这个等级共有<span id="nums">1</span>个会员<br/>
+						每人发放金额为<span id="per">0</span>元</span>
+					</span>
+				</p>
+				
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">确认发放(确认后无法撤销)</button>
+				</p>
+			</form>
+        
+        </div><!--contentwrapper-->
+        

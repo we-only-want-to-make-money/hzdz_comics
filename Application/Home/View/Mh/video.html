@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html data-dpr="1" style="font-size: 37.5px;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{$_CFG['site']['name']}</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="designWidth=750,width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/mhcss/video.css">
+<script type="text/javascript" src="__PUBLIC__/home/mhjs/jquery.js"></script>
+</head>
+<body style="font-size: 12px;">
+	<header>
+		<input id="keyword" value="{$_GET['keyword']}" placeholder="输入视频标题/作者搜索..." />
+		<button onclick="search();">搜索</button>
+	</header>
+	<div class="content">
+		<foreach name="list" item="v">
+			<a href="{:U('Mh/videoinfo')}&id={$v.id}">
+				<div class="c-box">
+					<div class="box-txt">
+						<img src="{$v.cover_pic}" />
+						<div class="title">
+							<h3>{$v.title}</h3>
+							<p>交易量：{$v['sold']}</p>
+							<p>{$v['author']}<span>价格:{$v.price}元</span></p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</foreach>
+		<div style="clear:both;height:1.33rem"></div>
+	</div>
+	<div class="tabar flb">
+		<nav class="nav hls1">
+			<div class="item">
+				<a href="{:U('Mh/video')}" class="active">
+					<i class="icon-book"></i><div class="title">必看视频</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="{:U('Mh/book_shelf')}">
+					<i class="icon-book"></i><div class="title">书架</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="{:U('Mh/index')}">
+					<i class="icon-home"></i><div class="title">经典漫画</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="{:U('Mh/my')}">
+					<i class="icon-user"></i><div class="title">我的</div>
+				</a>
+			</div>
+		</nav>
+	</div>
+	<script>
+		function search(){
+			var keyword = $("#keyword").val();
+			location.href= "{:U('Mh/video')}&keyword="+keyword;
+		}
+	</script>
+    <include file="include/share2" />
+</body>
+</html>

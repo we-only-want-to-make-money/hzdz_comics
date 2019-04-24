@@ -1,0 +1,64 @@
+.change_pwd_box{
+	padding: 50px 0 0 0;
+}
+.change_pwd_box .control-label{
+	float: left;
+	width:100px;
+	text-align:right;
+	font-weight: normal;
+	font-size: 14px;
+}
+.change_pwd_box .controls input{
+	width:280px;
+	line-height: 32px;
+	border-radius: 5px;
+	margin:0 0 0 10px;
+
+}
+.change_pwd_box .control-group{
+	margin-bottom: 20px;
+}
+.change_pwd_box .control-group{
+	padding:0 0 0 200px;
+}
+.change_pwd_box .control-group:nth-child(6){
+	margin-bottom: 50px;
+	/*padding-right: 200px;*/
+}
+.change_pwd_box .setting_role_btn{
+	padding:0 0 0 370px;
+}
+.change_pwd_box .form-actions button{
+	width:100px;
+}
+.saa_select label{
+	padding: 0 !important;
+}
+.saa_select div.controls{
+	float: left;
+	margin-left: 10px;
+	width: 800px;
+	/*padding-top: 4px;*/
+}
+.saa_select .manage_choose>ul>li{
+	/*margin-bottom: 15px;*/
+}
+.saa_select .manage_choose>ul>li>span{
+	font-size: 14px;
+	/*line-height: 14px;
+	float: left;*/
+	margin-right: 10px;
+}
+.saa_select .manage_choose>ul>li>.manage_role {
+	/*float: left;
+	padding: 0 !important;*/
+}
+.saa_select .manage_choose ul li ul li{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 6px;
+}
+.saa_select .manage_choose ul li ul li span{
+	float: left;
+	line-height: 14px;
+}

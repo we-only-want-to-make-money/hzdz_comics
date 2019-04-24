@@ -1,0 +1,53 @@
+<style>
+.swiper-no{
+    padding: 20px 0 20px 0;
+    min-height: 50px;
+    line-height: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #93899E;
+    margin: 0 auto;
+}
+</style>
+<if condition="$list">
+<foreach name="list" item="v">
+<li class="flex">
+	<img src="{$v['headimg']}" />
+	<div class="flex_1">
+		<p style="padding-top:6px">昵称：{$v['nickname']}</p>
+		<p style="padding-top:6px">微信号：{$v['wxid']}</p>
+		<p style="padding-top:6px">等级：{:get_level_lv_name($v['level'],$v['lv'])}</p>
+	</div>
+	<if condition="$type">
+		<div class="leava_msg" onclick="window.location.href=&#39;{:U('Ucenter/message',array('touser'=>$v['id']))}&#39;">
+			<i class="iconfont icon-community"></i>
+			<h5>给Ta留言</h5>
+		</div>
+	<else />
+		<div class="leava_msg">
+			<i class="iconfont icon-recharge"></i>
+			<h5>{:sprintf("%.2f",$v['money'])}</h5>
+		</div>
+	</if>
+</li>
+</foreach>
+<else />
+	<if condition="$page eq 1">
+	<div class="swiper-s">
+		<div class="swiper-no">
+			<img src="__HIMAGE__/empty.png" />
+		</div>
+		<div class="swiper-no">
+			您还未有客户
+		</div>
+	 </div>
+	<else />
+	<div class="swiper-ss" id="common-load">
+		<div class="swiper-no">
+			已经加载完数据！
+		</div>
+	</div>
+	</if>
+</if>

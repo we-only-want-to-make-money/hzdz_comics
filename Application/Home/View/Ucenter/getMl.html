@@ -1,0 +1,49 @@
+<style>
+.swiper-no{
+    padding: 20px 0 20px 0;
+    min-height: 50px;
+    line-height: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #93899E;
+    margin: 0 auto;
+}
+.swiper-no img{width:35%}
+</style>
+<if condition="$list">
+<foreach name="list" item="v">
+<li class="clear">
+	<div class="fl">
+		<div>{:get_finance_action($v['action'])}</div>
+		<div style="margin-top:8px;">{$v['create_time']|date="Y-m-d H:i:s",###}</div>
+	</div>		
+	<div class="fr" style="color:#659ed2;margin-top:15px;font-size:14px;margin:10px;">
+		<if condition="$v['action'] eq 2 or $v['action'] eq 4 or $v['action'] eq 6">
+			-
+		<else />
+			+
+		</if>
+		{$v.money}
+	</div>
+</li>
+</foreach>
+<else />
+	<if condition="$page eq 1">
+	<div class="swiper-s">
+		<div class="swiper-no">
+			<img src="__HIMAGE__/empty.png" />
+		</div>
+		<div class="swiper-no">
+			您还未没有信息
+		</div>
+	 </div>
+	<else />
+	<div class="swiper-ss" id="common-load">
+		<div class="swiper-no">
+			已经加载完数据！
+		</div>
+	</div>
+	</if>
+</if>

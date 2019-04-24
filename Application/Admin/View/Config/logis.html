@@ -1,0 +1,39 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">物流设置</h1>
+            <span class="pagedesc"></span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>默认运费<small>留空则不启用运费</small></label>
+					<span class="field"><input type="text" name="default_fee" id="default_fee" value="{$_CFG.logis.default_fee}" class="smallinput" /></span>
+				</p>
+				
+				<p>
+					<label>免运费金额<small>满多少金额免运费,留空不生效</small></label>
+					<span class="field"><input type="text" name="free_money" id="free_money" value="{$_CFG.logis.free_money}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>免运费数量<small>满多少件免运费,留空不生效</small></label>
+					<span class="field"><input type="text" name="free_count" id="free_count" value="{$_CFG.logis.free_count}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>物流说明<small>显示在提交订单页面</small></label>
+					<span class="field"><input type="text" name="remark" id="remark" value="{$_CFG.logis.remark}" class="smallinput" /></span>
+				</p>
+				
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

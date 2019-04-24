@@ -1,0 +1,75 @@
+{__NOLAYOUT__}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>管理后台</title>
+<link rel="stylesheet" href="/Public/admin/css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="/Public/plugins/bootstrap/css/bootstrap.font.css" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="/Public/admin/js/custom/general.js"></script>
+
+<!--[if IE 9]>
+    <link rel="stylesheet" media="screen" href="css/style.ie9.css"/>
+<![endif]-->
+<!--[if IE 8]>
+    <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/plugins/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body class="withvernav">
+        <div class="pageheader notab">
+            <h1 class="pagetitle">模板消息设置</h1>
+            <span class="pagedesc"></span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>初始化</label>
+					<span class="field">
+						使用模板消息功能之前，您需要将公众号主行业设置为“IT科技/互联网|电子商务”，然后点击下面的初始化按钮来初始化模板消息的一些参数。
+						<button type="button"  class="submit radius2" onclick="init_tplmsg()" >初始化</button>
+					</span>
+				</p>
+				
+				<p>
+					<label>升级成功通知</label>
+					<span class="field">
+						<input type="checkbox" name="OPENTM207008612" onclick="switch_status(this)" <if condition="$_CFG['tplmsg']['OPENTM207008612']['status'] eq 1">checked</if> <empty name="_CFG['tplmsg']['OPENTM207008612']['id']">disabled</empty> /> 勾选表示启用
+					</span>
+				</p>
+				<script>
+				function init_tplmsg(){
+					jQuery.post(location.href,{act:'init'},function(d){
+						alert(d.info);
+						if(d.status==1)location.href=location.href;
+					});
+				}
+				
+				function switch_status(obj){
+					id = jQuery(obj).attr('name');
+					status = jQuery(obj).is(':checked') ? 1 : 0;
+					jQuery.post(location.href,{act:'switch', id:id, status:status},function(d){
+						alert(d.info);
+						if(d.status==1)location.href=location.href;
+					});
+				}
+				</script>
+				
+				<!--p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p-->
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

@@ -1,0 +1,47 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">公众号设置</h1>
+            <span class="pagedesc">设置您的公众号信息，对接公众平台开发者中心</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post" enctype="multipart/form-data">
+				<p>
+					<label>APPID</label>
+					<span class="field"><input type="text" name="appid" id="appid" value="{$_CFG.mp.appid}" class="smallinput" /></span>
+				</p>
+				
+				<p>
+					<label>APPSECRET</label>
+					<span class="field"><input type="text" name="appsecret" id="appsecret" value="{$_CFG.mp.appsecret}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>商户号(MCH_ID)</label>
+					<span class="field"><input type="text" name="mch_id" id="mch_id" value="{$_CFG.mp.mch_id}" class="smallinput" /></span>
+				</p>
+
+				<p>
+					<label>支付密钥(KEY)</label>
+					<span class="field"><input type="text" name="key" id="key" value="{$_CFG.mp.key}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>API证书<small>请直接上传从微信下载的cert.zip</small></label>
+					<span class="field">
+						<input type="file" name="cert" />
+						<notempty name="_CFG['mp']['cert']">您已上传过证书</notempty>
+					</span>
+				</p>
+				
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

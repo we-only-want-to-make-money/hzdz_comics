@@ -1,0 +1,74 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">打赏赠送设置</h1>
+            <span class="pagedesc">前端用户对喜爱的漫画或小说进行打赏的相关设置，包括打赏赠送的礼物图案以及对应的书币量。</span>
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<div class="tableoptions">                    
+                    <input value="添加一项" type="button" class="radius3" onclick="add_row()" />
+                </div><!--tableoptions-->
+				<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+                    <thead>
+                        <tr>
+                            <th class="head1" width="120">图片</th>
+							<th class="head1">打赏书币</th>
+							<th class="head1">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+						
+                    	<volist name="_send" id="vo">
+                        <tr style="background:#fff">
+                            <td>
+								<iframe src="{:U('upload?event=setPath&cur_index='.$i.'&url='.$vo['pic'])}" scrolling="no" style="width:100px; height:100px;"></iframe>
+								<input type="hidden" name="pic[]" value="{$vo.pic}" />
+							</td>
+							<td><input type="text" name="money[]" value="{$vo.money}" /></td>
+							<td><a href="javascript:;" onclick="del_row(this)">删除</a></td>
+                        </tr>
+                        </volist>
+                    </tbody>
+                </table>
+				<script>
+				var cur_index = null;
+					index = null;
+				function add_row(){
+					//return false;
+					html = '<tr style="background:#fff">'
+							+'	 <td>'
+							+'		<iframe src="{:U('upload?cur_index=_n_&event=setPath')}" scrolling="no" style="width:100px; height:100px;"></iframe>'
+							+'		<input type="hidden" name="pic[]" value="" />'
+							+'	</td>'
+							+'	<td><input type="text" name="money[]" /></td>'
+							+'<td><a href="javascript:;" onclick="del_row(this)">删除</a></td>'
+							+'</tr>';
+						 
+					size = jQuery("#table2").find("tbody").find("tr").size();
+					size_r = size+1;
+					jQuery("#table2").find("tbody").append(html.replace('_n_',size_r));
+				}
+				
+				function del_row(obj){
+					jQuery(obj).parent("td").parent("tr").remove();
+				}
+				
+				function setPath(url){
+					if(cur_index==null)return;
+					index = cur_index;
+					cur_index= null;
+					jQuery("#table2").find("tbody").find("tr").eq(index-1).find("td:eq(0)").find("input[type=hidden]").val(url);
+				}
+				</script>
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

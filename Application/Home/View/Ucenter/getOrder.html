@@ -1,0 +1,73 @@
+<style>
+.swiper-no{
+    padding: 20px 0 20px 0;
+    min-height: 50px;
+    line-height: 10px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #93899E;
+    margin: 0 auto;
+}
+.order-item .order-count ul li {
+    float: left;
+    width: 45%;
+    padding: 0px 2px;
+}
+.order-item .order-count ul li img {
+    width: 100%;
+    height: 80px;
+}
+.order-item h3 span:last-child {
+    float: right;
+    color: #f39800;
+}
+.order-item {
+    margin-bottom: 10px;
+}
+</style>
+<if condition="$list">
+<foreach name="list" item="v">
+<div class="order-item">
+	<div>
+		<h3>
+			<span style="color:#f39800;">下单时间：{$v['create_time']|date="Y-m-d H:i:s",###}</span>
+				<span>{:get_order_status($v['status'])}</span>
+		</h3>
+		<h3>
+			<span style="float:left;">订单编号：{$v['sn']}</span>
+		</h3>
+		<div class="order-count">
+			<ul class="clr">
+				<foreach name="v['cart']" item="val">
+					<li><a href="{:U('Ucenter/play',array('gid'=>$val['goods_id']))}" target="_self" alt="点击观看"><img src="{$val['pic']}"></a></li>
+				</foreach>
+			</ul>
+			<div>
+				<p>{$v['count']}个包裹(共{$v['count']}件)</p><p>￥{$v['money']}</p>
+			</div>
+			<i class="iconfont icon-right"></i>
+		</div>
+	</div>
+	
+</div>
+</foreach>
+<else />
+	<if condition="$page eq 1">
+	<div class="swiper-s">
+		<div class="swiper-no">
+			<img src="__HIMAGE__/empty.png" />
+		</div>
+		<div class="swiper-no">
+			您还未购买课程
+		</div>
+	 </div>
+	<else />
+	<div class="swiper-ss" id="common-load">
+		<div class="swiper-no">
+			已经加载完数据！
+		</div>
+	</div>
+	</if>
+</if>

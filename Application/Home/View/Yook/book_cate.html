@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://m.efucms.com/book/{:U('Mh/book_cate')} -->
+<html data-dpr="1" style="font-size: 41.6px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{$_CFG['site']['name']} - 分类</title>
+    <meta name="keywords" content="漫画,漫画大全,漫画图片,免费漫画,原创漫画,在线漫画,神漫画,漫画下载,看漫画,手机漫画,小说漫画源码">
+    <meta name="description" content="efucms小说漫画源码系统致力于打造正版小说漫画在线阅读平台搭建、网站开发,连载众多优秀原创国漫等海量精彩内容,小说漫画网站建设,就用易付漫画小说系统源码!">
+    <!-- 共用引入资源.开始 -->
+
+    <script src="__PUBLIC__/home/mhjs/stats.js" name="MTAH5" sid="500462993"></script>
+    <meta name="viewport" content="designWidth=750,width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 防止加载lib.flexible加载的时候文字由大变小的闪烁 -->
+    <style>html,body{font-size:12px;}</style>
+    <!-- lib.flexible 移动端相对适应比例 必须在浏览器head类 -->
+    <script type="text/javascript">
+        !function (a, b) { function c() { var b = f.getBoundingClientRect().width; b / i > 540 && (b = 540 * i); var c = b / 10; f.style.fontSize = c + "px", k.rem = a.rem = c } var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'), h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {}); if (g) {  var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/); l && (j = parseFloat(l[1]), i = parseInt(1 / j)) } else if (h) { var m = h.getAttribute("content"); if (m) { var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/); n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2))) } } if (!i && !j) { var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)), q = a.devicePixelRatio; i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i } if (f.setAttribute("data-dpr", i), !g) if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + 1 + ", maximum-scale=" + 1 + ", minimum-scale=" + 1 + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else { var r = e.createElement("div"); r.appendChild(g), e.write(r.innerHTML) } a.addEventListener("resize", function () { clearTimeout(d), d = setTimeout(c, 300) }, !1), a.addEventListener("pageshow", function (a) { a.persisted && (clearTimeout(d), d = setTimeout(c, 300)) }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () { e.body.style.fontSize = 12 * i + "px" }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) { var b = parseFloat(a) * this.rem; return "string" == typeof a && a.match(/rem$/) && (b += "px"), b }, k.px2rem = function (a) { var b = parseFloat(a) / this.rem; return "string" == typeof a && a.match(/px$/) && (b += "rem"), b } }(window, window.lib || (window.lib = {}));
+    </script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/mhcss/style.min.css">
+    <script type="text/javascript" src="__PUBLIC__/home/mhjs/fundebug.0.1.7.min.js" apikey="ba3a0e0d938e92b44f279067dffb8d071ee87fc35eb75918b7a900e8581a955d"></script>
+    <script type="text/javascript" src="__PUBLIC__/home/mhjs/jquery.js"></script>
+    <!-- 共用引入资源.结束 -->
+    <script type="text/javascript" src="__PUBLIC__/home/mhjs/saved_resource"></script>
+</head>
+<body style="font-size: 12px;">
+<div class="navbar flt">
+    <nav class="tab-box">
+        <div class="item">
+            <a href="{:U('index')}">首页</a>
+        </div>
+        <div class="item">
+            <a href="{:U('book_cate')}" class="active">分类</a>
+        </div>
+    </nav>
+    <div class="action">
+        <a href="{:U('Book/load_search')}" class="btn">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+            <path d="M35.94 35.94l7.71 7.71" fill="none" stroke="#fff" stroke-width="3"></path>
+            <circle cx="23.3" cy="23.3" r="18.5" fill="none" stroke="#fff" stroke-width="3"></circle>
+            <path d="M11.72 23.15A12 12 0 0 1 24.5 12" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"></path></svg>
+        </a>
+    </div>
+</div>
+
+<nav class="nav-row-cate mt-navbar">
+    <div class="shrink collect-box condition-box" style="display: none;">
+        <div class="row container close-type">
+            <div class="item"><a href="javascript:;" type="tid" val="0" class="active" id="close-all">全部</a></div>
+            <div class="item"><a href="javascript:;" type="tid" val="1" id="close-8">总裁</a></div>
+            <div class="item"><a href="javascript:;" type="tid" val="2" id="close-12">穿越</a></div>
+            <div class="item"><a href="javascript:;" type="tid" val="3" id="close-1">校园</a></div>
+            <div class="item"><a href="javascript:;" type="tid" val="4" id="close-11">恐怖</a></div>
+        </div>
+    </div>
+    <div class="shrink open-box condition-box" style="display: block;">
+        <div class="row has-label">
+            <label class="label"><span>分类</span></label>
+            <div class="container open-type">
+                <div class="item"><a href="{:U('book_cate')}&cateid=0" type="tid" val="0" <if condition="$cateid eq 0">class="active"</if> id="open-all">全部</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=1" type="tid" val="1" <if condition="$cateid eq 1">class="active"</if> id="open-8">总裁</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=2" type="tid" val="2" <if condition="$cateid eq 2">class="active"</if> id="open-12">穿越</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=3" type="tid" val="3" <if condition="$cateid eq 3">class="active"</if> id="open-1">校园</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=4" type="tid" val="4" <if condition="$cateid eq 4">class="active"</if> id="open-11">恐怖</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=5" type="tid" val="5" <if condition="$cateid eq 5">class="active"</if> id="open-3">古风</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=6" type="tid" val="6" <if condition="$cateid eq 6">class="active"</if> id="open-2">恋爱</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=7" type="tid" val="7" <if condition="$cateid eq 7">class="active"</if> id="open-13">奇幻</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=8" type="tid" val="8" <if condition="$cateid eq 8">class="active"</if> id="open-4">热血</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=9" type="tid" val="9" <if condition="$cateid eq 9">class="active"</if> id="open-5">悬疑</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=10" type="tid" val="10" <if condition="$cateid eq 10">class="active"</if> id="open-6">耽美</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=11" type="tid" val="11" <if condition="$cateid eq 11">class="active"</if> id="open-7">都市</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=12" type="tid" val="12" <if condition="$cateid eq 12">class="active"</if> id="open-9">爆笑</a></div>
+                <div class="item"><a href="{:U('book_cate')}&cateid=13" type="tid" val="13" <if condition="$cateid eq 13">class="active"</if> id="open-14">真人</a></div>
+            </div>
+        </div>
+        <div class="row has-label">
+            <label class="label"><span>状态</span></label>
+            <div class="container">
+                <div class="item"><a href="{:U('book_cate')}&status=0" type="end" val="0" <if condition="$status eq 0">class="active"</if> >全部</a></div>
+                <div class="item"><a href="{:U('book_cate')}&status=1" type="end" val="1" <if condition="$status eq 1">class="active"</if> >连载</a></div>
+                <div class="item"><a href="{:U('book_cate')}&status=2" type="end" val="2" <if condition="$status eq 2">class="active"</if> >完结</a></div>
+            </div>
+        </div>
+        <div class="row has-label">
+            <label class="label"><span>属性</span></label>
+            <div class="container">
+                <div class="item"><a href="{$selfurl}&free_type=0" type="vip" val="0" <if condition="$free_type eq 0">class="active"</if> >全部</a></div>
+                <div class="item"><a href="{$selfurl}&free_type=1" type="vip" val="1" <if condition="$free_type eq 1">class="active"</if> >免费</a></div>
+                <div class="item"><a href="{$selfurl}&free_type=2" type="vip" val="2" <if condition="$free_type eq 2">class="active"</if> >付费</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="action">
+        <a href="javascript:void(0);" class="opened"><span class="text">收起</span><i class="icon-arrow"></i></a>
+    </div>
+</nav>
+
+
+<div class="books-list mt-10 mb-tabar" id="html_box">
+    <!-- <div class="item"> <a href="https://m.efucms.com/book/10058/"> 
+    <div class="cover"> <img width="160" height="90" href="__PUBLIC__/home/mhimages/5a2226c231e1e.jpg"> </div> 
+    <div class="body"> <div class="title">我在殡仪馆工作的那些事儿</div> <div class="text">他脱了殡仪馆女尸的衣服，当礼送人</div> 
+    <div class="bottom"> 
+    <span class="col"><i class="icon-gray-hot"></i> 225.2万</span> 
+    <span class="col"><i class="icon-hand"></i> 2万</span> </div> </div> </a> 
+    </div> -->
+    <volist name="list" id="vo">
+    <div class="item"> 
+    <a href="{:U('bookinfo')}&yid={$vo.id}"> 
+    <div class="cover"> <img width="160" height="90" src="{$vo.cover_pic}"> </div> 
+    <div class="body"> <div class="title">{$vo.title}</div> 
+    <div class="text">{$vo.summary|mb_substr=###,0,20}</div> 
+    <div class="bottom"> 
+    <span class="col"><i class="icon-gray-hot"></i>{$vo.reader}</span> 
+    <span class="col"><i class="icon-hand"></i>{$vo.likes}</span> 
+    </div></div>
+    </a>
+    </div>
+    </volist>
+</div>
+
+
+<div class="tabar flb">
+    <nav class="nav hls1">
+       <!--  <div class="item">
+            <a href="{:U('Mh/video')}">
+                <i class="icon-book"></i><div class="title">必看视频</div>
+            </a>
+        </div> -->
+        <div class="item">
+            <a href="{:U('Mh/book_shelf')}">
+                <i class="icon-book"></i><div class="title">书架</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="{:U('Mh/index')}" class="active">
+                <i class="icon-home"></i><div class="title">首页</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="{:U('Mh/my')}">
+                <i class="icon-user"></i><div class="title">我的</div>
+            </a>
+        </div>
+    </nav>
+</div>
+<div class="backtop" id="icon-top" style="display:none;">
+    <a href="javascript:void(0);" class="top">顶部</a>
+</div>
+<script id="itemTpl" type="text/html">
+    {{# for(var i = 0, len = d.length; i < len; i++){ }}
+    <div class="item">
+        <a href="/book/{{ d[i].id }}/">
+            <div class="cover">
+                <img width="160" height="90" src="{{ d[i].book_horizontal }}" />
+            </div>
+            <div class="body">
+                <div class="title">{{ d[i].book_name }}</div>
+                <div class="text">{{ d[i].short_title }}</div>
+                <div class="bottom">
+                    <span class="col"><i class="icon-gray-hot"></i> {{=formatTjNumber(d[i].read_cnt) }}</span>
+                    <span class="col"><i class="icon-hand"></i> {{=formatTjNumber(d[i].like_cnt) }}</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    {{# } }}
+</script>
+<script>
+    var p = 1;
+    var tid = "all";
+    var vip = "all";
+    var end = "all";
+    $(document).ready(function() {
+        $('.nav-row-cate > .action a').click(function(e) {
+            var collect = $('.collect-box');
+            var open = $('.open-box');
+            var self = $(this);
+            if (self.hasClass('opened')) {
+                open.hide();
+                collect.show();
+                self.find('.text').text('展开');
+                self.removeClass('opened');
+
+                var type_id =  $('.open-type .active').attr('val');
+                $(".close-type div a").removeClass('active');
+                $('#close-'+type_id).addClass('active');
+                return
+            }
+            var type_id =  $('.close-type .active').attr('val');
+            if($("#open-"+type_id).length>0){
+                $(".open-type div a").removeClass('active');
+            }
+            $('#open-'+type_id).addClass('active');
+            collect.hide();
+            open.show();
+            self.find('.text').text('收起');
+            self.addClass('opened')
+        });
+
+        // 滚动到底部获取新的分页
+        var url = "index.php?m=Home&c=Mh&a=ajax_book_cate_list";
+        var data = {tid:tid,vip:vip,end:end,p:p};
+        if(p == 1){
+            get_page_data(url,data);
+        }
+        list_page(url,data);
+        // 选择分类显示
+        $(".condition-box .container div a").click(function(){
+            var p_entry = $(this).parents('.container');
+            p_entry.find("div a").removeClass("active");
+            $(this).addClass("active");
+            var c_type = $(this).attr('type');
+            var c_val = $(this).attr('val');
+            if(c_type == 'tid'){
+                tid = c_val;
+            }
+            if(c_type == 'vip'){
+                vip = c_val;
+            }
+            if(c_type == 'end'){
+                end = c_val;
+            }
+            p = 1;
+            $("#html_box").empty();
+            data['p'] = p;
+            data['end'] = end;
+            data['vip'] = vip;
+            data['tid'] = tid;
+            //window.console&&console.log(data);
+            get_page_data(url,data);
+        });
+    })
+</script>
+<!-- 统计 -->
+<script type="text/javascript" src="__PUBLIC__/home/mhjs/gcoupon.min.js"></script>
+<script type="text/javascript">
+    function addLoadEvent(func){
+        if (typeof window.addEventListener != "undefined") {
+            window.addEventListener("load",func,false);
+        } else {
+            window.attachEvent("onload",func) ;
+        }
+    }
+    function tj_getcookie(name){
+        var nameValue = "";
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg)) {
+            nameValue = decodeURI(arr[2]);
+        }
+        return nameValue;
+    }
+    function getQueryString(name){
+        var reg = new RegExp("(^|&)"+name+"=([^&]*)(&|$)","i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r!=null) return unescape(r[2]); return null;
+    }
+    addLoadEvent(function(){
+        var error_img = new Image(),channel=tj_getcookie('qrmh_channel'),channel_type=tj_getcookie('qrmh_channel_type');
+        error_img.onerror=null;
+        error_img.src="//www.efucms.com/stats/?c="+channel+"&ct="+channel_type+"&rnd="+(+new Date);
+        error_img=null;
+        //某些地方页面缓存-检测
+        var p_img =new Image(), p_userid = parseInt("5414066"),c_auth=tj_getcookie('qrmh_auth'),p_reload = getQueryString('p_reload');
+        if(p_userid>0&&c_auth==''){
+            if(p_reload==null){
+                var url = window.location.href;
+                //刷新一次页面
+                window.location.href=url.indexOf("?")>0?(url+'&p_reload=1&reload_time='+(+new Date)):(url+'?p_reload=1&reload_time='+(+new Date));
+            }else{
+                //还是出现这个问题的话，就记录下来
+                p_img.onerror=null;
+                p_img.src="//www.efucms.com/page_stats/?p_userid="+p_userid+"&rnd="+(+new Date);
+            }
+        }
+        p_img=p_userid=c_auth=p_reload=null;
+    });
+    //update byefucms 20170906 某些手机系统下，旋转屏幕出现页面混乱问题，通过延时500ms滚动页面1个单位得以恢复正常
+    var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+    window.addEventListener(evt, function() {
+        setTimeout(function(){
+            window.scrollTo(0, window.pageYOffset+1);
+        },500);
+    }, false);
+</script>
+<!-- 统计 -->
+<!-- 第三方qq统计 -->
+<!-- <script type="text/javascript">
+    var _mtac = {};
+    (function() {
+        setTimeout(function(){
+            var mta = document.createElement("script");
+            mta.src = (("https:" == document.location.protocol) ? "https://" : "http://")+"pingjs.qq.com/h5/stats.js?v2.0.4";
+            mta.setAttribute("name", "MTAH5");
+            mta.setAttribute("sid", "500462993");
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(mta, s);
+        },888);
+    })();
+</script> -->
+<!-- 第三方qq统计 -->
+
+</body></html>

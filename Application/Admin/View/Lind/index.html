@@ -1,0 +1,233 @@
+{__NOLAYOUT__}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>管理后台</title>
+<link rel="stylesheet" href="/Public/admin/css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="/Public/plugins/bootstrap/css/bootstrap.font.css" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="/Public/admin/js/custom/general.js"></script>
+
+<!--[if IE 9]>
+    <link rel="stylesheet" media="screen" href="css/style.ie9.css"/>
+<![endif]-->
+<!--[if IE 8]>
+    <link rel="stylesheet" media="screen" href="css/style.ie8.css"/>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/plugins/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body class="withvernav">
+		<script src="__PUBLIC__/plugins/My97DatePicker/WdatePicker.js"></script>
+        <div class="pageheader notab">
+            <h1 class="pagetitle">用户管理</h1>
+            <span class="pagedesc">管理商城中的用户信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+			<div class="tableoptions">        
+				<form method="post">
+					<!-- 等级:
+					<select name="level" default="{$_GET['level']}" style="width:90px; min-width:0;">
+						<option value="">全部</option>
+						<volist name="_CFG['level']" id="vo">
+						<option value="{$key}">{$vo.name}</option>
+						</volist>
+					</select> -->
+					编号:
+					<input type="text" name="id" value="{$_GET['id']}" class="smallinput" style="width:100px;" />
+					<input type="submit" value="查找" />
+					<input type="button" value="模板消息设置" onclick="location.href=&#39;{:U('Lind/tpl')}&#39;" />
+					<input type="button" value="模板消息" onclick="location.href=&#39;{:U('Lind/tplmsg')}&#39;" />
+					<input type="button" value="代理查看" onclick="location.href=&#39;{:U('Lind/member')}&#39;" />
+					<input type="button" value="总代资料设置" onclick="location.href=&#39;{:U('Lind/Asite')}&#39;" />
+				</form>
+			</div><!--tableoptions-->
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1" width="50">请选择</th>
+						<th class="head1">
+							<a href="<?php if($_GET['order'] == 'id' && $_GET['type'] == 'desc'){
+								echo U('index?order=id&type=asc');
+							}else{
+								echo U('index?order=id&type=desc');
+							}?>">
+							编号
+							<?php if($_GET['order'] == 'id' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head1">头像</th>
+						<th class="head0">昵称</th>
+						<th class="head1">账户书币</th>
+						<th class="head1">账户余额</th>
+						<th class="head0">
+							<a href="<?php if($_GET['order'] == 'sub_time' && $_GET['type'] == 'desc'){
+								echo U('index?order=sub_time&type=asc');
+							}else{
+								echo U('index?order=sub_time&type=desc');
+							}?>">
+							注册时间
+							<?php if($_GET['order'] == 'sub_time' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head0">
+							<a href="<?php if($_GET['order'] == 'agent1' && $_GET['type'] == 'desc'){
+								echo U('index?order=agent1&type=asc');
+							}else{
+								echo U('index?order=agent1&type=desc');
+							}?>">
+							一级下线数
+							<?php if($_GET['order'] == 'agent1' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head0">
+							<a href="<?php if($_GET['order'] == 'agent2' && $_GET['type'] == 'desc'){
+								echo U('index?order=agent2&type=asc');
+							}else{
+								echo U('index?order=agent2&type=desc');
+							}?>">
+							二级下线数
+							<?php if($_GET['order'] == 'agent2' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head0">
+							<a href="<?php if($_GET['order'] == 'agent3' && $_GET['type'] == 'desc'){
+								echo U('index?order=agent3&type=asc');
+							}else{
+								echo U('index?order=agent3&type=desc');
+							}?>">
+							三级下线数
+							<?php if($_GET['order'] == 'agent3' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<!-- <th>消费额</th> -->
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td><input class="ids" name="id[]" type="checkbox" value="{$vo['id']}" /></td>
+						<td>{$vo.id}</td>
+						<td><img src="{$vo.headimg}" style="width:50px; height:50px; border-radius:25px;" /></td>
+						<td>{$vo.nickname}</td>
+						<td>{$vo.money}</td>
+						<td>{$vo.rmb}</td>
+						<td><if condition="$vo['sub_time'] gt 0">{$vo.sub_time|date="Y-m-d H:i:s",###}<else/>-</if></td>
+						<td>{$vo.agent1}</td>
+						<td>{$vo.agent2}</td>
+						<td>{$vo.agent3}</td>
+						<!-- <td>{$vo.consume|default=0}</td> -->
+						<td>
+							<a href="{:U('detail?id='.$vo['id'])}">详细信息</a>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<style>
+				.r3{
+					float: left;
+					border: none;
+					color: #fff;
+					background: #FF5722;
+					margin-top: -2.5px;
+					margin-left: 10px;
+					border-radius: 4px;
+					text-align: center;
+				}
+			</style>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			<label><input class="checkAll" type="checkbox" style="float:left" /></label>
+			<button class="r3 " onclick="$('#tpldiv').toggle();" style="float:left">发送升级成功通知</button>
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+		<div style="border-radius:5px;display:none" id="tpldiv">
+				<div style="width:100%;background:#000;position:fixed;top:0;left:0;height:100%;opacity:0.6"></div>
+				<div style="width:500px;height:300px;position:fixed;background:#fff;left:33%;top:23%;">
+					<div style="height:45px;width:97%;padding-left:3%;line-height:45px;background:#ddd;font-size:16px;">请选择要发送的模板内容</div>
+					<div style="text-align:center;height:50px;margin-top:50px;">
+						模板标题:
+						<select id="tpl" style="width:350px;height:30px;border:1px solid #ddd;border-radius:3px;">
+							<option value="">请选择</option>
+							<foreach name="tpls" item="v">
+							<option value="{$v['id']}">{$v['title']}</option>
+							</foreach>
+						</select>
+					<div>
+					<div style="width: 50%;margin: 10% auto;">
+						<a href="javascript:;" onclick="sendMsg();" style="width: 40%;display: block;float: left;height: 30px;line-height: 30px;background: #FF9800;color: #fff;font-size: 14px;border-radius: 5px;">发送</a>
+						<a href="javascript:;" onclick="$('#tpldiv').hide();" style="width: 40%;display: block;float: right;height: 30px;line-height: 30px;background: #607D8B;color: #fff;font-size: 14px;border-radius: 5px;">取消</a>
+					</div>
+				</div>
+			</div>
+			<link rel="stylesheet" href="__PUBLIC__/layer/skin/default/layer.css?v=140b">
+			<script src="__PUBLIC__/layer/layer.js"></script>
+			<script>
+				var $=jQuery;
+				
+				//全选
+				$(".checkAll").click(function(){
+					$(".ids").prop("checked",this.checked);
+					$(".check-all").prop("checked",this.checked);
+				});
+				$(".ids").click(function () {
+					var option = $(".ids");
+					option.each(function (i) {
+						if (!this.checked) {
+							$(".checkAll").prop("checked", false);
+							return false;
+						} else {
+							$(".checkAll").prop("checked", true);
+						}
+					});
+				});
+				
+				//提交表单
+				function sendMsg(){
+					layer.msg('发送中...', {
+						icon: 16,
+						shade: 0.01
+					});
+
+					var tag = "";  
+					$(":checkbox[name='id[]']:checked").each(function(){ 
+						if(this.value>0) tag = tag + this.value + ","
+					});
+					var ids = tag.replace(/,$/,"");
+					if(ids == ''){
+						layer.msg('没有达到条件的用户');
+						$('#tpldiv').hide();
+						return false;
+					}
+					
+					var tpl = $('#tpl option:selected').val();
+					if(!tpl ||tpl==''){
+						layer.msg('请选择发送的内容');
+						return false;
+					}
+					
+					$.post("{:U('sendMsg')}",{ids:ids,tid:tpl},function(d){
+						if(d){
+							console.log(d);
+							$('#tpldiv').hide();
+							layer.closeAll();
+							layer.msg(d.info);
+						}else{
+							layer.msg('发送失败');
+						}
+					});
+				}
+			</script>
+		
+        

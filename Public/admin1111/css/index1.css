@@ -1,0 +1,11 @@
+.sr_box{
+	position: relative;
+}
+.sr_box .operate_box{
+	position: absolute;
+	top: 8px;
+	right: 2px;
+}
+.sr_box .operate_box a{
+	margin-right: 10px;
+}

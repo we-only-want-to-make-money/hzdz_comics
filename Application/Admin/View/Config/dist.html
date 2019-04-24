@@ -1,0 +1,65 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">用户分销设置</h1>
+            <span class="pagedesc">设置三级分销信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>上级分销商名称</label>
+					<span class="field"><input type="text" name="parent_name" id="parent_name" value="{$_CFG.dist.parent_name}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>分成模式</label>
+					<span class="field">
+						<select name="model" default="{$_CFG.dist.model}">
+							<option value="1">按订单总额进行分成</option>
+						</select>
+					</span>
+				</p>
+				<p>
+					<label>一级分销商名称</label>
+					<span class="field"><input type="text" name="level1_name" id="level1_name" value="{$_CFG.dist.level1_name}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>一级分销商分成比例<small>单位是%,填写数值即可</small></label>
+					<span class="field"><input type="text" name="level1_per" id="level1_per" value="{$_CFG.dist.level1_per}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>二级分销商名称</label>
+					<span class="field"><input type="text" name="level2_name" id="level2_name" value="{$_CFG.dist.level2_name}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>二级分销商分成比例<small>单位是%,填写数值即可</small></label>
+					<span class="field"><input type="text" name="level2_per" id="level2_per" value="{$_CFG.dist.level2_per}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>三级分销商名称</label>
+					<span class="field"><input type="text" name="level3_name" id="name" value="{$_CFG.dist.level3_name}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>三级分销商分成比例<small>单位是%,填写数值即可</small></label>
+					<span class="field"><input type="text" name="level3_per" id="charge" value="{$_CFG.dist.level3_per}" class="smallinput" /></span>
+				</p>
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+			
+			<script>
+				jQuery(document).ready(function(e){
+					$ = jQuery;
+					//调整下拉的默认选择
+					$("select").each(function(index, element) {
+						$(element).find("option[value='"+$(this).attr('default')+"']").attr('selected','selected');
+					});
+				});
+			</script>
+        
+        </div><!--contentwrapper-->
+        

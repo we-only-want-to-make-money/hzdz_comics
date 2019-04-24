@@ -1,0 +1,67 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">欢迎界面</h1>
+            <span class="pagedesc">欢迎使用{$_site['name']}管理后台</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+        
+            <h3>efucms正版:2018年9月28日</h3></br>
+			
+
+			<if condition="$_SERVER['SCRIPT_NAME'] eq '/bst_admin.php'">
+			<h2 style="color:red; line-height:40px; padding:30px 0;">	您使用的是默认后台入口文件，强烈将以您将网站根目录下的bst_admin.php修改为其他不容易被猜到的名字，比如bst{:mt_rand(1000,9999)}.php</h2>
+			</if>
+			
+			<!--table cellpadding="0" cellspacing="0" border="0" class="stdtable" >
+				<colgroup>
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+					<col class="con1" />
+					<col class="con0" />
+				</colgroup>
+				<tbody>				
+					<tr>
+						<td>今日订单数</td>
+						<td>{$info.orders_total}</td>
+					</tr>
+					<tr>
+						<td>今日销售额</td>
+						<td>{$info.total_today}</td>
+					</tr>
+					<tr>
+						<td>今日余额支付总额</td>
+						<td>{$info.money_pay}</td>
+					</tr>
+					<tr>
+						<td>今日积分支付总额</td>
+						<td>{$info.points_pay}</td>
+					</tr>
+					<tr>
+						<td>今日微信支付总额</td>
+						<td>{$info.wxpay_pay}</td>
+					</tr>
+					<tr>
+						<td>待结算佣金</td>
+						<td>{$info.expense1}</td>
+					</tr>
+					<tr>
+						<td>已结算佣金</td>
+						<td>{$info.expense4}</td>
+					</tr>
+					<tr>
+						<td>会员积分总额</td>
+						<td>{$info.points_total}</td>
+					</tr>
+					<tr>
+						<td>会员余额总额</td>
+						<td>{$info.money_total}</td>
+					</tr>
+				</tbody>
+			</table-->
+        
+        
+        </div><!--contentwrapper-->
+        

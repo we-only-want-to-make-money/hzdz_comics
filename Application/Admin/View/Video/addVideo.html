@@ -1,0 +1,140 @@
+<style>
+#upload_form {
+    padding: 50px;
+}
+.til{
+    height: 40px;
+    line-height: 40px;
+    background: #D85046;
+    padding-left: 0%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+#file{
+	height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+form a{
+    width: auto;
+    margin: 0;
+    font-weight: bold;
+    color: #eee;
+    background: #FB9337;
+    border: 1px solid #F0882C;
+    padding: 7px 10px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+</style>
+
+
+<form id="upload_form" name="upload_form" action="javascript:init();" method="post" enctype="multipart/form-data" style="background:#fff">
+    <div class="til" >
+        <label for="file">
+            请选择视频文件
+        </label>
+        <!-- &nbsp;上传到的地址为/upload/类型/文件名 -->
+    </div>
+    <div>
+		<div style="margin-top:10px;">
+		视频标题：<input type="text" id="title" name="title" style="width:300px;padding-left:10px;" placeholder="请输入演示视频标题" />
+		</div>
+		<div style="margin-top:10px;">
+		视频作者：<input type="text" id="author" name="author" style="width:300px;padding-left:10px;" placeholder="请输入演示视频作者" />
+		</div>
+		<div>
+		试看时间（秒）：<input type="text" id="trytime" name="trytime" style="width:300px;padding-left:10px;" placeholder="请输入试看时间（秒）" />
+		</div>
+		<div>
+		销售价格：<input type="text" id="price" name="price" style="width:300px;padding-left:10px;" placeholder="请输入销售价格" />
+		</div>
+		<!-- <div style="margin-top:10px;">
+		视频标签：<input type="text" id="title" name="title" style="width:300px;padding-left:10px;" placeholder="请输入演示视频名称" />
+		</div> -->
+		<div style="margin-top:10px;">
+		视频简介：<input type="text" id="summary" name="summary" style="width:300px;padding-left:10px;" placeholder="请输入演示视频简介" />
+		</div>
+		<div style="margin-top:10px;">
+		视频排序：<input type="text" id="sort" name="sort" style="width:300px;padding-left:10px;" placeholder="请输入演示视频排序，越大越前，默认10" />
+		</div>
+		<!-- <div style="margin-top:10px;">
+		外链地址：<input type="text" id="urls" name="urls" style="width:300px;padding-left:10px;" placeholder="请输入外链地址" />
+		</div> -->
+		<div style="margin-top:10px;">
+		视频封面图（用于列表）：	<iframe src="{:U('Admin/upload', array('event'=>'setPic1'))}" scrolling="no" width="75" height="100"></iframe>
+						<input type="hidden" name="cover_pic" id="cover_pic" value="" class="smallinput" />
+						<script>
+						function setPic1(url){
+							document.getElementById('cover_pic').value = url;
+						}
+						</script>
+		</div>
+		<!-- <div style="margin-top:10px;">
+		分享图标：&nbsp;&nbsp;&nbsp;&nbsp;		
+						<iframe src="{:U('Admin/upload', array('event'=>'setPic2'))}" scrolling="no" width="100" height="100"></iframe>
+						<input type="hidden" name="pic2" id="pic2"  class="smallinput" />
+						<script>
+						function setPic2(url){
+							document.getElementById('pic2').value = url;
+						}
+						</script>
+		</div> -->
+		
+        <input type="file" id="file" name="file" onchange="fileReady()" />
+        <div style="margin-top: 20px;">
+            <input type="submit" id="submit" name="submit" style="width:80px;" value="上传">
+            <button id="clear" onclick="clearUploadFile()" style="width:80px;">
+                清除
+            </button>
+			<a href="{:U('index')}" style="width:80px;">
+                返回
+            </a>
+            <div class="upload_message_show">
+                <!--进度条-->
+                <div class="upload_bar_box">
+                    <div class="upload_bar">
+                    </div>
+                    <span class="upload_percent">
+                    </span>
+                </div>
+                <!--上传剩余时间和上传速度-->
+                <div class="upload_count">
+                    <div class="left_time">
+                        剩余时间 | 00:00:00
+                    </div>
+                    <div class="speed">
+                        100k/s
+                    </div>
+                </div>
+                <!--文件信息-->
+                <div class="upload_file_message">
+                    <div class="message_box">
+                        <div class="upload_file_name">
+                        </div>
+                        <div class="upload_file_size">
+                        </div>
+                        <div class="upload_file_type">
+                        </div>
+                        <div class="upload_file_error">
+                        </div>
+                        <div class="isCompleted">
+                        </div>
+                    </div>
+                </div>
+				<div id="package_url"></div>
+            </div>
+		</form>
+	</div>
+	<img src="" id="compressTemp" style="display:none;">
+	<canvas id="canvas" style="display:none;"></canvas>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/html5_upload_ano.js"></script>
+ </body>
+</html>

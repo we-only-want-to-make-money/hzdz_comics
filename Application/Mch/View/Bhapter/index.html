@@ -1,0 +1,54 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">小说文案制作</h1>
+            <span class="pagedesc">对小说文案制作操作</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+        
+			<div class="tableoptions">        
+				<form method="post" id="form">
+					
+					小说名称:
+					<input type="text" name="title" value="{$_GET['title']}" class="smallinput" style="width:350px;" />
+					<input type="submit" value="查找" />				
+					</script>
+				</form>
+			</div><!--tableoptions-->		
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head0" style="width:50px;">小说ID</th>
+						<th class="head1">小说标题</th>
+						<th class="head0">分类</th>
+						<th class="head1">作者</th>
+						<th class="head0">状态</th>
+						<th class="head1">属性</th>
+						<th class="head0">最大章节</th>
+						<th class="head1">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.title}</td>
+						<td>{$vo.cateids}</td>
+						<td>{$vo.author}</td>
+						<td><if condition="$vo['status'] eq 1">连载<else />完结</if></td>
+						<td><if condition="$vo['free_type'] eq 1">免费<else />付费</if></td>
+						<td>{$vo.episodes}</td>
+						<td class="center">
+							<a href="{:U('free', 'id='.$vo['id'])}">文案制作</a>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        

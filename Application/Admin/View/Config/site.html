@@ -1,0 +1,119 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">站点设置</h1>
+            <span class="pagedesc">设置网站的基本信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>网站名称</label>
+					<span class="field"><input type="text" name="name" id="name" value="{$_CFG.site.name}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>关注时回复关键词<small>关注时自动回复此关键词对应的内容</small></label>
+					<span class="field"><input type="text" name="subscribe" id="subscribe" value="{$_CFG.site.subscribe}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>每日分享赠送书币<small>填0或空则不赠送书币</small></label>
+					<span class="field"><input type="text" name="send_money" id="send_money" value="{$_CFG.site.send_money}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>个人微信商户ID</label>
+					<span class="field"><input type="text" name="uid" id="uid" value="{$_CFG.site.uid}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>个人微信商户token</label>
+					<span class="field"><input type="text" name="token" id="token" value="{$_CFG.site.token}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>平台支付方式</label>
+					<span class="field">
+						<select name="paymodel" default="{$_CFG['site']['paymodel']}">
+							<option value="1">企业微信收款</option>
+							<option value="2">优云宝收款</option>
+							<option value="3">个人微信收款</option>
+						</select>
+					</span>
+				</p>
+				<p>
+					<label>客服QQ</label>
+					<span class="field"><input type="text" name="kfqq" id="kfqq" value="{$_CFG.site.kfqq}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>官方微信号</label>
+					<span class="field"><input type="text" name="weixin" id="weixin" value="{$_CFG.site.weixin}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>VIP包年价格<small>填写0或空则不开启vip包年</small></label>
+					<span class="field"><input type="text" name="vip" id="vip" value="{$_CFG.site.vip}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>充值书币比例<small>1元相当于X金币</small></label>
+					<span class="field"><input type="text" name="rate" id="rate" value="{$_CFG.site.rate}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>漫画付费集未设置，默认扣除<small>单位：书币</small></label>
+					<span class="field"><input type="text" name="mhmoney" id="mhmoney" value="{$_CFG.site.mhmoney}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>小说付费集未设置，默认扣除<small>单位：书币</small></label>
+					<span class="field"><input type="text" name="xsmoney" id="xsmoney" value="{$_CFG.site.xsmoney}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>今日签到赠送书币<small>单位：书币,若空或0则不开启</small></label>
+					<span class="field"><input type="text" name="sign" id="sign" value="{$_CFG.site.sign}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>客服电话<small></small></label>
+					<span class="field"><input type="text" name="mobile" id="mobile" value="{$_CFG.site.mobile}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>短信平台账号<small></small></label>
+					<span class="field"><input type="text" name="smsuser" id="smsuser" value="{$_CFG.site.smsuser}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>短信平台密码<small></small></label>
+					<span class="field"><input type="text" name="smspsw" id="smspsw" value="{$_CFG.site.smspsw}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>短信平台签名<small></small></label>
+					<span class="field"><input type="text" name="smssign" id="smssign" value="{$_CFG.site.smssign}" class="smallinput" /></span>
+				</p>
+
+<p>
+					<label>登陆方式<small></small></label>
+					<span class="field">
+						<input style="zoom:150%;" value="1" type="checkbox" name="weixinlogin" <if condition="$_CFG['site']['weixinlogin'] eq 1">checked</if> >微信自动登陆  <br>
+						<input style="zoom:150%;" value="1" type="checkbox" name="zidongzhuce"
+						<if condition="$_CFG['site']['zidongzhuce'] eq 1">checked</if> >自动注册  （谨慎开启）
+					</span>
+				</p>
+
+				
+				<p>
+					<label>平台二维码</label>
+					<span class="field">
+						<iframe src="{:U('upload', 'event=setPic&url='.$_CFG['site']['qrcode'])}" scrolling="no" width="100" height="100"></iframe>
+						<input type="hidden" name="qrcode" id="qrcode" value="{$_CFG['site']['qrcode']}" class="smallinput" />
+						<script>
+						function setPic(url){
+							document.getElementById('qrcode').value = url;
+						}
+						</script>
+					</span>
+				</p>
+				
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+        
+        
+        </div><!--contentwrapper-->
+        

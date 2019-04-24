@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no">
+<title>{$_site['name']} -- 安全支付</title>
+<link href="__PUBLIC__/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/store.css?bc" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/user.css" rel="stylesheet" type="text/css" />
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>	
+</head>
+<body>
+<div class="header-blank"></div>
+<div class="header">
+	订单安全支付
+</div>
+<div class="pay-main">
+	<div class="pay-tips">正在支付</div>
+	<div class="pay-info">
+		<p>
+			课程支付,金额：￥{$order['money']}
+		</p>
+		<p>
+		订单编号：{$order['sn']}
+		</p>
+	</div>
+	<div class="pay-loading">
+		<img src="__PUBLIC__/images/loading.gif" />
+		正在支付请稍后...
+	</div>
+	<div class="pay-repay">
+		<a href="javascript:;" onclick="callpay()">重新支付</a>
+	</div>
+</div>
+<script type="text/javascript">
+	//调用微信JS api 支付
+	function jsApiCall()
+	{
+		WeixinJSBridge.invoke(
+			'getBrandWCPayRequest',
+			{$params},
+			function(res){
+				WeixinJSBridge.log(res.err_msg);
+				if(res.err_msg == 'get_brand_wcpay_request:cancel'){
+					$(".pay-loading").hide();
+					$(".pay-repay").show();
+				}else{
+					location.href="{:U('Ucenter/myGoods')}";
+				}
+			}
+		);
+	}
+
+	function callpay()
+	{
+		if (typeof WeixinJSBridge == "undefined"){
+			if( document.addEventListener ){
+				document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+			}else if (document.attachEvent){
+				document.attachEvent('WeixinJSBridgeReady', jsApiCall); 
+				document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+			}
+		}else{
+			jsApiCall();
+		}
+	}
+	setTimeout(callpay,2000)
+</script>
+</body>
+</html>

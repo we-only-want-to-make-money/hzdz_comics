@@ -1,0 +1,151 @@
+html, body {font-size: 12px;background:#f2f2f2;}  
+*{margin:0;padding:0;color:#333}
+a{text-decoration:none}
+
+header{width:100%;height:1.5rem;background:#fff;position:fixed;top:0}
+header input{width:75%;padding-left:3%;margin:.3rem 0 .3rem 2%;height:.9rem;border:1px solid #ddd;border-radius:10px;-webkit-appearance: none;}
+header button{    
+	padding: .215rem .45rem;
+    margin-left: .1rem;
+    border: none;
+    background: #ff5420;
+    border-radius: 5px;
+	color: #fff;
+	z-index:99;
+}
+
+.content{
+	width:100%;
+	margin-top:1.8rem;
+}
+.content .c-box{
+	width:50%;
+	float:left;
+	height:auto;
+	margin-bottom:.5rem;
+}
+.content .c-box .box-txt{
+	width: 90%;
+    margin: 0 auto;
+	background: #fff;
+	padding-bottom:.2rem;
+}
+.content .c-box .box-txt img{
+	width:100%;
+	height: 3.5rem;
+	border-radius: 3px;
+}
+.content .c-box .box-txt .title{
+	height:auto;
+	width:100%;
+}
+.content .c-box .box-txt .title p{
+	padding-left:.2rem;
+	line-height:0.5rem;
+	color: #B38C8C;
+    font-weight: bold;
+}
+.content .c-box .box-txt .title span{
+	float:right;
+	color: #ff3c00;
+    font-weight: bold;
+	margin-right:.2rem;
+}
+
+.content .c-box .box-txt .title h3{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	margin: 0;
+    font-weight: normal;
+	padding-left:.2rem;
+	color: #666;
+    font-weight: bold;
+}
+
+.tabar {
+    background-color: #fff;
+    height: 1.333rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.tabar > .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    height: 1.333rem;
+}
+
+.tabar > .nav .item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.tabar > .nav .item a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 1.333rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-size: .3467rem;
+}
+
+.tabar > .nav .item i[class^="icon-"] {
+    width: .5333rem;
+    height: .5333rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: .16rem;
+}
+
+.tabar > .nav .item .active {
+    color: #ff5420
+}
+
+.tabar > .nav .item .icon-book {
+    background-image: url('../mhimages/svg/tabbar_book_n.svg');
+}
+
+.tabar > .nav .item .active .icon-book {
+    background-image: url('../mhimages/svg/tabbar_book_s.svg');
+}
+
+.tabar > .nav .item .icon-home {
+    background-image: url('../mhimages/svg/tabbar_home_n.svg');
+}
+
+.tabar > .nav .item .active .icon-home {
+    background-image: url('../mhimages/svg/tabbar_home_s.svg');
+}
+
+.tabar > .nav .item .icon-user {
+    background-image: url('../mhimages/svg/tabbar_me_n.svg');
+}
+
+.tabar > .nav .item .active .icon-user {
+    background-image: url('../mhimages/svg/tabbar_me_s.svg');
+}
+
+.portal-slick img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+}
+
+.slick-initialized img {
+    opacity: 1;
+}

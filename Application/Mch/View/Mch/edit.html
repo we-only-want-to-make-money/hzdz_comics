@@ -1,0 +1,43 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">申请提现</h1>
+            <span class="pagedesc">请认真编辑各项信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>可提现金额</label>
+					<span class="field"><input type="text"  value="{$info.money}" readonly style="background:#ddd;" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>提现金额<small></small></label>
+					<span class="field"><input type="text" name="money" id="money" value="" class="smallinput" /></span>
+				</p>
+				<p class="stdformbutton">
+					<input type="hidden" name="id" value="{$info['id']}" />
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="返回" onclick="history.back();" />
+				</p>
+			</form>
+			
+        </div><!--contentwrapper-->
+		 <link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css" type="text/css" />
+		<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+		<script>
+			var $=jQuery;
+			function showQrcode(id){
+				layer.open({
+				  type: 2,
+				  title: '查看二维码',
+				  shadeClose: true,
+				  shade: 0.8,
+				  area: ['445px', '430px'],
+				  content: "{:U('showQrcode')}&id="+id,
+				});
+			}		
+		</script>
+        

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no, address=no">
+<title>{$_site['name']}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/common.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/app.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/font.css">
+<script src="__HJS__/jquery-1.10.1.min.js"></script>
+<body bgcolor="#f2f2f2">
+<style>
+.comment_list {
+	padding: 10px;
+	font-size: 12px;
+	color: #666666;
+}
+.comment_list li {
+	float: left;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCCCCC;
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.comment_list  .pl_user_img {
+	float: left;
+	height: 30px;
+	width: 30px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.comment_list  .pl_user_img  img {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
+.comment_list .pl_user_top {
+	float: left;
+	width: 90%;
+	line-height: 30px;
+	max-width: 98%;
+}
+
+.comment_list  .pl_user_name {
+	float: left;
+	margin-left: 10px;
+	color: #0099CC;
+	font-size: 12px;
+}
+.comment_list .pl_user_time {
+	float: left;
+	margin-left: 10px;
+	color: #D4190B;
+	font-size: 18px;
+}
+.comment_list .pl_user_comment {
+	width: 97%;
+	margin-top: 5px;
+	padding-left: 2.2%;
+	float: left;
+	text-align: justify;
+	line-height: 22px;
+	font-size: 14px;
+}
+#comment-content ul li {
+    height: auto;
+    width: 100%;
+    background-color: #FFF;
+    clear: both;
+    margin-top: 10px; 
+    padding: 10px; 
+}
+.goods-header>ul li {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.goods-header>ul li span {
+    width: 100%;
+    margin: 0 auto;
+    height: 45px;
+    line-height: 44px;
+    display: block;
+}
+</style>
+<div class="goods-header">
+	<i class="iconfont icon-back" onclick="window.history.go(-1)"></i>
+	<ul class="clr">
+		<li class="" id="goods"><span>消息详情</span></li>
+	</ul>
+	<i class="iconfont icon-sort" onclick="javascript:$('#showFloatMenu').toggle();"></i>
+</div>
+<div style="height:45px;"></div>
+<div class="floatMenu" id="showFloatMenu" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: none;">
+    <span class="triangle-up"></span>
+    <ul>
+		<li onclick="window.location.href = &#39;{:U('Index/index')}&#39;">
+			<i class="iconfont icon-home"></i><span>首页</span>
+		</li>
+		<li onclick="window.location.href = &#39;{:U('Ucenter/index')}&#39;">
+			<i class="iconfont icon-my"></i><span>个人中心</span>
+		</li>
+    </ul>
+</div>
+<div id="comment-content">
+	<div class="comment_list">
+		<ul id="list">
+			<li>
+				<div class="pl_user_top">
+				<div class="pl_user_time">{$notice['title']}</div>
+				</div>
+				<div class="pl_user_comment">{$notice['body']}</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+<include file="include/share2" />
+</html>

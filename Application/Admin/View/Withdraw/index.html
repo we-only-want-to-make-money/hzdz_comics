@@ -1,0 +1,70 @@
+		<script src="__PUBLIC__/plugins/My97DatePicker/WdatePicker.js"></script>
+        <div class="pageheader notab">
+            <h1 class="pagetitle">提现申请管理</h1>
+            <span class="pagedesc">处理用户的余额提现申请</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			<div class="tableoptions">        
+				<form method="post">
+					状态:
+					<select name="status" default="{$_GET['status']}" style="width:90px; min-width:0;">
+						<option value="">全部</option>
+						<option value="-1">已拒绝</option>
+						<option value="1">待审核</option>
+						<option value="2">待确认</option>
+						<option value="3">已完成</option>
+					</select>
+					申请时间:
+					<input type="text" name="time1" value="{$_GET['time1']}" class="smallinput" style="width:100px;" onclick="WdatePicker()" />
+					到
+					<input type="text" name="time2" value="{$_GET['time2']}" class="smallinput" style="width:100px;" onclick="WdatePicker()"  />
+					<input type="submit" value="查找" />
+				</form>
+			</div><!--tableoptions-->
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">申请用户</th>
+						<th class="head0">申请时间</th>
+						<th class="head1">金额(￥)</th>
+						<th class="head1">支付宝名称</th>
+						<th class="head1">支付宝账号</th>
+						<th class="head0">状态</th>
+						<th class="head1">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr style="background:#fff">
+						<td>{$vo.user_id}</td>
+						<td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+						<td>{$vo.money}</td>
+						<td>{$vo.truename}</td>
+						<td>{$vo.cardno}</td>
+						<td>{$vo.status|get_withdraw_status}</td>
+						<td class="center">
+							<if condition="$vo['status'] eq 1">
+							<a href="{:U('refuse?id='.$vo['id'])}">拒绝</a> | 
+							<a href="{:U('audit?id='.$vo['id'])}">审核</a>
+							<elseif condition="$vo['status'] eq 2"/>
+							<!--企业付款方式显示一件转账链接-->
+							<if condition="$_CFG['site']['withdraw'] eq 2">
+							<a href="{:U('Finance/pay', array('user_id' => $vo['user_id'],'money' => $vo['money'], 'remark' => '平台提现'))}" target="_blank">一键转账</a>	 |
+							</if>
+							<a href="{:U('confirm?id='.$vo['id'])}">确认完成</a>
+							<else/>
+							无
+							</if>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        

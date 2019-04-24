@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no, address=no">
+<title>{$_site['name']} -- 分类</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/common.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/app.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/font.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/designer.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/index.css">
+<script src="__PUBLIC__/ever/js/jquery-1.8.3.min.js"></script>
+<body bgcolor="#f2f2f2">
+<style>
+.vbg{
+    color: #fff;
+    background: #f90;
+}
+</style>
+<div class="category-header flex">
+	<i class="iconfont icon-back" onclick="javascript:history.go(-1)"></i>
+	<div class="search flex_1">
+		<i class="iconfont icon-search" id="searchall"></i>
+		<input type="text" name="keyword" id="gsearch" value="" placeholder="请输入关键词">
+	</div>
+	<i class="iconfont icon-more" onclick="$('#showFloatMenu').toggle();"></i>
+	<div id="showFloatMenu" class="floatMenu" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: none;">
+		<span class="triangle-up"></span>
+		<ul>
+			<li onclick="window.location.href = &#39;{:U('Index/index')}&#39;"><i class="iconfont icon-home"></i><span>首页</span></li>
+			<li onclick="window.location.href = &#39;{:U('Ucenter/index')}&#39;"><i class="iconfont icon-my"></i><span>个人中心</span></li>
+		</ul>
+	</div>
+</div>
+<div class="ng-scope">
+	<div class="category-left">
+		<ul>
+			<foreach name="cates" item="v" key="k">
+				<if condition="$k eq 0">
+					<li class="ng-binding ng-scope cate vbg" data-id="{$v['id']}">{$v['fname']}</li>
+				<else />
+					<li class="ng-binding ng-scope cate" data-id="{$v['id']}">{$v['fname']}</li>
+				</if>
+				
+			</foreach>
+		</ul>
+	</div>
+	<div class="category-right">
+		<div class="category-item" id="list">
+			
+		</div>
+
+	</div>
+</div>
+<script>
+	var p = 1;
+	var cate_id;
+	var keyword;
+	$(function(){
+		$('.category-left ul li').each(function(){
+			if($(this).hasClass('vbg')){
+				cate_id = $(this).attr('data-id');
+			}
+		});
+		$('.category-left ul li').click(function(){
+			$(this).addClass('vbg');
+			$(this).css('color','#fff');
+			$(this).siblings().removeClass('vbg');
+			$(this).siblings().css('color','black');
+			p=1;
+			cate_id = $(this).attr('data-id');
+			$('#list').html('');
+			$('input[name="keyword"]').val('');
+			keyword='';
+			getCates();
+		});
+		$("input[name=keyword]").keydown(function(e){
+			var curKey = e.which;
+			if(curKey == 13){
+				keyword = $('input[name="keyword"]').val();
+				p=1;
+				$('#list').html('');
+				getCates();
+			}
+		});
+		
+		getCates();
+	});
+	
+	function getCates(){
+		$.post("{:U('Index/getCates')}",{p:p,cate_id:cate_id,keyword:keyword},function(data){
+			if(data){
+				if(data.status){
+					$('#list').append(data.msg);
+					bindScroll();
+				}else{
+					msgFade(data.msg);
+				}
+			}else{
+				msgFade('网络异常');
+			}
+		})
+	}
+	//下拉加载
+	function bindScroll(){
+		$('.category-right').scroll(function(){
+			// 当滚动到最底部以上50像素时， 加载新内容
+			if ($(document).height() - $(this).scrollTop() - $(this).height() < 50){
+				p++;
+				$(window).unbind("scroll");
+				getCates();
+			}
+		});
+	}
+</script>
+</body>
+<include file="include/share2" />
+</html>

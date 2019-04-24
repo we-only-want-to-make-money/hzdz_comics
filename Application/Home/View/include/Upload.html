@@ -1,0 +1,50 @@
+<link rel="stylesheet" type="text/css" href="__ACSS__/common.css">
+<style>
+.upload img{
+    vertical-align: middle;
+    border: none;
+    max-width: 100%;
+    text-align: center;
+    float: left;
+    margin-left: 20%;
+    width: 100px;
+    height: 100px;
+}
+</style>
+<div class="upload">
+	<div style="position: relative;">
+		<a class="btn orange_btn" id="gm_fs_img" style="z-index: -1;">上传图片</a>
+		<span class="c666 ml5">尺寸160*160,建议大小不要超过400k</span>
+		<div class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 96px; height: 32px; overflow: hidden; z-index: 0;">
+			<input type="file" onchange="upload(this);" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">
+		</div>
+	</div>
+	<input type="hidden" name="pic" value="">
+	<img class="goods_material_upLoad" id="upload_img" style="display:none;" src="">
+</div>
+<script src="__AJS__/lrz.mobile.min.js"></script>
+<script>
+//    var v=$("input[name='pic']").val();
+//    $("#upload_img").after("<img id='slin' width='150' height='186' src='"+v+"'/>");
+	var $this;
+	function upload(obj){
+	//上传图片至服务器
+		$this= $(obj);
+		var inputHide = $(obj.parentElement).parent().parent().find("input[type=hidden]");
+		lrz(obj.files[0], {
+			done: function (results) {
+			  // 你需要的数据都在这里，可以以字符串的形式传送base64给服务端转存为图片。
+				$.post("{:U('IndexAjax/Upload')}",{img:results.base64,size:results.base64.length},function(data){
+			//		console.log(data);
+					if(data.status){
+						inputHide.val(data.info);
+						$this.parent().parent().parent().find('img').attr('src',data.info);
+						$this.parent().parent().parent().find('img').show();
+					}else{
+						alert(data.info);
+					}
+				});
+			}
+		});
+	}
+</script>	

@@ -1,0 +1,115 @@
+[ 2019-01-01T01:04:43+08:00 ] 111.165.134.121 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: imei /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 32 行.
+NOTIC: [8] Undefined index: chapid /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 42 行.
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 63 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 63 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `vv_user` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `vv_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `vv_data` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `vv_data` WHERE ( date=20181231 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `vv_order` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_order` WHERE `create_time` BETWEEN 1546185600 AND 1546272000 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `vv_order` WHERE `create_time` BETWEEN 1546185600 AND 1546272000 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `vv_user` WHERE ( sub_time between 1546185600 and 1546272000 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: INSERT INTO `vv_data` (`orders`,`total`,`subs`,`date`) VALUES ('0','0','1','20181231') [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: adsPic /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 163 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 164 行.
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%5%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%6%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%7%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%8%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%9%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%10%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%11%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%12%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE `free_type` = 1 ORDER BY sort desc  [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for Common\Util\ddwechat::setParam(), called in /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php on line 32 and defined /www/wwwroot/mh.lingdmh.com/Application/Common/Util/ddwechat.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: share /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 203 行.
+NOTIC: [8] Undefined variable: share /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 204 行.
+NOTIC: [8] Undefined variable: share /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 205 行.
+NOTIC: [8] Undefined index: thirdcode /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2019-01-01T11:49:10+08:00 ] 14.17.3.65 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `vv_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `vv_config`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: imei /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 32 行.
+NOTIC: [8] Undefined index: chapid /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 42 行.
+NOTIC: [8] unserialize(): Error at offset 75 of 79 bytes /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 63 行.
+NOTIC: [8] unserialize(): Error at offset 45 of 108 bytes /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 63 行.
+NOTIC: [8] Undefined index: user_id /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `vv_data` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `vv_data` WHERE ( date=20181231 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: adsPic /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 163 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/HomeController.class.php 第 164 行.
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `vv_mh_list` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%5%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%6%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%7%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%8%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%9%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%10%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%11%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: sort /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php 第 23 行.
+SQL: SELECT * FROM `vv_mh_list` WHERE `mhcate` LIKE '%12%' ORDER BY sort desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `vv_mh_list` WHERE `free_type` = 1 ORDER BY sort desc  [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for Common\Util\ddwechat::setParam(), called in /www/wwwroot/mh.lingdmh.com/Application/Home/Controller/MhController.class.php on line 32 and defined /www/wwwroot/mh.lingdmh.com/Application/Common/Util/ddwechat.class.php 第 39 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: share /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 203 行.
+NOTIC: [8] Undefined variable: share /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 204 行.
+NOTIC: [8] Undefined variable: share /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 205 行.
+NOTIC: [8] Undefined index: thirdcode /www/wwwroot/mh.lingdmh.com/Application/Runtime/Cache/Home/67199abba7efdab949490dffef721944.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000379s ]
+

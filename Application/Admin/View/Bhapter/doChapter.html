@@ -1,0 +1,131 @@
+{__NOLAYOUT__}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>生成推广文案</title>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-1.7.min.js"></script>
+<link href="__PUBLIC__/layer/skin/layer.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/clipboard.min.js"></script>
+</head>
+<style>
+	ul,li{list-style:none;}
+	.content{width:30%;height:100%;margin:0 auto;}
+	.content .title{height:50px;line-height:50px;border-bottom:1px solid #ddd;font-size:30px;font-weight:600}
+	.content .imgs{width:100%;height:100%;}
+	.content .imgs img{width:100%;height:100%;}
+	.content p{margin: 0;padding: 0; -webkit-margin-before: 0;-webkit-margin-after: 0;}
+	.footer {width:100%;position:fixed;height:50px;bottom:0;background:#f7f7f7}
+	.footer .ctnt{width:30%;margin:0 auto;}
+	.footer .ctnt div{width:50%;float:left;text-align:center;line-height:50px;}
+	.footer .ctnt div span{cursor:pointer ;margin:6px auto;width: 140px;height: 38px;line-height: 38px;text-align: center;display: block;background: #337ab7;color: #fff;border-radius: 5px;font-size: 14px;}
+	.create{width:100%;display:none}
+	.create .imgs{width:150px;height:120px;margin:20px auto;}
+	.create .imgs img{width:100%;height:100%;}
+	.create .txt{width: 90%;margin: 0 auto;}
+	.create .txt ul li{line-height: 50px;height: 50px;border-bottom: 1px solid #eeee;}
+	.create .txt ul li span:nth-child(1){width:30%;float:left;}
+	.create .txt ul li span:nth-child(2){width:70%;float:left;}
+	.create .txt ul li input[type="text"]{line-height: 28px;margin: 8px 0;width: 70%;padding-left: 2%;}
+	.create .txt button{width: 50%; margin: 20px 25%;height: 40px; background: red;color: #fff;font-size: 16px;border: none;border-radius: 6px;}
+</style>
+<body>
+	<div class="content" id="content">
+		<div class="title">{$info.title}</div>
+		<div class="imgs">
+			{$info.info}
+		</div>
+	</div>
+	<div class="footer">
+		<div class="ctnt">
+		<div>
+			<span class="copy" data-clipboard-action="copy" data-clipboard-target="#content">复制正文</span>
+		</div>
+		<div>
+			<span onclick="createChapter();">生成原文链接</span>
+		</div>
+		</div>
+    </div>
+	<div class="create">
+		<div class="imgs"><img src="{$binfo.cover_pic}" /></div>
+		<div class="txt">
+			<ul>
+				<li>
+					<span style="color:#000;font-weight:600;">阅读原文章节</span>
+					<span style="color:#000;font-weight:600;">第{$next.ji_no}话&nbsp;&nbsp;{$next.title}</span>
+				</li>
+				<li>
+					<span>文案名称</span>
+					<span><input type="text" name="name" id="name" placeholder="输入文案名称" /></span>
+				</li>
+			    <li>
+					<span>是否强制关注</span>
+					<span><input type="checkbox" name="isubscribe" id="isubscribe" value="1" />&nbsp;是</span>
+				</li>
+				<li>
+					<span>强制关注章节</span>
+					<span><input type="text" name="subjino" id="subjino" placeholder="输入强制关注章节" value="" /></span>
+				</li>
+			</ul>
+			<button onclick="createUrl();">生成链接</button>
+		</div>
+	</div>
+</div>
+<script>
+    var clipboard = new Clipboard('.copy');
+	clipboard.on('success', function(e) {
+		e.clearSelection();
+		layer.msg('已经复制到粘贴板！', {icon: 1, time: 1500,});
+	});
+	function createChapter(){
+		layer.open({
+			type: 1,
+			title: '生成原文链接',
+			skin: 'layui-layer-rim', //加上边框
+			area: ['470px', '520px'], //宽高
+			content: $('.create'),
+		});
+	}
+	
+	function createUrl(){
+		var mbid = "{$bid}";
+			eid = "{$next['id']}";
+			title = "{$binfo['title']}";
+			etitle = "{$next['title']}";
+			pic = "{$binfo['cover_pic']}";
+			ji_no="{$next['ji_no']}";
+			name = $('#name').val();
+			subjino=$('#subjino').val();
+			isubscribe = $('#isubscribe:checked').val()?$('#isubscribe:checked').val():0;
+			if(name == ""){
+				layer.msg('请输入文案名称');
+				return false;
+			}
+			if(isubscribe !=0 && !subjino){
+				layer.msg('请输入强制章节');
+				return false;
+			}
+		$.post("{:U('createUrl')}",{mbid:mbid,eid:eid,title:title,etitle:etitle,pic:pic,ji_no:ji_no,subjino:subjino,name:name,isubscribe:isubscribe},function(d){
+			if(d){
+				if(d.status){
+					layer.alert(d.info,function(){
+						if(d.url){
+							location.href=d.url;
+						}else{
+							layer.closeAll();
+						}
+					});
+					
+				}else{
+					alert(d.info);
+				}
+			}else{
+				layer.msg('请求失败！');
+			}
+		})
+	}
+</script>
+</body>
+</html>

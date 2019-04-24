@@ -1,0 +1,191 @@
+		<script src="__PUBLIC__/plugins/My97DatePicker/WdatePicker.js"></script>
+        <div class="pageheader notab">
+            <h1 class="pagetitle">用户管理</h1>
+            <span class="pagedesc">管理平台中的用户信息</span>
+            
+        </div><!--pageheader-->
+        <style>
+					.r4{
+						display: block;
+						width: 70px;
+						line-height: 25px;
+						background: #FF9800;
+						float: right;
+						text-align: center;
+						font-size: 15px;
+						color: #fff;
+						border-radius: 5px;
+						margin-right:5%;
+					}
+				</style>
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			<div class="tableoptions">        
+				<form method="post" id="form">
+					VIP:
+					<select name="vip" default="{$_GET['vip']}" style="width:90px; min-width:0;">
+						<option value="">全部</option>
+						<option value="1">是</option>
+						<option value="-1">否</option>
+					</select>
+					编号:
+					<input type="text" name="id" value="{$_GET['id']}" class="smallinput" style="width:100px;" />
+					昵称/姓名:
+					<input type="text" name="name" value="{$_GET['name']}" class="smallinput" style="width:100px;" />
+					<input type="submit" value="查找" />
+					<input type="button" value="导出" onclick="exportExcel()" />
+					<script>
+						function exportExcel(){
+							jQuery("#form").attr('action', "{:U('export')}");
+							jQuery("#form").submit();
+						}					
+					</script>
+				</form>
+			</div><!--tableoptions-->
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb" style="background:#fff">
+				<thead>
+					<tr>
+						<th class="head1">
+							<a href="<?php if($_GET['order'] == 'id' && $_GET['type'] == 'desc'){
+								echo U('index?order=id&type=asc');
+							}else{
+								echo U('index?order=id&type=desc');
+							}?>">
+							编号
+							<?php if($_GET['order'] == 'id' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head1">头像</th>
+						<th class="head0">昵称</th>
+						<th class="head1">VIP</th>
+						<th class="head1">VIP到期时间</th>
+						<th class="head1">
+							<a href="<?php if($_GET['order'] == 'money' && $_GET['type'] == 'desc'){
+								echo U('index?order=money&type=asc');
+							}else{
+								echo U('index?order=money&type=desc');
+							}?>" style="color:red">
+							账户书币
+							<?php if($_GET['order'] == 'money' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head1">账户余额</th>
+						<th class="head0">
+							<a href="<?php if($_GET['order'] == 'sub_time' && $_GET['type'] == 'desc'){
+								echo U('index?order=sub_time&type=asc');
+							}else{
+								echo U('index?order=sub_time&type=desc');
+							}?>" style="color:red">
+							注册时间
+							<?php if($_GET['order'] == 'sub_time' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head0">
+							<a href="<?php if($_GET['order'] == 'agent1' && $_GET['type'] == 'desc'){
+								echo U('index?order=agent1&type=asc');
+							}else{
+								echo U('index?order=agent1&type=desc');
+							}?>" style="color:red">
+							一级下线数
+							<?php if($_GET['order'] == 'agent1' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head0">
+							<a href="<?php if($_GET['order'] == 'agent2' && $_GET['type'] == 'desc'){
+								echo U('index?order=agent2&type=asc');
+							}else{
+								echo U('index?order=agent2&type=desc');
+							}?>" style="color:red">
+							二级下线数
+							<?php if($_GET['order'] == 'agent2' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head0">
+							<a href="<?php if($_GET['order'] == 'agent3' && $_GET['type'] == 'desc'){
+								echo U('index?order=agent3&type=asc');
+							}else{
+								echo U('index?order=agent3&type=desc');
+							}?>" style="color:red">
+							三级下线数
+							<?php if($_GET['order'] == 'agent3' && $_GET['type'] == 'desc')echo '↑';else echo '↓';?>
+							</a>
+						</th>
+						<th class="head1">是否客服消息黑名单</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						
+						<td>{$vo.id}</td>
+						<td><img src="{$vo.headimg}" style="width:50px; height:50px; border-radius:25px;" /></td>
+						<td>{$vo.nickname}</td>
+						<td><if condition="$vo['vip']">VIP<else />-</if></td>
+						<td><if condition="$vo['vip_e_time'] gt 0">{$vo.vip_e_time|date="Y-m-d H:i:s",###}<else/>-</if></td>
+						<td>{$vo.money}<a href="javascript:;" class="r4" onclick="showP({$vo['id']});">充值书币</a></td></td>
+						<td>{$vo.rmb}</td>
+						<td><if condition="$vo['sub_time'] gt 0">{$vo.sub_time|date="Y-m-d H:i:s",###}<else/>-</if></td>
+						<td>{$vo.agent1}</td>
+						<td>{$vo.agent2}</td>
+						<td>{$vo.agent3}</td>
+						<td>
+							<if condition="$vo['isrec'] eq 1">
+								<a style="color:blue" href="{:U('Admin/setField',array('id'=>$vo['id'],'table'=>'user','field'=>'isrec'))}">否</a>
+							<else />
+								<a style="color:red" href="{:U('Admin/setField',array('id'=>$vo['id'],'table'=>'user','field'=>'isrec'))}">是</a>
+							</if>
+						</td>
+						<td>
+							<a href="{:U('detail?id='.$vo['id'])}">详细信息</a> |
+							<if condition="$vo['vip'] eq 1">
+								<a href="{:U('setVip?id='.$vo['id'])}">取消VIP</a>
+							<else />
+								<a href="{:U('setVip?id='.$vo['id'])}">设置VIP</a>
+							</if>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<style>
+				.r3{
+					float: left;
+					border: none;
+					color: #fff;
+					background: #FF5722;
+					margin-top: -2.5px;
+					margin-left: 10px;
+					border-radius: 4px;
+					text-align: center;
+				}
+			</style>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+		<link href="__PUBLIC__/layer_mobile/skin/layer.css" rel="stylesheet" type="text/css" />
+		<script src="__PUBLIC__/layer_mobile/layer.js" type="text/javascript"></script>
+		<script>
+				function showP(userid){
+					layer.prompt({title:'输入充值金额，减少金额充值负数'},function(val, index){
+						if(val == ''){
+							layer.msg('请输入您要充值的金额');
+							return;
+						}
+
+						$.post("{:U('setMoney')}",{money:val,user_id:userid},function(d){
+							if(d){
+								layer.msg(d.info, {icon: 6});
+								setTimeout(function(){
+									layer.close(index);
+									location.reload();
+								}, 2000);
+							}else{
+								layer.msg('网络异常');
+							}
+						});
+						layer.close(index);
+					});
+				}
+		</script>

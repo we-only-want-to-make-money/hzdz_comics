@@ -1,0 +1,71 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">编辑文章</h1>
+            <span class="pagedesc">请认真编辑各项信息</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+        
+            <form class="stdform stdform2" method="post">
+				<p>
+					<label>标题</label>
+					<span class="field"><input type="text" name="title" id="title" value="{$info.title}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>作者</label>
+					<span class="field"><input type="text" name="author" id="author" value="{$info.author}" class="smallinput" /></span>
+				</p>
+				<p>
+					<label>
+						封面图片
+						<small>点击+可以上传，点击图片可更换</small>
+					</label>
+					<span class="field">
+						<iframe src="{:U('upload', 'event=setPic&url='.$info['cover'])}" scrolling="no" width="100" height="100"></iframe>
+						<input type="hidden" name="cover" id="cover" value="{$info.cover}" class="smallinput" />
+						<script>
+						function setPic(url){
+							document.getElementById('cover').value = url;
+						}
+						</script>
+					</span>
+				</p>
+				<p>
+					<label>封面图片显示在正文</label>
+					<span class="field">
+						<input type="checkbox" name="show_cover" value="1" />
+					</span>
+				</p>
+
+				<p>
+					<label>摘要</label>
+					<span class="field">
+						<textarea name="desc" class="longinput"></textarea>
+					</span>
+				</p>
+				<p>
+					<label>正文内容</label>
+					<span class="field">
+						<textarea name="body" id="body" class="longinput" style="margin: 0px; height: 400px; width: 693px;">{$info.body}</textarea>
+					</span>
+				</p>
+				<p>
+					<label>外链<small>设置外链后点开直接跳转到外链</small></label>
+					<span class="field"><input type="text" name="link" id="link" value="{$info.link}" class="longinput" /></span>
+				</p>
+				
+				<p class="stdformbutton">
+					<button class="submit radius2">提交</button>
+					<input type="reset" class="reset radius2" value="重置" />
+				</p>
+			</form>
+			<script src="__PUBLIC__/plugins/ueditor1.4.3/ueditor.config.js"></script>
+			<script src="__PUBLIC__/plugins/ueditor1.4.3/ueditor.all.min.js"></script>
+			<script>
+				ue = UE.getEditor('body');
+			</script>
+        
+        </div><!--contentwrapper-->
+        

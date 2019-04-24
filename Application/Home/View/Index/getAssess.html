@@ -1,0 +1,35 @@
+<if condition="$list">
+<foreach name="list" item="v">
+<div class="swiper-s">
+	<div class="swiper-s-img">
+		<div class="swiper-img">
+		<img src="{$user['headimg']}" >
+		</div>
+	</div>
+	<div class="swiper-s-tit">
+		<div class="swiper-s-m">
+		   <div class="swiper-yk">{:getUserName($v['user_id'])}</div>
+		</div>
+		<div class="swiper-s-m">{$v['content']}</div>
+		<div class="swiper-s-m">{:gettoTime($v['create_time'])}</div>
+	</div>
+ </div>
+ </foreach>
+<else />
+<if condition="$page eq 1">
+<div class="swiper-s">
+	<div class="swiper-no">
+		<img src="__HIMAGE__/empty.png" />
+	</div>
+	<div class="swiper-no">
+		该课程暂时没有评论！
+	</div>
+ </div>
+<else />
+<div class="swiper-ss" id="common-load">
+	<div class="swiper-no">
+		已经加载完数据！
+	</div>
+</div>
+</if>
+</if>

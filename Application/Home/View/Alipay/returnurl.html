@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="" lang="zh-cmn-Hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <meta name="keywords" content="{$_site['name']}">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">    
+	<meta http-equiv="cleartype" content="on">
+    <meta name="referrer" content="always">
+    <link rel="shortcut icon" href="__PUBLIC__/wine/images/yz_fc.ico">    
+	<title>订单列表 - {$_site['name']}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">  
+	<link rel="stylesheet" href="__PUBLIC__/wine/css/showcase.css">
+    <link rel="stylesheet" href="__PUBLIC__/wine/css/shopnav_custom.css">	
+	<link href="__PUBLIC__/wine/css/order_list.css" rel="stylesheet">
+    <link href="__PUBLIC__/wine/css/mains.css" rel="stylesheet">
+	<script type="text/javascript" src="/Public/new/js/jquery-1.9.1.min.js"></script>
+</head>
+<style>
+ .btn-primary {
+    color: #fff;
+    border-color: #f60;
+    background-color: #f60;
+}
+ .btn-bottom {
+    margin-left: 5px;
+    padding: 0px 10px;
+    line-height: 28px;
+    vertical-align: middle;
+}
+#order-list-container {
+    margin-top: 0px;
+}
+.empty-list h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #f60;
+}
+</style>
+<body class=" ">
+    
+<div class="container ">
+<div class="content js-page-content" id="content">  
+	
+	<div id="order-list-container">
+		<div class="js-list b-list" id="order_list">
+		
+		<div id="order-list-container"><div class="js-list b-list"></div><div class="empty-list list-finished" style="padding-top:60px;"><div><h4>支付成功！</h4><p class="font-size-12">您的订单支付成功！请到微信中查看订单</p></div><div></div></div></div></div>
+	<div class="loading" style="height: 200px; display: none;"></div>
+	<!--  -->
+	</div>
+</div>    
+</div>
+<div class="popup" style="display:none">
+	<div>
+		<textarea placeholder="输入您要评价的内容" type="text" id="contents"></textarea>
+		<input name="assess_save" id="assess_save" value="保存" type="button">
+		<input name="reset" value="返回" type="button">
+	</div>
+</div>
+
+</body>
+</html>

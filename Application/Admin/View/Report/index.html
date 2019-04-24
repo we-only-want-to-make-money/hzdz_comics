@@ -1,0 +1,74 @@
+		<script src="__PUBLIC__/plugins/My97DatePicker/WdatePicker.js"></script>
+        <div class="pageheader notab">
+            <h1 class="pagetitle">新增关注用户统计报表</h1>
+            <span class="pagedesc">默认查看最近7天的数据</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+			<style>
+			input.smallinput2 { 
+				padding: 8px 5px; border: 1px solid #ccc; width: 120px !important; -moz-border-radius: 2px; -webkit-border-radius: 2px; 
+				border-radius: 2px; background: #fcfcfc; vertical-align: middle; -moz-box-shadow: inset 0 1px 3px #ddd; 
+				-webkit-box-shadow: inset 0 1px 3px #ddd; box-shadow: inset 0 1px 3px #ddd; color: #666;
+			}
+
+			</style>
+        
+			<div class="tableoptions">
+				<span style=" float:left;">
+					<form method="post" name="form" id="form">
+						时间:
+						<input type="text" class="smallinput2" name="stime" value="{$_POST['stime']}" onclick="WdatePicker()" />
+						到
+						<input type="text" class="smallinput2" name="etime" value="{$_POST['etime']}" onclick="WdatePicker()" />
+						<button class="radius3" onclick="form.submit()">查询</button>
+					</form>
+				</span>
+				<span style=" float:right;">
+					<!--button class="radius3" onclick="showData('orders')">订单数</button>
+					<button class="radius3" onclick="showData('total')">销售额</button>
+					<button class="radius3" onclick="showData('wxpay')">现金支付</button-->
+					<button class="radius3" onclick="showData('subs')">关注人数</button>
+				</span>
+				<div style=" clear:both"></div>
+			</div><!--tableoptions-->
+			<div style="border:1px solid #ddd">
+				<div id="container" style="min-width:800px;height:400px"></div>
+			</div>
+        </div><!--contentwrapper-->
+		<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+		<script>
+			data = {$data};
+			title = {orders:'订单数',total:'销售额',wxpay:'现金支付',subs:'关注人数'}
+			jQuery(function () { 
+				showData('subs')
+			});
+			
+			function showData(type){
+				jQuery('#container').highcharts({                   //图表展示容器，与div的id保持一致
+						credits:{
+							 enabled:false // 禁用版权信息
+						},
+						chart: {
+							type: 'spline'                         //指定图表的类型，默认是折线图（line）
+						},
+						title: {
+							text: title[type]+"数据报表"      //指定图表标题
+						},
+						xAxis: {
+							categories: {$cates}   //指定x轴分组
+						},
+						yAxis: {
+							title: {
+								text: '金额/数量'                  //指定y轴的标题
+							}
+						},
+						series: [{                                 //指定数据列
+							name: title[type] ,                   //数据列名
+							data: data[type]                        //数据
+						}]
+					});
+			}
+		</script>
+        

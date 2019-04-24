@@ -1,0 +1,67 @@
+		<script src="__PUBLIC__/plugins/My97DatePicker/WdatePicker.js"></script>
+        <div class="pageheader notab">
+            <h1 class="pagetitle">分成记录</h1>
+            <span class="pagedesc"></span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21" style="background:#fff">
+        
+        
+			<div class="tableoptions">                    
+				<form method="post">
+					状态:
+					<select name="status" default="{$_GET['status']}" style="width:90px; min-width:0;">
+						<option value="">全部</option>
+						<option value="2">已分成</option>
+						<option value="1">未分成</option>
+						<option value="-1">已取消</option>
+					</select>
+					用户:
+					<input type="text" name="user_id" value="{$_GET['user_id']}" placeholder="请输入用户编号" class="smallinput" style="width:100px;" />
+					订单号:
+					<input type="text" name="order_sn" value="{$_GET['order_sn']}" placeholder="输入订单号" class="smallinput" style="width:100px;" />
+					操作时间:
+					<input type="text" name="time1" value="{$_GET['time1']}" class="smallinput" style="width:100px;" onclick="WdatePicker()" />
+					到
+					<input type="text" name="time2" value="{$_GET['time2']}" class="smallinput" style="width:100px;" onclick="WdatePicker()"  />
+					<input type="submit" value="查找" />
+				</form>
+			</div><!--tableoptions-->
+
+			<table cellpadding="0" cellspacing="0" border="0" id="table2" class="stdtable stdtablecb">
+				<thead>
+					<tr>
+						<th class="head1">编号</th>
+						<th class="head1">获佣用户</th>
+						<th class="head0">订单号</th>
+						<th class="head0">金额</th>
+						<!-- <th class="head0">{$_CFG.site.points_name}</th> -->
+						<th class="head0">级别</th>
+						<th class="head0">状态</th>
+						<th class="head0">时间</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="vo">
+					<tr>
+						<td>{$vo.id}</td>
+						<td>{$vo.user_id}</td>
+						<td>{$vo.order_id}</td>
+						<td>{$vo['money']}</td>
+						<!-- <td>{$vo['points']}</td> -->
+						<td>{$vo['level']}级</td>
+						<td>
+							{$vo.status|get_separate_status}
+						</td>
+						<td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			<div class="dataTables_paginate paging_full_numbers" id="dyntable2_paginate">
+			{$page|default="<p style='text-align:center'>暂时没有数据</p>"}
+			</div>
+        
+        </div><!--contentwrapper-->
+        

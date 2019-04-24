@@ -1,0 +1,28 @@
+
+        <div class="pageheader notab">
+            <h1 class="pagetitle">在线升级</h1>
+            <span class="pagedesc">检查并升级您的分销商城</span>
+            
+        </div><!--pageheader-->
+        
+        <div id="contentwrapper" class="contentwrapper lineheight21">
+        
+			<if condition="$version_no gt 0">
+			<div class="tableoptions">                    
+				<button class="radius3" onclick="location.href='{:U('check')}'">检查更新</button>
+			</div><!--tableoptions-->
+			<div style="padding:10px; border:1px solid #ddd; background:#fff;">
+				<p>您当前的版本：{:C('VERSION')}</p>
+				<p>您可以在这里检查您的程序是否可以更新，以获得修复BUG或者获得最新的功能！</p>
+				<p>如果您的程序有定制内容，或者自己修改了代码请勿更新！更新后定制内容或者自己修改的代码可能会失效！</p>
+			</div>
+			<else/>
+			<div class="tableoptions">                    
+				<button class="radius3">定制程序</button>
+			</div><!--tableoptions-->
+			<div style="padding:10px; border:1px solid #ddd; background:#fff;">
+				<p>您当前的版本：{:C('VERSION')}</p>
+			</div>
+			</if>
+        </div><!--contentwrapper-->
+        

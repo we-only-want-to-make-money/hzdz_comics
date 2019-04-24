@@ -1,0 +1,57 @@
+<include file="include/head" />
+<body bgcolor="#f2f2f2">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/common(1).css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/ever/css/app(1).css">
+	<div class="red-page-header">
+	<i class="iconfont icon-back" style="float: left;" onclick="javascript:history.go( - 1)"></i>
+	<h3>我的收米</h3>
+</div>
+<style>
+.active{
+	background: #1071ae;
+}
+</style>
+	<div class="zl_select">
+		<div class="zl_select_span">
+			<span class="active" status='parent1'>一级 &nbsp;&nbsp;({$sp1}人)</span></a>
+			<span status="parent2">二级 &nbsp;&nbsp;({$sp2}人)</span></a>
+			<span status="parent3">三级 &nbsp;&nbsp;({$sp3}人)</span></a>
+		</div>
+	</div>
+	<div class="level_content">
+		<ul id="list">
+			
+		</ul>
+	</div>
+
+
+<div id="backtop">
+	<i class="iconfont icon-fold"></i>
+</div>
+<link rel="stylesheet" href="__PUBLIC__/layer/skin/layer.css">
+<script src="__HJS__/jquery-1.10.1.min.js"></script>
+<script src="__PUBLIC__/layer_mobile/layer.js"></script>
+<script src="__HJS__/common.js"></script>
+<script type="text/javascript">
+	var page = 1;
+		html = false;
+		status='parent1';
+	loadSeparate();
+	$('.zl_select_span span').click(function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass("active");
+		status = $(this).attr('status');
+		p=1;
+		$('#list').html('');
+		loadSeparate();
+	});
+		
+	//加载评论
+	function loadSeparate(){
+		AjaxLoad("{:U('Ucenter/getSeparate')}",{page:page,status:status},$('#list'),html,loadSeparate);
+	}
+</script>
+<div id="backtop"><i class="iconfont icon-fold"></i></div>
+</body>
+</html>
+<include file="include/footer" />
