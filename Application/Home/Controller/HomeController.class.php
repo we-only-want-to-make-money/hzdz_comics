@@ -24,7 +24,7 @@ class HomeController extends Controller
     {
         header('Content-Type: text/html; charset=utf-8');
         $this->getGrant();
-       
+
         $config = M('config')->select();
         if (!is_array($config)) {
             $_var_0('请先在后台设置好各参数');
@@ -79,10 +79,11 @@ class HomeController extends Controller
                 setcookie("uloginid",rand(100,999).$this->user[id],time()+5*365*24*3600);
             } else {
                 //$_CFG['site']['weixinlogin']=0;
-               
+
                 if($this->_site['weixinlogin']==1){
                 if (!isset($_GET['code'])) {
                     $custome_url = get_current_url();
+                    $this->error('custome_url='.$custome_url);
                     $scope = 'snsapi_userinfo';
                     $oauth_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' . $this->_mp['appid'] . '&redirect_uri=' . urlencode($custome_url) . '&response_type=code&scope=' . $scope . '&state=dragondean#wechat_redirect';
                     header('Location:' . $oauth_url);
