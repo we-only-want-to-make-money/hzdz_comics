@@ -83,8 +83,8 @@ class HomeController extends Controller
                 if($this->_site['weixinlogin']==1){
                 if (!isset($_GET['code'])) {
                     $custome_url = get_current_url();
-                    $this->error('custome_url='.$custome_url);
                     $scope = 'snsapi_userinfo';
+                    Log::record('appid'.$this->_mp['appid']);
                     $oauth_url = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=' . $this->_mp['appid'] . '&redirect_uri=' . urlencode($custome_url) . '&response_type=code&scope=' . $scope . '&state=dragondean#wechat_redirect';
                     header('Location:' . $oauth_url);
                     exit;
@@ -211,7 +211,7 @@ class HomeController extends Controller
             $user_id = decode($_GET['uid']);
             $shuser = M('user')->find(intval($user_id));
             $log = M('slog')->where(array('self_id' => $this->user['id'], 'date' => date('Y-m-d'), 'user_id' => $shuser['id']))->find();
-            if (!$log && $this->_site['send_money'] && $user_id != $his->user['id']) {
+            if (!$log && $this->_site['send_money'] && $user_id != $this->user['id']) {
                 M('slog')->add(array("date" => date('Y-m-d'), "user_id" => $shuser['id'], "self_id" => $this->user['id'], "money" => $this->_site['send_money'], "create_time" => time()));
                 M('user')->where(array('id' => $user_id))->save(array("money" => array('exp', 'money+' . $this->_site['send_money'])));
                 flog($user_id, "money", $this->_site['send_money'], 13);
